@@ -17,23 +17,23 @@ IUSE=""
 
 DEPEND="
 	app-arch/lzma
-    dev-libs/nss
-    gnome-base/gconf
+	dev-libs/nss
+	gnome-base/gconf
 	media-libs/alsa-lib
-    sys-apps/dbus
-    x11-apps/xrandr
-    x11-base/xorg-server
-    x11-libs/gtk+:2
-    x11-libs/libnotify
-    x11-libs/libXcomposite
-    x11-libs/libXcursor
-    x11-libs/libXdamage
-    x11-libs/libXext
-    x11-libs/libXfixes
-    x11-libs/libXrender
-    x11-libs/libXScrnSaver
-    x11-libs/libXtst
-	"
+	sys-apps/dbus
+	x11-apps/xrandr
+	x11-base/xorg-server
+	x11-libs/gtk+:2
+	x11-libs/libnotify
+	x11-libs/libXcomposite
+	x11-libs/libXcursor
+	x11-libs/libXdamage
+	x11-libs/libXext
+	x11-libs/libXfixes
+	x11-libs/libXrender
+	x11-libs/libXScrnSaver
+	x11-libs/libXtst
+"
 
 RDEPEND="${DEPEND}"
 
