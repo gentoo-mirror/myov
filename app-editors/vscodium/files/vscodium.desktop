@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=VSCodium
+GenericName=Code Editor
+Comment=Open Source Software Binaries of VSCode
+Icon=vscodium
+MimeType=text/css;text/english;text/html;text/plain;text/x-c;text/x-chdr;text/x-csrc;text/x-c++;text/x-c++hdr;text/x-c++src;text/x-java;text/x-makefile;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;
+Categories=Development;TextEditor;IDE;
+Exec=codium %F
+TryExec=codium
+StartupNotify=true
+Terminal=false

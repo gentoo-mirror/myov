@@ -1,0 +1,16 @@
+#+TITLE: My Overlay
+#+STARTUP: Showall
+* Adding the overlay
+** Layman
+#+BEGIN_SRC shell-script
+  layman -o 'https://gitlab.com/xgqt/myov.git/raw/master/repositories.xml' -f -a myov
+#+END_SRC
+** Manual
+Add an entry to /etc/portage/repos.conf:
+#+BEGIN_SRC conf
+  [myov]
+  location = /usr/local/portage/myov
+  sync-uri = https://gitlab.com/xgqt/myov.git
+  sync-type = git
+  auto-sync = yes
+#+END_SRC

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>myov</name>
+    <description lang="en">My Overlay - custom Gentoo overlay from XGQT</description>
+    <homepage>https://gitlab.com/xgqt/myov.git</homepage>
+    <owner type="person">
+      <name>XGQT</name>
+      <email>xgqt@protonmail.com</email>
+    </owner>
+    <source type="git">https://gitlab.com/xgqt/myov.git</source>
+    <feed>https://gitlab.com/xgqt/myov/commits/master.atom</feed>
+  </repo>
+</repositories>
