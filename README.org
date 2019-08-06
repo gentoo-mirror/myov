@@ -3,7 +3,7 @@
 * Adding the overlay
 ** Layman
 #+BEGIN_SRC shell-script
-  layman -o 'https://gitlab.com/xgqt/myov.git/raw/master/repositories.xml' -f -a myov
+  layman -o 'https://gitlab.com/xgqt/myov/raw/master/repositories.xml' -f -a myov
 #+END_SRC
 ** Manual
 Add an entry to /etc/portage/repos.conf:
