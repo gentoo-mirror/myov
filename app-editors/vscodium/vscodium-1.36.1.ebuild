@@ -5,8 +5,8 @@ EAPI=6
 
 inherit eutils pax-utils
 
-DESCRIPTION="Multiplatform Visual Studio Code from Microsoft"
-HOMEPAGE="https://code.visualstudio.com"
+DESCRIPTION="Open Source Software Binaries of VSCode"
+HOMEPAGE="https://github.com/VSCodium/vscodium"
 SRC_URI="https://github.com/VSCodium/vscodium/releases/download/${PV}/VSCodium-linux-x64-${PV}.tar.gz"
 RESTRICT="mirror strip"
 
@@ -35,7 +35,7 @@ QA_PRESTRIPPED="opt/${PN}/code"
 
 S="${WORKDIR}"
 
-src_install(){
+src_install () {
 	pax-mark m code
 	insinto "/opt/${PN}"
 	doins -r *
@@ -49,7 +49,7 @@ src_install(){
 	insinto "/usr/share/licenses/${PN}"
 }
 
-pkg_postinst(){
+pkg_postinst () {
 	elog "You may install some additional utils, so check them in:"
 	elog "https://code.visualstudio.com/Docs/setup#_additional-tools"
 	elog ""
