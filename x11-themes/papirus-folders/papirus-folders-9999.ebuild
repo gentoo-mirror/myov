@@ -17,8 +17,9 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
-DEPEND=""
+DEPEND="
+	x11-themes/papirus-icon-theme
+"
 RDEPEND="
 	${DEPEND}
-	x11-themes/papirus-icon-theme
 "
