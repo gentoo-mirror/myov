@@ -11,7 +11,6 @@ DESCRIPTION="A minimal terminal for GNOME."
 HOMEPAGE="https://gitlab.gnome.org/ZanderBrown/kgx"
 EGIT_REPO_URI="https://gitlab.gnome.org/ZanderBrown/kgx"
 
-KEYWORDS="~amd64"
 LICENSE="GPL-3"
 SLOT="0"
 
