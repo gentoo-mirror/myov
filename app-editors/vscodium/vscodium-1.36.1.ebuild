@@ -41,7 +41,7 @@ src_install () {
 	doins -r *
 	dosym "../../opt/${PN}/bin/codium" "/usr/bin/${PN}"
 	dosym "../../opt/${PN}/bin/codium" "/usr/bin/codium"
-	make_desktop_entry "${PN}" "Visual Studio Code" "${PN}" "Development;IDE"
+	make_desktop_entry "${PN}" "VSCodium" "${PN}" "Development;IDE"
 	doicon "${FILESDIR}/${PN}.png"
 	fperms +x "/opt/${PN}/codium"
 	fperms +x "/opt/${PN}/bin/codium"

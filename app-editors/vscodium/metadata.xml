@@ -4,7 +4,6 @@
 	<maintainer type="person">
 		<email>xgqt@protonmail.com</email>
 		<name>XGQT</name>
-		<description>My Overlay</description>
 	</maintainer>
 	<use>
 		<flag name="libsecret">Enable libsecret support</flag>
