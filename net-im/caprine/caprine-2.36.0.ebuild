@@ -35,19 +35,20 @@ QA_PREBUILT="
 
 S="${WORKDIR}"
 
-src_unpack () {
+src_unpack() {
 	unpack_deb ${A}
 }
 
-src_install () {
+src_install() {
 	mv * "${D}" || die
+	rm -rd "${D}/usr/share/doc/caprine"
 	dosym "/opt/Caprine/caprine" "/usr/bin/caprine"
 }
 
-pkg_postinst () {
+pkg_postinst() {
 	xdg_icon_cache_update
 }
 
-pkg_postrm () {
+pkg_postrm() {
 	xdg_icon_cache_update
 }
