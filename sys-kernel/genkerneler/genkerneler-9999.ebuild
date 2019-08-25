@@ -5,11 +5,11 @@ EAPI=6
 
 inherit git-r3
 
-DESCRIPTION="Simple wrapper for genkernel and gentoo utilities."
+DESCRIPTION="Simple wrapper for genkernel and gentoo utilities"
 HOMEPAGE="https://gitlab.com/xgqt/genkerneler"
 EGIT_REPO_URI="https://gitlab.com/xgqt/genkerneler.git"
 
-LICENSE="MIT"
+LICENSE="ISC"
 SLOT="0"
 
 DEPEND="
