@@ -8,7 +8,7 @@ inherit gnome2-utils
 DESCRIPTION="Papirus icon theme for Linux"
 HOMEPAGE="https://git.io/papirus-icon-theme"
 
-if [[ ${PV} == 9999 ]];then
+if [[ ${PV} == 99999999 ]];then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/PapirusDevelopmentTeam/${PN}.git"
 else
