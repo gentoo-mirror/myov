@@ -10,6 +10,7 @@
       <email>xgqt@protonmail.com</email>
     </owner>
     <source type="git">https://gitlab.com/xgqt/myov.git</source>
+    <source type="git">git+ssh://git@gitlab.com/xgqt/myov.git</source>
     <feed>https://gitlab.com/xgqt/myov/commits/master.atom</feed>
   </repo>
 </repositories>
