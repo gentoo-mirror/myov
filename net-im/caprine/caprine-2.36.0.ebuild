@@ -1,7 +1,7 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit eutils unpacker xdg-utils
 
@@ -14,15 +14,13 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="
+RDEPEND="
 	dev-libs/libappindicator
 	dev-libs/nss
 	gnome-base/gconf
 	x11-libs/libnotify
 	x11-libs/libXtst
 "
-
-RDEPEND="${DEPEND}"
 
 QA_PREBUILT="
 	/opt/Caprine/swiftshader/libEGL.so

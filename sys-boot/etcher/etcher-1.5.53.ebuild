@@ -1,7 +1,7 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit eutils unpacker xdg-utils
 
@@ -13,9 +13,8 @@ RESTRICT="mirror"
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
 
-DEPEND="
+RDEPEND="
 	app-arch/lzma
 	dev-libs/nss
 	gnome-base/gconf
@@ -35,8 +34,6 @@ DEPEND="
 	x11-libs/libXtst
 "
 
-RDEPEND="${DEPEND}"
-
 QA_PREBUILT="
 opt/balenaEtcher/libnode.so
 opt/balenaEtcher/libffmpeg.so
@@ -51,6 +48,7 @@ src_unpack() {
 
 src_install() {
 	mv * "${D}" || die
+	rm -rd "${D}/usr/share/doc/balena-etcher-electron"
 	sed -i "s/Utility/System/g" "${D}"usr/share/applications/balena-"${PN}"-electron.desktop
 	fperms 0755 /opt/balenaEtcher/balena-"${PN}"-electron || die
 }
@@ -59,6 +57,6 @@ pkg_postinst() {
 	xdg_icon_cache_update
 }
 
- pkg_postrm() {
+pkg_postrm() {
 	xdg_icon_cache_update
- }
+}

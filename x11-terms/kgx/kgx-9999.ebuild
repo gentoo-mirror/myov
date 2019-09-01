@@ -7,12 +7,14 @@ PYTHON_COMPAT=( python3_6 )
 
 inherit git-r3 meson gnome2-utils xdg-utils
 
-DESCRIPTION="A minimal terminal for GNOME."
+DESCRIPTION="A minimal terminal for GNOME"
 HOMEPAGE="https://gitlab.gnome.org/ZanderBrown/kgx"
 EGIT_REPO_URI="https://gitlab.gnome.org/ZanderBrown/kgx"
 
 LICENSE="GPL-3"
 SLOT="0"
+KEYWORDS=""
+IUSE=""
 
 DEPEND="
     ${PYTHON_DEPS}
@@ -32,19 +34,19 @@ RDEPEND="
 "
 
 pkg_preinst() {
-	gnome2_schemas_savelist
+    gnome2_schemas_savelist
 }
 
 pkg_postinst() {
-	gnome2_gconf_install
-	gnome2_schemas_update
-	xdg_desktop_database_update
+    gnome2_gconf_install
+    gnome2_schemas_update
+    xdg_desktop_database_update
     xdg_icon_cache_update
 }
 
 pkg_postrm() {
-	gnome2_gconf_uninstall
-	gnome2_schemas_update
-	xdg_desktop_database_update
+    gnome2_gconf_uninstall
+    gnome2_schemas_update
+    xdg_desktop_database_update
     xdg_icon_cache_update
 }
