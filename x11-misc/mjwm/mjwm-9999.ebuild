@@ -16,7 +16,6 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE=""
 
 pkg_postinst() {
 	elog 'Please note that this program only works with JWM'

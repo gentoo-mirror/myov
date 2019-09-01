@@ -13,8 +13,6 @@ EGIT_REPO_URI="https://gitlab.gnome.org/ZanderBrown/kgx"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
-IUSE=""
 
 DEPEND="
     ${PYTHON_DEPS}

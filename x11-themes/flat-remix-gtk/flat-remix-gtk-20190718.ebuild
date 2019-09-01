@@ -10,4 +10,3 @@ SRC_URI="https://github.com/daniruiz/flat-remix-gtk/archive/${PV}.tar.gz -> ${P}
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""

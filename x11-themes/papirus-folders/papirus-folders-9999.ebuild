@@ -16,7 +16,6 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE=""
 
 DEPEND="
 	x11-themes/papirus-icon-theme

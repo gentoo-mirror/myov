@@ -11,8 +11,6 @@ EGIT_REPO_URI="https://github.com/xenlism/wildfire.git -> ${P}"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
-IUSE=""
 
 src_install() {
 	mkdir -p "${D}usr/share/icons"
