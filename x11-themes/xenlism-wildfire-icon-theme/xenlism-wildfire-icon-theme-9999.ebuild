@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit gnome2-utils git-r3
+inherit git-r3 xdg-utils
 
 DESCRIPTION="Minimal icon theme for *nix"
 HOMEPAGE="http://xenlism.github.io/wildfire/"
@@ -13,18 +13,14 @@ LICENSE="GPL-3"
 SLOT="0"
 
 src_install() {
-	mkdir -p "${D}usr/share/icons"
-	mv icons/* "${D}usr/share/icons/" || die
-}
-
-pkg_preinst() {
-	gnome2_icon_savelist
+	mkdir -p "${D}/usr/share/icons"
+	mv icons/* "${D}/usr/share/icons/" || die
 }
 
 pkg_postinst() {
-	gnome2_icon_cache_update
+	xdg_icon_cache_update
 }
 
 pkg_postrm() {
-	gnome2_icon_cache_update
+	xdg_icon_cache_update
 }
