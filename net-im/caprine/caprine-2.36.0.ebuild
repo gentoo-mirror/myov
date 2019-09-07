@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils unpacker xdg-utils
+inherit unpacker xdg-utils
 
 DESCRIPTION="Elegant Facebook Messenger desktop app."
 HOMEPAGE="https://sindresorhus.com/caprine/"
@@ -39,7 +39,7 @@ src_unpack() {
 
 src_install() {
 	mv * "${D}" || die
-	rm -rd "${D}/usr/share/doc/caprine"
+	rm -rd "${D}/usr/share/doc"
 	dosym "/opt/Caprine/caprine" "/usr/bin/caprine"
 }
 

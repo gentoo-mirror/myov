@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -39,7 +39,7 @@ src_unpack() {
 
 src_install() {
 	mv * "${D}" || die
-	rm -rd "${D}usr/share/doc/caprine"
+	rm -rd "${D}/usr/share/doc"
 	dosym "/opt/Caprine/caprine" "/usr/bin/caprine"
 }
 
