@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit gnome2-utils
+inherit xdg-utils
 
 DESCRIPTION="A pretty simple icon theme inspired on material design."
 HOMEPAGE="https://drasite.com/flat-remix"
@@ -15,14 +15,10 @@ KEYWORDS="~amd64 ~x86"
 
 S="${WORKDIR}/${P//-icon-theme}"
 
-pkg_preinst() {
-	gnome2_icon_savelist
-}
-
 pkg_postinst() {
-	gnome2_icon_cache_update
+	xdg_icon_cache_update
 }
 
 pkg_postrm() {
-	gnome2_icon_cache_update
+	xdg_icon_cache_update
 }
