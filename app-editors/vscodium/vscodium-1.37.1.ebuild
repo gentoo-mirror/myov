@@ -3,12 +3,12 @@
 
 EAPI=7
 
-inherit eutils pax-utils
+inherit desktop pax-utils
 
 DESCRIPTION="Open Source Software Binaries of VSCode"
 HOMEPAGE="https://github.com/VSCodium/vscodium"
 SRC_URI="https://github.com/VSCodium/vscodium/releases/download/${PV}/VSCodium-linux-x64-${PV}.tar.gz -> ${P}.tar.gz"
-RESTRICT="mirror strip"
+RESTRICT="mirror strip bindist"
 
 LICENSE="MIT"
 SLOT="0"
@@ -41,10 +41,10 @@ src_install() {
 	pax-mark m code
 	insinto "/opt/${PN}"
 	doins -r *
-	dosym "../../opt/${PN}/bin/codium" "/usr/bin/${PN}"
-	dosym "../../opt/${PN}/bin/codium" "/usr/bin/codium"
+	dosym "/opt/${PN}/bin/codium" "/usr/bin/${PN}"
+	dosym "/opt/${PN}/bin/codium" "/usr/bin/codium"
 	make_desktop_entry "${PN}" "VSCodium" "${PN}" "Development;IDE"
-	doicon "${FILESDIR}/${PN}.png"
+	newicon "resources/app/resources/linux/code.png" ${PN}.png
 	fperms +x "/opt/${PN}/codium"
 	fperms +x "/opt/${PN}/bin/codium"
 	fperms +x "/opt/${PN}/resources/app/node_modules.asar.unpacked/vscode-ripgrep/bin/rg"
