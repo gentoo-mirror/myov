@@ -3,6 +3,8 @@
 
 EAPI=7
 
+inherit autotools
+
 DESCRIPTION="mjwm creates JWM application menu from (freedesktop) desktop files"
 HOMEPAGE="https://github.com/chiku/mjwm"
 
@@ -16,6 +18,11 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
+
+src_prepare() {
+	default
+	eautoreconf
+}
 
 pkg_postinst() {
 	elog 'Please note that this program only works with JWM'
