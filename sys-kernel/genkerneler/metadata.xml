@@ -5,4 +5,8 @@
 		<email>xgqt@protonmail.com</email>
 		<name>XGQT</name>
 	</maintainer>
+	<use>
+		<flag name="genkernel">Use sys-kernel/genkernel for the script</flag>
+		<flag name="genkernel-next">Use sys-kernel/genkernel-next for the script</flag>
+	</use>
 </pkgmetadata>
