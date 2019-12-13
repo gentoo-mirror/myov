@@ -1,16 +1,20 @@
 #+TITLE: My Overlay
 #+STARTUP: Showall
 * Adding the overlay
-** Layman - from official list
+** Official list
 #+BEGIN_SRC shell-script
   layman -a myov
 #+END_SRC
-** Layman - from URL
+or
+#+BEGIN_SRC shell-script
+  eselect repository enable myov
+#+END_SRC
+** From URL
 #+BEGIN_SRC shell-script
   layman -o 'https://gitlab.com/xgqt/myov/raw/master/repositories.xml' -f -a myov
 #+END_SRC
 ** Manual
-Add an entry to /etc/portage/repos.conf:
+Create /etc/portage/repos.conf/myov.conf
 #+BEGIN_SRC conf
   [myov]
   location = /var/db/repos/myov
