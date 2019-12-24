@@ -16,6 +16,7 @@ else
 	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 fi
 
+RESTRICT="mirror"
 LICENSE="GPL-3"
 SLOT="0"
 

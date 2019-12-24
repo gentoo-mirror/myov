@@ -16,6 +16,7 @@ else
 	KEYWORDS="~amd64 ~hppa ~ppc ~x86 ~x86-fbsd"
 fi
 
+RESTRICT="mirror"
 LICENSE="GPL-2"
 SLOT="0"
 

@@ -7,6 +7,7 @@ DESCRIPTION="A pretty simple gtk window theme inspired on material design"
 HOMEPAGE="https://drasite.com/flat-remix-gtk"
 SRC_URI="https://github.com/daniruiz/flat-remix-gtk/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
+RESTRICT="mirror"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"

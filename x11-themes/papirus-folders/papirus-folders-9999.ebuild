@@ -14,6 +14,7 @@ else
 	KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 fi
 
+RESTRICT="mirror"
 LICENSE="MIT"
 SLOT="0"
 
