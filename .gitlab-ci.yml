@@ -19,5 +19,7 @@ before_script:
   - cp scripts/check-commit /usr/bin
 
 test:
-  - cd /var/db/repos/myov
-  - check-commit
+  stage: test
+  script:
+    - cd /var/db/repos/myov
+    - check-commit
