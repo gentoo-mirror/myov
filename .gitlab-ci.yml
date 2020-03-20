@@ -14,7 +14,6 @@ before_script:
   - mkdir -p /var/db/repos
   - git clone https://gitlab.com/xgqt/myov.git /var/db/repos/myov
   - mkdir -p /var/cache/distfiles
-  - eselect profile set default/linux/amd64/17.1
   - git clone https://gitlab.com/src_prepare/scripts.git
   - cp scripts/check-commit /usr/bin
 
