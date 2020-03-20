@@ -7,13 +7,14 @@ before_script:
   - apk update && apk add alpine-sdk bash git python py3-lxml py3-pip python3-dev rsync wget xz
   - pip3 install pkgcheck pyyaml
   - git clone https://anongit.gentoo.org/git/proj/portage.git
-  - cd portage && ./setup.py install
-  - cd repoman && ./setup.py install
+  - cd portage && python3 setup.py install
+  - cd repoman && python3 setup.py install
   - cd ../.. && rm -rf portage
   - adduser -S portage && addgroup portage
-  - mkdir -p /var/db/repos
-  - git clone https://gitlab.com/xgqt/myov.git /var/db/repos/myov
   - mkdir -p /var/cache/distfiles
+  - mkdir -p /var/db/repos
+  - git clone https://anongit.gentoo.org/git/repo/gentoo.git /var/db/repos/gentoo
+  - git clone https://gitlab.com/xgqt/myov.git /var/db/repos/myov
   - git clone https://gitlab.com/src_prepare/scripts.git
   - cp scripts/check-commit /usr/bin
 
