@@ -16,7 +16,7 @@ before_script:
   - git clone https://anongit.gentoo.org/git/repo/gentoo.git /var/db/repos/gentoo
   - git clone https://gitlab.com/xgqt/myov.git /var/db/repos/myov
   - git clone https://gitlab.com/src_prepare/scripts.git
-  - cp scripts/check-commit /usr/bin
+  - cp scripts/src/check-commit /usr/bin
 
 test:
   stage: test
