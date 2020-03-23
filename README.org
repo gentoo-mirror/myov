@@ -1,5 +1,7 @@
 #+TITLE: My Overlay
 #+STARTUP: Showall
+* Purpose
+Collection of ebuild scripts of programs I maintain
 * Adding the overlay
 ** Official list
 #+BEGIN_SRC shell-script
