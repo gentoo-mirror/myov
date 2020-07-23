@@ -7,9 +7,7 @@ before_script:
   - mkdir -p /var/cache/distfiles
   - mkdir -p /var/db/repos/gentoo
   - emerge-webrsync
-  - emerge -q --noreplace app-portage/repoman
-  - emerge -q --noreplace dev-util/pkgcheck
-  - emerge -q --noreplace net-misc/wget
+  - emerge -q --jobs=4 --noreplace app-portage/repoman dev-util/pkgcheck dev-vcs/git net-misc/wget
   - wget "https://gitlab.com/src_prepare/scripts/-/raw/master/src/check-commit" -O /usr/bin/check-commit
   - chmod 777 /usr/bin/check-commit
 
