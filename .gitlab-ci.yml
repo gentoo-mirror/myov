@@ -7,8 +7,10 @@ before_script:
   - mkdir -p /var/cache/distfiles
   - mkdir -p /var/db/repos/gentoo
   - emerge-webrsync
-  - git clone https://gitlab.com/src_prepare/scripts.git /scripts
-  - cp /scripts/src/check-commit /usr/bin
+  - emerge -q --noreplace app-portage/repoman
+  - emerge -q --noreplace dev-util/pkgcheck
+  - emerge -q --noreplace net-misc/wget
+  - wget "https://gitlab.com/src_prepare/scripts/-/raw/master/src/check-commit" -O /usr/bin/check-commit
 
 test:
   stage: test
