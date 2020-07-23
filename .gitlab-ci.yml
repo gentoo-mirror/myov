@@ -1,25 +1,16 @@
-image: alpine:3
+image: gentoo/stage3-amd64:latest
 
 stages:
   - test
 
 before_script:
-  - apk update && apk add alpine-sdk bash git py3-lxml py3-pip python3-dev rsync wget xz
-  - pip3 install pkgcheck pyyaml
-  - git clone https://anongit.gentoo.org/git/proj/portage.git
-  - cd portage && python3 setup.py install
-  - cd repoman && python3 setup.py install
-  - cd ../.. && rm -rf portage
-  - adduser -S portage && addgroup portage
   - mkdir -p /var/cache/distfiles
-  - mkdir -p /var/db/repos
-  - git clone https://anongit.gentoo.org/git/repo/gentoo.git /var/db/repos/gentoo
-  - git clone https://gitlab.com/xgqt/myov.git /var/db/repos/myov
-  - git clone https://gitlab.com/src_prepare/scripts.git
-  - cp scripts/src/check-commit /usr/bin
+  - mkdir -p /var/db/repos/gentoo
+  - emerge-webrsync
+  - git clone https://gitlab.com/src_prepare/scripts.git /scripts
+  - cp /scripts/src/check-commit /usr/bin
 
 test:
   stage: test
   script:
-    - cd /var/db/repos/myov
     - check-commit
