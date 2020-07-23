@@ -11,6 +11,7 @@ before_script:
   - emerge -q --noreplace dev-util/pkgcheck
   - emerge -q --noreplace net-misc/wget
   - wget "https://gitlab.com/src_prepare/scripts/-/raw/master/src/check-commit" -O /usr/bin/check-commit
+  - chmod 777 /usr/bin/check-commit
 
 test:
   stage: test
