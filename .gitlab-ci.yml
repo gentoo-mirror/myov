@@ -7,8 +7,9 @@ before_script:
   - mkdir -p /var/cache/distfiles
   - mkdir -p /var/db/repos/gentoo
   - emerge-webrsync
+  - export MAKEOPTS="--jobs=$(nproc)" && echo "Running with $(nproc) jobs"
   - export USE="-perl"
-  - emerge -1 -q --jobs=8 --noreplace app-portage/repoman dev-vcs/git net-misc/wget
+  - emerge -1 -q --jobs=$(nproc) --noreplace app-portage/repoman dev-vcs/git net-misc/wget
   - wget "https://gitlab.com/src_prepare/scripts/-/raw/master/src/repomanci" -O /usr/bin/repomanci
   - chmod 777 /usr/bin/repomanci
 
