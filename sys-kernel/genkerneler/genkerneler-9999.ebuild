@@ -11,16 +11,11 @@ EGIT_REPO_URI="https://gitlab.com/xgqt/genkerneler.git"
 
 LICENSE="ISC"
 SLOT="0"
-IUSE="+genkernel genkernel-next"
+IUSE=""
 
 RDEPEND="
-	|| (
-		sys-kernel/genkernel
-		sys-kernel/genkernel-next
-	)
-	genkernel? ( sys-kernel/genkernel )
-	genkernel-next? ( sys-kernel/genkernel-next )
 	app-admin/eselect
 	app-shells/bash
 	sys-boot/grub
+	sys-kernel/genkernel
 "
