@@ -3,7 +3,7 @@
 <pkgmetadata>
   <maintainer type="person">
     <email>xgqt@protonmail.com</email>
-    <name>XGQT</name>
+    <name>Maciej Barć</name>
   </maintainer>
   <upstream>
     <remote-id type="gitlab">xgqt/kerneler</remote-id>
