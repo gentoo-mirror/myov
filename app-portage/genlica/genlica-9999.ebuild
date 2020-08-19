@@ -46,6 +46,9 @@ src_test() {
 src_install() {
 	dodoc README.md
 
+	exeinto "/usr/bin"
+	doexe update-genlica
+
 	exeinto "/opt/${PN}"
 	doexe check_local create_notmp install uninstall update
 
@@ -57,4 +60,5 @@ src_install() {
 pkg_postinst() {
 	elog "Now to install the configuration"
 	elog "Go to /opt/genlica and run 'bash install'"
+	elog "You can also run 'update-genlica' to update genlica"
 }
