@@ -18,9 +18,13 @@ SLOT="0"
 IUSE="test"
 
 RDEPEND="
-	app-admin/stow
 	app-portage/cpuid2cpuflags
 	sys-apps/portage
+	|| (
+		app-admin/pystow
+		app-admin/stow
+		app-admin/xstow
+	)
 "
 DEPEND="
 	${RDEPEND}
