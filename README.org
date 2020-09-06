@@ -1,5 +1,11 @@
 #+TITLE: My Overlay
-#+STARTUP: Showall
+#+AUTHOR: XGQT
+#+LANGUAGE: en
+#+ATTR_HTML: style margin-left: auto; margin-right: auto;
+#+STARTUP: showall inlineimages
+#+OPTIONS: toc:nil num:nil
+#+REVEAL_THEME: black
+[[https://gitlab.com/xgqt/myov/pipelines][file:https://gitlab.com/xgqt/myov/badges/master/pipeline.svg]] [[https://gitlab.com/xgqt/myov/commits/master.atom][file:https://img.shields.io/badge/feed-atom-orange.svg]] [[./LICENSE][file:https://img.shields.io/badge/license-GPLv2-blue.svg]]
 * Purpose
 Collection of ebuild scripts of programs I maintain
 * Adding the overlay
