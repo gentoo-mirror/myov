@@ -16,7 +16,3 @@ IUSE=""
 
 DEPEND=""
 RDEPEND=""
-
-DOCS=(
-	README.md
-)
