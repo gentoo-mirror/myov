@@ -50,8 +50,7 @@ src_test() {
 src_install() {
 	dodoc README.md
 
-	exeinto "/usr/bin"
-	doexe update-genlica
+	dobin update-genlica
 
 	exeinto "/opt/${PN}"
 	doexe check_local create_notmp install uninstall update
