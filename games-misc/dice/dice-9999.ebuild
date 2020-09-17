@@ -7,7 +7,7 @@ inherit git-r3 eutils
 
 DESCRIPTION="A small utility to roll some dice"
 HOMEPAGE="https://gitlab.com/xgqt/dice"
-EGIT_REPO_URI="https://gitlab.com/xgqt/dice.git"
+EGIT_REPO_URI="https://gitlab.com/xgqt/${PN}.git"
 
 LICENSE="GPL-3"
 SLOT="0"
