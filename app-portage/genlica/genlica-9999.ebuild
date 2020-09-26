@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit git-r3
+inherit eutils git-r3
 
 DESCRIPTION="Gentoo replica"
 HOMEPAGE="https://gitlab.com/xgqt/genlica"
@@ -36,19 +36,12 @@ DEPEND="
 	)
 "
 
-src_prepare() {
-	default
-
-	rm LICENSE
-	rm -rd .git*
-}
-
 src_test() {
-	bash test.sh
+	bash test.sh || die "Tests failed"
 }
 
 src_install() {
-	dodoc README.md
+	einstalldocs
 
 	dobin update-genlica
 
