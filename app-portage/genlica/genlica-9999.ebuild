@@ -56,5 +56,10 @@ src_install() {
 pkg_postinst() {
 	elog "Now to install the configuration"
 	elog "Go to /opt/genlica and run 'bash install'"
+	elog "or run 'emerge --config genlica'"
 	elog "You can also run 'update-genlica' to update genlica"
+}
+
+pkg_config() {
+	bash ${EPREFIX}/opt/genlica/install
 }
