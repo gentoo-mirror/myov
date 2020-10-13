@@ -61,5 +61,5 @@ pkg_postinst() {
 }
 
 pkg_config() {
-	bash ${EPREFIX}/opt/genlica/install
+	bash "${EPREFIX}"/opt/genlica/install
 }

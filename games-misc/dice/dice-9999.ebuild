@@ -11,7 +11,6 @@ EGIT_REPO_URI="https://gitlab.com/xgqt/${PN}.git"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
 IUSE=""
 
 DEPEND=""
