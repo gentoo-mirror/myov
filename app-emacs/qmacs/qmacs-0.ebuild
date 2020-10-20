@@ -33,14 +33,15 @@ src_unpack() {
 src_install() {
 	# In /usr/bin/qmacs this looks... interesting
 	make_wrapper "${PN}" \
-				 "emacs -Q -nw \
-						--eval '(setq
-								  auto-save-default nil
-								  create-lockfiles nil
-								  make-backup-files nil
-								  scroll-conservatively 100
-								  x-select-enable-clipboard-manager nil
-								)'"
+		      "emacs -Q -nw \
+			     --eval '(setq
+					auto-save-default nil
+					create-lockfiles nil
+					make-backup-files nil
+					scroll-conservatively 100
+					x-select-enable-clipboard-manager nil
+					column-number-mode t
+					)'"
 	make_desktop_entry "${PN}" "${PN^}" "emacs" \
 					   "Development;TextEditor;" "Terminal=true"
 }
