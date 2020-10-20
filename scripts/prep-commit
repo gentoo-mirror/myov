@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+# Original author: XGQT (xgqt@protonmail.com)
+
+# Copyright 1999-2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+
+repoman fix && repoman -Idx full && pkgcheck scan

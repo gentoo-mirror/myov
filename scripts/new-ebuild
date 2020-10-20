@@ -1,0 +1,49 @@
+#!/bin/sh
+
+
+# Original author: XGQT (xgqt@protonmail.com)
+
+# Copyright 1999-2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+
+if [ ! -f ../../profiles/repo-name ]
+then
+    cat > ./"$(basename "$(pwd)")-9999.ebuild" << CONTENTS
+# Copyright 1999-2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+
+inherit eutils
+
+DESCRIPTION=""
+HOMEPAGE=""
+
+if [[ "\${PV}" == *9999* ]]; then
+    inherit git-r3
+    EGIT_REPO_URI=""
+else
+    SRC_URI=""
+    KEYWORDS="~amd64"
+fi
+
+RESTRICT="mirror"
+LICENSE=""
+SLOT="0"
+IUSE=""
+
+BDEPEND=""
+DEPEND=""
+RDEPEND=""
+CONTENTS
+    cat > ./metadata.xml << CONTENTS
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+</pkgmetadata>
+CONTENTS
+else
+    echo "Are you in a overlay repo?"
+    exit 1
+fi
