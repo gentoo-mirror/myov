@@ -14,7 +14,6 @@ else
 	KEYWORDS="~amd64"
 fi
 
-RESTRICT="mirror"
 LICENSE="ISC"
 SLOT="0"
 
