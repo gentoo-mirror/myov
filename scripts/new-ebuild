@@ -7,6 +7,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 
+trap 'exit 1' INT
+export PATH
+
+
 if [ ! -f ../../profiles/repo-name ]
 then
     cat > ./"$(basename "$(pwd)")-9999.ebuild" << CONTENTS

@@ -7,4 +7,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 
+trap 'exit 1' INT
+export PATH
+
+
 repoman fix && repoman -Idx full && pkgcheck scan
