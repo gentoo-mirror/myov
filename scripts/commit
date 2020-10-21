@@ -1,6 +1,12 @@
 #!/bin/sh
 
 
+# Original author: XGQT (xgqt@protonmail.com)
+
+# Copyright 1999-2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+
 trap 'exit 1' INT
 set -e
 export PATH
