@@ -36,11 +36,11 @@ src_install() {
 		      "emacs -Q -nw \
 			     --eval '(setq
 					auto-save-default nil
+					column-number-mode t
 					create-lockfiles nil
 					make-backup-files nil
 					scroll-conservatively 100
 					x-select-enable-clipboard-manager nil
-					column-number-mode t
 					)'"
 	make_desktop_entry "${PN}" "${PN^}" "emacs" \
 					   "Development;TextEditor;" "Terminal=true"
