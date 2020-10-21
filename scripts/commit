@@ -1,0 +1,18 @@
+#!/bin/sh
+
+
+trap 'exit 1' INT
+set -e
+export PATH
+
+
+EDITOR="vi"
+export EDITOR
+FEATURES="sign"
+export FEATURES
+
+
+git add .
+repoman commit
+git pull --verbose
+git push --verbose
