@@ -12,8 +12,11 @@ set -e
 export PATH
 
 
-EDITOR="vi"
-export EDITOR
+if command -v qmacs >/dev/null 2>&1
+then
+    EDITOR="qmacs"
+    export EDITOR
+fi
 FEATURES="sign"
 export FEATURES
 
