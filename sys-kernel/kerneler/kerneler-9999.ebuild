@@ -11,7 +11,6 @@ EGIT_REPO_URI="https://gitlab.com/xgqt/kerneler.git"
 
 LICENSE="ISC"
 SLOT="0"
-IUSE=""
 
 RDEPEND="
 	app-admin/eselect
