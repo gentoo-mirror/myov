@@ -7,7 +7,10 @@ inherit git-r3
 
 DESCRIPTION="Simple wrapper for make, dracut and gentoo utilities"
 HOMEPAGE="https://gitlab.com/xgqt/kerneler"
-EGIT_REPO_URI="https://gitlab.com/xgqt/kerneler.git"
+EGIT_REPO_URI="
+	https://gitlab.com/xgqt/${PN}.git
+	https://github.com/xgqt/${PN}.git
+"
 
 LICENSE="ISC"
 SLOT="0"

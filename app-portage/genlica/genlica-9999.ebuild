@@ -7,7 +7,10 @@ inherit eutils git-r3
 
 DESCRIPTION="Gentoo replica"
 HOMEPAGE="https://gitlab.com/xgqt/genlica"
-EGIT_REPO_URI="https://gitlab.com/xgqt/${PN}.git"
+EGIT_REPO_URI="
+	https://gitlab.com/xgqt/${PN}.git
+	https://github.com/xgqt/${PN}.git
+"
 
 RESTRICT="
 	mirror

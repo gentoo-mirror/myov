@@ -7,7 +7,10 @@ inherit git-r3
 
 DESCRIPTION="System-wide installation of scripts from mydot"
 HOMEPAGE="https://gitlab.com/xgqt/mydot"
-EGIT_REPO_URI="https://gitlab.com/xgqt/mydot.git"
+EGIT_REPO_URI="
+	https://gitlab.com/xgqt/mydot.git
+	https://github.com/xgqt/mydot.git
+"
 
 RESTRICT="
 	mirror

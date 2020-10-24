@@ -7,7 +7,10 @@ inherit git-r3
 
 DESCRIPTION="Simple wrapper for genkernel and gentoo utilities"
 HOMEPAGE="https://gitlab.com/xgqt/genkerneler"
-EGIT_REPO_URI="https://gitlab.com/xgqt/genkerneler.git"
+EGIT_REPO_URI="
+	https://gitlab.com/xgqt/${PN}.git
+	https://github.com/xgqt/${PN}.git
+"
 
 LICENSE="ISC"
 SLOT="0"
