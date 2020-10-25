@@ -19,8 +19,6 @@ then
 
 EAPI=7
 
-inherit eutils
-
 DESCRIPTION=""
 HOMEPAGE=""
 
