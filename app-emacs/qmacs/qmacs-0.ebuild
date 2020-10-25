@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils desktop xdg
+inherit desktop wrapper xdg
 
 DESCRIPTION="'Quick' - Emacs pseudo-distribution (in ebuild form only)"
 HOMEPAGE="https://gitlab.com/xgqt/myov"

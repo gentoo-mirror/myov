@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit desktop eutils xdg
+inherit desktop wrapper xdg
 
 DESCRIPTION="XGQT's Emacs config aimed at Windows"
 HOMEPAGE="https://gitlab.com/xgqt/wmacs"
