@@ -11,4 +11,9 @@ trap 'exit 1' INT
 export PATH
 
 
+script_dir="$(dirname "${0}")"
+
+
+sh "${script_dir}"/clean-metadata || exit 1
+
 repoman fix && repoman -Idx full && pkgcheck scan
