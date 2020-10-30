@@ -13,10 +13,7 @@ HOMEPAGE="https://gitlab.com/xgqt/myov"
 SRC_URI=""
 KEYWORDS="~amd64"
 
-RESTRICT="
-	fetch
-	test
-"
+RESTRICT="binchecks fetch mirror strip test"
 LICENSE="GPL-2"
 SLOT="0"
 
@@ -42,6 +39,9 @@ src_install() {
 					scroll-conservatively 100
 					x-select-enable-clipboard-manager nil
 					)'"
+	dosym ../../usr/bin/"${PN}" /usr/bin/"${PN}"-"${PV}"
+	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"
+	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"-"${PV}"
 	make_desktop_entry "${PN}" "${PN^}" "emacs" \
 					   "Development;TextEditor;" "Terminal=true"
 }
