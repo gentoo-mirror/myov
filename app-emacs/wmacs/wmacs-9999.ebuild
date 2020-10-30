@@ -33,13 +33,16 @@ RDEPEND="
 src_install() {
 	einstalldocs
 
-	insinto /opt/wmacs
+	insinto /opt/"${PN}"
 	doins init.el
 
-	exeinto /opt/wmacs
+	exeinto /opt/"${PN}"
 	doexe *.sh
 
 	make_wrapper "${PN}" "sh ${EPREFIX}/opt/${PN}/launch.sh"
+	dosym ../../usr/bin/"${PN}" /usr/bin/"${PN}"-"${PV}"
+	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"
+	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"-"${PV}"
 	make_desktop_entry "${PN}" "${PN^}" "emacs" "Development;TextEditor;"
 }
 
