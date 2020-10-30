@@ -6,6 +6,6 @@
         <name>Maciej Barć</name>
     </maintainer>
     <upstream>
-        <remote-id type="gitlab">xgqt/mydot</remote-id>
+        <remote-id type="gitlab">xgqt/myov</remote-id>
     </upstream>
 </pkgmetadata>
