@@ -13,7 +13,7 @@ EGIT_REPO_URI="
 "
 
 RESTRICT="
-	mirror
+	binchecks mirror strip
 	!test? ( test )
 "
 LICENSE="ISC"
@@ -49,7 +49,15 @@ src_install() {
 	dobin update-genlica
 
 	exeinto "/opt/${PN}"
-	doexe check_local create_notmp install uninstall update
+	rm test.sh
+	for exe in *
+	do
+		if [ ! -d "${exe}" ] && [ -x "${exe}" ]
+		then
+			echo "[I] Installing ${exe}"
+			doexe "${exe}"
+		fi
+	done
 
 	insinto "/opt/${PN}"
 	doins -r examples
