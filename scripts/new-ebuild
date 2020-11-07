@@ -30,10 +30,13 @@ else
     KEYWORDS="~amd64"
 fi
 
-RESTRICT="mirror"
+RESTRICT="
+    mirror
+    !test? ( test )
+"
 LICENSE=""
 SLOT="0"
-IUSE=""
+IUSE="test"
 
 BDEPEND=""
 DEPEND=""
