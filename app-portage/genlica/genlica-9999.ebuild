@@ -49,13 +49,14 @@ src_install() {
 	dobin update-genlica
 
 	exeinto "/opt/${PN}"
-	rm test.sh
+	rm test.sh || die
 	for exe in *
 	do
 		if [ ! -d "${exe}" ] && [ -x "${exe}" ]
 		then
 			echo "[I] Installing ${exe}"
 			doexe "${exe}"
+			dosym "../../opt/${PN}/${exe}" "/usr/bin/${PN}-${exe}"
 		fi
 	done
 
