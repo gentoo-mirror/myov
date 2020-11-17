@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils git-r3
+inherit eutils git-r3 wrapper
 
 DESCRIPTION="Gentoo replica"
 HOMEPAGE="https://gitlab.com/xgqt/genlica"
@@ -56,7 +56,7 @@ src_install() {
 		then
 			echo "[I] Installing ${exe}"
 			doexe "${exe}"
-			dosym "../../opt/${PN}/${exe}" "/usr/bin/${PN}-${exe}"
+			make_wrapper "${PN}-${exe}" "${EPREFIX}/opt/${PN}/${exe}"
 		fi
 	done
 
