@@ -5,7 +5,7 @@ EAPI=7
 
 inherit desktop wrapper xdg
 
-DESCRIPTION="'Quick' - Emacs pseudo-distribution (in ebuild form only)"
+DESCRIPTION="Quick Emacs pseudo-distribution (in ebuild form only)"
 HOMEPAGE="https://gitlab.com/xgqt/myov"
 
 # Yes, we generate this thing in the ebuild only...
@@ -31,14 +31,15 @@ src_install() {
 	# In /usr/bin/qmacs this looks... interesting
 	make_wrapper "${PN}" \
 		      "emacs -Q -nw \
-			     --eval '(setq
+			     --eval \"(setq
 					auto-save-default nil
 					column-number-mode t
 					create-lockfiles nil
 					make-backup-files nil
+					ring-bell-function 'ignore
 					scroll-conservatively 100
 					x-select-enable-clipboard-manager nil
-					)'"
+					)\""
 	dosym ../../usr/bin/"${PN}" /usr/bin/"${PN}"-"${PV}"
 	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"
 	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"-"${PV}"
