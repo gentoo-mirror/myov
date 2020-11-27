@@ -16,7 +16,7 @@ if [[ "${PV}" == *9999* ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="
 		https://gitlab.com/xgqt/${PN}.git
-		https://gitlab.com/xgqt/${PN}.git
+		https://github.com/xgqt/${PN}.git
 	"
 else
 	SRC_URI="
