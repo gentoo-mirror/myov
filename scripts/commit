@@ -8,6 +8,7 @@
 
 
 trap 'exit 128' INT
+set -e
 export PATH
 
 
