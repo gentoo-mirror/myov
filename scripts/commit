@@ -7,8 +7,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 
-trap 'exit 1' INT
-set -e
+trap 'exit 128' INT
 export PATH
 
 
@@ -17,11 +16,19 @@ then
     EDITOR="qmacs"
     export EDITOR
 fi
+
 FEATURES="sign"
 export FEATURES
 
 
 git add .
-repoman commit
+
+if [ -z "${1}" ]
+then
+    repoman commit
+else
+    repoman commit -m "${*}"
+fi
+
 git pull --verbose
 git push --verbose
