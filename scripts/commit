@@ -12,6 +12,8 @@ set -e
 export PATH
 
 
+pdir="$(git rev-parse --show-prefix)"
+
 if command -v qmacs >/dev/null 2>&1
 then
     EDITOR="qmacs"
@@ -28,7 +30,7 @@ if [ -z "${1}" ]
 then
     repoman commit
 else
-    repoman commit -m "${*}"
+    repoman commit -m "${pdir%/}: ${*}"
 fi
 
 git pull --verbose
