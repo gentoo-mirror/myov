@@ -12,7 +12,7 @@ EGIT_REPO_URI="
 	https://github.com/xgqt/${PN}.git
 "
 
-LICENSE="ISC"
+LICENSE="GPL-3"
 SLOT="0"
 
 RDEPEND="

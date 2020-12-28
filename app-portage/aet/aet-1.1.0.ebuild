@@ -21,7 +21,7 @@ else
 fi
 
 RESTRICT="mirror"
-LICENSE="ISC"
+LICENSE="GPL-3"
 SLOT="0"
 
 RDEPEND="
