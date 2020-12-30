@@ -5,6 +5,11 @@
         <email>xgqt@protonmail.com</email>
         <name>Maciej Barć</name>
     </maintainer>
+    <use>
+        <flag name="generic">
+            Present using the generic name "tree"
+        </flag>
+    </use>
     <upstream>
         <remote-id type="gitlab">xgqt/tree-ng</remote-id>
     </upstream>

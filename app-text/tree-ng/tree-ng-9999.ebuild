@@ -25,9 +25,12 @@ fi
 RESTRICT="mirror"
 LICENSE="GPL-3"
 SLOT="0"
+IUSE="+generic"
 
 DEPEND="
-	!app-text/tree
+	generic? (
+		!app-text/tree
+	)
 "
 
 src_compile() {
@@ -40,11 +43,17 @@ src_compile() {
 }
 
 src_install() {
-	pushd src || die
-	dobin tree
-	dosym "${EPREFIX}"/usr/bin/tree "${EPREFIX}"/usr/bin/${PN}
-	doman doc/tree.1
-	popd
-
 	einstalldocs
+
+	pushd src >/dev/null || die
+
+	newbin tree "${PN}"
+	newman doc/tree.1 "${PN}.1"
+
+	if use generic; then
+		dosym "${EPREFIX}"/usr/bin/"${PN}" "${EPREFIX}"/usr/bin/tree
+		doman doc/tree.1
+	fi
+
+	popd >/dev/null || die
 }
