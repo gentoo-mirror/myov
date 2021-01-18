@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <maintainer type="person">
-    <email>xgqt@protonmail.com</email>
-    <name>Maciej Barć</name>
-  </maintainer>
-  <longdescription lang="en">
-    nf is a script that gathers information about your system and
-    prints it to the terminal next to an image, a distro's logo or any
-    ASCII art of your choice.
-  </longdescription>
-  <upstream>
-    <remote-id type="gitlab">xgqt/nf</remote-id>
-  </upstream>
-  <use>
-    <flag name="X">
-      Enable support for detecting DEs, WMs, screen resolutions, and showing images from an X terminal
-    </flag>
-  </use>
+	<maintainer type="person">
+		<email>xgqt@protonmail.com</email>
+		<name>Maciej Barć</name>
+	</maintainer>
+	<longdescription lang="en">
+		nf is a script that gathers information about your system and
+		prints it to the terminal next to an image, a distro's logo or any
+		ASCII art of your choice.
+	</longdescription>
+	<upstream>
+		<remote-id type="gitlab">xgqt/nf</remote-id>
+	</upstream>
+	<use>
+		<flag name="X">
+			Enable support for detecting DEs, WMs, screen resolutions, and showing images from an X terminal
+		</flag>
+	</use>
 </pkgmetadata>
