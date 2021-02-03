@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>xgqt@protonmail.com</email>
+		<name>Maciej Barć</name>
+	</maintainer>
+	<longdescription lang="en">
+		Fortune modules from the Grateful Gead song lyrics.
+		Lyrics taken from from https://www.cs.cmu.edu/~mleone/dead-lyrics.html.
+	</longdescription>
+	<upstream>
+		<remote-id type="gitlab">xgqt/grateful_dead_lyrics</remote-id>
+	</upstream>
+</pkgmetadata>
