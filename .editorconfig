@@ -40,7 +40,7 @@ indent_style = tab
 indent_style = tab
 
 [*.eclass]
-indent_style = space
+indent_style = tab
 
 [metadata.xml]
 indent_style = tab
