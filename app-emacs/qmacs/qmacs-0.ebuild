@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-inherit desktop wrapper xdg
+inherit desktop myov-wrapper xdg
 
 DESCRIPTION="Quick Emacs pseudo-distribution (in ebuild form only)"
 HOMEPAGE="https://gitlab.com/xgqt/myov"
@@ -30,8 +30,8 @@ src_unpack() {
 src_install() {
 	# In /usr/bin/qmacs this looks... interesting
 	make_wrapper "${PN}" \
-		      "emacs -Q -nw \
-			     --eval \"(setq
+			  "emacs -Q -nw \
+				 --eval \"(setq
 					auto-save-default nil
 					column-number-mode t
 					create-lockfiles nil
