@@ -28,21 +28,21 @@ src_unpack() {
 }
 
 src_install() {
-	# In /usr/bin/qmacs this looks... interesting
-	make_wrapper "${PN}" \
-			  "emacs -Q -nw \
-				 --eval \"(setq
-					auto-save-default nil
-					column-number-mode t
-					create-lockfiles nil
-					make-backup-files nil
-					ring-bell-function 'ignore
-					scroll-conservatively 100
-					x-select-enable-clipboard-manager nil
-					)\""
+	local qmacs_command="emacs -Q -nw --eval \"(setq
+	auto-save-default nil
+	column-number-mode t
+	create-lockfiles nil
+	make-backup-files nil
+	ring-bell-function 'ignore
+	scroll-conservatively 100
+	x-select-enable-clipboard-manager nil
+	)\""
+	make_wrapper "${PN}" "${qmacs_command}"
+
 	dosym ../../usr/bin/"${PN}" /usr/bin/"${PN}"-"${PV}"
 	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"
 	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"-"${PV}"
+
 	make_desktop_entry "${PN}" "${PN^}" "emacs" \
 					   "Development;TextEditor;" "Terminal=true"
 }
