@@ -18,6 +18,8 @@
 # Licensed under the GNU GPL v2 License
 
 
+# General
+
 root = true
 
 [*]
@@ -31,8 +33,14 @@ trim_trailing_whitespace = true
 [.gitmodules]
 indent_style = tab
 
+
+# Portage
+
 [*.ebuild]
 indent_style = tab
+
+[*.eclass]
+indent_style = space
 
 [metadata.xml]
 indent_style = tab
