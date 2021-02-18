@@ -5,24 +5,41 @@
 #+STARTUP: showall inlineimages
 #+OPTIONS: toc:nil num:nil
 #+REVEAL_THEME: black
+
+
 [[https://gitlab.com/xgqt/myov/pipelines][file:https://gitlab.com/xgqt/myov/badges/master/pipeline.svg]] [[https://gitlab.com/xgqt/myov/commits/master.atom][file:https://img.shields.io/badge/feed-atom-orange.svg]] [[./LICENSE][file:https://img.shields.io/badge/license-GPLv2-blue.svg]]
+
+
 * Purpose
-Collection of ebuild scripts of programs I maintain
+
+  Collection of ebuild scripts of programs I maintain
+
+
 * Adding the overlay
+
 ** Official list
+
 #+BEGIN_SRC shell-script
   layman -a myov
 #+END_SRC
-or
+   or
 #+BEGIN_SRC shell-script
   eselect repository enable myov
 #+END_SRC
+
 ** From URL
+
 #+BEGIN_SRC shell-script
-  layman -o 'https://gitlab.com/xgqt/myov/raw/master/repositories.xml' -f -a myov
+  layman -o "https://gitlab.com/xgqt/myov/raw/master/repositories.xml" -f -a myov
 #+END_SRC
+   or
+#+BEGIN_SRC shell-script
+  eselect repository add myov git "https://gitlab.com/xgqt/myov"
+#+END_SRC
+
 ** Manual
-Create /etc/portage/repos.conf/myov.conf
+
+   Create =/etc/portage/repos.conf/myov.conf=
 #+BEGIN_SRC conf
   [myov]
   location = /var/db/repos/myov
