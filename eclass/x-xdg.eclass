@@ -43,7 +43,7 @@ DEPEND+="
 
 # Exported functions
 
-EXPORT_FUNCTIONS pkg_postinst pkg_postrm
+EXPORT_FUNCTIONS src_prepare pkg_postinst pkg_postrm
 
 
 # @FUNCTION: X_xdg_reset
