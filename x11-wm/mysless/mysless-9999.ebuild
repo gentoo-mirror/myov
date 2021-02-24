@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -30,6 +30,15 @@ LICENSE="GPL-3 MIT"
 SLOT="0"
 IUSE="test"
 
+BDEPEND="
+	virtual/pkgconfig
+	test? (
+		|| (
+			dev-util/shellcheck
+			dev-util/shellcheck-bin
+		)
+	)
+"
 RDEPEND="
 	>=sys-libs/ncurses-6.0:0=
 	media-libs/fontconfig
@@ -39,14 +48,7 @@ RDEPEND="
 "
 DEPEND="
 	${RDEPEND}
-	virtual/pkgconfig
 	x11-base/xorg-proto
-	test? (
-		|| (
-			dev-util/shellcheck
-			dev-util/shellcheck-bin
-		)
-	)
 "
 
 src_test() {

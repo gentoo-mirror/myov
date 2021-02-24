@@ -29,8 +29,7 @@ RDEPEND="
 		app-admin/xstow
 	)
 "
-DEPEND="
-	${RDEPEND}
+BDEPEND="
 	test? (
 		|| (
 			dev-util/shellcheck
