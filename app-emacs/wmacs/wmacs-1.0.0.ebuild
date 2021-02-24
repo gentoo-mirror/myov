@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit desktop myov-wrapper xdg
+inherit desktop myov-wrapper x-xdg
 
 DESCRIPTION="XGQT's Emacs config aimed at Windows"
 HOMEPAGE="https://gitlab.com/xgqt/wmacs"
@@ -44,12 +44,4 @@ src_install() {
 	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"
 	dosym ../../usr/bin/"${PN}" /usr/bin/emacs-"${PN}"-"${PV}"
 	make_desktop_entry "${PN}" "${PN^}" "emacs" "Development;TextEditor;"
-}
-
-pkg_postinst() {
-	xdg_desktop_database_update
-}
-
-pkg_postrm() {
-	xdg_desktop_database_update
 }
