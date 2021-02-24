@@ -11,6 +11,19 @@
 # @BLURB: create a shell wrapper script (fork of "wrapper.eclass")
 
 
+case "${EAPI}"
+in
+	0 | 1 | 2 | 3 | 4 | 5 | 6 )
+		die "EAPI: ${EAPI} too old"
+		;;
+	7 )
+		;;
+	* )
+		die "EAPI: ${EAPI} not supported"
+		;;
+esac
+
+
 _WRAPPER_ECLASS=1
 
 
@@ -21,6 +34,7 @@ _WRAPPER_ECLASS=1
 # (defaults to the bindir) to execute target (default of wrapper)
 # by first optionally setting LD_LIBRARY_PATH to the colon-delimited
 # libpaths followed by optionally changing directory to chdir.
+
 function make_wrapper() {
 	local wrapper="${1}" bin="${2}"  chdir="${3}"
 	local libdir="${4}"  path="${5}"
