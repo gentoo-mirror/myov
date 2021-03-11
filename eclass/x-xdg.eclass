@@ -4,9 +4,9 @@
 
 # @ECLASS: x-xdg.eclass
 # @MAINTAINER:
-# Maciej Barć <xgqt@protonmail.com>
+# Maciej Barć <xgqt@riseup.net>
 # @AUTHOR:
-# Maciej Barć <xgqt@protonmail.com>
+# Maciej Barć <xgqt@riseup.net>
 # @BLURB: execute actions if USE=X
 
 

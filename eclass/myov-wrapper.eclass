@@ -4,10 +4,10 @@
 
 # @ECLASS: myov-wrapper.eclass
 # @MAINTAINER:
-# Maciej Barć <xgqt@protonmail.com>
+# Maciej Barć <xgqt@riseup.net>
 # @AUTHOR:
 # base-system@gentoo.org
-# Maciej Barć <xgqt@protonmail.com>
+# Maciej Barć <xgqt@riseup.net>
 # @BLURB: create a shell wrapper script (fork of "wrapper.eclass")
 
 
