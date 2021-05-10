@@ -43,25 +43,28 @@ src_test() {
 }
 
 src_install() {
+	rm test.sh || die
 	einstalldocs
 
 	dobin update-genlica
 
+	ebegin "Installing helper scripts"
 	exeinto "/opt/${PN}"
-	rm test.sh || die
 	for exe in *
 	do
 		if [ ! -d "${exe}" ] && [ -x "${exe}" ]
 		then
-			echo "[I] Installing ${exe}"
+			echo "[INSTALLING]: ${exe}"
 			doexe "${exe}"
 			make_wrapper "${PN}-${exe}" "${EPREFIX}/opt/${PN}/${exe}"
 		fi
 	done
+	eend $?
 
 	insinto "/opt/${PN}"
 	doins -r examples
 	doins -r portage
+	fperms +x "/opt/${PN}/portage/postsync.d"/*
 }
 
 pkg_postinst() {
