@@ -46,6 +46,13 @@ src_install() {
 	rm test.sh || die
 	einstalldocs
 
+	ebegin "Installing 'portage' and 'examples' directories"
+	local ins="${D}/opt/${PN}"
+	mkdir -p "${ins}"  || die
+	cp -r ./examples "${ins}/"  || die
+	cp -r ./portage  "${ins}/"  || die
+	eend $?
+
 	dobin update-genlica
 
 	ebegin "Installing helper scripts"
@@ -60,11 +67,6 @@ src_install() {
 		fi
 	done
 	eend $?
-
-	insinto "/opt/${PN}"
-	doins -r examples
-	doins -r portage
-	fperms +x "/opt/${PN}/portage/postsync.d"/*
 }
 
 pkg_postinst() {
