@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+	<maintainer type="person">
+		<email>xgqt@riseup.net</email>
+		<name>Maciej Barć</name>
+	</maintainer>
+	<use>
+		<flag name="cxx">
+			Pull in C/C++ development packages
+		</flag>
+		<flag name="latex">
+			Pull in LaTeX development packages
+		</flag>
+		<flag name="python">
+			Pull in Python development packages
+		</flag>
+		<flag name="qemu">
+			Pull in Qemu and Libvirt packages
+		</flag>
+	</use>
+</pkgmetadata>
