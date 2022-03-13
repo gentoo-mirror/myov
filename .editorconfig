@@ -43,6 +43,7 @@ indent_style = tab
 
 [metadata.xml]
 indent_style = tab
+tab_width = 2
 
 [repositories.xml]
 indent_style = space
