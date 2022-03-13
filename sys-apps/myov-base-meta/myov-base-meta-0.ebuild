@@ -16,8 +16,8 @@ RDEPEND="
 	app-admin/rsyslog
 	app-admin/sysstat
 	app-misc/tmux
-	app-shells/bash-completion
-	app-shells/zsh
+	app-shells/bash-completion[eselect(+)]
+	app-shells/zsh[unicode(+)]
 	dev-util/strace
 	dev-util/trace-cmd
 	dev-vcs/git[gpg(+)]
@@ -83,6 +83,7 @@ RDEPEND="
 		sys-fs/sysfsutils
 		sys-kernel/linux-firmware
 		sys-power/powertop
+		sys-process/htop[lm-sensors(+)]
 		network? ( sys-apps/ethtool )
 	)
 	network? (
