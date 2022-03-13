@@ -44,6 +44,8 @@ RDEPEND="
 	net-p2p/transmission
 	x11-misc/xsensors
 
+	x11-themes/xcursor-themes
+
 	|| (
 		media-video/vlc[ffmpeg,pulseaudio?,v4l]
 		media-video/mpv[pulseaudio?]
