@@ -10,10 +10,12 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+accessibility +fonts +graphics"
+IUSE="+accessibility +fonts +graphics pulseaudio"
 
 RDEPEND="
+	app-admin/system-config-printer
 	app-cdr/dolphin-plugins-mountiso
+	gnome-base/dconf-editor
 	kde-apps/ark
 	kde-apps/dolphin-plugins-git
 	kde-apps/ffmpegthumbs
@@ -29,7 +31,10 @@ RDEPEND="
 	kde-misc/kdirstat
 	kde-misc/krename
 	kde-plasma/breeze-gtk
-	kde-plasma/plasma-meta
+	kde-plasma/plasma-meta[browser-integration(+),desktop-portal(+),smart(+)]
+	kde-plasma/plasma-meta[pulseaudio?]
+	media-gfx/simple-scan
+	x11-misc/xsensors
 	accessibility? (
 		kde-apps/kdeaccessibility-meta
 	)
@@ -53,5 +58,10 @@ RDEPEND="
 		media-gfx/inkscape
 		media-gfx/jpegoptim
 		media-gfx/optipng
+		x11-apps/mesa-progs
+	)
+	pulseaudio? (
+		media-sound/paprefs
+		media-sound/pavucontrol
 	)
 "
