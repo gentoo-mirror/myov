@@ -20,6 +20,7 @@ RDEPEND="
 	app-shells/zsh
 	dev-util/strace
 	dev-util/trace-cmd
+	dev-vcs/git
 	sys-apps/busybox
 	sys-block/parted
 	sys-devel/gdb
@@ -50,8 +51,19 @@ RDEPEND="
 		grub? ( sys-boot/grub[device-mapper(+)] )
 	)
 	gentoo? (
+		app-eselect/eselect-package-manager
+		app-eselect/eselect-repository
 		app-eselect/eselect-timezone
 		app-eselect/eselect-vi
+		app-portage/eix
+		app-portage/elogv
+		app-portage/gentoolkit
+		app-portage/portage-utils
+		app-portage/repoman
+		app-portage/smart-live-rebuild
+		dev-util/pkgcheck
+		dev-util/pkgdev
+		sys-apps/pkgcore
 		sys-devel/crossdev
 		hardware? (
 			app-portage/cpuid2cpuflags
