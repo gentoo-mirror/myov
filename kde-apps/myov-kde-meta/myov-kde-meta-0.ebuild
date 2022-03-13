@@ -14,6 +14,7 @@ IUSE="+accessibility +fonts +graphics pulseaudio vulkan"
 RESTRICT="bindist"
 
 RDEPEND="
+	app-cdr/dolphin-plugins-mountiso
 	kde-apps/ark
 	kde-apps/dolphin-plugins-git
 	kde-apps/ffmpegthumbs
@@ -35,12 +36,18 @@ RDEPEND="
 	kde-plasma/plasma-meta[pulseaudio?]
 
 	app-admin/keepassxc[browser(+)]
+	media-sound/kid3
+
 	app-admin/system-config-printer
-	app-cdr/dolphin-plugins-mountiso
 	gnome-base/dconf-editor
 	media-gfx/simple-scan
 	net-p2p/transmission
 	x11-misc/xsensors
+
+	|| (
+		media-video/vlc[ffmpeg,pulseaudio?,v4l]
+		media-video/mpv[pulseaudio?]
+	)
 
 	accessibility? (
 		kde-apps/kdeaccessibility-meta
