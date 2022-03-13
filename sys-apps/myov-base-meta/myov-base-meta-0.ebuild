@@ -87,6 +87,7 @@ RDEPEND="
 		network? ( sys-apps/ethtool )
 	)
 	network? (
+		app-text/wgetpaste
 		net-analyzer/arp-scan
 		net-analyzer/iftop
 		net-analyzer/iptraf-ng
