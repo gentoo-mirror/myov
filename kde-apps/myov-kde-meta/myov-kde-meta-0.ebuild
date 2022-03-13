@@ -23,6 +23,7 @@ RDEPEND="
 	kde-apps/kompare
 	kde-apps/konsole
 	kde-apps/kwalletmanager
+	kde-apps/kwave
 	kde-apps/okular
 	kde-apps/spectacle
 	kde-misc/kdirstat
