@@ -20,7 +20,7 @@ RDEPEND="
 	app-shells/zsh
 	dev-util/strace
 	dev-util/trace-cmd
-	dev-vcs/git
+	dev-vcs/git[gpg(+)]
 	sys-apps/busybox
 	sys-block/parted
 	sys-devel/gdb
