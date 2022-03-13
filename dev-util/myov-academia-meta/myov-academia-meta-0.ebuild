@@ -10,7 +10,8 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+cxx +latex +python +qemu"
+IUSE="android +cxx +latex +python +qemu"
+REQUIRED_USE="android? ( qemu )"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -27,6 +28,10 @@ RDEPEND="
 	)
 	|| ( app-text/pandoc app-text/pandoc-bin )
 	|| ( dev-util/shellcheck dev-util/shellcheck-bin )
+	android? (
+		dev-util/android-studio
+		dev-util/android-tools
+	)
 	cxx? (
 		dev-cpp/gtest
 		dev-util/ccache
@@ -56,7 +61,7 @@ RDEPEND="
 		dev-python/virtualenv
 	)
 	qemu? (
-		app-emulation/libvirt
+		app-emulation/libvirt[qemu(+)]
 		app-emulation/virt-manager
 		app-emulation/virt-viewer
 	)
