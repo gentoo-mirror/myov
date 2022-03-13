@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+	<maintainer type="person">
+		<email>xgqt@riseup.net</email>
+		<name>Maciej Barć</name>
+	</maintainer>
+	<use>
+		<flag name="archive">
+			Pull in popular archive compressors/extractors
+		</flag>
+		<flag name="crypt">
+			Pull in encryption packages
+		</flag>
+		<flag name="gentoo">
+			Pull in Gentoo specific tools
+		</flag>
+		<flag name="grub">
+			Pull in GRUB2
+		</flag>
+		<flag name="hardware">
+			Pull in hardware tools
+		</flag>
+		<flag name="network">
+			Pull in network communication/diagnosis tools
+		</flag>
+	</use>
+</pkgmetadata>
