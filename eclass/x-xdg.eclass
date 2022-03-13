@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 
@@ -15,7 +15,7 @@ in
 	0 | 1 | 2 | 3 | 4 | 5 | 6 )
 		die "EAPI: ${EAPI} too old"
 		;;
-	7 )
+	7 | 8 )
 		;;
 	* )
 		die "EAPI: ${EAPI} not supported"
