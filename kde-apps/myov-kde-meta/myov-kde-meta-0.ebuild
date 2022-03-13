@@ -75,6 +75,8 @@ RDEPEND="
 	)
 	vulkan? (
 		dev-util/vulkan-tools
+		media-libs/mesa[vulkan(+)]
+		media-video/ffmpeg[vulkan(+)]
 		media-video/libva-utils
 	)
 "
