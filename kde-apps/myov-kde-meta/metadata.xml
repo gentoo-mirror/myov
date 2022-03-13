@@ -16,5 +16,8 @@
 		<flag name="graphics">
 			Pull in graphics packages - KDE-related and unrelated packages
 		</flag>
+		<flag name="vulkan">
+			Pull in Vulkan-related packages
+		</flag>
 	</use>
 </pkgmetadata>
