@@ -10,12 +10,9 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+accessibility +fonts +graphics pulseaudio"
+IUSE="+accessibility +fonts +graphics pulseaudio vulkan"
 
 RDEPEND="
-	app-admin/system-config-printer
-	app-cdr/dolphin-plugins-mountiso
-	gnome-base/dconf-editor
 	kde-apps/ark
 	kde-apps/dolphin-plugins-git
 	kde-apps/ffmpegthumbs
@@ -31,15 +28,24 @@ RDEPEND="
 	kde-misc/kdirstat
 	kde-misc/krename
 	kde-plasma/breeze-gtk
+	kde-plasma/discover[firmware(+)]
 	kde-plasma/plasma-meta[browser-integration(+),desktop-portal(+),smart(+)]
 	kde-plasma/plasma-meta[pulseaudio?]
+
+	app-admin/keepassxc[browser(+)]
+	app-admin/system-config-printer
+	app-cdr/dolphin-plugins-mountiso
+	gnome-base/dconf-editor
 	media-gfx/simple-scan
+	net-p2p/transmission
 	x11-misc/xsensors
+
 	accessibility? (
 		kde-apps/kdeaccessibility-meta
 	)
 	fonts? (
 		media-fonts/cantarell
+		media-fonts/cascadia-code
 		media-fonts/droid
 		media-fonts/fontawesome
 		media-fonts/hack
@@ -58,10 +64,16 @@ RDEPEND="
 		media-gfx/inkscape
 		media-gfx/jpegoptim
 		media-gfx/optipng
+		media-libs/exiftool
+		media-video/handbrake[gtk(+)]
 		x11-apps/mesa-progs
 	)
 	pulseaudio? (
 		media-sound/paprefs
 		media-sound/pavucontrol
+	)
+	vulkan? (
+		dev-util/vulkan-tools
+		media-video/libva-utils
 	)
 "
