@@ -40,6 +40,7 @@ RDEPEND="
 	)
 	python? (
 		dev-python/black
+		dev-python/coverage
 		dev-python/jupyter
 		dev-python/nose
 		dev-python/numpy
@@ -50,6 +51,7 @@ RDEPEND="
 		dev-python/responses
 		dev-python/scipy
 		dev-python/sphinx
+		dev-python/tox
 		dev-python/virtualenv
 	)
 	qemu? (
