@@ -98,6 +98,7 @@ RDEPEND="
 		net-analyzer/tcptraceroute
 		net-analyzer/traceroute
 		net-dns/bind-tools
+		net-fs/nfs-utils
 		net-fs/sshfs
 		net-ftp/lftp
 		net-misc/bridge-utils
