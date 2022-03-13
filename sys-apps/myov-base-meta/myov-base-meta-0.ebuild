@@ -115,4 +115,16 @@ RDEPEND="
 	)
 "
 
-# TODO: post to update TZ and vi
+pkg_postinst() {
+	if use gentoo ; then
+		# Do not fail here
+
+		ebegin "Setting default package manger"
+		eselect package-manager update
+		eend 0
+
+		ebegin "Setting default Vi implementation"
+		eselect vi update
+		eend 0
+	fi
+}
