@@ -11,6 +11,7 @@ LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="+cxx +latex +python +qemu"
+RESTRICT="bindist"
 
 RDEPEND="
 	app-doc/doxygen[dot(+)]

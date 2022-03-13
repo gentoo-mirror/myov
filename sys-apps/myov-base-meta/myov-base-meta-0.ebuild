@@ -11,6 +11,7 @@ LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="+archive +crypt +gentoo grub +hardware +network"
+RESTRICT="bindist"
 
 RDEPEND="
 	app-admin/rsyslog

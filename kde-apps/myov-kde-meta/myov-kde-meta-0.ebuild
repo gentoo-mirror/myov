@@ -11,6 +11,7 @@ LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="+accessibility +fonts +graphics pulseaudio vulkan"
+RESTRICT="bindist"
 
 RDEPEND="
 	kde-apps/ark
