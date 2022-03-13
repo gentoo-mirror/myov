@@ -25,7 +25,7 @@ RDEPEND="
 	kde-apps/kompare
 	kde-apps/konsole
 	kde-apps/kwalletmanager
-	kde-apps/kwave
+	kde-apps/kwave[flac(+),mp3(+),opus(+)]
 	kde-apps/okular
 	kde-apps/spectacle
 	kde-misc/kdirstat
