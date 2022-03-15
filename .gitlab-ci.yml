@@ -16,7 +16,7 @@ test:
   stage: test
 
   before_script:
-    - emerge --version ; pkgcheck --verson
+    - emerge --version ; pkgcheck --version
 
   script:
     - pkgcheck scan --keywords=-RedundantVersion --exit error --verbose .
