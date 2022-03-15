@@ -7,9 +7,6 @@
 		<name>Maciej Barć</name>
 	</maintainer>
 	<use>
-		<flag name="accessibility">
-			Pull in KDE-related accessibility packages
-		</flag>
 		<flag name="fonts">
 			Pull in selected font packages
 		</flag>
