@@ -12,13 +12,10 @@ EGIT_REPO_URI="
 	https://github.com/xgqt/${PN}.git
 "
 
-RESTRICT="
-	mirror
-	!test? ( test )
-"
 LICENSE="GPL-3"
 SLOT="0"
 IUSE="test"
+RESTRICT="mirror !test? ( test )"
 
 RDEPEND="
 	|| (
@@ -27,24 +24,13 @@ RDEPEND="
 		app-admin/xstow
 	)
 "
-BDEPEND="
-	test? (
-		|| (
-			dev-util/shellcheck
-			dev-util/shellcheck-bin
-		)
-	)
-"
-
-src_test() {
-	bash test.sh || die "Tests failed"
-}
+BDEPEND="test? ( || ( dev-util/shellcheck dev-util/shellcheck-bin ) )"
 
 src_install() {
-	einstalldocs
-
 	mkdir -p "${D}"/opt/"${PN}" || die
 	cp -r * "${D}"/opt/"${PN}" || die
 
-	make_wrapper "install-${PN}" "bash ${EPREFIX}/opt/${PN}/install"
+	make_wrapper "install-mydot" "bash ${EPREFIX}/opt/${PN}/install"
+
+	einstalldocs
 }
