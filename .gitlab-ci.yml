@@ -8,15 +8,15 @@
 image: registry.gitlab.com/src_prepare/gentoo-repoman-container:latest
 
 
-variables:
-  GIT_SUBMODULE_STRATEGY: "recursive"
-
-
 stages:
   - test
 
 
 test:
   stage: test
+
+  before_script:
+    - emerge --version ; pkgcheck --verson
+
   script:
     - pkgcheck scan --keywords=-RedundantVersion --exit error --verbose .
