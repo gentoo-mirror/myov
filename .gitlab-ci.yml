@@ -19,4 +19,4 @@ stages:
 test:
   stage: test
   script:
-    - bash scripts/repomanci
+    - pkgcheck scan --keywords=-RedundantVersion --exit error --verbose .
