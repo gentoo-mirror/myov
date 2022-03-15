@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE repositories SYSTEM "https://www.gentoo.org/dtd/repositories.dtd">
 <repositories xmlns="" version="1.0">
   <repo quality="experimental" status="unofficial">
     <name>myov</name>
     <description lang="en">My Overlay - custom Gentoo overlay from XGQT</description>
     <homepage>https://gitlab.com/xgqt/myov.git</homepage>
     <owner type="person">
+      <email>xgqt@gentoo.org</email>
       <name>XGQT</name>
-      <email>xgqt@riseup.net</email>
     </owner>
     <source type="git">https://gitlab.com/xgqt/myov.git</source>
     <source type="git">git+ssh://git@gitlab.com/xgqt/myov.git</source>
