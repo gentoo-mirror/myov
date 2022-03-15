@@ -1,2 +1,4 @@
-# Unmask everything in myov
-*/*::myov                                       **
+# -*- conf -*-
+
+
+*/*::myov       **
