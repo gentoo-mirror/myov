@@ -60,7 +60,6 @@ RDEPEND="
 		app-portage/elogv
 		app-portage/gentoolkit
 		app-portage/portage-utils
-		app-portage/repoman
 		app-portage/smart-live-rebuild
 		dev-util/pkgcheck
 		dev-util/pkgdev
