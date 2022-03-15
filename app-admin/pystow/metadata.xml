@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+
 <pkgmetadata>
 	<maintainer type="person">
 		<email>xgqt@riseup.net</email>
 		<name>Maciej Barć</name>
 	</maintainer>
-	<longdescription lang="en">
-		GNU Stow rewritten in Python
-	</longdescription>
 	<upstream>
+		<bugs-to>https://gitlab.com/xgqt/pystow</bugs-to>
 		<remote-id type="gitlab">xgqt/pystow</remote-id>
 	</upstream>
 </pkgmetadata>
