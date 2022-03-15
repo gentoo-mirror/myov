@@ -47,6 +47,11 @@ RDEPEND="
 	x11-themes/xcursor-themes
 
 	|| (
+		media-sound/elisa
+		media-sound/strawberry
+		media-sound/clementine
+	)
+	|| (
 		media-video/vlc[ffmpeg,pulseaudio?,v4l]
 		media-video/mpv[pulseaudio?]
 	)
