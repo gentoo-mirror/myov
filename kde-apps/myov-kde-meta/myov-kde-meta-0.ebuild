@@ -27,6 +27,7 @@ RDEPEND="
 	kde-apps/kwalletmanager
 	kde-apps/kwave[flac(+),mp3(+),opus(+)]
 	kde-apps/okular
+	kde-apps/print-manager
 	kde-apps/spectacle
 	kde-misc/kdirstat
 	kde-misc/krename
@@ -38,7 +39,6 @@ RDEPEND="
 	app-admin/keepassxc[browser(+)]
 	media-sound/kid3
 
-	app-admin/system-config-printer
 	gnome-base/dconf-editor
 	media-gfx/simple-scan
 	net-p2p/transmission
