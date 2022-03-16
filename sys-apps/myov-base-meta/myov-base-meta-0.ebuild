@@ -25,6 +25,7 @@ RDEPEND="
 	sys-apps/busybox
 	sys-block/parted
 	sys-devel/gdb
+	sys-fs/dfc
 	sys-fs/dosfstools
 	sys-fs/mdadm
 	sys-fs/ncdu
@@ -32,6 +33,7 @@ RDEPEND="
 	sys-process/cronie
 	sys-process/htop
 	sys-process/lsof
+	|| ( app-text/tree app-text/tree-ng )
 	archive? (
 		app-arch/bzip2
 		app-arch/dpkg
@@ -52,6 +54,7 @@ RDEPEND="
 		grub? ( sys-boot/grub[device-mapper(+)] )
 	)
 	emacs? (
+		app-admin/emacs-updater
 		app-editors/emacs
 		gentoo? (
 			app-emacs/ebuild-mode
@@ -59,6 +62,7 @@ RDEPEND="
 		)
 	)
 	gentoo? (
+		app-doc/eclass-manpages
 		app-eselect/eselect-package-manager
 		app-eselect/eselect-repository
 		app-eselect/eselect-timezone
@@ -70,7 +74,6 @@ RDEPEND="
 		app-portage/smart-live-rebuild
 		dev-util/pkgcheck
 		dev-util/pkgdev
-		sys-apps/pkgcore
 		sys-devel/crossdev
 		hardware? (
 			app-portage/cpuid2cpuflags
