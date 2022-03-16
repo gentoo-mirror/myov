@@ -112,7 +112,6 @@ RDEPEND="
 		net-fs/nfs-utils
 		net-fs/sshfs
 		net-ftp/lftp
-		net-misc/bridge-utils
 		net-misc/curl
 		net-misc/iperf
 		net-misc/iputils
