@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+archive +crypt +gentoo grub +hardware +network"
+IUSE="+archive +crypt emacs +gentoo grub +hardware +network"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -50,6 +50,13 @@ RDEPEND="
 		sys-fs/cryptsetup
 		sys-fs/lvm2
 		grub? ( sys-boot/grub[device-mapper(+)] )
+	)
+	emacs? (
+		app-editors/emacs
+		gentoo? (
+			app-emacs/ebuild-mode
+			app-emacs/nxml-gentoo-schemas
+		)
 	)
 	gentoo? (
 		app-eselect/eselect-package-manager
