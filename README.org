@@ -1,6 +1,8 @@
 #+TITLE: My Overlay
-#+AUTHOR: XGQT
+
+#+AUTHOR: Maciej Barć
 #+LANGUAGE: en
+
 #+ATTR_HTML: style margin-left: auto; margin-right: auto;
 #+STARTUP: showall inlineimages
 #+OPTIONS: toc:nil num:nil
@@ -19,31 +21,31 @@
 
 ** Official list
 
-#+BEGIN_SRC shell-script
-  layman -a myov
-#+END_SRC
+   #+BEGIN_SRC shell-script
+     layman -a myov
+   #+END_SRC
    or
-#+BEGIN_SRC shell-script
-  eselect repository enable myov
-#+END_SRC
+   #+BEGIN_SRC shell-script
+     eselect repository enable myov
+   #+END_SRC
 
 ** From URL
 
-#+BEGIN_SRC shell-script
-  layman -o "https://gitlab.com/xgqt/myov/raw/master/repositories.xml" -f -a myov
-#+END_SRC
+   #+BEGIN_SRC shell-script
+     layman -o "https://gitlab.com/xgqt/myov/raw/master/repositories.xml" -f -a myov
+   #+END_SRC
    or
-#+BEGIN_SRC shell-script
-  eselect repository add myov git "https://gitlab.com/xgqt/myov"
-#+END_SRC
+   #+BEGIN_SRC shell-script
+     eselect repository add myov git "https://gitlab.com/xgqt/myov"
+   #+END_SRC
 
 ** Manual
 
    Create =/etc/portage/repos.conf/myov.conf=
-#+BEGIN_SRC conf
-  [myov]
-  location = /var/db/repos/myov
-  sync-uri = https://gitlab.com/xgqt/myov.git
-  sync-type = git
-  auto-sync = yes
-#+END_SRC
+   #+BEGIN_SRC conf
+     [myov]
+     location = /var/db/repos/myov
+     sync-uri = https://gitlab.com/xgqt/myov.git
+     sync-type = git
+     auto-sync = yes
+   #+END_SRC
