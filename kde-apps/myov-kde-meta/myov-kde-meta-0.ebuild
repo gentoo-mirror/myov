@@ -62,9 +62,7 @@ RDEPEND="
 	fonts? (
 		media-fonts/cantarell
 		media-fonts/cascadia-code
-		media-fonts/droid
 		media-fonts/fontawesome
-		media-fonts/hack
 		media-fonts/jetbrains-mono
 		media-fonts/noto-cjk
 		media-fonts/noto-emoji
