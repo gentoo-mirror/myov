@@ -9,7 +9,7 @@ SRC_URI=""
 
 LICENSE="metapackage"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE="+archive +crypt emacs +gentoo grub +hardware +network"
 RESTRICT="bindist"
 
