@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+accessibility +fonts +graphics pulseaudio vulkan"
+IUSE="+accessibility dvd +fonts +graphics pulseaudio vulkan"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -56,9 +56,8 @@ RDEPEND="
 		media-video/mpv[pulseaudio?]
 	)
 
-	accessibility? (
-		kde-apps/kdeaccessibility-meta
-	)
+	accessibility? ( kde-apps/kdeaccessibility-meta )
+	dvd? ( kde-apps/k3b[dvd(+)] )
 	fonts? (
 		media-fonts/cantarell
 		media-fonts/cascadia-code
