@@ -20,6 +20,10 @@ trim_trailing_whitespace = true
 [.gitmodules]
 indent_style = tab
 
+[{*.html,*.json,*.xml,*.yml}]
+indent_size = 2
+tab_width = 2
+
 
 # Portage
 
@@ -28,11 +32,3 @@ indent_style = tab
 
 [*.eclass]
 indent_style = tab
-
-[metadata.xml]
-indent_style = tab
-tab_width = 2
-
-[repositories.xml]
-indent_style = space
-tab_width = 2
