@@ -39,6 +39,7 @@ RDEPEND="
 	app-emacs/org-superstar-mode
 	app-emacs/package-lint
 	app-emacs/rainbow-delimiters
+	app-emacs/rainbow-mode
 	app-emacs/spacemacs-theme
 	app-emacs/swiper
 	app-emacs/switch-window
