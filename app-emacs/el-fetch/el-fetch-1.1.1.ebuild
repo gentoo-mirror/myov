@@ -48,7 +48,7 @@ src_test() {
 }
 
 src_install() {
-	elisp-install src/${PN}/*.el{,c}
+	elisp-install ${PN} src/${PN}/*.el{,c}
 	elisp-site-file-install "${FILESDIR}/${SITEFILE}"
 
 	dobin extras/${PN}-console
