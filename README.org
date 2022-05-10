@@ -9,12 +9,14 @@
 #+REVEAL_THEME: black
 
 
-[[https://gitlab.com/xgqt/myov/pipelines][file:https://gitlab.com/xgqt/myov/badges/master/pipeline.svg]] [[https://gitlab.com/xgqt/myov/commits/master.atom][file:https://img.shields.io/badge/feed-atom-orange.svg]] [[./LICENSE][file:https://img.shields.io/badge/license-GPLv2-blue.svg]]
+[[https://gitlab.com/xgqt/myov/pipelines][file:https://gitlab.com/xgqt/myov/badges/master/pipeline.svg]]
+[[https://gitlab.com/xgqt/myov/commits/master.atom][file:https://img.shields.io/badge/feed-atom-orange.svg]]
+[[./LICENSE][file:https://img.shields.io/badge/license-GPLv2-blue.svg]]
 
 
 * Purpose
 
-  Collection of ebuild scripts of programs I maintain
+  Collection of ebuild scripts of the programs I created/maintain.
 
 
 * Adding the overlay
@@ -41,7 +43,8 @@
 
 ** Manual
 
-   Create =/etc/portage/repos.conf/myov.conf=
+   Create the =/etc/portage/repos.conf/myov.conf= file with following contents:
+
    #+BEGIN_SRC conf
      [myov]
      location = /var/db/repos/myov
