@@ -33,11 +33,6 @@ src_compile() {
 	emake compile
 }
 
-src_test() {
-	mkdir -p "${HOME}"/.emacs.d || die
-	emake test
-}
-
 src_install() {
 	emake IDIR="${D}" image
 	einstalldocs
