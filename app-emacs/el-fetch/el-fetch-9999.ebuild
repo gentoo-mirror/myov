@@ -5,6 +5,7 @@ EAPI=8
 
 MY_PN=emacs-${PN}
 MY_P=${MY_PN}-${PV}
+
 NEED_EMACS=25.1
 
 inherit elisp
@@ -28,29 +29,16 @@ RESTRICT="!test? ( test )"
 
 BDEPEND="test? ( app-emacs/buttercup )"
 
-SITEFILE="50${PN}-gentoo.el"
-
-src_prepare() {
-	elisp_src_prepare
-
-	sed "s|#!emacs|#!${EPREFIX}/usr/bin/emacs|" -i extras/${PN}-console || die
-}
-
 src_compile() {
 	emake compile
 }
 
 src_test() {
 	mkdir -p "${HOME}"/.emacs.d || die
-
 	emake test
 }
 
 src_install() {
-	elisp-install src/${PN}/*.el{,c}
-	elisp-site-file-install "${FILESDIR}/${SITEFILE}"
-
-	dobin extras/${PN}-console
-
+	emake IDIR="${D}" image
 	einstalldocs
 }
