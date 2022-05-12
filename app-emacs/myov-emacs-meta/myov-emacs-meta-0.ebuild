@@ -18,19 +18,25 @@ RDEPEND="
 	app-emacs/buttercup
 	app-emacs/company-math
 	app-emacs/counsel
+	app-emacs/csharp-mode
 	app-emacs/dashboard
 	app-emacs/deft
 	app-emacs/diminish
+	app-emacs/dockerfile-mode
 	app-emacs/editorconfig-emacs
 	app-emacs/elpher
 	app-emacs/ert-runner
 	app-emacs/flycheck-guile
 	app-emacs/flycheck-package
+	app-emacs/fsharp-mode
 	app-emacs/geiser-chez
 	app-emacs/geiser-guile
 	app-emacs/go-mode
+	app-emacs/haskell-mode
+	app-emacs/haxe-mode
 	app-emacs/highlight-indentation
 	app-emacs/ivy-rich
+	app-emacs/julia-mode
 	app-emacs/lsp-mode
 	app-emacs/lua-mode
 	app-emacs/markdown-mode
@@ -40,9 +46,11 @@ RDEPEND="
 	app-emacs/package-lint
 	app-emacs/rainbow-delimiters
 	app-emacs/rainbow-mode
+	app-emacs/rust-mode
 	app-emacs/spacemacs-theme
 	app-emacs/swiper
 	app-emacs/switch-window
+	app-emacs/typescript-mode
 	app-emacs/undo-tree
 	app-emacs/use-package
 	app-emacs/webpaste
