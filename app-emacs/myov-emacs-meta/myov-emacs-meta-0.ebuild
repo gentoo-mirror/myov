@@ -67,8 +67,10 @@ RDEPEND="
 		app-emacs/flycheck-package
 		app-emacs/mocker
 		app-emacs/package-lint
+		app-emacs/undercover
 	)
 	polyglot? (
+		app-emacs/bnf-mode
 		app-emacs/csharp-mode
 		app-emacs/dockerfile-mode
 		app-emacs/fsharp-mode
