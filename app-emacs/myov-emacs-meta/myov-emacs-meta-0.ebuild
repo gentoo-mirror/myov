@@ -10,52 +10,31 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+git gui +java +python"
+IUSE="+git gui +guile +java +package-developer +polyglot +python"
 RESTRICT="bindist"
 
 RDEPEND="
 	app-emacs/amx
-	app-emacs/buttercup
 	app-emacs/company-math
 	app-emacs/counsel
-	app-emacs/csharp-mode
 	app-emacs/dashboard
 	app-emacs/deft
 	app-emacs/diminish
-	app-emacs/dockerfile-mode
 	app-emacs/editorconfig-emacs
 	app-emacs/elpher
-	app-emacs/ert-runner
-	app-emacs/flycheck-guile
-	app-emacs/flycheck-package
-	app-emacs/fsharp-mode
-	app-emacs/geiser-chez
-	app-emacs/geiser-guile
-	app-emacs/go-mode
-	app-emacs/haskell-mode
-	app-emacs/haxe-mode
 	app-emacs/highlight-indentation
 	app-emacs/ivy-rich
-	app-emacs/julia-mode
-	app-emacs/lsp-mode
-	app-emacs/lua-mode
-	app-emacs/markdown-mode
-	app-emacs/meson-mode
 	app-emacs/org-appear
 	app-emacs/org-superstar-mode
-	app-emacs/package-lint
 	app-emacs/rainbow-delimiters
 	app-emacs/rainbow-mode
-	app-emacs/rust-mode
 	app-emacs/spacemacs-theme
 	app-emacs/swiper
 	app-emacs/switch-window
-	app-emacs/typescript-mode
 	app-emacs/undo-tree
 	app-emacs/use-package
 	app-emacs/webpaste
 	app-emacs/which-key
-	app-emacs/yaml-mode
 	app-emacs/yasnippet
 	app-emacs/yasnippet-snippets
 	git? (
@@ -72,9 +51,43 @@ RDEPEND="
 		app-emacs/company-quickhelp
 		app-emacs/emojify
 	)
+	guile? (
+		app-emacs/flycheck-guile
+		app-emacs/geiser-guile
+	)
 	java? (
 		>=virtual/jdk-11
 		app-emacs/lsp-java
 	)
-	python? ( app-emacs/elpy )
+	package-developer? (
+		app-emacs/buttercup
+		app-emacs/cask
+		app-emacs/eldev
+		app-emacs/ert-runner
+		app-emacs/flycheck-package
+		app-emacs/mocker
+		app-emacs/package-lint
+	)
+	polyglot? (
+		app-emacs/csharp-mode
+		app-emacs/dockerfile-mode
+		app-emacs/fsharp-mode
+		app-emacs/geiser-chez
+		app-emacs/go-mode
+		app-emacs/haskell-mode
+		app-emacs/haxe-mode
+		app-emacs/julia-mode
+		app-emacs/lsp-mode
+		app-emacs/lua-mode
+		app-emacs/markdown-mode
+		app-emacs/meson-mode
+		app-emacs/rust-mode
+		app-emacs/typescript-mode
+		app-emacs/yaml-mode
+	)
+	python? (
+		app-emacs/elpy
+		app-emacs/emacs-ipython-notebook
+		dev-python/ipython
+	)
 "

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 
 <pkgmetadata>
   <maintainer type="person">
     <email>xgqt@riseup.net</email>
     <name>Maciej Barć</name>
   </maintainer>
+  <use>
+    <flag name="package-developer">
+      pull in packages for Emacs package development and testing
+    </flag>
+    <flag name="polyglot">
+      pull in packages for many different programming language modes
+    </flag>
+  </use>
 </pkgmetadata>
