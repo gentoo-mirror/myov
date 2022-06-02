@@ -3,6 +3,7 @@
 
 
 EGENCACHE       := egencache
+EMERGE          := emerge
 PKGCHECK        := pkgcheck
 PKGDEV          := pkgdev
 RM              := rm
@@ -30,6 +31,8 @@ SCAN_FLAGS      := $(SCAN_AUX) $(SCAN_CHECKS)
 all: manifests test
 
 
+# Regeneration
+
 manifests:
 	$(MANIFEST) $(MANIFEST_FLAGS) $(PWD)
 
@@ -37,14 +40,22 @@ egencache:
 	$(EGENCACHE) $(EGENCACHE_FLAGS)
 
 clean-metadata-cache:
-	rm -r $(PWD)/metadata/md5-cache
+	$(RMDIR) $(PWD)/metadata/md5-cache
 
 clean: clean-metadata-cache
 
 
+# Test
+
 test:
 	$(SCAN) $(SCAN_FLAGS) $(PWD)
 
+
+# Auxiliary
+
+deps-versions:
+	@$(EMERGE) --version
+	@$(PKGCHECK) --version
 
 submodules:
 	$(SH) $(PWD)/3rd_party/scripts/src/update-submodules
