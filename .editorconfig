@@ -17,7 +17,7 @@ insert_final_newline = true
 tab_width = 4
 trim_trailing_whitespace = true
 
-[.gitmodules]
+[{.gitmodules,Makefile}]
 indent_style = tab
 
 [{*.html,*.json,*.xml,*.yml}]
@@ -27,8 +27,5 @@ tab_width = 2
 
 # Portage
 
-[*.ebuild]
-indent_style = tab
-
-[*.eclass]
+[{*.ebuild,*.eclass}]
 indent_style = tab
