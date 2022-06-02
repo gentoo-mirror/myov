@@ -16,7 +16,7 @@ test:
   stage: test
 
   before_script:
-    - emerge --version ; pkgcheck --version
+    - make deps-versions
 
   script:
     - make test
