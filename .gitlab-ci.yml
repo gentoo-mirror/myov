@@ -19,4 +19,4 @@ test:
     - emerge --version ; pkgcheck --version
 
   script:
-    - pkgcheck scan --keywords=-RedundantVersion --exit error --verbose .
+    - make test
