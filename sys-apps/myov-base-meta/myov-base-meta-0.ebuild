@@ -28,7 +28,6 @@ RDEPEND="
 	sys-fs/dfc
 	sys-fs/dosfstools
 	sys-fs/mdadm
-	sys-fs/ncdu
 	sys-process/audit
 	sys-process/cronie
 	sys-process/htop
