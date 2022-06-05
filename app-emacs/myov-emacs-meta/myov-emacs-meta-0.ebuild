@@ -39,6 +39,7 @@ RDEPEND="
 	app-emacs/yasnippet-snippets
 	git? (
 		app-emacs/diff-hl
+		app-emacs/git-modes
 		app-emacs/magit
 		app-emacs/projectile
 		dev-vcs/git
@@ -62,6 +63,7 @@ RDEPEND="
 	package-developer? (
 		app-emacs/buttercup
 		app-emacs/cask
+		app-emacs/cask-mode
 		app-emacs/eldev
 		app-emacs/ert-runner
 		app-emacs/flycheck-package
@@ -72,6 +74,7 @@ RDEPEND="
 	polyglot? (
 		app-emacs/bnf-mode
 		app-emacs/csharp-mode
+		app-emacs/d-mode
 		app-emacs/dockerfile-mode
 		app-emacs/fsharp-mode
 		app-emacs/geiser-chez
@@ -83,6 +86,7 @@ RDEPEND="
 		app-emacs/lua-mode
 		app-emacs/markdown-mode
 		app-emacs/meson-mode
+		app-emacs/raku-mode
 		app-emacs/rust-mode
 		app-emacs/typescript-mode
 		app-emacs/yaml-mode
