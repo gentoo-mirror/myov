@@ -2,12 +2,12 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 
 <pkgmetadata>
-	<maintainer type="person">
-		<email>xgqt@riseup.net</email>
-		<name>Maciej Barć</name>
-	</maintainer>
-	<upstream>
-		<bugs-to>https://gitlab.com/xgqt/pystow</bugs-to>
-		<remote-id type="gitlab">xgqt/pystow</remote-id>
-	</upstream>
+  <maintainer type="person">
+    <email>xgqt@riseup.net</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <upstream>
+    <bugs-to>https://gitlab.com/xgqt/pystow/</bugs-to>
+    <remote-id type="gitlab">xgqt/pystow</remote-id>
+  </upstream>
 </pkgmetadata>
