@@ -9,7 +9,7 @@ DISTUTILS_USE_SETUPTOOLS=rdepend
 inherit distutils-r1
 
 DESCRIPTION="Log rotation tool in Python"
-HOMEPAGE="https://gitlab.com/xgqt/pystow/"
+HOMEPAGE="https://gitlab.com/xgqt/python-logrot/"
 
 if [[ ${PV} == *9999* ]] ; then
 	inherit git-r3
