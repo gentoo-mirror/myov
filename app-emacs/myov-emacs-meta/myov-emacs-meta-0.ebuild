@@ -68,11 +68,14 @@ RDEPEND="
 		app-emacs/ert-runner
 		app-emacs/flycheck-package
 		app-emacs/mocker
+		app-emacs/noflet
 		app-emacs/package-lint
 		app-emacs/undercover
+		app-emacs/with-simulated-input
 	)
 	polyglot? (
 		app-emacs/bnf-mode
+		app-emacs/boogie-friends
 		app-emacs/csharp-mode
 		app-emacs/d-mode
 		app-emacs/dockerfile-mode
