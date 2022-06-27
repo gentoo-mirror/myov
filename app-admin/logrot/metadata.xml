@@ -9,5 +9,6 @@
   <upstream>
     <bugs-to>https://gitlab.com/xgqt/python-logrot/</bugs-to>
     <remote-id type="gitlab">xgqt/python-logrot</remote-id>
+    <remote-id type="pypi">logrot-tool</remote-id>
   </upstream>
 </pkgmetadata>
