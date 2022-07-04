@@ -14,6 +14,8 @@ IUSE="+git gui +guile +java +package-developer +polyglot +python"
 RESTRICT="bindist"
 
 RDEPEND="
+	sys-apps/eless
+
 	app-emacs/amx
 	app-emacs/company-math
 	app-emacs/counsel
@@ -79,6 +81,7 @@ RDEPEND="
 		app-emacs/csharp-mode
 		app-emacs/d-mode
 		app-emacs/dockerfile-mode
+		app-emacs/fennel-mode
 		app-emacs/fsharp-mode
 		app-emacs/geiser-chez
 		app-emacs/go-mode
