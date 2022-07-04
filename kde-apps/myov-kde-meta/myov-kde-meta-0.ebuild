@@ -35,15 +35,14 @@ RDEPEND="
 	kde-plasma/discover[firmware(+)]
 	kde-plasma/plasma-meta[browser-integration(+),desktop-portal(+),smart(+)]
 	kde-plasma/plasma-meta[pulseaudio?]
+	sys-block/partitionmanager
 
 	app-admin/keepassxc[browser(+)]
-	media-sound/kid3
-
 	gnome-base/dconf-editor
 	media-gfx/simple-scan
+	media-sound/kid3
 	net-p2p/transmission
 	x11-misc/xsensors
-
 	x11-themes/xcursor-themes
 
 	|| (
