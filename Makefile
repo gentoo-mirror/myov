@@ -13,14 +13,15 @@ SH              := sh
 MANIFEST        := $(PKGDEV) manifest
 SCAN            := $(PKGCHECK) scan
 
+METADATA        := $(PWD)/metadata
+
+SCAN_CONFIG     := $(METADATA)/pkgcheck.conf
+
 NPROC           := $(shell nproc || echo 1)
+
 MANIFEST_FLAGS  := --verbose
-
-EGENCACHE_AUX   := --jobs $(NPROC) --load-average $(NPROC) --verbose
-EGENCACHE_REPO  := myov
-EGENCACHE_FLAGS := $(EGENCACHE_AUX) --update --repo $(EGENCACHE_REPO)
-
-SCAN_FLAGS        := --jobs=$(NPROC) --verbose
+EGENCACHE_FLAGS := --jobs $(NPROC) --load-average $(NPROC) --verbose --update
+SCAN_FLAGS      := --config $(SCAN_CONFIG) --jobs=$(NPROC) --verbose
 
 
 all: manifests test
@@ -32,10 +33,11 @@ manifests:
 	$(MANIFEST) $(MANIFEST_FLAGS) $(PWD)
 
 egencache:
-	$(EGENCACHE) $(EGENCACHE_FLAGS)
+	PORATGE_REPOSITORIES="[myov] location = $(PWD)" \
+		$(EGENCACHE) --repo myov $(EGENCACHE_FLAGS)
 
 clean-metadata-cache:
-	$(RMDIR) $(PWD)/metadata/md5-cache
+	$(RMDIR) $(METADATA)/md5-cache
 
 clean: clean-metadata-cache
 
