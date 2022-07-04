@@ -20,12 +20,7 @@ EGENCACHE_AUX   := --jobs $(NPROC) --load-average $(NPROC) --verbose
 EGENCACHE_REPO  := myov
 EGENCACHE_FLAGS := $(EGENCACHE_AUX) --update --repo $(EGENCACHE_REPO)
 
-SCAN_AUX        := --jobs=$(NPROC) --verbose
-SCAN_EXIT_ON    := error
-SCAN_KEYWORDS   := -MatchingChksums,-RedundantVersion
-SCAN_PROFILES   := default/linux/amd64/17.1
-SCAN_CHECKS     := --exit=$(SCAN_EXIT_ON) --keywords=$(SCAN_KEYWORDS) --profiles=$(SCAN_PROFILES)
-SCAN_FLAGS      := $(SCAN_AUX) $(SCAN_CHECKS)
+SCAN_FLAGS        := --jobs=$(NPROC) --verbose
 
 
 all: manifests test
