@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+git gui +guile +java +package-developer +polyglot +python"
+IUSE="+git gui +guile +java +net +package-developer +polyglot +python"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -23,7 +23,6 @@ RDEPEND="
 	app-emacs/deft
 	app-emacs/diminish
 	app-emacs/editorconfig-emacs
-	app-emacs/elpher
 	app-emacs/highlight-indentation
 	app-emacs/ivy-rich
 	app-emacs/org-appear
@@ -35,7 +34,6 @@ RDEPEND="
 	app-emacs/switch-window
 	app-emacs/undo-tree
 	app-emacs/use-package
-	app-emacs/webpaste
 	app-emacs/which-key
 	app-emacs/yasnippet
 	app-emacs/yasnippet-snippets
@@ -61,6 +59,11 @@ RDEPEND="
 	java? (
 		>=virtual/jdk-11
 		app-emacs/lsp-java
+	)
+	net? (
+		app-emacs/apache-mode
+		app-emacs/elpher
+		app-emacs/webpaste
 	)
 	package-developer? (
 		app-emacs/buttercup

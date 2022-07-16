@@ -7,11 +7,15 @@
     <name>Maciej Barć</name>
   </maintainer>
   <use>
+    <flag name="net">
+      Pull in packages for configuration of or interaction with network-related
+      services
+    </flag>
     <flag name="package-developer">
-      pull in packages for Emacs package development and testing
+      Pull in packages for Emacs package development and testing
     </flag>
     <flag name="polyglot">
-      pull in packages for many different programming language modes
+      Pull in packages for many different programming language modes
     </flag>
   </use>
 </pkgmetadata>
