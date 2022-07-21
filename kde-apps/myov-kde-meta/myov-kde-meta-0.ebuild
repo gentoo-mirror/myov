@@ -74,7 +74,6 @@ RDEPEND="
 		media-gfx/darktable
 		media-gfx/inkscape
 		media-gfx/jpegoptim
-		media-gfx/krita
 		media-gfx/optipng
 		media-libs/exiftool
 		media-video/handbrake[gtk(+)]
