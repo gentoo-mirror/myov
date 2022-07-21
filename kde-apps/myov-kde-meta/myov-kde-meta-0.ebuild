@@ -48,7 +48,9 @@ RDEPEND="
 	|| (
 		media-sound/elisa
 		media-sound/strawberry
+		media-sound/cantata
 		media-sound/clementine
+		media-sound/quodlibet
 	)
 	|| (
 		media-video/vlc[ffmpeg,pulseaudio?,v4l]
