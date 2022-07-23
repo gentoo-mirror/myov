@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+git gui +guile +java +net +package-developer +polyglot +python"
+IUSE="+git gui +guile +java +net ocaml +package-developer +polyglot +python"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -21,6 +21,7 @@ RDEPEND="
 	app-emacs/counsel
 	app-emacs/dashboard
 	app-emacs/deft
+	app-emacs/demap
 	app-emacs/diminish
 	app-emacs/editorconfig-emacs
 	app-emacs/highlight-indentation
@@ -65,7 +66,14 @@ RDEPEND="
 		app-emacs/elpher
 		app-emacs/webpaste
 	)
+	ocaml? (
+		>=dev-lang/ocaml-4.07.0
+		app-emacs/dune-format
+		app-emacs/tuareg-mode
+		dev-ml/merlin[emacs(+)]
+	)
 	package-developer? (
+		app-emacs/assess
 		app-emacs/buttercup
 		app-emacs/cask
 		app-emacs/cask-mode
@@ -84,6 +92,7 @@ RDEPEND="
 		app-emacs/csharp-mode
 		app-emacs/d-mode
 		app-emacs/dockerfile-mode
+		app-emacs/emacs-bazel-mode
 		app-emacs/fennel-mode
 		app-emacs/fsharp-mode
 		app-emacs/geiser-chez
