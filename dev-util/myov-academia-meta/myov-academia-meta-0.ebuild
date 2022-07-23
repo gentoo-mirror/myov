@@ -35,6 +35,7 @@ RDEPEND="
 	cxx? (
 		dev-cpp/gtest
 		dev-util/ccache
+		dev-util/cppcheck
 		sys-devel/gdb
 	)
 	emacs? (
