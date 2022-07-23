@@ -54,6 +54,7 @@ RDEPEND="
 		dev-texlive/texlive-xetex
 	)
 	python? (
+		dev-python/autopep8
 		dev-python/black
 		dev-python/coverage
 		dev-python/jupyter
@@ -67,6 +68,7 @@ RDEPEND="
 		dev-python/scipy
 		dev-python/sphinx
 		dev-python/tox
+		dev-python/twine
 		dev-python/virtualenv
 	)
 	qemu? (
