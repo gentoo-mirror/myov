@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="android +cxx +latex +python +qemu"
+IUSE="android +cxx emacs +latex +python +qemu"
 REQUIRED_USE="android? ( qemu )"
 RESTRICT="bindist"
 
@@ -36,6 +36,14 @@ RDEPEND="
 		dev-cpp/gtest
 		dev-util/ccache
 		sys-devel/gdb
+	)
+	emacs? (
+		app-emacs/myov-emacs-meta
+		latex? (
+			app-emacs/auctex
+			app-emacs/biblio
+			app-emacs/ebib
+		)
 	)
 	latex? (
 		app-office/texstudio
