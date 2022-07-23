@@ -22,11 +22,11 @@ RDEPEND="
 	dev-vcs/git-lfs
 	media-gfx/graphviz[pdf(+),python(+),svg(+)]
 	net-analyzer/wireshark[qt5(+)]
+	virtual/pandoc
 	|| (
 		app-office/libreoffice[pdfimport(+)]
 		app-office/libreoffice-bin
 	)
-	|| ( app-text/pandoc app-text/pandoc-bin )
 	|| ( dev-util/shellcheck dev-util/shellcheck-bin )
 	android? (
 		dev-util/android-studio
@@ -38,7 +38,7 @@ RDEPEND="
 		sys-devel/gdb
 	)
 	emacs? (
-		app-emacs/myov-emacs-meta
+		app-emacs/myov-emacs-meta[git(+),java(+),python(+)]
 		latex? (
 			app-emacs/auctex
 			app-emacs/biblio
