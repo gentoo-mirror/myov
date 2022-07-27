@@ -33,15 +33,16 @@ RDEPEND="
 	kde-misc/krename
 	kde-plasma/breeze-gtk
 	kde-plasma/discover[firmware(+)]
-	kde-plasma/plasma-meta[browser-integration(+),desktop-portal(+),smart(+)]
+	kde-plasma/plasma-browser-integration
+	kde-plasma/plasma-disks
 	kde-plasma/plasma-meta[pulseaudio?]
+	kde-plasma/xdg-desktop-portal-kde
 	sys-block/partitionmanager
 
 	app-admin/keepassxc[browser(+)]
 	gnome-base/dconf-editor
 	media-gfx/simple-scan
 	media-sound/kid3
-	net-p2p/transmission
 	x11-misc/xsensors
 	x11-themes/xcursor-themes
 
@@ -55,6 +56,10 @@ RDEPEND="
 	|| (
 		media-video/vlc[ffmpeg,pulseaudio?,v4l]
 		media-video/mpv[pulseaudio?]
+	)
+	|| (
+		net-p2p/transmission[gtk]
+		net-p2p/transmission[qt5]
 	)
 
 	accessibility? ( kde-apps/kdeaccessibility-meta )
