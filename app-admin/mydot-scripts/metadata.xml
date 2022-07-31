@@ -7,7 +7,11 @@
     <name>Maciej Barć</name>
   </maintainer>
   <upstream>
-    <remote-id type="gitlab">xgqt/mydot</remote-id>
+    <maintainer status="active">
+      <email>xgqt@riseup.net</email>
+      <name>Maciej Barć</name>
+    </maintainer>
     <bugs-to>https://gitlab.com/xgqt/mydot/-/issues/</bugs-to>
+    <remote-id type="gitlab">xgqt/mydot</remote-id>
   </upstream>
 </pkgmetadata>

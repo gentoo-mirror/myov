@@ -7,6 +7,10 @@
     <name>Maciej Barć</name>
   </maintainer>
   <upstream>
+    <maintainer status="active">
+      <email>xgqt@riseup.net</email>
+      <name>Maciej Barć</name>
+    </maintainer>
     <bugs-to>https://gitlab.com/xgqt/python-deckmaster/</bugs-to>
     <remote-id type="gitlab">xgqt/python-deckmaster</remote-id>
     <remote-id type="pypi">deckmaster</remote-id>

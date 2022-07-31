@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+
 <pkgmetadata>
-	<maintainer type="person">
-		<email>xgqt@riseup.net</email>
-		<name>Maciej Barć</name>
-	</maintainer>
-	<use>
-		<flag name="generic">
-			Present using the generic name "tree"
-		</flag>
-	</use>
-	<upstream>
-		<remote-id type="gitlab">xgqt/tree-ng</remote-id>
-	</upstream>
+  <maintainer type="person">
+    <email>xgqt@riseup.net</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <use>
+    <flag name="generic">Present using the generic name "tree"</flag>
+  </use>
+  <upstream>
+    <maintainer status="active">
+      <email>xgqt@riseup.net</email>
+      <name>Maciej Barć</name>
+    </maintainer>
+    <bugs-to>https://gitlab.com/xgqt/tree-ng/-/issues/</bugs-to>
+    <remote-id type="gitlab">xgqt/tree-ng</remote-id>
+  </upstream>
 </pkgmetadata>

@@ -7,7 +7,11 @@
     <name>Maciej Barć</name>
   </maintainer>
   <upstream>
-    <remote-id type="gitlab">xgqt/genstrap</remote-id>
+    <maintainer status="active">
+      <email>xgqt@riseup.net</email>
+      <name>Maciej Barć</name>
+    </maintainer>
     <bugs-to>https://gitlab.com/xgqt/genstrap/-/issues/</bugs-to>
+    <remote-id type="gitlab">xgqt/genstrap</remote-id>
   </upstream>
 </pkgmetadata>

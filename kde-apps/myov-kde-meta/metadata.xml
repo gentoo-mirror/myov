@@ -2,19 +2,13 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 
 <pkgmetadata>
-	<maintainer type="person">
-		<email>xgqt@riseup.net</email>
-		<name>Maciej Barć</name>
-	</maintainer>
-	<use>
-		<flag name="fonts">
-			Pull in selected font packages
-		</flag>
-		<flag name="graphics">
-			Pull in graphics packages - KDE-related and unrelated packages
-		</flag>
-		<flag name="vulkan">
-			Pull in Vulkan-related packages
-		</flag>
-	</use>
+  <maintainer type="person">
+    <email>xgqt@riseup.net</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <use>
+    <flag name="fonts">Pull in selected font packages</flag>
+    <flag name="graphics">Pull in graphics packages - KDE-related and unrelated packages</flag>
+    <flag name="vulkan">Pull in Vulkan-related packages</flag>
+  </use>
 </pkgmetadata>
