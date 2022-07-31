@@ -45,7 +45,7 @@ src_compile() {
 src_install() {
 	( cd src/${PN} && distutils-r1_src_install )
 
-	dodoc README.md
+	dodoc README.md logo.png
 
 	if use doc ; then
 		dodoc -r docs/artifacts/{html,latex}
