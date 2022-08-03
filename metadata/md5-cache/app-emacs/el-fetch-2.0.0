@@ -1,0 +1,15 @@
+BDEPEND=test? ( app-emacs/buttercup ) >=app-editors/emacs-25.1:*
+DEFINED_PHASES=compile configure install postinst postrm prepare setup unpack
+DESCRIPTION=Show system information in Neofetch-like style (eg CPU, RAM) inside Emacs
+EAPI=8
+HOMEPAGE=https://gitlab.com/xgqt/emacs-el-fetch/
+INHERIT=elisp
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=app-editors/emacs-25.1:*
+RESTRICT=!test? ( test )
+SLOT=0
+SRC_URI=https://gitlab.com/xgqt/emacs-el-fetch/-/archive/2.0.0/emacs-el-fetch-2.0.0.tar.gz
+_eclasses_=elisp-common	e7aaa047873789f549ea3df2f04b2145	elisp	c1c17e9c24d72d3bd58c611de8116fb6
+_md5_=df005c89fd1942d16fc46ff8643e0b0b

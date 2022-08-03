@@ -1,0 +1,15 @@
+BDEPEND=virtual/pkgconfig >=x11-misc/icon-naming-utils-0.8.90
+DEFINED_PHASES=postinst postrm preinst
+DESCRIPTION=SVG icon theme from the Fedora Echo Icon project
+EAPI=8
+HOMEPAGE=https://fedorahosted.org/echo-icon-theme
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=xdg
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=CC-BY-SA-3.0
+RESTRICT=binchecks mirror strip !test? ( test )
+SLOT=0
+SRC_URI=https://gitlab.com/xgqt/echo-icon-theme/-/archive/0.3.89.0_pre20081031/echo-icon-theme-0.3.89.0_pre20081031.tar.gz
+_eclasses_=xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	xdg	6024fbc93167fad782e2032933654857
+_md5_=5782ded4a439a93c33a22344a662f17c

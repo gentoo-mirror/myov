@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=Funtoo base system tarball bootstrap
+EAPI=8
+HOMEPAGE=https://gitlab.com/xgqt/funstrap/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=app-shells/bash net-misc/wget
+SLOT=0
+SRC_URI=https://gitlab.com/xgqt/funstrap/-/archive/1.0.0/funstrap-1.0.0.tar.gz
+_md5_=ab7fd6ba0b69d9de834384c8eab4dbd2

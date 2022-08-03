@@ -1,0 +1,20 @@
+app-admin/logrot 0.0.0 9999: Log rotation tool in Python
+app-admin/mydot-scripts 9999: System-wide installation of scripts from mydot
+app-admin/pystow 1.2.0 1.2.1 1.2.2 9999: GNU Stow rewritten in Python
+app-emacs/el-fetch 2.0.0 3.0.0 3.1.0 9999: Show system information in Neofetch-like style (eg CPU, RAM) inside Emacs
+app-emacs/emacs-ansilove 0.2.0 0.3.0 1.0.0 9999: Display buffers as PNG images using ansilove in GNU Emacs
+app-emacs/myov-emacs-meta 0: Meta package for Emacs Lisp packages
+app-text/tree-ng 1.9.0 9999: Lists directories recursively (fork of Steve Baker's tree)
+dev-qt/qtbase 5: Meta package for Qt5-base
+dev-util/etask 0.2.0 0.3.0 1.1.0 9999: CLI interface to GNU Emacs
+dev-util/funstrap 1.0.0 9999: Funtoo base system tarball bootstrap
+dev-util/genstrap 1.0.0 9999: Gentoo base system tarball bootstrap
+dev-util/myov-academia-meta 0: Meta package for academic packages
+games-board/deckmaster 0.0.1 0.1.0 9999: TCG/CCG deck creation tool
+games-misc/dice 1.0.0 9999: Roll some dice
+games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Grateful Gead song lyrics
+kde-apps/myov-kde-meta 0: Meta package for KDE packages
+sys-apps/myov-base-meta 0: Meta package for basic system packages
+sys-fs/ncdu-c 1.17: NCurses Disk Usage
+x11-misc/myov-enlightenment-meta 0: Meta package for Enlightenment packages
+x11-themes/echo-icon-theme 0.3.89.0_pre20081031 9999: SVG icon theme from the Fedora Echo Icon project

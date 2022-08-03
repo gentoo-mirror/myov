@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install
+DEPEND=generic? ( !app-text/tree )
+DESCRIPTION=Lists directories recursively (fork of Steve Baker's tree)
+EAPI=8
+HOMEPAGE=https://gitlab.com/xgqt/tree-ng
+INHERIT=toolchain-funcs flag-o-matic
+IUSE=+generic
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=generic? ( !app-text/tree )
+SLOT=0
+SRC_URI=https://gitlab.com/xgqt/tree-ng/-/archive/1.9.0/tree-ng-1.9.0.tar.gz
+_eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	38d6ec96711cea42a5cb1cc723a6e906
+_md5_=b7eba3791ca280f15dcbd87d0d792abd

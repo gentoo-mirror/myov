@@ -1,0 +1,13 @@
+BDEPEND=test? ( || ( dev-util/shellcheck dev-util/shellcheck-bin ) ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install test unpack
+DESCRIPTION=System-wide installation of scripts from mydot
+EAPI=8
+HOMEPAGE=https://gitlab.com/xgqt/mydot
+INHERIT=git-r3
+IUSE=test
+LICENSE=GPL-3
+PROPERTIES=live
+RESTRICT=mirror !test? ( test )
+SLOT=0
+_eclasses_=git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_md5_=d397927c36e707836e42888ef52e72b0

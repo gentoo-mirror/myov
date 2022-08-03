@@ -1,0 +1,22 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+app-emacs/myov-emacs-meta:net - Pull in packages for configuration of or interaction with network-related services
+app-emacs/myov-emacs-meta:package-developer - Pull in packages for Emacs package development and testing
+app-emacs/myov-emacs-meta:polyglot - Pull in packages for many different programming language modes
+app-text/tree-ng:generic - Present using the generic name "tree"
+dev-util/myov-academia-meta:android - Pull in Android development packages
+dev-util/myov-academia-meta:cxx - Pull in C/C++ development packages
+dev-util/myov-academia-meta:latex - Pull in LaTeX development packages
+dev-util/myov-academia-meta:python - Pull in Python development packages
+dev-util/myov-academia-meta:qemu - Pull in Qemu and Libvirt packages
+kde-apps/myov-kde-meta:fonts - Pull in selected font packages
+kde-apps/myov-kde-meta:graphics - Pull in graphics packages - KDE-related and unrelated packages
+kde-apps/myov-kde-meta:vulkan - Pull in Vulkan-related packages
+sys-apps/myov-base-meta:archive - Pull in popular archive compressors/extractors
+sys-apps/myov-base-meta:crypt - Pull in encryption packages
+sys-apps/myov-base-meta:gentoo - Pull in Gentoo specific tools
+sys-apps/myov-base-meta:grub - Pull in GRUB2
+sys-apps/myov-base-meta:hardware - Pull in hardware tools
+sys-apps/myov-base-meta:network - Pull in network communication/diagnosis tools
