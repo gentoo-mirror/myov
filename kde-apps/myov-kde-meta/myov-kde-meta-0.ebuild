@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+accessibility dvd +fonts +graphics pulseaudio vulkan"
+IUSE="+accessibility dvd +fonts +graphics vulkan"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -35,7 +35,7 @@ RDEPEND="
 	kde-plasma/discover[firmware(+)]
 	kde-plasma/plasma-browser-integration
 	kde-plasma/plasma-disks
-	kde-plasma/plasma-meta[pulseaudio?]
+	kde-plasma/plasma-meta
 	kde-plasma/xdg-desktop-portal-kde
 	sys-block/partitionmanager
 
@@ -54,8 +54,8 @@ RDEPEND="
 		media-sound/quodlibet
 	)
 	|| (
-		media-video/vlc[ffmpeg,pulseaudio?,v4l]
-		media-video/mpv[pulseaudio?]
+		media-video/vlc[ffmpeg,v4l]
+		media-video/mpv
 	)
 	|| (
 		net-p2p/transmission[gtk]
@@ -85,10 +85,6 @@ RDEPEND="
 		media-libs/exiftool
 		media-video/handbrake[gtk(+)]
 		x11-apps/mesa-progs
-	)
-	pulseaudio? (
-		media-sound/paprefs
-		media-sound/pavucontrol
 	)
 	vulkan? (
 		dev-util/vulkan-tools
