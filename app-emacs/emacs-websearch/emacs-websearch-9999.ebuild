@@ -21,7 +21,7 @@ fi
 LICENSE="GPL-3"
 SLOT="0"
 
-DOCS=( README.md )
+DOCS=( README.md logo.png )
 SITEFILE="50${PN}-gentoo.el"
 
 src_compile() {
