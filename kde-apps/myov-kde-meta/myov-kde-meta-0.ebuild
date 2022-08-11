@@ -34,7 +34,6 @@ RDEPEND="
 	kde-plasma/breeze-gtk
 	kde-plasma/discover[firmware(+)]
 	kde-plasma/plasma-browser-integration
-	kde-plasma/plasma-disks
 	kde-plasma/plasma-meta
 	kde-plasma/xdg-desktop-portal-kde
 	sys-block/partitionmanager
