@@ -50,7 +50,6 @@ RDEPEND="
 		app-emacs/all-the-icons-dired
 		app-emacs/all-the-icons-ibuffer
 		app-emacs/all-the-icons-ivy-rich
-		app-emacs/company-quickhelp
 		app-emacs/emojify
 	)
 	guile? (
