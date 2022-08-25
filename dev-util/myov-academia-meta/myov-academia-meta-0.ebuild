@@ -21,7 +21,6 @@ RDEPEND="
 	dev-vcs/git
 	dev-vcs/git-lfs
 	media-gfx/graphviz[pdf(+),python(+),svg(+)]
-	net-analyzer/wireshark[qt5(+)]
 	virtual/pandoc
 	|| (
 		app-office/libreoffice[pdfimport(+)]
