@@ -3,7 +3,7 @@ app-admin/mydot-scripts 9999: System-wide installation of scripts from mydot
 app-admin/pystow 1.2.0 1.2.1 1.2.2 9999: GNU Stow rewritten in Python
 app-emacs/el-fetch 2.0.0 3.0.0 3.1.0 9999: Show system information in Neofetch-like style (eg CPU, RAM) inside Emacs
 app-emacs/emacs-ansilove 0.2.0 0.3.0 1.0.0 9999: Display buffers as PNG images using ansilove in GNU Emacs
-app-emacs/emacs-websearch 1.0.0 9999: Query search engines from Emacs
+app-emacs/emacs-websearch 1.0.0 2.0.0 9999: Query search engines from Emacs
 app-emacs/myov-emacs-meta 0: Meta package for Emacs Lisp packages
 app-text/tree-ng 1.9.0 9999: Lists directories recursively (fork of Steve Baker's tree)
 dev-qt/qtbase 5: Meta package for Qt5-base
