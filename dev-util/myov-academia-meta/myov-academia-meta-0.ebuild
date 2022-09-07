@@ -46,8 +46,6 @@ RDEPEND="
 		)
 	)
 	latex? (
-		app-office/texstudio
-		app-text/kbibtex
 		dev-texlive/texlive-fontsextra
 		dev-texlive/texlive-plaingeneric
 		dev-texlive/texlive-xetex
