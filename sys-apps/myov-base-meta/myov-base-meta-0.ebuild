@@ -96,7 +96,6 @@ RDEPEND="
 		network? ( sys-apps/ethtool )
 	)
 	network? (
-		app-text/wgetpaste
 		net-analyzer/arp-scan
 		net-analyzer/iftop
 		net-analyzer/iptraf-ng
@@ -115,7 +114,6 @@ RDEPEND="
 		net-misc/iperf
 		net-misc/iputils
 		net-misc/mosh
-		net-misc/netkit-telnetd
 		net-misc/ntp
 		net-misc/socat
 		net-misc/whois
