@@ -17,10 +17,10 @@ RESTRICT="bindist"
 RDEPEND="
 	app-doc/doxygen[dot(+)]
 	app-text/pdfgrep
-	dev-java/openjdk
 	dev-vcs/git
 	dev-vcs/git-lfs
 	media-gfx/graphviz[pdf(+),python(+),svg(+)]
+	virtual/jdk
 	virtual/pandoc
 	|| (
 		app-office/libreoffice[pdfimport(+)]
@@ -38,7 +38,7 @@ RDEPEND="
 		sys-devel/gdb
 	)
 	emacs? (
-		app-emacs/myov-emacs-meta[git(+),java(+),python(+)]
+		app-emacs/myov-emacs-meta[git(+)]
 		latex? (
 			app-emacs/auctex
 			app-emacs/biblio
