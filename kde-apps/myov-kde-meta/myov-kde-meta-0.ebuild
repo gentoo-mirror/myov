@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+accessibility dvd +fonts +graphics vulkan"
+IUSE="X +accessibility dvd +fonts +graphics vulkan"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -60,6 +60,11 @@ RDEPEND="
 		net-p2p/transmission[qt5]
 	)
 
+	X? (
+		x11-apps/xinit
+		x11-apps/xkill
+		x11-base/xorg-server
+	)
 	accessibility? ( kde-apps/kdeaccessibility-meta )
 	dvd? ( kde-apps/k3b[dvd(+)] )
 	fonts? (
