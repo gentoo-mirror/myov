@@ -10,5 +10,5 @@ LICENSE=CC-BY-SA-3.0
 PROPERTIES=live
 RESTRICT=binchecks mirror strip !test? ( test )
 SLOT=0
-_eclasses_=xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	xdg	6024fbc93167fad782e2032933654857	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_eclasses_=xdg-utils	ac0e315a3688929e34ac75b139e7349a	xdg	6024fbc93167fad782e2032933654857	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
 _md5_=5782ded4a439a93c33a22344a662f17c
