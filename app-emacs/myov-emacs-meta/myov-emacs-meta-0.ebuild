@@ -27,7 +27,7 @@ RDEPEND="
 	app-emacs/highlight-indentation
 	app-emacs/ivy-rich
 	app-emacs/org-appear
-	app-emacs/org-superstar-mode
+	app-emacs/org-modern
 	app-emacs/rainbow-delimiters
 	app-emacs/rainbow-mode
 	app-emacs/spacemacs-theme
