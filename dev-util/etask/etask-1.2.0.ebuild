@@ -15,7 +15,7 @@ if [[ ${PV} == *9999* ]] ; then
 	inherit git-r3
 	EGIT_REPO_URI="https://gitlab.com/xgqt/python-${PN}.git"
 else
-	SRC_URI="https://gitlab.com/xgqt/python-${PN}/-/archive/${PV}/python-${P}.tar.gz"
+	SRC_URI="https://gitlab.com/xgqt/python-${PN}/-/archive/${PV}/python-${P}.tar.bz2"
 	S="${WORKDIR}"/python-${P}
 	KEYWORDS="~amd64 ~x86"
 fi

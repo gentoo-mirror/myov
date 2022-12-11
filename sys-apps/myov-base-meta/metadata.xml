@@ -14,4 +14,7 @@
     <flag name="hardware">Pull in hardware tools</flag>
     <flag name="network">Pull in network communication/diagnosis tools</flag>
   </use>
+  <upstream>
+    <remote-id type="gitlab">xgqt/myov</remote-id>
+  </upstream>
 </pkgmetadata>

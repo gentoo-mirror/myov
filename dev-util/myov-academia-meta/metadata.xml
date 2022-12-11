@@ -13,4 +13,7 @@
     <flag name="python">Pull in Python development packages</flag>
     <flag name="qemu">Pull in Qemu and Libvirt packages</flag>
   </use>
+  <upstream>
+    <remote-id type="gitlab">xgqt/myov</remote-id>
+  </upstream>
 </pkgmetadata>

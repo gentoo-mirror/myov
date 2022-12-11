@@ -19,6 +19,7 @@ RDEPEND="
 	app-misc/tmux
 	app-shells/bash-completion[eselect(+)]
 	app-shells/zsh[unicode(+)]
+	app-text/tree
 	dev-util/strace
 	dev-util/trace-cmd
 	dev-vcs/git[gpg(+)]
@@ -32,7 +33,6 @@ RDEPEND="
 	sys-process/cronie
 	sys-process/htop
 	sys-process/lsof
-	|| ( app-text/tree app-text/tree-ng )
 	archive? (
 		app-arch/bzip2
 		app-arch/dpkg
