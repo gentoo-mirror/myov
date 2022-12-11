@@ -9,7 +9,7 @@ stages:
 
 
 before_script:
-  - emerge --sync
+  - emerge --sync --quiet
 
 
 test:
