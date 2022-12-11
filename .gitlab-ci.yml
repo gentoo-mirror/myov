@@ -1,10 +1,6 @@
 ---
 
 
-# Copyright (c) 2019-2022, Maciej Barć <xgqt@riseup.net>
-# Licensed under the GNU GPL v2 License
-
-
 image: registry.gitlab.com/src_prepare/gentoo-repoman-container:latest
 
 
@@ -12,11 +8,13 @@ stages:
   - test
 
 
+before_script:
+  - emerge --sync
+
+
 test:
   stage: test
 
-  before_script:
-    - make deps-versions
-
   script:
+    - make deps-versions
     - make test
