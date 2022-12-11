@@ -42,7 +42,6 @@ RDEPEND="
 	media-gfx/simple-scan
 	media-sound/kid3
 	x11-misc/xsensors
-	x11-themes/xcursor-themes
 
 	|| (
 		media-sound/elisa
