@@ -8,6 +8,6 @@ KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=>=app-editors/emacs-24.4:*
 SLOT=0
-SRC_URI=https://gitlab.com/xgqt/emacs-websearch/-/archive/1.0.0/emacs-websearch-1.0.0.tar.gz
+SRC_URI=https://gitlab.com/xgqt/emacs-websearch/-/archive/1.0.0/emacs-websearch-1.0.0.tar.bz2
 _eclasses_=elisp-common	79f8e13c80c89792e5c9b3fc8ef59f3b	elisp	8aab2c847b5894dc40503ae1d203abcf
-_md5_=77586ca1d357ff3da69268228397994f
+_md5_=9adc7cfeffa8640a2b040970d586eda7

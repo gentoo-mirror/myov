@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=>=app-editors/emacs-24.4:*
 SLOT=0
 _eclasses_=elisp-common	79f8e13c80c89792e5c9b3fc8ef59f3b	elisp	8aab2c847b5894dc40503ae1d203abcf	git-r3	2347f8fe2d392b2a091191f94be37e6f
-_md5_=c40f2c40175af3e008c35e5d76a99c3f
+_md5_=e84c841cc6f5678e437049abec657f06

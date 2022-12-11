@@ -5,5 +5,5 @@ HOMEPAGE=https://gitlab.com/xgqt/dice
 KEYWORDS=~amd64
 LICENSE=GPL-3
 SLOT=0
-SRC_URI=https://gitlab.com/xgqt/dice/-/archive/1.0.0/dice-1.0.0.tar.gz
-_md5_=230454ed322494463cf445b62021b640
+SRC_URI=https://gitlab.com/xgqt/dice/-/archive/1.0.0/dice-1.0.0.tar.bz2
+_md5_=ce4ab1f7334248f31f15108be03e72fd

@@ -11,4 +11,4 @@ PROPERTIES=live
 RESTRICT=binchecks mirror strip !test? ( test )
 SLOT=0
 _eclasses_=xdg-utils	ac0e315a3688929e34ac75b139e7349a	xdg	6024fbc93167fad782e2032933654857	git-r3	2347f8fe2d392b2a091191f94be37e6f
-_md5_=5782ded4a439a93c33a22344a662f17c
+_md5_=6f5238cd5780dce669d3c8d02a44fae5

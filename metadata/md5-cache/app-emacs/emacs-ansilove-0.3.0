@@ -8,6 +8,6 @@ KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=>=app-editors/emacs-26.1[imagemagick] media-gfx/ansilove media-gfx/imagemagick[png] >=app-editors/emacs-26.1:*
 SLOT=0
-SRC_URI=https://gitlab.com/xgqt/emacs-ansilove/-/archive/0.3.0/emacs-ansilove-0.3.0.tar.gz
+SRC_URI=https://gitlab.com/xgqt/emacs-ansilove/-/archive/0.3.0/emacs-ansilove-0.3.0.tar.bz2
 _eclasses_=elisp-common	79f8e13c80c89792e5c9b3fc8ef59f3b	elisp	8aab2c847b5894dc40503ae1d203abcf
-_md5_=3e2f34938df62f872654b6bff22e86ff
+_md5_=361197a2fb45100283b16d3313bc357d
