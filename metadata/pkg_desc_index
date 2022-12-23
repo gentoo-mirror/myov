@@ -1,5 +1,4 @@
 app-admin/logrot 0.0.0-r1 9999: Log rotation tool in Python
-app-admin/mydot-scripts 9999: System-wide installation of scripts from mydot
 app-admin/pystow 1.2.0-r1 1.2.1-r1 1.2.2-r1 9999: GNU Stow rewritten in Python
 app-emacs/emacs-eie 1.0.0 9999: Run a Emacs batch process REPL inside Emacs
 app-emacs/myov-emacs-meta 0: Meta package for Emacs Lisp packages

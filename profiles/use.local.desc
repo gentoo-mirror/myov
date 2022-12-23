@@ -10,6 +10,7 @@ dev-util/myov-academia-meta:cxx - Pull in C/C++ development packages
 dev-util/myov-academia-meta:latex - Pull in LaTeX development packages
 dev-util/myov-academia-meta:python - Pull in Python development packages
 dev-util/myov-academia-meta:qemu - Pull in Qemu and Libvirt packages
+kde-apps/myov-kde-meta:android - Pull in Android integration packages
 kde-apps/myov-kde-meta:fonts - Pull in selected font packages
 kde-apps/myov-kde-meta:graphics - Pull in graphics packages - KDE-related and unrelated packages
 kde-apps/myov-kde-meta:vulkan - Pull in Vulkan-related packages
