@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="X +accessibility dvd +fonts +graphics vulkan"
+IUSE="X android +accessibility dvd +fonts +graphics vulkan"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -65,6 +65,7 @@ RDEPEND="
 		x11-base/xorg-server
 	)
 	accessibility? ( kde-apps/kdeaccessibility-meta )
+	android? ( kde-misc/kdeconnect )
 	dvd? ( kde-apps/k3b[dvd(+)] )
 	fonts? (
 		media-fonts/cantarell
