@@ -55,7 +55,6 @@ RDEPEND="
 		dev-python/black
 		dev-python/coverage
 		dev-python/jupyter
-		dev-python/nose
 		dev-python/numpy
 		dev-python/pandas
 		dev-python/pip

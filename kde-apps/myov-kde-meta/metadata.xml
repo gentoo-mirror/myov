@@ -7,6 +7,7 @@
     <name>Maciej Barć</name>
   </maintainer>
   <use>
+    <flag name="android">Pull in Android integration packages</flag>
     <flag name="fonts">Pull in selected font packages</flag>
     <flag name="graphics">Pull in graphics packages - KDE-related and unrelated packages</flag>
     <flag name="vulkan">Pull in Vulkan-related packages</flag>
