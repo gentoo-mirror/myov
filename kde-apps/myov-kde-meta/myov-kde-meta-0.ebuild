@@ -55,7 +55,7 @@ RDEPEND="
 		media-video/vlc[ffmpeg,v4l]
 	)
 	|| (
-		net-p2p/qbittorrent[gui]
+		net-p2p/qbittorrent[gui(+)]
 		net-p2p/transmission[gtk]
 		net-p2p/transmission[qt5]
 	)
