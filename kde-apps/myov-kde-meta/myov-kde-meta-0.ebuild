@@ -44,15 +44,15 @@ RDEPEND="
 	x11-misc/xsensors
 
 	|| (
-		media-sound/elisa
 		media-sound/strawberry
+		media-sound/elisa
 		media-sound/cantata
 		media-sound/clementine
 		media-sound/quodlibet
 	)
 	|| (
-		media-video/vlc[ffmpeg,v4l]
 		media-video/mpv
+		media-video/vlc[ffmpeg,v4l]
 	)
 	|| (
 		net-p2p/qbittorrent[gui]
