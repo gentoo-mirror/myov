@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -44,19 +44,21 @@ RDEPEND="
 	x11-misc/xsensors
 
 	|| (
-		media-sound/elisa
 		media-sound/strawberry
+		media-sound/elisa
 		media-sound/cantata
 		media-sound/clementine
 		media-sound/quodlibet
 	)
 	|| (
-		media-video/vlc[ffmpeg,v4l]
 		media-video/mpv
+		media-video/vlc[ffmpeg,v4l]
 	)
 	|| (
 		net-p2p/transmission[gtk]
 		net-p2p/transmission[qt5]
+		net-p2p/ktorrent
+		net-p2p/qbittorrent[gui(+)]
 	)
 
 	X? (
