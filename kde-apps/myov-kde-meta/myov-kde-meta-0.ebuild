@@ -3,14 +3,14 @@
 
 EAPI=8
 
-DESCRIPTION="Meta package for KDE packages"
+DESCRIPTION="Meta package for KDE packages, custom selection"
 HOMEPAGE="https://gitlab.com/xgqt/myov/"
 SRC_URI=""
 
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="X android +accessibility dvd +fonts +graphics vulkan"
+IUSE="X android +accessibility dvd +fonts +graphics vulkan wayland"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -21,9 +21,9 @@ RDEPEND="
 	kde-apps/kamoso
 	kde-apps/kate
 	kde-apps/kcalc
-	kde-apps/kdialog
+	kde-apps/kdialog[X(+)?]
 	kde-apps/kompare
-	kde-apps/konsole
+	kde-apps/konsole[X(+)?]
 	kde-apps/kwalletmanager
 	kde-apps/kwave[flac(+),mp3(+),opus(+)]
 	kde-apps/okular
@@ -37,23 +37,30 @@ RDEPEND="
 	kde-plasma/xdg-desktop-portal-kde
 	sys-block/partitionmanager
 
-	app-admin/keepassxc[browser(+)]
+	app-admin/keepassxc[X(+)?,browser(+)]
 	gnome-base/dconf-editor
 	media-gfx/simple-scan
-	media-sound/kid3
+	x11-apps/mesa-progs
 	x11-misc/xsensors
 
+	media-libs/mesa[X(+)?,vulkan(+)?,wayland(+)?]
+	media-video/ffmpeg[X(+)?,vulkan(+)?]
+
+	|| (
+		media-video/mpv[X(+)?]
+		media-video/vlc[X(+)?,ffmpeg(+),v4l(+)]
+	)
 	|| (
 		media-sound/strawberry
 		media-sound/elisa
 		media-sound/cantata
 		media-sound/clementine
 		media-sound/quodlibet
-		media-video/vlc[ffmpeg]
+		media-video/vlc[X(+)?,ffmpeg(+)]
 	)
 	|| (
-		media-video/mpv
-		media-video/vlc[ffmpeg,v4l]
+		media-sound/kid3
+		media-sound/nickvision-tagger
 	)
 	|| (
 		net-p2p/transmission[gtk]
@@ -66,9 +73,10 @@ RDEPEND="
 		x11-apps/xinit
 		x11-apps/xkill
 		x11-base/xorg-server
+		x11-apps/xinput
 	)
 	accessibility? ( kde-apps/kdeaccessibility-meta )
-	android? ( kde-misc/kdeconnect )
+	android? ( kde-misc/kdeconnect[X(+)?] )
 	dvd? ( kde-apps/k3b[dvd(+)] )
 	fonts? (
 		media-fonts/cantarell
@@ -82,20 +90,21 @@ RDEPEND="
 		media-fonts/roboto
 	)
 	graphics? (
-		kde-apps/gwenview
+		kde-apps/gwenview[X(+)?]
 		kde-apps/kdegraphics-meta
 		media-gfx/darktable
-		media-gfx/inkscape
+		media-gfx/inkscape[X(+)?]
 		media-gfx/jpegoptim
 		media-gfx/optipng
 		media-libs/exiftool
 		media-video/handbrake[gtk(+)]
-		x11-apps/mesa-progs
 	)
 	vulkan? (
 		dev-util/vulkan-tools
-		media-libs/mesa[vulkan(+)]
-		media-video/ffmpeg[vulkan(+)]
 		media-video/libva-utils
+	)
+	wayland? (
+		app-misc/wayland-utils
+		sys-apps/xdg-desktop-portal-gtk[X(+)?,wayland(+)]
 	)
 "
