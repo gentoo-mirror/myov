@@ -49,6 +49,7 @@ RDEPEND="
 		media-sound/cantata
 		media-sound/clementine
 		media-sound/quodlibet
+		media-video/vlc[ffmpeg]
 	)
 	|| (
 		media-video/mpv
