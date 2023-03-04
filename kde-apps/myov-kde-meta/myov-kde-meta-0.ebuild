@@ -18,6 +18,7 @@ RDEPEND="
 	kde-apps/ark
 	kde-apps/dolphin-plugins-git
 	kde-apps/ffmpegthumbs
+	kde-apps/filelight
 	kde-apps/kamoso
 	kde-apps/kate
 	kde-apps/kcalc
@@ -29,7 +30,6 @@ RDEPEND="
 	kde-apps/okular
 	kde-apps/print-manager
 	kde-apps/spectacle
-	kde-misc/kdirstat
 	kde-misc/krename
 	kde-plasma/breeze-gtk
 	kde-plasma/plasma-browser-integration
