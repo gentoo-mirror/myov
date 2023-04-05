@@ -9,4 +9,4 @@ RDEPEND=app-doc/doxygen[dot(+)] app-text/pdfgrep dev-vcs/git dev-vcs/git-lfs med
 REQUIRED_USE=android? ( qemu )
 RESTRICT=bindist
 SLOT=0
-_md5_=1c57e837892124e7c379475e4a04794a
+_md5_=82dd9dc6be697431290a5b55f35aed43
