@@ -92,7 +92,6 @@ RDEPEND="
 	graphics? (
 		kde-apps/gwenview[X(+)?]
 		kde-apps/kdegraphics-meta
-		media-gfx/darktable
 		media-gfx/inkscape[X(+)?]
 		media-gfx/jpegoptim
 		media-gfx/optipng
