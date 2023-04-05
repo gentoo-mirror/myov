@@ -23,7 +23,7 @@ RDEPEND="
 	virtual/jdk
 	virtual/pandoc
 	|| ( app-office/libreoffice-bin app-office/libreoffice[pdfimport(+)] )
-	|| ( dev-util/shellcheck-bin dev-util/shellcheck  )
+	|| ( dev-util/shellcheck-bin dev-util/shellcheck )
 	android? (
 		dev-util/android-studio
 		dev-util/android-tools
