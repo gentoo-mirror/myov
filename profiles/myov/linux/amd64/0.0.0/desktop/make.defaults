@@ -1,0 +1,33 @@
+# Copyright 1999-2023 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+USE="
+    -gpm
+    -gtk2
+    -handbook
+    alsa
+    branding
+    firmware
+    git
+    gpg
+    initramfs
+    ldap
+    lm-sensors
+    lvm
+    mtp
+    pie
+    policykit
+    pulseaudio
+    raw
+    readline
+    screencast
+    sound
+    system-zlib
+    threads
+    usb
+    v4l
+    vaapi
+    vulkan
+    webp
+    wifi
+"
