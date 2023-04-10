@@ -1,0 +1,25 @@
+# myov:targets/desktop/package.accept_keywords
+
+
+##################################### Graphics
+#                                   #                   #
+
+# GIMP
+<media-gfx/gimp-9999:0/3            **
+media-libs/babl
+media-libs/gegl
+
+
+##################################### Java
+#                                   #                   #
+
+# Antlr
+dev-java/antlr
+dev-java/antlr-runtime
+dev-java/antlr-tool
+dev-java/jakarta-json-api
+dev-java/stringtemplate
+dev-python/antlr4-python3-runtime
+
+# Servlets
+dev-java/javax-servlet-api
