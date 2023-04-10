@@ -28,25 +28,21 @@ app-crypt/pinentry                  qt5
 dev-util/astyle                     java                # Arduino dependency
 
 # LibreCAD
-media-gfx/librecad                  3d tools
+media-gfx/librecad                  tools
 
 # KiCAD
 sci-electronics/kicad               doc
-sci-electronics/kicad               github
 sci-electronics/kicad-meta          doc
 sci-libs/hdf5                       cxx
 sci-libs/hdf5                       unsupported
-sci-libs/oce                        vtk
 sci-libs/vtk                        boost
 sci-libs/vtk                        ffmpeg
 sci-libs/vtk                        imaging
 sci-libs/vtk                        python
 sci-libs/vtk                        qt5
 sci-libs/vtk                        rendering
-sci-libs/vtk                        tcl
 sci-libs/vtk                        tk
 sci-libs/vtk                        views
-sci-libs/vtk                        xdmf2
 
 
 ##################################### Emacs
@@ -93,7 +89,6 @@ gnome-base/gvfs                     archive
 gnome-base/gvfs                     fuse
 
 # Webkit-GTK
-net-libs/webkit-gtk                 -geolocation
 net-libs/webkit-gtk                 gstreamer
 
 # wxWidgets
@@ -112,7 +107,6 @@ media-video/obs-studio              pipewire
 
 # MPV
 media-video/mpv                     archive
-media-video/mpv                     cplugins
 media-video/mpv                     drm
 media-video/mpv                     libmpv
 media-video/mpv                     lua
@@ -122,10 +116,7 @@ media-video/mpv                     tools
 # KDEnlive
 media-libs/mlt                      -gtk
 media-libs/mlt                      ffmpeg
-media-libs/mlt                      fftw
 media-libs/mlt                      frei0r
-media-libs/mlt                      kdenlive
-media-libs/mlt                      melt
 media-libs/mlt                      python
 media-libs/mlt                      qt5
 media-libs/mlt                      sdl
@@ -164,10 +155,8 @@ media-video/ffmpeg                  libdrm
 media-video/ffmpeg                  libv4l
 media-video/ffmpeg                  mp3
 media-video/ffmpeg                  network
-media-video/ffmpeg                  ogg
 media-video/ffmpeg                  openssl
 media-video/ffmpeg                  opus
-media-video/ffmpeg                  rtmp
 media-video/ffmpeg                  rubberband
 media-video/ffmpeg                  sdl
 media-video/ffmpeg                  theora
@@ -177,7 +166,6 @@ media-video/ffmpeg                  vorbis
 media-video/ffmpeg                  vpx
 media-video/ffmpeg                  x264
 media-video/ffmpeg                  x265
-media-video/ffmpeg                  xcb
 media-video/ffmpeg                  xvid
 
 # Inkscape
@@ -206,7 +194,6 @@ media-libs/openal                   -qt5
 net-wireless/wpa_supplicant         -qt5
 
 # Qt Python
-dev-python/PyQt5                    -webkit
 dev-python/PyQt5                    declarative
 dev-python/PyQt5                    designer
 dev-python/PyQt5                    webchannel
@@ -234,15 +221,11 @@ media-sound/strawberry              gstreamer
 # Chromaprint
 media-libs/chromaprint              tools
 
-# Pulseaudio
-media-sound/pulseaudio              -qt5
-
 
 ##################################### Version control
 #                                   #                   #
 
 # Git
-dev-vcs/git                         -emacs
 dev-vcs/git                         cgi
 dev-vcs/git                         gpg                 # Integrate with GPG
 dev-vcs/git                         perl                # Support e-mail
@@ -260,12 +243,10 @@ net-libs/nodejs                     inspector           # Needed by chromium and
 www-client/chromium                 -component-build
 www-client/chromium                 -custom-cflags
 www-client/chromium                 -headless
-www-client/chromium                 -js-type-check
 www-client/chromium                 -kerberos
 www-client/chromium                 -official
 www-client/chromium                 -qt5
 www-client/chromium                 -suid
-www-client/chromium                 -tcmalloc
 www-client/chromium                 -widevine
 www-client/chromium                 hangouts
 www-client/chromium                 proprietary-codecs
@@ -277,14 +258,12 @@ sys-libs/zlib                       minizip
 # Firefox
 www-client/firefox                  -system-sqlite
 www-client/firefox                  -wifi
-www-client/firefox                  bindist
 www-client/firefox                  geckodriver
 www-client/firefox                  hardened
 www-client/firefox                  hwaccel
 
 # Thunderbird
 mail-client/thunderbird             -wifi
-mail-client/thunderbird             bindist
 mail-client/thunderbird             hardened
 mail-client/thunderbird             hwaccel
 
@@ -295,4 +274,5 @@ www-client/w3m                      imlib               # Support displaying ima
 www-plugins/lightspark              curl
 www-plugins/lightspark              ffmpeg
 www-plugins/lightspark              nsplugin
-www-plugins/lightspark              ppapi rtmp
+www-plugins/lightspark              ppapi
+www-plugins/lightspark              rtmp

@@ -19,7 +19,6 @@ dev-qt/qtmultimedia                 gstreamer
 dev-qt/qtmultimedia                 qml
 kde-frameworks/kauth                policykit
 kde-frameworks/kitemmodels          qml
-kde-plasma/kdeplasma-addons         -comic
 kde-plasma/plasma-desktop           -kaccounts
 kde-plasma/plasma-desktop           emoji
 kde-plasma/plasma-desktop           ibus
