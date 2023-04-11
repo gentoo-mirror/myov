@@ -1,3 +1,6 @@
+# myov:myov/linux/amd64/0.0.0/desktop/plasma/package.use
+
+
 # KDE Exclusions
 app-office/libreoffice              -kde
 media-gfx/darktable                 -kwallet
