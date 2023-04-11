@@ -2,7 +2,6 @@
 # Distributed under the terms of the GNU General Public License v2
 
 USE="
-    -gpm
     -gtk2
     -handbook
     alsa
@@ -15,15 +14,11 @@ USE="
     lm-sensors
     lvm
     mtp
-    pie
     policykit
     pulseaudio
     raw
-    readline
     screencast
     sound
-    system-zlib
-    threads
     usb
     v4l
     vaapi
@@ -31,3 +26,5 @@ USE="
     webp
     wifi
 "
+
+INPUT_DEVICES="libinput"
