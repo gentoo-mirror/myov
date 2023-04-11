@@ -1,0 +1,11 @@
+# myov:myov/linux/amd64/0.0.0/desktop/package.mask
+
+
+##################################### GNOME
+#                                   #                   #
+
+# Deprecated GTK version
+x11-libs/gtk+:2
+
+# Deprecated wxGTK version
+x11-libs/wxGTK:3.0
