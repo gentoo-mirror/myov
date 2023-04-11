@@ -92,6 +92,7 @@ gnome-base/gvfs                     fuse
 net-libs/webkit-gtk                 gstreamer
 
 # wxWidgets
+x11-libs/wxGTK                      curl
 x11-libs/wxGTK                      gstreamer
 
 
@@ -104,6 +105,11 @@ x11-base/xorg-server                xvfb
 
 # OBS
 media-video/obs-studio              pipewire
+
+# Okular
+kde-apps/okular                     djvu
+kde-apps/okular                     epub
+kde-apps/okular                     markdown
 
 # MPV
 media-video/mpv                     archive
@@ -129,20 +135,6 @@ media-libs/opencv                   contrib
 media-libs/opencv                   contribdnn
 media-libs/opencv                   ffmpeg
 
-# HandBrake
-media-video/handbrake               -fdk
-media-video/handbrake               libav-aac
-
-# GStreamer
-media-libs/gst-plugins-base         theora
-media-plugins/gst-plugins-meta      ffmpeg
-media-plugins/gst-plugins-meta      lame
-media-plugins/gst-plugins-meta      libass
-media-plugins/gst-plugins-meta      opus
-media-plugins/gst-plugins-meta      taglib
-media-plugins/gst-plugins-meta      theora
-media-plugins/gst-plugins-meta      vpx
-
 # FFmpeg
 media-video/ffmpeg                  cdio
 media-video/ffmpeg                  chromium
@@ -167,6 +159,25 @@ media-video/ffmpeg                  vpx
 media-video/ffmpeg                  x264
 media-video/ffmpeg                  x265
 media-video/ffmpeg                  xvid
+
+# GStreamer
+media-libs/gst-plugins-base         theora
+media-plugins/gst-plugins-meta      ffmpeg
+media-plugins/gst-plugins-meta      lame
+media-plugins/gst-plugins-meta      libass
+media-plugins/gst-plugins-meta      opus
+media-plugins/gst-plugins-meta      taglib
+media-plugins/gst-plugins-meta      theora
+media-plugins/gst-plugins-meta      vpx
+
+# GIMP
+media-gfx/gimp                      vector-icons
+media-libs/babl                     introspection
+media-libs/gegl                     introspection
+
+# HandBrake
+media-video/handbrake               -fdk
+media-video/handbrake               libav-aac
 
 # Inkscape
 media-gfx/inkscape                  imagemagick
