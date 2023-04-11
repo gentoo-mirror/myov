@@ -1,0 +1,227 @@
+# myov: myov/linux/amd64/0.0.0
+
+
+##################################### Academia
+#                                   #                   #
+
+# Boost
+dev-libs/boost                      context
+dev-libs/boost                      lzma
+dev-libs/boost                      python
+dev-libs/boost                      tools
+
+# Doxygen
+app-doc/doxygen                     dot
+
+# Gnuplot
+sci-visualization/gnuplot           bitmap
+sci-visualization/gnuplot           latex
+
+# Numpy
+dev-python/numpy                    lapack
+
+# Octave
+sci-mathematics/octave              -opengl
+sci-mathematics/octave              curl
+sci-mathematics/octave              doc
+sci-mathematics/octave              fftw
+sci-mathematics/octave              gnuplot
+sci-mathematics/octave              postscript
+sci-mathematics/octave              readline
+
+# Pandas
+dev-python/pandas                   -minimal
+dev-python/pandas                   full-support
+
+# Plotutils
+media-gfx/pstoedit                  imagemagick
+media-gfx/pstoedit                  plotutils
+media-libs/plotutils                png
+
+# Tesseract
+app-text/tesseract                  training
+
+
+##################################### Accessibility
+#                                   #                   #
+
+# Speechd
+app-accessibility/speech-dispatcher python
+
+
+#################################### Archive
+#                                   #                   #
+
+# Brotli
+app-arch/brotli                     python
+
+
+##################################### LaTex
+#                                   #                   #
+
+# Texlive
+app-text/texlive-core               xetex
+
+
+##################################### Sandbox
+#                                   #                   #
+
+# Bubblewrap
+sys-apps/bubblewrap                 suid
+
+
+##################################### System
+#                                   #                   #
+
+# Busybox
+sys-apps/busybox                    -pam
+sys-apps/busybox                    static syslog
+sys-libs/libxcrypt                  static-libs
+virtual/libcrypt                    static-libs
+
+# Fwupd
+sys-apps/fwupd                      bash-completion
+sys-apps/fwupd                      gnutls
+sys-apps/fwupd                      lzma
+sys-apps/fwupd                      nvme
+sys-apps/fwupd                      synaptics
+sys-apps/fwupd                      uefi
+
+# IPMI
+sys-apps/ipmitool                   openipmi
+sys-libs/openipmi                   crypt
+sys-libs/openipmi                   python
+
+# Linux utils
+sys-apps/util-linux                 -static-libs
+
+# OpenRC
+sys-apps/openrc                     sysv-utils
+
+# Rsyslog
+app-admin/rsyslog                   gcrypt
+app-admin/rsyslog                   openssl
+app-admin/rsyslog                   ssl
+app-admin/rsyslog                   usertools
+app-admin/rsyslog                   uuid
+
+# SANE
+media-gfx/sane-backends             -sane_backends_escl
+
+
+##################################### Languages
+#                                   #                   #
+
+# Important libnraries
+dev-libs/libpcre2                   pcre16
+dev-libs/libpcre2                   pcre32
+
+# PHP
+app-eselect/eselect-php             apache2
+app-eselect/eselect-php             fpm
+dev-lang/php                        acl
+dev-lang/php                        apache2
+dev-lang/php                        bcmath
+dev-lang/php                        cgi
+dev-lang/php                        cjk
+dev-lang/php                        curl
+dev-lang/php                        exif
+dev-lang/php                        fpm
+dev-lang/php                        ftp
+dev-lang/php                        gd
+dev-lang/php                        gmp
+dev-lang/php                        intl
+dev-lang/php                        ldap
+dev-lang/php                        pcntl
+dev-lang/php                        pdo
+dev-lang/php                        spell
+dev-lang/php                        sqlite
+dev-lang/php                        threads
+dev-lang/php                        truetype
+dev-lang/php                        xmlreader
+dev-lang/php                        xmlwriter
+dev-lang/php                        xpm
+dev-lang/php                        zip
+
+# Prolog
+dev-lang/swi-prolog                 -java
+dev-lang/swi-prolog                 -libedit
+dev-lang/swi-prolog                 archive
+dev-lang/swi-prolog                 doc
+dev-lang/swi-prolog                 odbc
+dev-lang/swi-prolog                 readline
+dev-lang/swi-prolog                 yaml
+
+# Python
+dev-lang/python                     sqlite
+
+
+##################################### Networking
+#                                   #                   #
+
+# Apache
+dev-libs/apr-util                   ldap
+www-servers/apache                  apache2_mpms_worker
+www-servers/apache                  ldap
+www-servers/apache                  threads
+
+# Curl
+net-libs/nghttp2                    -cxx                # Do not pull in boost
+net-misc/curl                       gopher
+net-misc/curl                       http2
+net-misc/curl                       idn
+net-misc/curl                       samba
+net-misc/curl                       ssh
+net-misc/curl                       ssl
+net-misc/curl                       telnet
+net-misc/curl                       zstd
+
+# LibSSH
+net-libs/libssh                     server
+
+# MoSh
+net-misc/mosh                       client
+net-misc/mosh                       examples
+net-misc/mosh                       mosh-hardening
+net-misc/mosh                       server
+net-misc/mosh                       ufw
+
+# NFS
+net-nds/rpcbind                     warmstarts
+
+# Nginx
+app-misc/mime-types                 nginx
+
+# Nmap
+net-analyzer/nmap                   ncat
+net-analyzer/nmap                   nping
+
+# RabbitMQ
+net-libs/rabbitmq-c                 tools
+
+# Rsync
+net-misc/rsync                      lz4
+net-misc/rsync                      zstd
+
+# Samba
+net-fs/samba                        acl
+net-fs/samba                        addc
+net-fs/samba                        ads
+net-fs/samba                        json
+net-fs/samba                        ldap
+net-fs/samba                        python
+net-fs/samba                        syslog
+net-fs/samba                        winbind
+sys-libs/ldb                        python
+sys-libs/tdb                        python
+sys-libs/tevent                     python
+
+
+##################################### Virtualization
+#                                   #                   #
+
+# Libvirt
+app-emulation/libvirt               qemu
+app-emulation/libvirt               virt-network
+app-emulation/qemu                  ssh
+net-dns/dnsmasq                     script
