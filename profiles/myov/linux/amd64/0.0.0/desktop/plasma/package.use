@@ -25,10 +25,6 @@ kde-frameworks/kitemmodels          qml
 kde-plasma/plasma-desktop           -kaccounts
 kde-plasma/plasma-desktop           emoji
 kde-plasma/plasma-desktop           ibus
-kde-plasma/plasma-meta              -crypt
-kde-plasma/plasma-meta              -display-manager
-kde-plasma/plasma-meta              -sddm
-kde-plasma/plasma-meta              -wallpapers
 media-libs/phonon                   -vlc
 media-libs/phonon                   gstreamer
 
