@@ -233,6 +233,14 @@ media-sound/strawberry              gstreamer
 media-libs/chromaprint              tools
 
 
+##################################### System
+#                                   #                   #
+
+# Flatpak
+kde-plasma/discover                 flatpak             # Most Discover functionality ;-)
+sys-apps/bubblewrap                 -suid               # Needed by many applications.
+
+
 ##################################### Version control
 #                                   #                   #
 
