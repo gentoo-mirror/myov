@@ -16,7 +16,7 @@ app-crypt/gpgme                     python
 sys-boot/grub                       device-mapper mount
 
 # Pinentry
-app-crypt/pinentry                  -emacs              # Disable broken Emacs interface
+app-crypt/pinentry                  -emacs              # Disable broken Emacs interface.
 app-crypt/pinentry                  -gtk
 app-crypt/pinentry                  qt5
 
@@ -25,7 +25,7 @@ app-crypt/pinentry                  qt5
 #                                   #                   #
 
 # Arduino
-dev-util/astyle                     java                # Arduino dependency
+dev-util/astyle                     java                # Arduino dependency.
 
 # LibreCAD
 media-gfx/librecad                  tools
@@ -193,7 +193,7 @@ app-office/libreoffice              -kde
 app-office/libreoffice              -mariadb
 app-office/libreoffice              pdfimport
 app-office/libreoffice              postgres
-dev-db/postgresql                   kerberos            # Needed by LireOffice
+dev-db/postgresql                   kerberos            # Needed by LibreOffice.
 
 
 ##################################### Qt
@@ -233,13 +233,21 @@ media-sound/strawberry              gstreamer
 media-libs/chromaprint              tools
 
 
+##################################### System
+#                                   #                   #
+
+# Flatpak
+kde-plasma/discover                 flatpak             # Most Discover functionality ;-)
+sys-apps/bubblewrap                 -suid               # Needed by many applications.
+
+
 ##################################### Version control
 #                                   #                   #
 
 # Git
 dev-vcs/git                         cgi
-dev-vcs/git                         gpg                 # Integrate with GPG
-dev-vcs/git                         perl                # Support e-mail
+dev-vcs/git                         gpg                 # Integrate with GPG.
+dev-vcs/git                         perl                # Support e-mail.
 dev-vcs/git                         tk
 
 
@@ -248,7 +256,7 @@ dev-vcs/git                         tk
 
 # Browser libraries
 media-libs/libvpx                   postproc
-net-libs/nodejs                     inspector           # Needed by chromium and firefox
+net-libs/nodejs                     inspector           # Needed by chromium and Firefox.
 
 # Chromium
 www-client/chromium                 -component-build
@@ -279,7 +287,7 @@ mail-client/thunderbird             hardened
 mail-client/thunderbird             hwaccel
 
 # W3M
-www-client/w3m                      imlib               # Support displaying images
+www-client/w3m                      imlib               # Support displaying images.
 
 # Lightspark
 www-plugins/lightspark              curl
