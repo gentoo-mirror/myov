@@ -102,8 +102,5 @@ RDEPEND="
 		dev-util/vulkan-tools
 		media-video/libva-utils
 	)
-	wayland? (
-		app-misc/wayland-utils
-		sys-apps/xdg-desktop-portal-gtk[X(+)?,wayland(+)]
-	)
+	wayland? ( app-misc/wayland-utils )
 "
