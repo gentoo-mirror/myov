@@ -40,11 +40,9 @@ RDEPEND="
 	app-admin/keepassxc[X(+)?,browser(+)]
 	gnome-base/dconf-editor
 	media-gfx/simple-scan
-	x11-apps/mesa-progs
-	x11-misc/xsensors
-
-	media-libs/mesa[X(+)?,vulkan(+)?,wayland(+)?]
+	media-sound/kid3
 	media-video/ffmpeg[X(+)?,vulkan(+)?]
+	x11-apps/mesa-progs
 
 	|| (
 		media-video/mpv[X(+)?]
@@ -59,12 +57,8 @@ RDEPEND="
 		media-video/vlc[X(+)?,ffmpeg(+)]
 	)
 	|| (
-		media-sound/kid3
-		media-sound/nickvision-tagger
-	)
-	|| (
-		net-p2p/transmission[gtk]
 		net-p2p/transmission[qt5]
+		net-p2p/transmission[gtk]
 		net-p2p/ktorrent
 		net-p2p/qbittorrent[gui(+)]
 	)
