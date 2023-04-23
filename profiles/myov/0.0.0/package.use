@@ -56,6 +56,18 @@ app-accessibility/speech-dispatcher python
 app-arch/brotli                     python
 
 
+##################################### Emacs
+#                                   #                   #
+
+# GNU Emacs
+app-editors/emacs                   -lcms
+app-editors/emacs                   dynamic-loading
+app-editors/emacs                   games
+app-editors/emacs                   json
+app-editors/emacs                   libxml2
+app-emacs/emacs-common              games
+
+
 ##################################### LaTex
 #                                   #                   #
 

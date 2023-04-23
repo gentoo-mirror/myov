@@ -49,22 +49,15 @@ sci-libs/vtk                        views
 #                                   #                   #
 
 # GNU Emacs
-app-editors/emacs                   -acl
-app-editors/emacs                   -lcms
 app-editors/emacs                   alsa
 app-editors/emacs                   cairo
 app-editors/emacs                   dbus
-app-editors/emacs                   dynamic-loading
-app-editors/emacs                   games
 app-editors/emacs                   gtk
 app-editors/emacs                   harfbuzz
 app-editors/emacs                   imagemagick
-app-editors/emacs                   json
-app-editors/emacs                   libxml2
 app-editors/emacs                   sound
 app-editors/emacs                   toolkit-scroll-bars
 app-editors/emacs                   xft
-app-emacs/emacs-common              games
 
 # ELisp libraries
 app-emacs/auctex                    preview-latex
