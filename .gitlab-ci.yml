@@ -8,10 +8,6 @@ stages:
   - test
 
 
-before_script:
-  - emerge --sync --quiet
-
-
 test:
   stage: test
   timeout: 20 minutes
