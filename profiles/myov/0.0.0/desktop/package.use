@@ -9,7 +9,6 @@ app-admin/keepassxc                 browser
 app-admin/keepassxc                 -network
 
 # GPG
-app-crypt/gpgme                     -qt5
 app-crypt/gpgme                     python
 
 # GRUB

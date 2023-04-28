@@ -32,7 +32,6 @@ media-libs/phonon                   gstreamer
 kde-apps/akonadi                    -mysql
 kde-apps/akonadi                    -postgres
 kde-apps/akonadi                    sqlite
-kde-frameworks/kwallet              -gpg
 kde-plasma/powerdevil               -wireless
 net-p2p/ktorrent                    -webengine
 
