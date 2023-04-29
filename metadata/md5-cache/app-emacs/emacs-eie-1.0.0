@@ -4,10 +4,10 @@ DESCRIPTION=Run a Emacs batch process REPL inside Emacs
 EAPI=8
 HOMEPAGE=https://gitlab.com/xgqt/emacs-eie/
 INHERIT=elisp
-KEYWORDS=~amd64 ~x86
+KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2+
 RDEPEND=>=app-editors/emacs-24.1:*
 SLOT=0
 SRC_URI=https://gitlab.com/xgqt/emacs-eie/-/archive/1.0.0/emacs-eie-1.0.0.tar.bz2
 _eclasses_=elisp-common	dcd21c5d379fc2217e95f529504c5fe0	elisp	7190c722d9e06fabcae26ef1e1dc9183
-_md5_=fdf43806975c0d53974f52151dd10575
+_md5_=353fd7d4207fde88ba6858840f92f1c6
