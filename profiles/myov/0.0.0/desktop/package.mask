@@ -1,4 +1,4 @@
-# myov:myov/linux/amd64/0.0.0/desktop/package.mask
+# myov:myov/0.0.0/desktop/package.mask
 
 
 ##################################### GNOME
