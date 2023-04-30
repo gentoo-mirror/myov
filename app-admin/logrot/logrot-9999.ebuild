@@ -18,7 +18,7 @@ if [[ ${PV} == *9999* ]] ; then
 else
 	SRC_URI="https://gitlab.com/xgqt/python-${PN}/-/archive/${PV}/python-${P}.tar.bz2"
 	S="${WORKDIR}"/python-${P}/src/${PN}
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
 fi
 
 LICENSE="GPL-3"
