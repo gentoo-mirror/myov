@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=app-shells/bash net-misc/wget
 SLOT=0
 _eclasses_=git-r3	27e13c09a4c7e4c78ac812f74727e676
-_md5_=73afe2ae51a372950f7e055d6c6d1e0f
+_md5_=73fdb625c2f8442630755eac4255e2fa
