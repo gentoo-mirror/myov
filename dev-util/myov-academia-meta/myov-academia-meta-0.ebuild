@@ -9,7 +9,7 @@ SRC_URI=""
 
 LICENSE="metapackage"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 IUSE="android +cxx emacs +latex +python +qemu"
 REQUIRED_USE="android? ( qemu )"
 RESTRICT="bindist"
