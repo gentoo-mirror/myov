@@ -20,7 +20,6 @@ kde-plasma/plasma-desktop           ibus
 
 # Unnecessary
 kde-plasma/powerdevil               -wireless
-net-p2p/ktorrent                    -webengine
 
 # Development
 dev-qt/qtsql                        -mysql
@@ -38,13 +37,14 @@ kde-apps/kwave                      vorbis
 media-libs/phonon                   -vlc
 media-libs/phonon                   gstreamer
 
+# Network
+net-misc/nextcloud-client           dolphin
+net-p2p/ktorrent                    -webengine
+net-p2p/transmission                -gtk
+net-p2p/transmission                -qt6
+net-p2p/transmission                qt5
+
 # PIM
 kde-apps/akonadi                    -mysql
 kde-apps/akonadi                    -postgres
 kde-apps/akonadi                    sqlite
-
-# Special
-net-misc/nextcloud-client           dolphin
-net-p2p/transmission                -gtk
-net-p2p/transmission                -qt6
-net-p2p/transmission                qt5
