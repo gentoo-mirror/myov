@@ -29,9 +29,6 @@ media-libs/phonon                   -vlc
 media-libs/phonon                   gstreamer
 
 # Unnecessary
-kde-apps/akonadi                    -mysql
-kde-apps/akonadi                    -postgres
-kde-apps/akonadi                    sqlite
 kde-plasma/powerdevil               -wireless
 net-p2p/ktorrent                    -webengine
 
@@ -41,6 +38,11 @@ dev-qt/qtsql                        postgres
 dev-qt/qtsql                        sqlite
 kde-apps/kate-addons                lspclient
 kde-apps/kate-addons                sql
+
+# PIM
+kde-apps/akonadi                    -mysql
+kde-apps/akonadi                    -postgres
+kde-apps/akonadi                    sqlite
 
 # Special
 net-misc/nextcloud-client           dolphin
