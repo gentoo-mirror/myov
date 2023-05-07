@@ -6,16 +6,12 @@ app-office/libreoffice              -kde
 media-gfx/darktable                 -kwallet
 
 # Small dependencies
-kde-apps/dolphin                    activities
-kde-apps/kio-extras                 activities
 kde-apps/kio-extras                 nfs
 kde-apps/kio-extras                 taglib
 
 # Necessary
 app-text/poppler                    nss
-kde-frameworks/kauth                policykit
 kde-plasma/plasma-desktop           -kaccounts
-kde-plasma/plasma-desktop           emoji
 kde-plasma/plasma-desktop           ibus
 
 # Unnecessary
