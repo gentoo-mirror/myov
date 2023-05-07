@@ -14,14 +14,11 @@ kde-apps/kwave                      flac
 kde-apps/kwave                      mp3
 kde-apps/kwave                      opus
 kde-apps/kwave                      vorbis
-kde-frameworks/prison               qml
 
 # Necessary
 app-text/poppler                    nss
 dev-qt/qtmultimedia                 gstreamer
-dev-qt/qtmultimedia                 qml
 kde-frameworks/kauth                policykit
-kde-frameworks/kitemmodels          qml
 kde-plasma/plasma-desktop           -kaccounts
 kde-plasma/plasma-desktop           emoji
 kde-plasma/plasma-desktop           ibus
