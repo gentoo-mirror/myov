@@ -1,9 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=Meta package for Qt5-base
-EAPI=8
-HOMEPAGE=https://www.qt.io/
-KEYWORDS=~amd64
-LICENSE=metapackage
-RDEPEND=dev-qt/qtconcurrent:5 dev-qt/qtcore:5 dev-qt/qtdbus:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtopengl:5 dev-qt/qtprintsupport:5 dev-qt/qtsql:5 dev-qt/qttest:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5
-SLOT=5
-_md5_=a2da7c9d5b997c52f65a0a388466025b
