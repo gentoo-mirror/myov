@@ -56,6 +56,29 @@ app-accessibility/speech-dispatcher python
 app-arch/brotli                     python
 
 
+##################################### Editors
+#                                   #                   #
+
+# Neovim
+app-editors/neovim                  -lua_single_target_lua5-1
+app-editors/neovim                  lua_single_target_luajit
+dev-lua/lpeg                        lua_targets_luajit
+dev-lua/luv                         -lua_single_target_lua5-1
+dev-lua/luv                         -lua_single_target_lua5-3
+dev-lua/luv                         -lua_single_target_lua5-4
+dev-lua/luv                         lua_targets_luajit
+dev-lua/mpack                       lua_targets_luajit
+
+# Vim
+app-editors/vim                     lua
+app-editors/vim                     python
+app-editors/vim                     vim-pager
+app-editors/vim                     -lua_single_target_lua5-1
+app-editors/vim                     -lua_single_target_lua5-3
+app-editors/vim                     -lua_single_target_luajit
+app-editors/vim                     lua_single_target_lua5-4
+
+
 ##################################### Emacs
 #                                   #                   #
 
