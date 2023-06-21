@@ -277,7 +277,6 @@ www-client/firefox                  hwaccel
 mail-client/thunderbird             -wifi
 mail-client/thunderbird             hardened
 mail-client/thunderbird             hwaccel
-dev-libs/sexp                       static-libs         # Required by "system-librnp".
 
 # W3M
 www-client/w3m                      imlib               # Support displaying images.
