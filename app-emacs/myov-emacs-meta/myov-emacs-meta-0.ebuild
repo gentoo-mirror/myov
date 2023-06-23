@@ -87,7 +87,6 @@ RDEPEND="
 	polyglot? (
 		app-emacs/bnf-mode
 		app-emacs/boogie-friends
-		app-emacs/csharp-mode
 		app-emacs/d-mode
 		app-emacs/dockerfile-mode
 		app-emacs/emacs-bazel-mode
