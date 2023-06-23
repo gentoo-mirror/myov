@@ -83,6 +83,12 @@ gnome-base/gvfs                     fuse
 # Webkit-GTK
 net-libs/webkit-gtk                 gstreamer
 
+# GNOME-Boxes
+app-emulation/qemu                  smartcard           # Required by Spice-GTK.
+app-emulation/spice                 smartcard           # Required by Spice-GTK.
+net-misc/spice-gtk                  smartcard
+net-misc/spice-gtk                  vala
+
 # wxWidgets
 x11-libs/wxGTK                      curl
 x11-libs/wxGTK                      gstreamer
