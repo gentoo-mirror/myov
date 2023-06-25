@@ -228,8 +228,10 @@ net-nds/rpcbind                     warmstarts
 app-misc/mime-types                 nginx
 
 # Nmap
+net-analyzer/nmap                   lua_single_target_lua5-4
 net-analyzer/nmap                   ncat
 net-analyzer/nmap                   nping
+net-analyzer/nmap                   nse
 
 # RabbitMQ
 net-libs/rabbitmq-c                 tools
