@@ -53,8 +53,9 @@ RDEPEND="
 	python? (
 		dev-python/autopep8
 		dev-python/black
+		dev-python/build
 		dev-python/coverage
-		dev-python/jupyter
+		dev-python/ipython
 		dev-python/numpy
 		dev-python/pandas
 		dev-python/pip

@@ -108,7 +108,6 @@ RDEPEND="
 	)
 	python? (
 		app-emacs/elpy
-		app-emacs/emacs-ipython-notebook
 		dev-python/ipython
 	)
 "
