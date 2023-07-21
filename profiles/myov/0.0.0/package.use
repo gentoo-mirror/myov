@@ -66,7 +66,7 @@ dev-lua/lpeg                        lua_targets_luajit
 dev-lua/luv                         -lua_single_target_lua5-1
 dev-lua/luv                         -lua_single_target_lua5-3
 dev-lua/luv                         -lua_single_target_lua5-4
-dev-lua/luv                         lua_targets_luajit
+dev-lua/luv                         lua_single_target_luajit
 dev-lua/mpack                       lua_targets_luajit
 
 # Vim
