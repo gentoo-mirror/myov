@@ -262,3 +262,5 @@ app-emulation/libvirt               qemu
 app-emulation/libvirt               virt-network
 app-emulation/qemu                  ssh
 net-dns/dnsmasq                     script
+net-libs/gnutls                     pkcs11
+net-libs/gnutls                     tools
