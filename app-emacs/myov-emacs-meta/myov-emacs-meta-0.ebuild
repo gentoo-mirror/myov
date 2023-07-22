@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+git gui +guile +java +net ocaml +package-developer +polyglot +python"
+IUSE="+git gui +guile +java +net ocaml +package-developer +polyglot +python +www"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -26,6 +26,7 @@ RDEPEND="
 	app-emacs/editorconfig-emacs
 	app-emacs/highlight-indentation
 	app-emacs/ivy-rich
+	app-emacs/lsp-mode
 	app-emacs/org-appear
 	app-emacs/rainbow-delimiters
 	app-emacs/rainbow-mode
@@ -97,7 +98,6 @@ RDEPEND="
 		app-emacs/haskell-mode
 		app-emacs/haxe-mode
 		app-emacs/julia-mode
-		app-emacs/lsp-mode
 		app-emacs/lua-mode
 		app-emacs/markdown-mode
 		app-emacs/meson-mode
@@ -109,5 +109,11 @@ RDEPEND="
 	python? (
 		app-emacs/elpy
 		dev-python/ipython
+	)
+	www? (
+		app-emacs/js-comint
+		app-emacs/nginx-mode
+		app-emacs/restclient
+		app-emacs/vue-mode
 	)
 "
