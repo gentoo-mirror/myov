@@ -5,6 +5,7 @@
 app-emacs/myov-emacs-meta:net - Pull in packages for configuration of or interaction with network-related services
 app-emacs/myov-emacs-meta:package-developer - Pull in packages for Emacs package development and testing
 app-emacs/myov-emacs-meta:polyglot - Pull in packages for many different programming language modes
+app-emacs/myov-emacs-meta:www - Pull in packages for website development
 dev-util/myov-academia-meta:android - Pull in Android development packages
 dev-util/myov-academia-meta:cxx - Pull in C/C++ development packages
 dev-util/myov-academia-meta:latex - Pull in LaTeX development packages
