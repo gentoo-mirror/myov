@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+  <maintainer type="person">
+    <email>xgqt@gentoo.org</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <upstream>
+    <maintainer status="active">
+      <email>xgqt@gentoo.org</email>
+      <name>Maciej Barć</name>
+    </maintainer>
+    <bugs-to>https://gitlab.com/xgqt/xgqt-python-app-porttail/-/issues/</bugs-to>
+    <remote-id type="gitlab">xgqt/xgqt-python-app-porttail</remote-id>
+  </upstream>
+</pkgmetadata>
