@@ -88,6 +88,8 @@ app-editors/emacs                   dynamic-loading
 app-editors/emacs                   games
 app-editors/emacs                   json
 app-editors/emacs                   libxml2
+app-editors/emacs                   sqlite
+app-editors/emacs                   tree-sitter
 app-emacs/emacs-common              games
 
 
