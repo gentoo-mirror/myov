@@ -12,7 +12,7 @@ games-misc/dice 1.0.0 9999: Roll some dice
 games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Grateful Gead song lyrics
 kde-apps/myov-kde-meta 0: Meta package for KDE packages, custom selection
 sys-apps/myov-base-meta 0: Meta package for basic system packages
-sys-apps/qbwrap 1.0.0_alpha5 1.9999: Quick Bubblewrap chroot management tool
+sys-apps/qbwrap 1.0.0 1.9999: Quick Bubblewrap chroot management tool
 sys-fs/ncdu-c 1.18: NCurses Disk Usage
 x11-misc/myov-enlightenment-meta 0: Meta package for Enlightenment packages
 x11-themes/echo-icon-theme 0.3.89.0_pre20081031 9999: SVG icon theme from the Fedora Echo Icon project
