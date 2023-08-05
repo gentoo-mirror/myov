@@ -75,6 +75,10 @@ media-sound/timidity++              -gtk
 net-dialup/ppp                      -gtk
 sys-auth/polkit                     -gtk
 
+# Core GNOME desktop components
+gnome-base/gnome-shell              -networkmanager     # Required by GDM.
+gnome-base/gnome-control-center     -cups               # "cups" pulls in samba
+
 # GVFS
 gnome-base/gvfs                     -samba
 gnome-base/gvfs                     archive
