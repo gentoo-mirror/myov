@@ -31,6 +31,30 @@ RDEPEND="
 "
 BDEPEND="
 	${RDEPEND}
+	sys-apps/texinfo
 "
 
 DOCS=( README.md )
+
+distutils_enable_tests pytest
+
+src_compile() {
+	distutils-r1_src_compile
+
+	cd ../${PN}-info || die
+	makeinfo ${PN}.texi || die
+}
+
+src_test() {
+	cd ../${PN}-app-test || die
+	distutils-r1_src_test
+}
+
+src_install() {
+	distutils-r1_src_install
+
+	doinfo ../${PN}-info/${PN}.info
+	dodoc -r ../${PN}-examples/Examples
+
+	einstalldocs
+}
