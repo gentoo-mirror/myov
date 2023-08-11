@@ -74,8 +74,6 @@ RDEPEND="
 	package-developer? (
 		app-emacs/assess
 		app-emacs/buttercup
-		app-emacs/cask
-		app-emacs/cask-mode
 		app-emacs/eldev
 		app-emacs/ert-runner
 		app-emacs/flycheck-package
