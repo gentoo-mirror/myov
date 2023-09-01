@@ -27,12 +27,12 @@ RDEPEND="
 	sys-devel/gdb
 	sys-fs/dfc
 	sys-fs/dosfstools
-	sys-fs/mdadm
 	sys-process/audit
 	sys-process/htop
 	sys-process/lsof
 	!prefix? (
 		app-admin/sysstat
+		sys-fs/mdadm
 		sys-process/cronie
 	)
 	archive? (
