@@ -14,6 +14,7 @@ IUSE="+git gui +guile +java +net ocaml +package-developer +polyglot +python +www
 RESTRICT="bindist"
 
 RDEPEND="
+	app-admin/emacs-updater
 	sys-apps/eless
 
 	app-emacs/amx
