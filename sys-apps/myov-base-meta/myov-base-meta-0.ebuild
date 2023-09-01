@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,12 +10,11 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+archive +crypt emacs +gentoo grub +hardware +network"
+IUSE="+archive +crypt emacs +gentoo grub +hardware +network prefix"
 RESTRICT="bindist"
 
 RDEPEND="
 	app-admin/rsyslog
-	app-admin/sysstat
 	app-misc/tmux
 	app-shells/bash-completion[eselect(+)]
 	app-shells/zsh[unicode(+)]
@@ -33,6 +32,9 @@ RDEPEND="
 	sys-process/cronie
 	sys-process/htop
 	sys-process/lsof
+	!prefix? (
+		app-admin/sysstat
+	)
 	archive? (
 		app-arch/bzip2
 		app-arch/dpkg
