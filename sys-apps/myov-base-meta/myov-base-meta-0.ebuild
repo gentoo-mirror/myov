@@ -34,6 +34,11 @@ RDEPEND="
 		app-admin/sysstat
 		sys-fs/mdadm
 		sys-process/cronie
+		network? (
+			net-fs/nfs-utils
+			net-ftp/lftp
+			net-misc/whois
+		)
 	)
 	archive? (
 		app-arch/bzip2
@@ -109,16 +114,13 @@ RDEPEND="
 		net-analyzer/tcptraceroute
 		net-analyzer/traceroute
 		net-dns/bind-tools
-		net-fs/nfs-utils
 		net-fs/sshfs
-		net-ftp/lftp
 		net-misc/curl
 		net-misc/iperf
 		net-misc/iputils
 		net-misc/mosh
 		net-misc/ntp
 		net-misc/socat
-		net-misc/whois
 	)
 "
 
