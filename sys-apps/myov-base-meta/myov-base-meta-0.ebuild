@@ -29,11 +29,11 @@ RDEPEND="
 	sys-fs/dosfstools
 	sys-fs/mdadm
 	sys-process/audit
-	sys-process/cronie
 	sys-process/htop
 	sys-process/lsof
 	!prefix? (
 		app-admin/sysstat
+		sys-process/cronie
 	)
 	archive? (
 		app-arch/bzip2
