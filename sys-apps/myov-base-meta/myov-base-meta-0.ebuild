@@ -37,7 +37,6 @@ RDEPEND="
 		network? (
 			net-fs/nfs-utils
 			net-ftp/lftp
-			net-misc/whois
 		)
 	)
 	archive? (
@@ -121,6 +120,7 @@ RDEPEND="
 		net-misc/mosh
 		net-misc/ntp
 		net-misc/socat
+		net-misc/whois
 	)
 "
 
