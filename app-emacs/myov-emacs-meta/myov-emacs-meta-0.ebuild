@@ -39,6 +39,12 @@ RDEPEND="
 	app-emacs/which-key
 	app-emacs/yasnippet
 	app-emacs/yasnippet-snippets
+
+	|| (
+		app-text/aspell
+		app-text/hunspell
+	)
+
 	git? (
 		app-emacs/diff-hl
 		app-emacs/git-modes
