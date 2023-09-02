@@ -98,7 +98,6 @@ RDEPEND="
 		app-emacs/emacs-bazel-mode
 		app-emacs/fennel-mode
 		app-emacs/fsharp-mode
-		app-emacs/geiser-chez
 		app-emacs/go-mode
 		app-emacs/haskell-mode
 		app-emacs/haxe-mode
