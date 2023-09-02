@@ -39,6 +39,12 @@ RDEPEND="
 	app-emacs/which-key
 	app-emacs/yasnippet
 	app-emacs/yasnippet-snippets
+
+	|| (
+		app-text/aspell
+		app-text/hunspell
+	)
+
 	git? (
 		app-emacs/diff-hl
 		app-emacs/git-modes
@@ -92,7 +98,6 @@ RDEPEND="
 		app-emacs/emacs-bazel-mode
 		app-emacs/fennel-mode
 		app-emacs/fsharp-mode
-		app-emacs/geiser-chez
 		app-emacs/go-mode
 		app-emacs/haskell-mode
 		app-emacs/haxe-mode
