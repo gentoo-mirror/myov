@@ -33,7 +33,7 @@ manifests:
 	$(MANIFEST) $(MANIFEST_FLAGS) $(PWD)
 
 egencache:
-	PORATGE_REPOSITORIES="[myov] location = $(PWD)" \
+	PORTAGE_REPOSITORIES="[myov] location = $(PWD)" \
 		$(EGENCACHE) --repo myov $(EGENCACHE_FLAGS)
 
 clean-metadata-cache:
