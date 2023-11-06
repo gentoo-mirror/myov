@@ -1,0 +1,9 @@
+.cache/
+.devcontainer/
+.git/
+.vscode/
+
+.dir-locals.el
+.editorconfig
+.gitattributes
+.gitignore
