@@ -9,6 +9,8 @@ setup:
 
     COPY --dir . .
 
+    RUN make deps-versions
+
 test:
     FROM +setup
 
