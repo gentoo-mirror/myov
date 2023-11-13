@@ -5,7 +5,6 @@ EAPI=8
 
 DESCRIPTION="Meta package for KDE packages, custom selection"
 HOMEPAGE="https://gitlab.com/xgqt/myov/"
-SRC_URI=""
 
 LICENSE="metapackage"
 SLOT="0"
@@ -28,12 +27,12 @@ RDEPEND="
 	kde-apps/kwalletmanager
 	kde-apps/kwave[flac(+),mp3(+),opus(+)]
 	kde-apps/okular
-	kde-apps/print-manager
 	kde-apps/spectacle
 	kde-misc/krename
 	kde-plasma/breeze-gtk
 	kde-plasma/plasma-browser-integration
 	kde-plasma/plasma-meta
+	kde-plasma/print-manager
 	kde-plasma/xdg-desktop-portal-kde
 	sys-block/partitionmanager
 
