@@ -28,7 +28,6 @@ RDEPEND="
 	kde-apps/kwalletmanager
 	kde-apps/kwave[flac(+),mp3(+),opus(+)]
 	kde-apps/okular
-	kde-apps/print-manager
 	kde-apps/spectacle
 	kde-misc/krename
 	kde-plasma/breeze-gtk
