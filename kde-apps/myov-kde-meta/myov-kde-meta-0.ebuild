@@ -33,6 +33,7 @@ RDEPEND="
 	kde-plasma/breeze-gtk
 	kde-plasma/plasma-browser-integration
 	kde-plasma/plasma-meta
+	kde-plasma/print-manager
 	kde-plasma/xdg-desktop-portal-kde
 	sys-block/partitionmanager
 
