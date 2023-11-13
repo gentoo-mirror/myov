@@ -1,6 +1,6 @@
 ---
 
-image: docker.io/xgqt/ci-gentoo-tools:amd64-nomultilib-openrc-1.0.0.2023.11.05.23.14
+image: docker.io/xgqt/ci-gentoo-tools:amd64-nomultilib-openrc-1.1.0.current
 
 stages:
   - test

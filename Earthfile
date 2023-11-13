@@ -1,6 +1,6 @@
 VERSION 0.7
 
-FROM docker.io/xgqt/ci-gentoo-tools:amd64-nomultilib-openrc-1.0.0.2023.11.05.23.14
+FROM docker.io/xgqt/ci-gentoo-tools:amd64-nomultilib-openrc-1.1.0.current
 
 WORKDIR /earthly-build/myov
 
