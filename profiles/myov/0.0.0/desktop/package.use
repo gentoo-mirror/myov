@@ -261,13 +261,11 @@ media-libs/libvpx                   postproc
 net-libs/nodejs                     inspector           # Needed by chromium and Firefox.
 
 # Chromium
-www-client/chromium                 -component-build
 www-client/chromium                 -custom-cflags
 www-client/chromium                 -headless
 www-client/chromium                 -kerberos
 www-client/chromium                 -official
 www-client/chromium                 -qt5
-www-client/chromium                 -suid
 www-client/chromium                 -widevine
 www-client/chromium                 hangouts
 www-client/chromium                 proprietary-codecs
