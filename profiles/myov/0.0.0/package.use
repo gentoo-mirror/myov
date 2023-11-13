@@ -182,11 +182,9 @@ dev-lang/php                        zip
 
 # Prolog
 dev-lang/swi-prolog                 -java
-dev-lang/swi-prolog                 -libedit
 dev-lang/swi-prolog                 archive
 dev-lang/swi-prolog                 doc
 dev-lang/swi-prolog                 odbc
-dev-lang/swi-prolog                 readline
 dev-lang/swi-prolog                 yaml
 
 # Python

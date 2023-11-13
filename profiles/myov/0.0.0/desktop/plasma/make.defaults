@@ -4,8 +4,6 @@
 USE="
     -gnome
     -gnome-keyring
-    -gnome-online-accounts
-    -nautilus
     -tracker
     gles2
     wayland
