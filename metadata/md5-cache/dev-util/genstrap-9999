@@ -8,5 +8,5 @@ LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=app-shells/bash net-misc/wget
 SLOT=0
-_eclasses_=git-r3	5133e393e8717a3a093660f990801dc1
+_eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
 _md5_=73fdb625c2f8442630755eac4255e2fa
