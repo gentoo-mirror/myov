@@ -88,6 +88,7 @@ RDEPEND="
 		app-emacs/emacs-bazel-mode
 		app-emacs/fsharp-mode
 		app-emacs/go-mode
+		app-emacs/groovy-emacs-modes
 		app-emacs/haskell-mode
 		app-emacs/js-comint
 		app-emacs/julia-mode
