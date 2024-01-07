@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,15 +10,14 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+git gui +guile +java +net ocaml +package-developer +polyglot +python +www"
+IUSE="+git gui ocaml +package-developer +polyglot"
 RESTRICT="bindist"
 
 RDEPEND="
 	app-admin/emacs-updater
-	sys-apps/eless
 
 	app-emacs/amx
-	app-emacs/company-math
+	app-emacs/apheleia
 	app-emacs/counsel
 	app-emacs/dashboard
 	app-emacs/deft
@@ -36,6 +35,7 @@ RDEPEND="
 	app-emacs/switch-window
 	app-emacs/undo-tree
 	app-emacs/use-package
+	app-emacs/webpaste
 	app-emacs/which-key
 	app-emacs/yasnippet
 	app-emacs/yasnippet-snippets
@@ -59,19 +59,6 @@ RDEPEND="
 		app-emacs/all-the-icons-ivy-rich
 		app-emacs/emojify
 	)
-	guile? (
-		app-emacs/flycheck-guile
-		app-emacs/geiser-guile
-	)
-	java? (
-		>=virtual/jdk-11
-		app-emacs/lsp-java
-	)
-	net? (
-		app-emacs/apache-mode
-		app-emacs/elpher
-		app-emacs/webpaste
-	)
 	ocaml? (
 		>=dev-lang/ocaml-4.07.0
 		app-emacs/dune-format
@@ -91,33 +78,30 @@ RDEPEND="
 		app-emacs/with-simulated-input
 	)
 	polyglot? (
+		app-emacs/apache-mode
 		app-emacs/bnf-mode
 		app-emacs/boogie-friends
 		app-emacs/d-mode
 		app-emacs/dockerfile-mode
+		app-emacs/elixir-mode
+		app-emacs/elpy
 		app-emacs/emacs-bazel-mode
-		app-emacs/fennel-mode
 		app-emacs/fsharp-mode
 		app-emacs/go-mode
 		app-emacs/haskell-mode
-		app-emacs/haxe-mode
+		app-emacs/js-comint
 		app-emacs/julia-mode
 		app-emacs/lua-mode
 		app-emacs/markdown-mode
 		app-emacs/meson-mode
-		app-emacs/raku-mode
-		app-emacs/rust-mode
-		app-emacs/typescript-mode
-		app-emacs/yaml-mode
-	)
-	python? (
-		app-emacs/elpy
-		dev-python/ipython
-	)
-	www? (
-		app-emacs/js-comint
 		app-emacs/nginx-mode
+		app-emacs/powershell
 		app-emacs/restclient
+		app-emacs/rust-mode
+		app-emacs/systemd-mode
+		app-emacs/typescript-mode
 		app-emacs/vue-mode
+		app-emacs/web-mode
+		app-emacs/yaml-mode
 	)
 "

@@ -7,10 +7,8 @@
     <name>Maciej Barć</name>
   </maintainer>
   <use>
-    <flag name="net">Pull in packages for configuration of or interaction with network-related services</flag>
     <flag name="package-developer">Pull in packages for Emacs package development and testing</flag>
     <flag name="polyglot">Pull in packages for many different programming language modes</flag>
-    <flag name="www">Pull in packages for website development</flag>
   </use>
   <upstream>
     <remote-id type="gitlab">xgqt/myov</remote-id>
