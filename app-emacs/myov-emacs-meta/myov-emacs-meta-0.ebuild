@@ -17,6 +17,7 @@ RDEPEND="
 	app-admin/emacs-updater
 
 	app-emacs/amx
+	app-emacs/apheleia
 	app-emacs/counsel
 	app-emacs/dashboard
 	app-emacs/deft
@@ -82,24 +83,25 @@ RDEPEND="
 		app-emacs/boogie-friends
 		app-emacs/d-mode
 		app-emacs/dockerfile-mode
+		app-emacs/elixir-mode
 		app-emacs/elpy
 		app-emacs/emacs-bazel-mode
-		app-emacs/fennel-mode
 		app-emacs/fsharp-mode
 		app-emacs/go-mode
 		app-emacs/haskell-mode
-		app-emacs/haxe-mode
 		app-emacs/js-comint
 		app-emacs/julia-mode
 		app-emacs/lua-mode
 		app-emacs/markdown-mode
 		app-emacs/meson-mode
 		app-emacs/nginx-mode
-		app-emacs/raku-mode
+		app-emacs/powershell
 		app-emacs/restclient
 		app-emacs/rust-mode
+		app-emacs/systemd-mode
 		app-emacs/typescript-mode
 		app-emacs/vue-mode
+		app-emacs/web-mode
 		app-emacs/yaml-mode
 	)
 "
