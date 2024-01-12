@@ -201,7 +201,6 @@ www-servers/apache                  ldap
 www-servers/apache                  threads
 
 # Curl
-net-libs/nghttp2                    -cxx                # Do not pull in boost
 net-misc/curl                       gopher
 net-misc/curl                       http2
 net-misc/curl                       idn
