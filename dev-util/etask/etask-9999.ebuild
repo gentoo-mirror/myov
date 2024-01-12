@@ -31,7 +31,7 @@ RDEPEND="
 "
 BDEPEND="
 	${COMMON_DEPEND}
-	doc? ( app-doc/doxygen )
+	doc? ( app-text/doxygen )
 "
 
 distutils_enable_tests pytest

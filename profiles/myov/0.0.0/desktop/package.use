@@ -202,7 +202,7 @@ dev-db/postgresql                   kerberos            # Needed by LibreOffice.
 #                                   #                   #
 
 # Qt Exclusions
-app-doc/doxygen                     -qt5
+app-text/doxygen                    -qt5
 media-libs/openal                   -qt5
 net-wireless/wpa_supplicant         -qt5
 
@@ -275,7 +275,6 @@ dev-qt/qtwebchannel                 qml
 sys-libs/zlib                       minizip
 
 # Firefox
-www-client/firefox                  -system-sqlite
 www-client/firefox                  -wifi
 www-client/firefox                  geckodriver
 www-client/firefox                  hardened
