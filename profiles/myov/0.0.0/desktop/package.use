@@ -275,7 +275,6 @@ dev-qt/qtwebchannel                 qml
 sys-libs/zlib                       minizip
 
 # Firefox
-www-client/firefox                  -system-sqlite
 www-client/firefox                  -wifi
 www-client/firefox                  geckodriver
 www-client/firefox                  hardened
