@@ -15,7 +15,7 @@ REQUIRED_USE="android? ( qemu )"
 RESTRICT="bindist"
 
 RDEPEND="
-	app-doc/doxygen[dot(+)]
+	app-text/doxygen[dot(+)]
 	app-text/pdfgrep
 	dev-vcs/git
 	dev-vcs/git-lfs

@@ -11,7 +11,7 @@ dev-libs/boost                      python
 dev-libs/boost                      tools
 
 # Doxygen
-app-doc/doxygen                     dot
+app-text/doxygen                    dot
 
 # Gnuplot
 sci-visualization/gnuplot           bitmap
