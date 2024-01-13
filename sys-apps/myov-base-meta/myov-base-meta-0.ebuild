@@ -19,12 +19,12 @@ RDEPEND="
 	app-shells/bash-completion[eselect(+)]
 	app-shells/zsh[unicode(+)]
 	app-text/tree
+	dev-debug/gdb
 	dev-util/strace
 	dev-util/trace-cmd
 	dev-vcs/git[gpg(+)]
 	sys-apps/busybox
 	sys-block/parted
-	sys-devel/gdb
 	sys-fs/dfc
 	sys-fs/dosfstools
 	sys-process/audit
