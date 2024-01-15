@@ -3,12 +3,12 @@
 
 <pkgmetadata>
   <maintainer type="person">
-    <email>xgqt@riseup.net</email>
+    <email>xgqt@xgqt.org</email>
     <name>Maciej Barć</name>
   </maintainer>
   <upstream>
     <maintainer status="active">
-      <email>xgqt@riseup.net</email>
+      <email>xgqt@xgqt.org</email>
       <name>Maciej Barć</name>
     </maintainer>
     <bugs-to>https://gitlab.com/xgqt/python-deckmaster/</bugs-to>

@@ -1,4 +1,4 @@
-# Copyright (c) 2021-2022, Maciej Barć <xgqt@riseup.net>
+# Copyright (c) 2021-2022, Maciej Barć <xgqt@xgqt.org>
 # Licensed under the GNU GPL v2 License
 
 
