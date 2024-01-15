@@ -1,6 +1,6 @@
 VERSION 0.7
 
-FROM docker.io/xgqt/ci-gentoo-tools:amd64-nomultilib-openrc-1.1.0.current
+FROM docker.io/xgqt/ci-gentoo-tools:1.3.0.current-nomultilib-openrc
 
 WORKDIR /earthly-build/myov
 
@@ -9,6 +9,7 @@ setup:
 
     COPY --dir . .
 
+    RUN egencache --jobs 16 --load-average 2 --update
     RUN make deps-versions
 
 test:
