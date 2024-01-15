@@ -1,6 +1,6 @@
 ---
 
-image: docker.io/xgqt/ci-gentoo-tools:amd64-nomultilib-openrc-1.1.0.current
+image: docker.io/xgqt/ci-gentoo-tools:1.3.0.current-nomultilib-openrc
 
 stages:
   - test
@@ -10,5 +10,6 @@ test:
   timeout: 20 minutes
 
   script:
+    - egencache --jobs 16 --load-average 2 --update
     - make deps-versions
     - make test
