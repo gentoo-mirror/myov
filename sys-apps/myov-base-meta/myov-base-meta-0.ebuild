@@ -20,7 +20,7 @@ RDEPEND="
 	app-shells/zsh[unicode(+)]
 	app-text/tree
 	dev-debug/gdb
-	dev-util/strace
+	dev-debug/strace
 	dev-util/trace-cmd
 	dev-vcs/git[gpg(+)]
 	sys-apps/busybox
