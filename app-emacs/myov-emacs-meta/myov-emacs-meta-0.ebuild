@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+git gui ocaml +package-developer +polyglot"
+IUSE="+gentoo +git gui ocaml +package-developer +polyglot"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -45,6 +45,13 @@ RDEPEND="
 		app-text/hunspell
 	)
 
+	gentoo? (
+		app-emacs/company-ebuild
+		app-emacs/ebuild-mode
+		app-emacs/emacs-ebuild-snippets
+		app-emacs/nxml-gentoo-schemas
+		dev-util/pkgcheck[emacs]
+	)
 	git? (
 		app-emacs/diff-hl
 		app-emacs/git-modes
