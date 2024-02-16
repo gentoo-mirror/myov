@@ -53,7 +53,6 @@ RDEPEND="
 		media-sound/cantata
 		media-sound/clementine
 		media-sound/quodlibet
-		media-video/vlc[X(+)?,ffmpeg(+)]
 	)
 	|| (
 		net-p2p/transmission[qt5]
@@ -68,9 +67,15 @@ RDEPEND="
 		x11-base/xorg-server
 		x11-apps/xinput
 	)
-	accessibility? ( kde-apps/kdeaccessibility-meta )
-	android? ( kde-misc/kdeconnect[X(+)?] )
-	dvd? ( kde-apps/k3b[dvd(+)] )
+	accessibility? (
+		kde-apps/kdeaccessibility-meta
+	)
+	android? (
+		kde-misc/kdeconnect[X(+)?]
+	)
+	dvd? (
+		kde-apps/k3b[dvd(+)]
+	)
 	fonts? (
 		media-fonts/cantarell
 		media-fonts/cascadia-code
@@ -94,5 +99,7 @@ RDEPEND="
 		dev-util/vulkan-tools
 		media-video/libva-utils
 	)
-	wayland? ( app-misc/wayland-utils )
+	wayland? (
+		app-misc/wayland-utils
+	)
 "
