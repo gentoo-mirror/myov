@@ -17,15 +17,16 @@ RESTRICT="bindist"
 RDEPEND="
 	app-text/doxygen[dot(+)]
 	app-text/pdfgrep
-	dev-vcs/git
 	dev-vcs/git-lfs
 	media-gfx/graphviz[pdf(+),python(+),svg(+)]
+
 	virtual/jdk
 	virtual/pandoc
+
 	|| ( app-office/libreoffice-bin app-office/libreoffice[pdfimport(+)] )
 	|| ( dev-util/shellcheck-bin dev-util/shellcheck )
+
 	android? (
-		dev-util/android-studio
 		dev-util/android-tools
 	)
 	cxx? (
@@ -36,6 +37,7 @@ RDEPEND="
 	)
 	emacs? (
 		app-emacs/myov-emacs-meta[git(+)]
+
 		latex? (
 			app-emacs/auctex
 			app-emacs/biblio
@@ -61,7 +63,6 @@ RDEPEND="
 		dev-python/pip
 		dev-python/pylint
 		dev-python/pytest
-		dev-python/responses
 		dev-python/scipy
 		dev-python/sphinx
 		dev-python/tox
