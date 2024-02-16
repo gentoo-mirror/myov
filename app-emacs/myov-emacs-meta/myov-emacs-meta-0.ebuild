@@ -57,7 +57,6 @@ RDEPEND="
 		app-emacs/git-modes
 		app-emacs/magit
 		app-emacs/projectile
-		dev-vcs/git
 	)
 	gui? (
 		app-editors/emacs[gui(+)]
