@@ -15,5 +15,4 @@ sys-apps/myov-base-meta 0: Meta package for basic system packages
 sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
 sys-fs/ncdu-c 1.18: NCurses Disk Usage
 www-client/firefox-developer 122.0: Firefox browser developer edition
-x11-misc/myov-enlightenment-meta 0: Meta package for Enlightenment packages
 x11-themes/echo-icon-theme 0.3.89.0_pre20081031 9999: SVG icon theme from the Fedora Echo Icon project
