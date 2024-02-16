@@ -1,4 +1,4 @@
-VERSION 0.7
+VERSION 0.8
 
 FROM docker.io/xgqt/ci-gentoo-tools:1.3.0.current-nomultilib-openrc
 
