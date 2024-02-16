@@ -13,8 +13,30 @@ KEYWORDS="~amd64 ~x86"
 IUSE="+archive +crypt emacs +gentoo grub +hardware +network prefix"
 RESTRICT="bindist"
 
-RDEPEND="
+NO_PREFIX_DEPEND="
 	app-admin/rsyslog
+	app-admin/sysstat
+	sys-fs/mdadm
+	sys-process/audit
+	sys-process/cronie
+
+	crypt? (
+		sys-fs/cryptsetup
+		sys-fs/lvm2
+
+		grub? (
+			sys-boot/grub[device-mapper(+)]
+		)
+	)
+	grub? (
+		sys-boot/grub[mount(+)]
+	)
+	network? (
+		net-fs/nfs-utils
+		net-ftp/lftp
+	)
+"
+RDEPEND="
 	app-misc/tmux
 	app-shells/bash-completion[eselect(+)]
 	app-shells/zsh[unicode(+)]
@@ -27,18 +49,13 @@ RDEPEND="
 	sys-block/parted
 	sys-fs/dfc
 	sys-fs/dosfstools
-	sys-process/audit
 	sys-process/htop
 	sys-process/lsof
+
 	!prefix? (
-		app-admin/sysstat
-		sys-fs/mdadm
-		sys-process/cronie
-		network? (
-			net-fs/nfs-utils
-			net-ftp/lftp
-		)
+		${NO_PREFIX_DEPEND}
 	)
+
 	archive? (
 		app-arch/bzip2
 		app-arch/dpkg
@@ -53,14 +70,10 @@ RDEPEND="
 		app-arch/xz-utils
 		app-arch/zip
 	)
-	crypt? (
-		sys-fs/cryptsetup
-		sys-fs/lvm2
-		grub? ( sys-boot/grub[device-mapper(+)] )
-	)
 	emacs? (
 		app-admin/emacs-updater
 		app-editors/emacs
+
 		gentoo? (
 			app-emacs/ebuild-mode
 			app-emacs/nxml-gentoo-schemas
@@ -81,13 +94,13 @@ RDEPEND="
 		dev-util/pkgcheck
 		dev-util/pkgdev
 		sys-devel/crossdev
+
 		hardware? (
 			app-portage/cpuid2cpuflags
 			app-admin/eclean-kernel
 			sys-kernel/genkernel
 		)
 	)
-	grub? ( sys-boot/grub[mount(+)] )
 	hardware? (
 		sys-apps/hwloc
 		sys-apps/i2c-tools
@@ -100,7 +113,10 @@ RDEPEND="
 		sys-kernel/linux-firmware
 		sys-power/powertop
 		sys-process/htop[lm-sensors(+)]
-		network? ( sys-apps/ethtool )
+
+		network? (
+			sys-apps/ethtool
+		)
 	)
 	network? (
 		net-analyzer/arp-scan
