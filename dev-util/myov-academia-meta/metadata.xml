@@ -7,7 +7,6 @@
     <name>Maciej Barć</name>
   </maintainer>
   <use>
-    <flag name="android">Pull in Android development packages</flag>
     <flag name="cxx">Pull in C/C++ development packages</flag>
     <flag name="latex">Pull in LaTeX development packages</flag>
     <flag name="python">Pull in Python development packages</flag>
