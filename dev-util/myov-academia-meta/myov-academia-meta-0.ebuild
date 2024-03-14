@@ -10,8 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="android +cxx emacs +latex +python +qemu"
-REQUIRED_USE="android? ( qemu )"
+IUSE="+cxx +latex +python +qemu"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -19,30 +18,13 @@ RDEPEND="
 	app-text/pdfgrep
 	dev-vcs/git-lfs
 	media-gfx/graphviz[pdf(+),python(+),svg(+)]
-
 	virtual/jdk
-	virtual/pandoc
 
-	|| ( app-office/libreoffice-bin app-office/libreoffice[pdfimport(+)] )
-	|| ( dev-util/shellcheck-bin dev-util/shellcheck )
-
-	android? (
-		dev-util/android-tools
-	)
 	cxx? (
 		dev-cpp/gtest
 		dev-debug/gdb
 		dev-util/ccache
 		dev-util/cppcheck
-	)
-	emacs? (
-		app-emacs/myov-emacs-meta[git(+)]
-
-		latex? (
-			app-emacs/auctex
-			app-emacs/biblio
-			app-emacs/ebib
-		)
 	)
 	latex? (
 		dev-tex/latex-beamer
@@ -53,21 +35,11 @@ RDEPEND="
 		dev-texlive/texlive-xetex
 	)
 	python? (
-		dev-python/autopep8
-		dev-python/black
-		dev-python/build
-		dev-python/coverage
 		dev-python/ipython
 		dev-python/numpy
 		dev-python/pandas
 		dev-python/pip
-		dev-python/pylint
-		dev-python/pytest
 		dev-python/scipy
-		dev-python/sphinx
-		dev-python/tox
-		dev-python/twine
-		dev-python/virtualenv
 	)
 	qemu? (
 		app-emulation/libvirt[qemu(+)]
