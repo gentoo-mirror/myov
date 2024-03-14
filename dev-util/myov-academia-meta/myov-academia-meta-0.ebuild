@@ -11,7 +11,6 @@ LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="+cxx +latex +python +qemu"
-REQUIRED_USE="android? ( qemu )"
 RESTRICT="bindist"
 
 RDEPEND="
