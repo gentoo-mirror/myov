@@ -1,6 +1,5 @@
 ---
-
-image: docker.io/xgqt/ci-gentoo-tools:1.3.0.current-nomultilib-openrc
+image: docker.io/xgqt/ci-gentoo-tools:latest
 
 stages:
   - test
