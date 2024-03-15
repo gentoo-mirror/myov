@@ -39,11 +39,6 @@ cache:
 test:
 	$(PKGCHECK) scan $(SCAN-FLAGS) $(PWD)
 
-.PHONY: deps-versions
-deps-versions:
-	@$(EMERGE) --version
-	@$(PKGCHECK) --version
-
 .PHONY: submodules
 submodules:
 	$(SH) $(PWD)/3rd_party/scripts/src/update-submodules

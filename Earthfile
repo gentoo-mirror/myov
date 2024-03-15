@@ -10,7 +10,6 @@ setup:
     COPY --dir . .
 
     RUN egencache --jobs 16 --load-average 2 --update
-    RUN make deps-versions
 
 test:
     FROM +setup
