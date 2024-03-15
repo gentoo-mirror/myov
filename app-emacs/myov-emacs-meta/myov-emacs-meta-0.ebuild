@@ -30,7 +30,6 @@ RDEPEND="
 	app-emacs/lsp-mode
 	app-emacs/org-appear
 	app-emacs/rainbow-delimiters
-	app-emacs/rainbow-mode
 	app-emacs/spacemacs-theme
 	app-emacs/swiper
 	app-emacs/switch-window
