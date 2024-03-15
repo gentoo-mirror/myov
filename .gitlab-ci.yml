@@ -10,5 +10,4 @@ test:
 
   script:
     - egencache --jobs 16 --load-average 2 --update
-    - make deps-versions
     - make test

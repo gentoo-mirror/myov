@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+gentoo +git gui ocaml +package-developer +polyglot"
+IUSE="+gentoo +git gui ocaml +package-developer"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -24,12 +24,12 @@ RDEPEND="
 	app-emacs/demap
 	app-emacs/diminish
 	app-emacs/editorconfig-emacs
+	app-emacs/flycheck
 	app-emacs/highlight-indentation
 	app-emacs/ivy-rich
 	app-emacs/lsp-mode
 	app-emacs/org-appear
 	app-emacs/rainbow-delimiters
-	app-emacs/rainbow-mode
 	app-emacs/spacemacs-theme
 	app-emacs/swiper
 	app-emacs/switch-window
@@ -39,6 +39,14 @@ RDEPEND="
 	app-emacs/which-key
 	app-emacs/yasnippet
 	app-emacs/yasnippet-snippets
+
+	app-emacs/apache-mode
+	app-emacs/dockerfile-mode
+	app-emacs/markdown-mode
+	app-emacs/meson-mode
+	app-emacs/nginx-mode
+	app-emacs/systemd-mode
+	app-emacs/yaml-mode
 
 	|| (
 		app-text/aspell
@@ -82,33 +90,5 @@ RDEPEND="
 		app-emacs/package-lint
 		app-emacs/undercover
 		app-emacs/with-simulated-input
-	)
-	polyglot? (
-		app-emacs/apache-mode
-		app-emacs/bnf-mode
-		app-emacs/boogie-friends
-		app-emacs/d-mode
-		app-emacs/dockerfile-mode
-		app-emacs/elixir-mode
-		app-emacs/elpy
-		app-emacs/emacs-bazel-mode
-		app-emacs/fsharp-mode
-		app-emacs/go-mode
-		app-emacs/groovy-emacs-modes
-		app-emacs/haskell-mode
-		app-emacs/js-comint
-		app-emacs/julia-mode
-		app-emacs/lua-mode
-		app-emacs/markdown-mode
-		app-emacs/meson-mode
-		app-emacs/nginx-mode
-		app-emacs/powershell
-		app-emacs/restclient
-		app-emacs/rust-mode
-		app-emacs/systemd-mode
-		app-emacs/typescript-mode
-		app-emacs/vue-mode
-		app-emacs/web-mode
-		app-emacs/yaml-mode
 	)
 "
