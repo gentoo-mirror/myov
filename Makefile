@@ -1,58 +1,49 @@
-# Copyright (c) 2021-2022, Maciej Barć <xgqt@xgqt.org>
-# Licensed under the GNU GPL v2 License
+EGENCACHE               := egencache
+EMERGE                  := emerge
+ENV                     := env
+PKGCHECK                := pkgcheck
+PKGDEV                  := pkgdev
+RM                      := rm  -f -r
+SH                      := bash
 
+METADATA                := $(PWD)/metadata
+SCAN-CONFIG             := $(METADATA)/pkgcheck.conf
 
-EGENCACHE       := egencache
-EMERGE          := emerge
-PKGCHECK        := pkgcheck
-PKGDEV          := pkgdev
-RM              := rm
-RMDIR           := $(RM) -r
-SH              := sh
+NPROC                   := $(shell nproc || echo 1)
 
-MANIFEST        := $(PKGDEV) manifest
-SCAN            := $(PKGCHECK) scan
+MANIFEST-FLAGS          := --verbose
+EGENCACHE-FLAGS         := --jobs $(NPROC) --load-average $(NPROC) --verbose --update
+SCAN-FLAGS              := --config $(SCAN-CONFIG) --jobs=$(NPROC) --verbose
 
-METADATA        := $(PWD)/metadata
+.PHONY: all
+all:
+	$(MAKE) manifests
+	$(MAKE) test
 
-SCAN_CONFIG     := $(METADATA)/pkgcheck.conf
+.PHONY: clean
+clean:
+	$(RM) $(METADATA)/md5-cache
 
-NPROC           := $(shell nproc || echo 1)
-
-MANIFEST_FLAGS  := --verbose
-EGENCACHE_FLAGS := --jobs $(NPROC) --load-average $(NPROC) --verbose --update
-SCAN_FLAGS      := --config $(SCAN_CONFIG) --jobs=$(NPROC) --verbose
-
-
-all: manifests test
-
-
-# Regeneration
-
+.PHONY: manifests
 manifests:
-	$(MANIFEST) $(MANIFEST_FLAGS) $(PWD)
+	$(PKGDEV) manifest $(MANIFEST-FLAGS) $(PWD)
 
-egencache:
-	PORTAGE_REPOSITORIES="[myov] location = $(PWD)" \
-		$(EGENCACHE) --repo myov $(EGENCACHE_FLAGS)
+.PHONY: cache
+cache:
+	$(ENV) PORTAGE_REPOSITORIES="[myov] location = $(PWD)" \
+		$(EGENCACHE) --repo myov $(EGENCACHE-FLAGS)
 
-clean-metadata-cache:
-	$(RMDIR) $(METADATA)/md5-cache
+	$(PKGCHECK) cache --update
 
-clean: clean-metadata-cache
-
-
-# Test
-
+.PHONY: test
 test:
-	$(SCAN) $(SCAN_FLAGS) $(PWD)
+	$(PKGCHECK) scan $(SCAN-FLAGS) $(PWD)
 
-
-# Auxiliary
-
+.PHONY: deps-versions
 deps-versions:
 	@$(EMERGE) --version
 	@$(PKGCHECK) --version
 
+.PHONY: submodules
 submodules:
 	$(SH) $(PWD)/3rd_party/scripts/src/update-submodules
