@@ -9,7 +9,6 @@
   <use>
     <flag name="gentoo">Pull in Gentoo specific tools</flag>
     <flag name="package-developer">Pull in packages for Emacs package development and testing</flag>
-    <flag name="polyglot">Pull in packages for many different programming language modes</flag>
   </use>
   <upstream>
     <remote-id type="gitlab">xgqt/myov</remote-id>
