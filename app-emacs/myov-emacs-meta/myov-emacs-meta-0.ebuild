@@ -20,7 +20,6 @@ RDEPEND="
 	app-emacs/apheleia
 	app-emacs/counsel
 	app-emacs/dashboard
-	app-emacs/deft
 	app-emacs/demap
 	app-emacs/diminish
 	app-emacs/editorconfig-emacs
