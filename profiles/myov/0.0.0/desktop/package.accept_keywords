@@ -1,15 +1,6 @@
 # myov:myov/0.0.0/desktop/package.accept_keywords
 
 
-##################################### Graphics
-#                                   #                   #
-
-# GIMP
-<media-gfx/gimp-9999:0/3            **
-media-libs/babl
-media-libs/gegl
-
-
 ##################################### Java
 #                                   #                   #
 
