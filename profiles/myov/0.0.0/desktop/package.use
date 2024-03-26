@@ -202,7 +202,6 @@ dev-db/postgresql                   kerberos            # Needed by LibreOffice.
 #                                   #                   #
 
 # Qt Exclusions
-app-text/doxygen                    -qt5
 media-libs/openal                   -qt5
 net-wireless/wpa_supplicant         -qt5
 
