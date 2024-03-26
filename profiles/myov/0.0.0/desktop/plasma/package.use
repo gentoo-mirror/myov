@@ -36,8 +36,8 @@ media-libs/phonon                   gstreamer
 net-misc/nextcloud-client           dolphin
 net-p2p/ktorrent                    -webengine
 net-p2p/transmission                -gtk
-net-p2p/transmission                -qt6
-net-p2p/transmission                qt5
+net-p2p/transmission                -qt5
+net-p2p/transmission                qt6
 
 # PIM
 kde-apps/akonadi                    -mysql

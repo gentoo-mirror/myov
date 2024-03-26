@@ -202,7 +202,6 @@ dev-db/postgresql                   kerberos            # Needed by LibreOffice.
 #                                   #                   #
 
 # Qt Exclusions
-app-text/doxygen                    -qt5
 media-libs/openal                   -qt5
 net-wireless/wpa_supplicant         -qt5
 
@@ -225,7 +224,8 @@ dev-qt/qtwebengine                  widgets
 #                                   #                   #
 
 # Audacity
-media-sound/audacity                ffmpeg vamp
+media-sound/audacity                ffmpeg
+media-sound/audacity                vamp
 
 # Strawberry
 media-sound/strawberry              -mtp
@@ -239,7 +239,7 @@ media-libs/chromaprint              tools
 #                                   #                   #
 
 # Flatpak
-kde-plasma/discover                 flatpak             # Most Discover functionality ;-)
+kde-plasma/discover                 flatpak             # Most of Discover's functionality.
 sys-apps/bubblewrap                 -suid               # Needed by many applications.
 
 
@@ -284,13 +284,3 @@ www-client/firefox                  hwaccel
 mail-client/thunderbird             -wifi
 mail-client/thunderbird             hardened
 mail-client/thunderbird             hwaccel
-
-# W3M
-www-client/w3m                      imlib               # Support displaying images.
-
-# Lightspark
-www-plugins/lightspark              curl
-www-plugins/lightspark              ffmpeg
-www-plugins/lightspark              nsplugin
-www-plugins/lightspark              ppapi
-www-plugins/lightspark              rtmp
