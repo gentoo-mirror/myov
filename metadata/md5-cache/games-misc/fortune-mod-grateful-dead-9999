@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=games-misc/fortune-mod
 SLOT=0
 _eclasses_=git-r3	86fa1f157b70b9d2ff340c4633b1cf4b
-_md5_=089ba874feeacd6fb3ab8a3849a2e46e
+_md5_=b9e77fda5627507094beabab18650e9c
