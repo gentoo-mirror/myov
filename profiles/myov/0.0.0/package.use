@@ -237,6 +237,7 @@ net-libs/rabbitmq-c                 tools
 
 # Rsync
 net-misc/rsync                      lz4
+net-misc/rsync                      system-zlib
 net-misc/rsync                      zstd
 
 # Samba
