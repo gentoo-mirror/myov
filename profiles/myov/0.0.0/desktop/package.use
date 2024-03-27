@@ -10,6 +10,10 @@ app-admin/keepassxc                 -network
 
 # GPG
 app-crypt/gpgme                     python
+app-crypt/qca                       gpg
+app-portage/gemato                  gpg
+dev-vcs/git                         gpg
+kde-frameworks/kwallet              gpg
 
 # GRUB
 sys-boot/grub                       device-mapper mount
@@ -241,6 +245,16 @@ media-libs/chromaprint              tools
 # Flatpak
 kde-plasma/discover                 flatpak             # Most of Discover's functionality.
 sys-apps/bubblewrap                 -suid               # Needed by many applications.
+
+# Kernel
+sys-kernel/genkernel                firmware
+sys-kernel/linux-firmware           initramfs
+virtual/linux-sources               firmware
+
+# LVM
+sys-fs/lvm2                         lvm
+sys-fs/udisks                       lvm
+sys-libs/libblockdev                lvm
 
 
 ##################################### Version control
