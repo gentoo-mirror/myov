@@ -1,6 +1,6 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-USE="-gpm pie readline system-zlib threads"
+USE="-gpm pie readline threads"
 
 ACCEPT_LICENSE="*"

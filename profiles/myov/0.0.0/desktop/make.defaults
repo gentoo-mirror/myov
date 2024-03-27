@@ -1,28 +1,7 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-USE="
-    -handbook
-    alsa
-    branding
-    firmware
-    git
-    gpg
-    initramfs
-    ldap
-    lm-sensors
-    lvm
-    mtp
-    policykit
-    raw
-    screencast
-    sound
-    usb
-    v4l
-    vaapi
-    vulkan
-    webp
-    wifi
-"
+USE="-handbook alsa branding git ldap lm-sensors mtp policykit raw screencast
+ sound usb v4l vaapi vulkan webp wifi"
 
 INPUT_DEVICES="libinput"
