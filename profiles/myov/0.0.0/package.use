@@ -86,13 +86,6 @@ app-emacs/emacs-common              games
 app-text/texlive-core               xetex
 
 
-##################################### Sandbox
-#                                   #                   #
-
-# Bubblewrap
-sys-apps/bubblewrap                 suid
-
-
 ##################################### System
 #                                   #                   #
 
