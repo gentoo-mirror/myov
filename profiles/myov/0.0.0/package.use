@@ -68,19 +68,6 @@ dev-lua/luv                         -lua_single_target_lua5-4
 dev-lua/luv                         lua_single_target_luajit
 dev-lua/mpack                       lua_targets_luajit
 
-# Vim
-app-editors/vim                     lua
-app-editors/vim                     python
-app-editors/vim                     vim-pager
-app-editors/vim                     -lua_single_target_lua5-1
-app-editors/vim                     -lua_single_target_lua5-3
-app-editors/vim                     -lua_single_target_luajit
-app-editors/vim                     lua_single_target_lua5-4
-
-
-##################################### Emacs
-#                                   #                   #
-
 # GNU Emacs
 app-editors/emacs                   -lcms
 app-editors/emacs                   dynamic-loading
