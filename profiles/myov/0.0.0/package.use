@@ -6,7 +6,6 @@
 
 # Boost
 dev-libs/boost                      context
-dev-libs/boost                      lzma
 dev-libs/boost                      python
 dev-libs/boost                      tools
 
@@ -112,14 +111,14 @@ sys-apps/bubblewrap                 suid
 
 # Busybox
 sys-apps/busybox                    -pam
-sys-apps/busybox                    static syslog
+sys-apps/busybox                    static
+sys-apps/busybox                    syslog
 sys-libs/libxcrypt                  static-libs
 virtual/libcrypt                    static-libs
 
 # Fwupd
 sys-apps/fwupd                      bash-completion
 sys-apps/fwupd                      gnutls
-sys-apps/fwupd                      lzma
 sys-apps/fwupd                      nvme
 sys-apps/fwupd                      synaptics
 sys-apps/fwupd                      uefi
