@@ -67,7 +67,6 @@ RDEPEND="
 		app-arch/tar
 		app-arch/unrar
 		app-arch/unzip
-		app-arch/xz-utils
 		app-arch/zip
 	)
 	emacs? (

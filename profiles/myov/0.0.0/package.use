@@ -6,7 +6,6 @@
 
 # Boost
 dev-libs/boost                      context
-dev-libs/boost                      lzma
 dev-libs/boost                      python
 dev-libs/boost                      tools
 
@@ -69,19 +68,6 @@ dev-lua/luv                         -lua_single_target_lua5-4
 dev-lua/luv                         lua_single_target_luajit
 dev-lua/mpack                       lua_targets_luajit
 
-# Vim
-app-editors/vim                     lua
-app-editors/vim                     python
-app-editors/vim                     vim-pager
-app-editors/vim                     -lua_single_target_lua5-1
-app-editors/vim                     -lua_single_target_lua5-3
-app-editors/vim                     -lua_single_target_luajit
-app-editors/vim                     lua_single_target_lua5-4
-
-
-##################################### Emacs
-#                                   #                   #
-
 # GNU Emacs
 app-editors/emacs                   -lcms
 app-editors/emacs                   dynamic-loading
@@ -100,26 +86,19 @@ app-emacs/emacs-common              games
 app-text/texlive-core               xetex
 
 
-##################################### Sandbox
-#                                   #                   #
-
-# Bubblewrap
-sys-apps/bubblewrap                 suid
-
-
 ##################################### System
 #                                   #                   #
 
 # Busybox
 sys-apps/busybox                    -pam
-sys-apps/busybox                    static syslog
+sys-apps/busybox                    static
+sys-apps/busybox                    syslog
 sys-libs/libxcrypt                  static-libs
 virtual/libcrypt                    static-libs
 
 # Fwupd
 sys-apps/fwupd                      bash-completion
 sys-apps/fwupd                      gnutls
-sys-apps/fwupd                      lzma
 sys-apps/fwupd                      nvme
 sys-apps/fwupd                      synaptics
 sys-apps/fwupd                      uefi
@@ -131,6 +110,11 @@ sys-libs/openipmi                   python
 
 # Linux utils
 sys-apps/util-linux                 -static-libs
+
+# LVM
+sys-fs/lvm2                         lvm
+sys-fs/udisks                       lvm
+sys-libs/libblockdev                lvm
 
 # OpenRC
 sys-apps/openrc                     sysv-utils
@@ -144,6 +128,9 @@ app-admin/rsyslog                   uuid
 
 # SANE
 media-gfx/sane-backends             -sane_backends_escl
+
+# Sandboxes
+sys-apps/bubblewrap                 -suid               # Needed by many applications.
 
 
 ##################################### Languages
