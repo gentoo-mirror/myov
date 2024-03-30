@@ -111,6 +111,11 @@ sys-libs/openipmi                   python
 # Linux utils
 sys-apps/util-linux                 -static-libs
 
+# LVM
+sys-fs/lvm2                         lvm
+sys-fs/udisks                       lvm
+sys-libs/libblockdev                lvm
+
 # OpenRC
 sys-apps/openrc                     sysv-utils
 
@@ -123,6 +128,9 @@ app-admin/rsyslog                   uuid
 
 # SANE
 media-gfx/sane-backends             -sane_backends_escl
+
+# Sandboxes
+sys-apps/bubblewrap                 -suid               # Needed by many applications.
 
 
 ##################################### Languages
