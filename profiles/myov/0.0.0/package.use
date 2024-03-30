@@ -92,7 +92,6 @@ app-text/texlive-core               xetex
 # Busybox
 sys-apps/busybox                    -pam
 sys-apps/busybox                    static
-sys-apps/busybox                    syslog
 sys-libs/libxcrypt                  static-libs
 virtual/libcrypt                    static-libs
 
