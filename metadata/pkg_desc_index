@@ -11,5 +11,6 @@ games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Gratef
 kde-apps/myov-kde-meta 0: Meta package for KDE packages, custom selection
 sys-apps/myov-base-meta 0: Meta package for basic system packages
 sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
+sys-cluster/k3s-bin 1.29.4: Lightweight Kubernetes (binary package)
 sys-fs/ncdu-c 1.18: NCurses Disk Usage
 www-client/firefox-developer 122.0: Firefox browser developer edition
