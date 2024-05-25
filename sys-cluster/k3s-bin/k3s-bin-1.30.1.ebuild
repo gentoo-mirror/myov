@@ -9,7 +9,7 @@ DESCRIPTION="Lightweight Kubernetes (binary package)"
 HOMEPAGE="https://k3s.io/
 	https://github.com/k3s-io/k3s/"
 SRC_URI="https://github.com/k3s-io/k3s/releases/download/v${PV}+k3s1/k3s
-	-> ${PN}-amd64"
+	-> ${P}-amd64"
 S="${WORKDIR}"
 
 LICENSE="Apache-2.0"
@@ -27,7 +27,7 @@ RDEPEND="
 QA_PREBUILT="*"
 
 src_unpack() {
-	cp "${DISTDIR}/${PN}-amd64" "${WORKDIR}/k3s" || die
+	cp "${DISTDIR}/${P}-amd64" "${WORKDIR}/k3s" || die
 }
 
 src_install() {
