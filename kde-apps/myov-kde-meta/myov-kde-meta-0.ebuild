@@ -49,6 +49,7 @@ RDEPEND="
 	)
 	|| (
 		media-sound/strawberry
+		media-sound/lollypop
 		media-sound/elisa
 		media-sound/cantata
 		media-sound/clementine
