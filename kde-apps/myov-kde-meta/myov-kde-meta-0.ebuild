@@ -18,7 +18,6 @@ RDEPEND="
 	kde-apps/dolphin-plugins-git
 	kde-apps/ffmpegthumbs
 	kde-apps/filelight
-	kde-apps/kamoso
 	kde-apps/kate
 	kde-apps/kcalc
 	kde-apps/kdialog[X(+)?]
@@ -46,6 +45,10 @@ RDEPEND="
 	|| (
 		media-video/mpv[X(+)?]
 		media-video/vlc[X(+)?,ffmpeg(+),v4l(+)]
+	)
+	|| (
+		kde-apps/kamoso
+		media-video/cheese
 	)
 	|| (
 		media-sound/strawberry
