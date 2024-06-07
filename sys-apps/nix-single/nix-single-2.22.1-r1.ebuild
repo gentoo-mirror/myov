@@ -52,7 +52,7 @@ src_configure() {
 	tc-export CC CXX
 
 	local -a conf_opts=(
-		--localstatedir="/nix/com"
+		--localstatedir="/nix/var"
 		--sharedstatedir="/nix/var"
 
 		--enable-largefile
