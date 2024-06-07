@@ -100,8 +100,8 @@ src_install() {
 	rm -r "${D}/usr/"{include,lib64/pkgconfig} || die
 	rm -r "${D}/usr/lib/"{systemd,tmpfiles.d} || die
 
-	keepdir /nix/com /nix/com/nix /nix/store /nix/var
-	fperms 1775 /nix/com /nix/com/nix /nix/store /nix/var
+	keepdir /nix/store /nix/var /nix/var/nix
+	fperms 1775 /nix/store /nix/var /nix/var/nix
 }
 
 pkg_postinst() {
