@@ -26,8 +26,19 @@ SLOT="0"
 
 RDEPEND="
 	!sys-apps/nix
+
+	app-arch/brotli:=
+	app-arch/libarchive:=
+	dev-db/sqlite:3=
+	dev-libs/boost:=
+	dev-libs/libgit2:=
+	dev-libs/libsodium:=
+	dev-libs/openssl:=
+	net-misc/curl
+	sys-libs/libseccomp
+	sys-libs/readline:=
 "
-BDEPEND="
+DEPEND="
 	${RDEPEND}
 "
 
