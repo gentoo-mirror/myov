@@ -3,6 +3,7 @@ app-admin/pystow 1.2.3 9999: GNU Stow rewritten in Python
 app-emacs/emacs-eie 1.0.0 9999: Run a Emacs batch process REPL inside Emacs
 app-emacs/myov-emacs-meta 0: Meta package for Emacs Lisp packages
 app-portage/porttail 1.0.0_alpha1 1.9999: Dynamically follow and view running Portage builds
+dev-libs/editline 1.17.1-r1: line editing library for UNIX call compatible with the FSF readline
 dev-util/etask 1.2.0 9999: CLI interface to GNU Emacs
 dev-util/myov-academia-meta 0: Meta package for academic packages
 games-board/deckmaster 0.1.0 9999: TCG/CCG deck creation tool
@@ -10,7 +11,7 @@ games-misc/dice 1.0.0 9999: Roll some dice
 games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Grateful Gead song lyrics
 kde-apps/myov-kde-meta 0: Meta package for KDE packages, custom selection
 sys-apps/myov-base-meta 0: Meta package for basic system packages
-sys-apps/nix-single 2.22.1-r2: Nix, the purely functional package manager
+sys-apps/nix-single 2.23.0: Nix, the purely functional package manager
 sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
 sys-cluster/k3s-bin 1.30.1: Lightweight Kubernetes (binary package)
 sys-fs/ncdu-c 1.18: NCurses Disk Usage
