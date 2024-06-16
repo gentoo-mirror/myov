@@ -18,7 +18,7 @@ else
 		-> ${P}.tar.gz"
 	S="${WORKDIR}/nix-${PV}"
 
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64 ~arm64 ~x86"
 fi
 
 LICENSE="LGPL-2.1"
@@ -29,14 +29,15 @@ RDEPEND="
 
 	app-arch/brotli:=
 	app-arch/libarchive:=
+	dev-cpp/nlohmann_json
 	dev-db/sqlite:3=
 	dev-libs/boost:=
+	dev-libs/editline
 	dev-libs/libgit2:=
 	dev-libs/libsodium:=
 	dev-libs/openssl:=
 	net-misc/curl
 	sys-libs/libseccomp
-	sys-libs/readline:=
 "
 DEPEND="
 	${RDEPEND}
@@ -67,7 +68,7 @@ src_configure() {
 		--sharedstatedir="/nix/var"
 
 		--enable-largefile
-		--with-readline-flavor="readline"
+		--with-readline-flavor="editline"
 
 		# FIXME: Patch to re-enable.
 		--disable-gc
