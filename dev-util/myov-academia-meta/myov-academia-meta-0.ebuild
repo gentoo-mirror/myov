@@ -32,7 +32,6 @@ RDEPEND="
 		dev-texlive/texlive-fontsextra
 		dev-texlive/texlive-langpolish
 		dev-texlive/texlive-plaingeneric
-		dev-texlive/texlive-xetex
 	)
 	python? (
 		dev-python/ipython
