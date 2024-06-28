@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DESCRIPTION=Meta package for OCI container packages
+EAPI=8
+HOMEPAGE=https://gitlab.com/xgqt/myov/
+IUSE=+docker
+KEYWORDS=~amd64
+LICENSE=metapackage
+RDEPEND=app-containers/buildah app-containers/distrobox app-containers/earthly app-containers/k3d app-containers/podman app-containers/skopeo sys-cluster/k9scli sys-cluster/kubectl docker? ( app-containers/docker app-containers/docker-buildx app-containers/docker-cli app-containers/docker-compose )
+RESTRICT=bindist
+SLOT=0
+_md5_=431e78f126c0757530911f0e988d3a58

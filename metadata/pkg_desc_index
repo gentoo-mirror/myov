@@ -1,5 +1,6 @@
 app-admin/logrot 1.0.1 9999: Log rotation tool in Python
 app-admin/pystow 1.2.3 9999: GNU Stow rewritten in Python
+app-containers/myov-containers-meta 0: Meta package for OCI container packages
 app-emacs/emacs-eie 1.0.0 9999: Run a Emacs batch process REPL inside Emacs
 app-emacs/myov-emacs-meta 0: Meta package for Emacs Lisp packages
 app-portage/porttail 1.0.0_alpha1 1.9999: Dynamically follow and view running Portage builds
