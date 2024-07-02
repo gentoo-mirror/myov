@@ -29,8 +29,6 @@ kde-apps/kwave                      flac
 kde-apps/kwave                      mp3
 kde-apps/kwave                      opus
 kde-apps/kwave                      vorbis
-media-libs/phonon                   -vlc
-media-libs/phonon                   gstreamer
 
 # Network
 net-misc/nextcloud-client           dolphin
