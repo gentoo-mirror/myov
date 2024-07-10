@@ -8,6 +8,7 @@
   </maintainer>
   <use>
     <flag name="docker">Pull in docker-related packages</flag>
+    <flag name="kubernetes">Pull in kubernetes-related packages</flag>
   </use>
   <upstream>
     <remote-id type="gitlab">xgqt/myov</remote-id>

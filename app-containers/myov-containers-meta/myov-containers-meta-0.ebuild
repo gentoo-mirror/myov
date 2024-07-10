@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+docker"
+IUSE="+docker +kubernetes"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -21,13 +21,16 @@ RDEPEND="
 	app-containers/podman
 	app-containers/skopeo
 
-	sys-cluster/k9scli
-	sys-cluster/kubectl
-
 	docker? (
 		app-containers/docker
 		app-containers/docker-buildx
 		app-containers/docker-cli
 		app-containers/docker-compose
+	)
+
+	kubernetes? (
+		app-admin/helm
+		sys-cluster/k9scli
+		sys-cluster/kubectl
 	)
 "
