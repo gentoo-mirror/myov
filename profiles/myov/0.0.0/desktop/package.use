@@ -284,7 +284,6 @@ sys-libs/zlib                       minizip
 
 # Firefox
 www-client/firefox                  -wifi
-www-client/firefox                  geckodriver
 www-client/firefox                  hardened
 www-client/firefox                  hwaccel
 
