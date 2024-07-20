@@ -33,7 +33,11 @@ NO_PREFIX_DEPEND="
 	)
 	network? (
 		net-fs/nfs-utils
-		net-ftp/lftp
+
+		|| (
+			net-ftp/ncftp
+			net-ftp/lftp
+		)
 	)
 "
 RDEPEND="
