@@ -10,5 +10,5 @@ LICENSE=LGPL-2.1
 RDEPEND=!sys-apps/nix app-arch/brotli:= app-arch/libarchive:= dev-cpp/nlohmann_json dev-db/sqlite:3= dev-libs/boost:= dev-libs/editline dev-libs/libgit2:= dev-libs/libsodium:= dev-libs/openssl:= net-misc/curl sys-libs/libseccomp
 SLOT=0
 SRC_URI=https://github.com/NixOS/nix/archive/refs/tags/2.23.0.tar.gz -> nix-single-2.23.0.tar.gz
-_eclasses_=gnuconfig	a397adda6984a4c423e28ac274c1ba98	toolchain-funcs	0c713337f7872f1a002cecaaea9bef73	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	5f49a16f67f81bdf873e3d1f10b10001	autotools	d12ccbad07b44642a75ac97a3334d8e0
+_eclasses_=gnuconfig	a397adda6984a4c423e28ac274c1ba98	toolchain-funcs	5f8f1dc0c94e007fa08af4e98a19d0e5	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	5f49a16f67f81bdf873e3d1f10b10001	autotools	d12ccbad07b44642a75ac97a3334d8e0
 _md5_=e099ba4e02e8f7e2c524c5081761e54f
