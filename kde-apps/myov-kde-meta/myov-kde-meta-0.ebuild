@@ -9,7 +9,7 @@ HOMEPAGE="https://gitlab.com/xgqt/myov/"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="X android +accessibility dvd +fonts +graphics vulkan wayland"
+IUSE="X +android +accessibility dvd +fonts +graphics vulkan +wayland"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -43,7 +43,7 @@ RDEPEND="
 	x11-apps/mesa-progs
 
 	|| (
-		media-video/mpv[X(+)?]
+		media-video/mpv[X(+)?,wayland(+)?]
 		media-video/vlc[X(+)?,ffmpeg(+),v4l(+)]
 	)
 	|| (
