@@ -33,9 +33,7 @@ RDEPEND="
 	app-emacs/swiper
 	app-emacs/switch-window
 	app-emacs/undo-tree
-	app-emacs/use-package
 	app-emacs/webpaste
-	app-emacs/which-key
 	app-emacs/yasnippet
 	app-emacs/yasnippet-snippets
 
@@ -46,6 +44,9 @@ RDEPEND="
 	app-emacs/nginx-mode
 	app-emacs/systemd-mode
 	app-emacs/yaml-mode
+
+	|| ( >=app-editors/emacs-31.0.0 app-emacs/which-key )
+	|| ( >=app-editors/emacs-31.0.0 app-emacs/use-package )
 
 	|| (
 		app-text/aspell
