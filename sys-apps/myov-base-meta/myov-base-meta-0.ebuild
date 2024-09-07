@@ -14,6 +14,7 @@ IUSE="+archive +crypt emacs +gentoo grub +hardware +network prefix"
 RESTRICT="bindist"
 
 NO_PREFIX_DEPEND="
+	app-admin/logrotate
 	app-admin/rsyslog
 	app-admin/sysstat
 	sys-fs/mdadm
@@ -93,6 +94,7 @@ RDEPEND="
 		app-portage/elsw
 		app-portage/gentoolkit
 		app-portage/portage-utils
+		app-portage/pram
 		app-portage/smart-live-rebuild
 		dev-util/pkgcheck
 		dev-util/pkgdev
