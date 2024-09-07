@@ -5,7 +5,6 @@ EAPI=8
 
 DESCRIPTION="Meta package for academic packages"
 HOMEPAGE="https://gitlab.com/xgqt/myov/"
-SRC_URI=""
 
 LICENSE="metapackage"
 SLOT="0"
