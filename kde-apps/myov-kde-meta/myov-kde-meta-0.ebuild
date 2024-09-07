@@ -14,6 +14,7 @@ RESTRICT="bindist"
 
 RDEPEND="
 	app-cdr/dolphin-plugins-mountiso
+	app-cdr/isoimagewriter
 	kde-apps/ark
 	kde-apps/dolphin-plugins-git
 	kde-apps/ffmpegthumbs
@@ -27,7 +28,9 @@ RDEPEND="
 	kde-apps/kwave[flac(+),mp3(+),opus(+)]
 	kde-apps/okular
 	kde-apps/spectacle
+	kde-misc/kclock
 	kde-misc/krename
+	kde-misc/kweather
 	kde-plasma/breeze-gtk
 	kde-plasma/plasma-browser-integration
 	kde-plasma/plasma-meta

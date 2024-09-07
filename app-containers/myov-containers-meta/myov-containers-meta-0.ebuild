@@ -5,7 +5,6 @@ EAPI=8
 
 DESCRIPTION="Meta package for OCI container packages"
 HOMEPAGE="https://gitlab.com/xgqt/myov/"
-SRC_URI=""
 
 LICENSE="metapackage"
 SLOT="0"
