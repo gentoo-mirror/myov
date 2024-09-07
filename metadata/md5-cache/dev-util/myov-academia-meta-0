@@ -8,4 +8,4 @@ LICENSE=metapackage
 RDEPEND=app-text/doxygen[dot(+)] app-text/pdfgrep dev-vcs/git-lfs media-gfx/graphviz[pdf(+),python(+),svg(+)] virtual/jdk cxx? ( dev-cpp/gtest dev-debug/gdb dev-util/ccache dev-util/cppcheck ) latex? ( dev-tex/latex-beamer dev-tex/latexmk dev-texlive/texlive-fontsextra dev-texlive/texlive-langpolish dev-texlive/texlive-plaingeneric ) python? ( dev-python/ipython dev-python/numpy dev-python/pandas dev-python/pip dev-python/scipy ) qemu? ( app-emulation/libvirt[qemu(+)] app-emulation/virt-manager app-emulation/virt-viewer )
 RESTRICT=bindist
 SLOT=0
-_md5_=2cec3b9d5c512e185a21b79505482d64
+_md5_=3d1db1ff0942b52207b52a175d2a3008
