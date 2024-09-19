@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit autotools edo toolchain-funcs
+inherit autotools check-reqs edo toolchain-funcs
 
 DESCRIPTION="Nix, the purely functional package manager"
 HOMEPAGE="https://nixos.org/nix
@@ -18,7 +18,7 @@ else
 		-> ${P}.tar.gz"
 	S="${WORKDIR}/nix-${PV}"
 
-	KEYWORDS="~amd64 ~arm64 ~x86"
+	KEYWORDS="~amd64 ~x86"
 fi
 
 LICENSE="LGPL-2.1"
@@ -30,6 +30,7 @@ RDEPEND="
 	app-arch/brotli:=
 	app-arch/libarchive:=
 	dev-cpp/nlohmann_json
+	dev-cpp/toml11
 	dev-db/sqlite:3=
 	dev-libs/boehm-gc[cxx]
 	dev-libs/boost:=
@@ -44,10 +45,16 @@ DEPEND="
 	${RDEPEND}
 "
 
+CHECKREQS_DISK_BUILD="2000M"
+
 PATCHES=(
 	"${FILESDIR}/${PN}-2.22.1-lib-paths.patch"
 	"${FILESDIR}/${PN}-2.22.1-nix-profile.patch"
 )
+
+pkg_setup() {
+	check-reqs_pkg_setup
+}
 
 src_prepare() {
 	default
