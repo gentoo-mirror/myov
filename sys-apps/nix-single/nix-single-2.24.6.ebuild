@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit autotools toolchain-funcs
+inherit autotools check-reqs edo toolchain-funcs
 
 DESCRIPTION="Nix, the purely functional package manager"
 HOMEPAGE="https://nixos.org/nix
@@ -18,7 +18,7 @@ else
 		-> ${P}.tar.gz"
 	S="${WORKDIR}/nix-${PV}"
 
-	KEYWORDS="~amd64 ~arm64 ~x86"
+	KEYWORDS="~amd64 ~x86"
 fi
 
 LICENSE="LGPL-2.1"
@@ -30,7 +30,9 @@ RDEPEND="
 	app-arch/brotli:=
 	app-arch/libarchive:=
 	dev-cpp/nlohmann_json
+	dev-cpp/toml11
 	dev-db/sqlite:3=
+	dev-libs/boehm-gc[cxx]
 	dev-libs/boost:=
 	dev-libs/editline
 	dev-libs/libgit2:=
@@ -43,10 +45,16 @@ DEPEND="
 	${RDEPEND}
 "
 
+CHECKREQS_DISK_BUILD="2000M"
+
 PATCHES=(
 	"${FILESDIR}/${PN}-2.22.1-lib-paths.patch"
 	"${FILESDIR}/${PN}-2.22.1-nix-profile.patch"
 )
+
+pkg_setup() {
+	check-reqs_pkg_setup
+}
 
 src_prepare() {
 	default
@@ -67,19 +75,15 @@ src_configure() {
 		--localstatedir="/nix/var"
 		--sharedstatedir="/nix/var"
 
+		--enable-gc
 		--enable-largefile
 		--with-readline-flavor="editline"
-
-		# FIXME: Patch to re-enable.
-		--disable-gc
 
 		--disable-cpuid
 		--disable-markdown
 
 		# Disable docs
 		--disable-doc-gen
-		--disable-external-api-docs
-		--disable-internal-api-docs
 
 		# Disable tests
 		--disable-install-unit-tests
@@ -96,10 +100,10 @@ src_test() {
 src_install() {
 	default
 
-	rm "${D}/usr/bin/nix-daemon" || die
-	rm -r "${D}/etc/"{init,profile.d/nix-daemon.{fish,sh}} || die
-	rm -r "${D}/usr/"{include,lib64/pkgconfig} || die
-	rm -r "${D}/usr/lib/"{systemd,tmpfiles.d} || die
+	edo rm "${D}/usr/bin/nix-daemon"
+	edo rm -r "${D}/etc/"{init,profile.d/nix-daemon.{fish,sh}}
+	edo rm -r "${D}/usr/"{include,lib64/pkgconfig}
+	edo rm -r "${D}/usr/lib/"{systemd,tmpfiles.d}
 
 	keepdir /nix/store /nix/var /nix/var/nix
 	fperms 1775 /nix/store /nix/var /nix/var/nix
