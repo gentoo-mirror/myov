@@ -20,7 +20,7 @@ RESTRICT="strip"
 RDEPEND="
 	!sys-cluster/k3s
 	>=app-containers/slirp4netns-1.2.0
-	>=app-misc/yq-3.4.1
+	>=app-misc/yq-go-4.44.3
 	>=net-firewall/conntrack-tools-1.4.8
 "
 
