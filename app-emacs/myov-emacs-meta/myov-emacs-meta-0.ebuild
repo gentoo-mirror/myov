@@ -25,7 +25,6 @@ RDEPEND="
 	app-emacs/flycheck
 	app-emacs/highlight-indentation
 	app-emacs/ivy-rich
-	app-emacs/lsp-mode
 	app-emacs/org-appear
 	app-emacs/rainbow-delimiters
 	app-emacs/spacemacs-theme
@@ -44,8 +43,9 @@ RDEPEND="
 	app-emacs/systemd-mode
 	app-emacs/yaml-mode
 
-	|| ( >=app-editors/emacs-31.0.0 app-emacs/which-key )
+	|| ( >=app-editors/emacs-29.1.0 app-emacs/eglot )
 	|| ( >=app-editors/emacs-31.0.0 app-emacs/use-package )
+	|| ( >=app-editors/emacs-31.0.0 app-emacs/which-key )
 
 	|| (
 		app-text/aspell
