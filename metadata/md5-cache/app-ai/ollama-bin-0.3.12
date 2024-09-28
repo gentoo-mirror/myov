@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst pretend setup
+DESCRIPTION=Local runner for LLMs
+EAPI=8
+HOMEPAGE=https://ollama.com/ https://github.com/ollama/ollama/
+INHERIT=check-reqs
+KEYWORDS=~amd64 ~arm64
+LICENSE=MIT
+SLOT=0
+SRC_URI=amd64? ( https://github.com/ollama/ollama/releases/download/v0.3.12/ollama-linux-amd64.tgz ) arm64? ( https://github.com/ollama/ollama/releases/download/v0.3.12/ollama-linux-arm64.tgz )
+_eclasses_=check-reqs	f5db0b1ec36d0899adc2b41f8c447823
+_md5_=987c74610ce900b2995451770e9de836
