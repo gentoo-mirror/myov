@@ -37,3 +37,7 @@ src_install() {
 
 	dosym -r "/opt/${P}/bin/ollama" "/usr/bin/ollama"
 }
+
+pkg_postinst() {
+	einfo "Browse available models at: https://ollama.com/library/"
+}
