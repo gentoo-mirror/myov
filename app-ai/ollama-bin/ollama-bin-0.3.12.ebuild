@@ -35,5 +35,5 @@ src_install() {
 	doins -r bin
 	doins -r lib
 
-	dosym -r "/opt/${P}/bin/${PN}" "/usr/bin/${PN}"
+	dosym -r "/opt/${P}/bin/ollama" "/usr/bin/ollama"
 }
