@@ -26,8 +26,7 @@ clean:
 
 .PHONY: build
 build:
-	find . -type f -name "*.ebuild" -exec \
-		env FEATURES="test" USE="test" ebuild {} clean test clean \;
+	bash $(PWD)/.aux/admin/build_all.bash
 
 .PHONY: manifests
 manifests:
