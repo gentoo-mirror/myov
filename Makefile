@@ -38,7 +38,3 @@ cache:
 .PHONY: test
 test:
 	$(PKGCHECK) scan $(SCAN-FLAGS) $(PWD)
-
-.PHONY: submodules
-submodules:
-	$(SH) $(PWD)/3rd_party/scripts/src/update-submodules
