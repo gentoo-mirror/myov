@@ -24,6 +24,10 @@ all:
 clean:
 	$(RM) $(METADATA)/md5-cache
 
+.PHONY: build
+build:
+	bash $(PWD)/.aux/admin/build_all.bash
+
 .PHONY: manifests
 manifests:
 	$(PKGDEV) manifest $(MANIFEST-FLAGS) $(PWD)
@@ -38,7 +42,3 @@ cache:
 .PHONY: test
 test:
 	$(PKGCHECK) scan $(SCAN-FLAGS) $(PWD)
-
-.PHONY: submodules
-submodules:
-	$(SH) $(PWD)/3rd_party/scripts/src/update-submodules

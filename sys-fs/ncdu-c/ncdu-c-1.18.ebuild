@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="NCurses Disk Usage"
-HOMEPAGE="https://dev.yorhel.nl/ncdu/"
+HOMEPAGE="https://dev.yorhel.nl/ncdu"
 SRC_URI="https://dev.yorhel.nl/download/ncdu-${PV}.tar.gz"
 S="${WORKDIR}/ncdu-${PV}"
 
