@@ -19,9 +19,21 @@ cd "${SCRIPT_DIR}"
 
 cd ../../
 
+declare -a failed_ebuilds=()
+
 ebuild=""
 
 while read -r ebuild ; do
-    bash ./.aux/admin/build_package.bash "${ebuild}"
+    if bash ./.aux/admin/build_package.bash "${ebuild}" ; then
+        echo " Success, ${ebuild} has passed."
+    else
+        failed_ebuilds+=( "${ebuild}" )
+    fi
 done < \
      <(find . -type f -name "*.ebuild" -not -path "*/.cache/*" | sort)
+
+if [[ -n "${failed_ebuilds[*]}" ]] ; then
+    echo "Failed ebuilds: ${failed_ebuilds[*]}"
+
+    exit 1
+fi
