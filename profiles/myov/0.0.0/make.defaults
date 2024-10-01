@@ -3,4 +3,6 @@
 
 USE="-gpm pie readline threads"
 
+L10N="en en-US"
+
 ACCEPT_LICENSE="*"
