@@ -16,6 +16,11 @@ app-text/doxygen                    dot
 sci-visualization/gnuplot           bitmap
 sci-visualization/gnuplot           latex
 
+# Graphviz
+media-gfx/graphviz                  pdf
+media-gfx/graphviz                  python
+media-gfx/graphviz                  svg
+
 # Numpy
 dev-python/numpy                    lapack
 
