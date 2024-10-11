@@ -27,6 +27,7 @@ RDEPEND="
 	app-emacs/ivy-rich
 	app-emacs/org-appear
 	app-emacs/rainbow-delimiters
+	app-emacs/restclient
 	app-emacs/spacemacs-theme
 	app-emacs/swiper
 	app-emacs/switch-window
@@ -37,10 +38,17 @@ RDEPEND="
 
 	app-emacs/apache-mode
 	app-emacs/dockerfile-mode
+	app-emacs/emacs-bazel-mode
+	app-emacs/go-mode
+	app-emacs/groovy-emacs-modes
+	app-emacs/lua-mode
 	app-emacs/markdown-mode
 	app-emacs/meson-mode
 	app-emacs/nginx-mode
+	app-emacs/ninja-mode
+	app-emacs/rust-mode
 	app-emacs/systemd-mode
+	app-emacs/typescript-mode
 	app-emacs/yaml-mode
 
 	|| ( >=app-editors/emacs-29.1.0 app-emacs/eglot )
