@@ -47,6 +47,7 @@ RDEPEND="
 	dev-util/trace-cmd
 	dev-vcs/git[gpg(+)]
 	sys-apps/busybox
+	sys-apps/moreutils
 	sys-block/parted
 	sys-fs/dfc
 	sys-fs/dosfstools
