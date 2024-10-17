@@ -12,6 +12,8 @@ KEYWORDS="~amd64 ~x86"
 IUSE="+archive +crypt emacs +gentoo grub +hardware +network prefix"
 RESTRICT="bindist"
 
+# "NO_PREFIX_DEPEND" contains packages that do not work or make no sense on
+# the Gentoo EPrefix, so ones available only for your standard Gentoo systems.
 NO_PREFIX_DEPEND="
 	app-admin/logrotate
 	app-admin/rsyslog
@@ -33,11 +35,6 @@ NO_PREFIX_DEPEND="
 	)
 	network? (
 		net-fs/nfs-utils
-
-		|| (
-			net-ftp/ncftp
-			net-ftp/lftp
-		)
 	)
 "
 RDEPEND="
