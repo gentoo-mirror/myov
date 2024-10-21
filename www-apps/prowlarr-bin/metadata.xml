@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+  <maintainer type="person">
+    <email>xgqt@xgqt.org</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <upstream>
+    <bugs-to>https://github.com/Prowlarr/Prowlarr/issues/</bugs-to>
+    <remote-id type="github">Prowlarr/Prowlarr</remote-id>
+  </upstream>
+</pkgmetadata>
