@@ -75,5 +75,5 @@ src_install() {
 	newins "${FILESDIR}/prowlarr.logrotate" prowlarr
 
 	keepdir /var/lib/prowlarr
-	fowners -r prowlarr:prowlarr /var/lib/prowlarr
+	fowners -R prowlarr:prowlarr /var/lib/prowlarr
 }
