@@ -26,6 +26,7 @@ RDEPEND="
 	kde-apps/konsole[X(+)?]
 	kde-apps/kwalletmanager
 	kde-apps/kwave[flac(+),mp3(+),opus(+)]
+	kde-apps/kwrite
 	kde-apps/okular
 	kde-apps/spectacle
 	kde-misc/kclock
