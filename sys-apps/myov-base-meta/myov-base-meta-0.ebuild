@@ -9,7 +9,7 @@ HOMEPAGE="https://gitlab.com/xgqt/myov/"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+archive +crypt emacs +gentoo grub +hardware +network prefix"
+IUSE="+archive +crypt emacs +fonts +gentoo grub +hardware +network prefix"
 RESTRICT="bindist"
 
 # "NO_PREFIX_DEPEND" contains packages that do not work or make no sense on
@@ -29,6 +29,9 @@ NO_PREFIX_DEPEND="
 		grub? (
 			sys-boot/grub[device-mapper(+)]
 		)
+	)
+	fonts? (
+		media-fonts/terminus-font
 	)
 	grub? (
 		sys-boot/grub[mount(+)]
