@@ -16,6 +16,7 @@ kde-apps/myov-kde-meta:graphics - Pull in graphics packages - KDE-related and un
 kde-apps/myov-kde-meta:vulkan - Pull in Vulkan-related packages
 sys-apps/myov-base-meta:archive - Pull in popular archive compressors/extractors
 sys-apps/myov-base-meta:crypt - Pull in encryption packages
+sys-apps/myov-base-meta:fonts - Pull in console fonts
 sys-apps/myov-base-meta:gentoo - Pull in Gentoo specific tools
 sys-apps/myov-base-meta:grub - Pull in GRUB2
 sys-apps/myov-base-meta:hardware - Pull in hardware tools
