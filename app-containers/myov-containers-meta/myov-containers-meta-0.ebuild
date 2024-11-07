@@ -16,9 +16,11 @@ RDEPEND="
 	app-containers/buildah
 	app-containers/distrobox
 	app-containers/earthly
-	app-containers/k3d
 	app-containers/podman
 	app-containers/skopeo
+	app-containers/umoci
+
+	app-containers/k3d
 
 	docker? (
 		app-containers/docker
