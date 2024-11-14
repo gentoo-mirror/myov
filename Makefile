@@ -17,7 +17,7 @@ SCAN-FLAGS              := --config $(SCAN-CONFIG) --jobs=$(NPROC) --verbose
 
 .PHONY: all
 all:
-	$(MAKE) manifests
+	$(MAKE) clean
 	$(MAKE) test
 
 .PHONY: clean
@@ -26,7 +26,7 @@ clean:
 
 .PHONY: build
 build:
-	bash $(PWD)/.aux/admin/build_all.bash
+	$(SH) $(PWD)/.aux/admin/build_all.bash
 
 .PHONY: manifests
 manifests:
@@ -40,5 +40,12 @@ cache:
 	$(PKGCHECK) cache --update
 
 .PHONY: test
+test: cache
+test: manifests
 test:
 	$(PKGCHECK) scan $(SCAN-FLAGS) $(PWD)
+
+.PHONY: push
+push: test
+push:
+	$(SH) $(PWD)/.aux/admin/push_all.bash
