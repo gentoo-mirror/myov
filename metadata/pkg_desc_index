@@ -1,3 +1,5 @@
+acct-group/_iked 0: A group for net-vpn/openiked VPN
+acct-user/_iked 0: A user for net-vpn/openiked VPN
 app-admin/logrot 1.0.1: Log rotation tool in Python
 app-admin/pystow 1.2.3 9999: GNU Stow rewritten in Python
 app-ai/ollama-bin 0.3.12: Local runner for LLMs
@@ -14,6 +16,7 @@ games-board/deckmaster 0.1.0 9999: TCG/CCG deck creation tool
 games-misc/dice 1.0.0 9999: Roll some dice
 games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Grateful Gead song lyrics
 kde-apps/myov-kde-meta 0: Meta package for KDE packages, custom selection
+net-vpn/openiked 7.3: Internet Key Exchange version 2 (IKEv2) daemon
 sys-apps/myov-base-meta 0: Meta package for basic system packages
 sys-apps/nix-single 2.24.6: Nix, the purely functional package manager
 sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
