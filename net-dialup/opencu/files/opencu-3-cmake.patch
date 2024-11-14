@@ -1,0 +1,16 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -36,13 +36,6 @@ endif()
+ 
+ set(CFLAGS)
+ list(APPEND CFLAGS
+-	-O2
+-	-Wall
+-	-Wno-pointer-sign
+-	-Wno-deprecated-declarations
+-	-Wstrict-prototypes
+-	-Wmissing-prototypes
+-	-Wmissing-declarations
+ 	-Wshadow
+ 	-Wpointer-arith
+ 	-Wcast-qual
