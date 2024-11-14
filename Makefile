@@ -34,9 +34,7 @@ manifests:
 
 .PHONY: cache
 cache:
-	$(ENV) PORTAGE_REPOSITORIES="[myov] location = $(PWD)" \
-		$(EGENCACHE) --repo myov $(EGENCACHE-FLAGS)
-
+	-$(EGENCACHE) --repo myov $(EGENCACHE-FLAGS)
 	$(PKGCHECK) cache --update
 
 .PHONY: test
