@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+  <maintainer type="person">
+    <email>xgqt@xgqt.org</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <longdescription lang="en">
+    This package provides a port of OpenBSD's OpenIKED to
+    different Unix-like operating systems, including Linux, macOS,
+    FreeBSD and NetBSD.
+  </longdescription>
+  <upstream>
+    <bugs-to>https://github.com/openiked/openiked-portable/issues/</bugs-to>
+    <remote-id type="github">openiked/openiked-portable</remote-id>
+  </upstream>
+</pkgmetadata>
