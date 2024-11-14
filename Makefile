@@ -44,9 +44,9 @@ test: cache
 test: manifests
 test:
 	$(PKGCHECK) scan $(SCAN-FLAGS)
+	-$(PKGCHECK) scan $(SCAN-FLAGS) --commits
 
 .PHONY: push
 push: test
 push:
-	$(PKGCHECK) scan $(SCAN-FLAGS) --commits
 	$(SH) $(PWD)/.aux/admin/push_all.bash
