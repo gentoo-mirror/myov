@@ -8,6 +8,8 @@ app-emacs/emacs-eie 1.0.0 9999: Run a Emacs batch process REPL inside Emacs
 app-emacs/myov-emacs-meta 0: Meta package for Emacs Lisp packages
 app-portage/porttail 1.0.0_alpha1 1.9999: Dynamically follow and view running Portage builds
 app-shells/bazel-completion 7.3.2: Shell completion for Bazel
+app-text/headerdoc 8.9.31: Engine processing comments from source code and header files
+dev-build/jam 2.6.1: make(1) redux, build utility based on Make
 dev-lang/deno-bin 1.46.3: Modern runtime for JavaScript and TypeScript
 dev-libs/editline 1.17.1-r1: line editing library for UNIX call compatible with the FSF readline
 dev-util/etask 1.2.0 9999: CLI interface to GNU Emacs
