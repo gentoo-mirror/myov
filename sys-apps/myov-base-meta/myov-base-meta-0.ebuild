@@ -17,6 +17,7 @@ RESTRICT="bindist"
 NO_PREFIX_DEPEND="
 	app-admin/logrotate
 	app-admin/rsyslog
+	app-admin/sudo
 	app-admin/sysstat
 	sys-fs/mdadm
 	sys-process/audit
@@ -40,10 +41,14 @@ NO_PREFIX_DEPEND="
 		net-fs/nfs-utils
 	)
 "
+
 RDEPEND="
+	app-editors/vim
 	app-misc/tmux
 	app-shells/bash-completion[eselect(+)]
+	app-shells/tcsh
 	app-shells/zsh[unicode(+)]
+	app-text/htmltidy
 	app-text/tree
 	dev-debug/gdb
 	dev-debug/strace
@@ -54,6 +59,7 @@ RDEPEND="
 	sys-block/parted
 	sys-fs/dfc
 	sys-fs/dosfstools
+	sys-libs/cracklib
 	sys-process/htop
 	sys-process/lsof
 
@@ -62,6 +68,7 @@ RDEPEND="
 	)
 
 	archive? (
+		app-arch/xar
 		app-arch/bzip2
 		app-arch/dpkg
 		app-arch/gzip

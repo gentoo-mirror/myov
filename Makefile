@@ -1,3 +1,7 @@
+# Copyright (c) 2024, Maciej Barć <xgqt@xgqt.org>
+
+PWD                     := $(shell pwd)
+
 EGENCACHE               := egencache
 EMERGE                  := emerge
 ENV                     := env
