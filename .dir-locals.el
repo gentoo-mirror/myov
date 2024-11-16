@@ -3,9 +3,7 @@
 ;; Directory Local Variables
 ;; For more information see (info "(emacs) Directory Variables")
 
-((nil           . ((projectile-project-type . make)
-                   (eval . (progn
-                             (add-hook 'before-save-hook 'whitespace-cleanup)))))
+((nil           . ((projectile-project-type . make)))
  (find-file     . ((require-final-newline . t)
                    (show-trailing-whitespace . t)
                    (tab-width . 4)))
