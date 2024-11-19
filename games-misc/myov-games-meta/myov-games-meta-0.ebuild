@@ -13,10 +13,11 @@ IUSE="+kde"
 RESTRICT="bindist"
 
 # TODO: Find clones: bejeweled, billiard, space cadet (pinball), zuma.
-# TODO: Replace those KDE games: granatier, kbreakout.
+# TODO: Replace those KDE games: granatier.
 
 RDEPEND="
 	games-arcade/gnome-nibbles
+	games-arcade/lbreakouthd
 	games-board/gnome-mahjongg
 	games-board/gnome-mines
 	games-puzzle/gnome-sudoku
