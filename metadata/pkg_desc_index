@@ -14,6 +14,7 @@ dev-lang/deno-bin 1.46.3: Modern runtime for JavaScript and TypeScript
 dev-libs/editline 1.17.1-r1: line editing library for UNIX call compatible with the FSF readline
 dev-util/etask 1.2.0 9999: CLI interface to GNU Emacs
 dev-util/myov-academia-meta 0: Meta package for academic packages
+games-arcade/lbreakouthd 1.1.9: Breakout clone written with the SDL library
 games-board/deckmaster 0.1.0 9999: TCG/CCG deck creation tool
 games-misc/dice 1.0.0 9999: Roll some dice
 games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Grateful Gead song lyrics

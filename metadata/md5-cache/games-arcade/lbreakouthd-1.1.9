@@ -1,0 +1,15 @@
+BDEPEND=nls? ( sys-devel/gettext ) themes? ( app-arch/unzip )
+DEFINED_PHASES=configure install unpack
+DEPEND=acct-group/gamestat media-libs/libpng:= media-libs/libsdl2[joystick,sound,video] media-libs/sdl2-image media-libs/sdl2-mixer media-libs/sdl2-net media-libs/sdl2-ttf sys-libs/zlib:= nls? ( virtual/libintl )
+DESCRIPTION=Breakout clone written with the SDL library
+EAPI=8
+HOMEPAGE=http://lgames.sourceforge.net/LBreakoutHD/
+INHERIT=desktop
+IUSE=+nls +themes
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2+
+RDEPEND=acct-group/gamestat media-libs/libpng:= media-libs/libsdl2[joystick,sound,video] media-libs/sdl2-image media-libs/sdl2-mixer media-libs/sdl2-net media-libs/sdl2-ttf sys-libs/zlib:= nls? ( virtual/libintl )
+SLOT=0
+SRC_URI=https://sourceforge.net/projects/lgames/files/lbreakouthd/lbreakouthd-1.1.9.tar.gz https://sourceforge.net/projects/lgames/files/add-ons/lbreakout2/lbreakout2-levelsets-20160512.tar.gz themes? ( https://sourceforge.net/projects/lgames/files/add-ons/lbreakout2/lbreakout2-themes-20160512.tar.gz )
+_eclasses_=desktop	3a72ffe0d8e1dd73af3a1c8c15a59fed
+_md5_=927da230e4d5dc0ac7bde67b66fc8978
