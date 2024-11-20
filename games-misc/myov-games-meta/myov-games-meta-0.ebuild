@@ -25,9 +25,10 @@ RDEPEND="
 
 	kde? (
 		kde-apps/kapman
+		kde-apps/kbreakout
+		kde-apps/kdiamond
 		kde-apps/knavalbattle
 		kde-apps/knights
 		kde-apps/kpat
-		kde-apps/kdiamond
 	)
 "
