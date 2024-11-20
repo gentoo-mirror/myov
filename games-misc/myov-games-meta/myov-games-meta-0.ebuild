@@ -29,5 +29,6 @@ RDEPEND="
 		kde-apps/knavalbattle
 		kde-apps/knights
 		kde-apps/kpat
+		kde-apps/kdiamond
 	)
 "
