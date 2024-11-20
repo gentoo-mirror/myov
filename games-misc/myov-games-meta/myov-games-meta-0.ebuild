@@ -17,7 +17,6 @@ RESTRICT="bindist"
 
 RDEPEND="
 	games-arcade/gnome-nibbles
-	games-arcade/lbreakouthd
 	games-board/gnome-mahjongg
 	games-board/gnome-mines
 	games-puzzle/gnome-sudoku
