@@ -100,6 +100,9 @@ sys-apps/busybox                    static
 sys-libs/libxcrypt                  static-libs
 virtual/libcrypt                    static-libs
 
+# EXT
+sys-fs/e2fsprogs                    fuse
+
 # Fwupd
 sys-apps/fwupd                      bash-completion
 sys-apps/fwupd                      gnutls
@@ -119,6 +122,11 @@ sys-apps/util-linux                 -static-libs
 sys-fs/lvm2                         lvm
 sys-fs/udisks                       lvm
 sys-libs/libblockdev                lvm
+
+# MC
+app-misc/mc                         sftp
+app-misc/mc                         -X
+app-misc/mc                         -spell
 
 # OpenRC
 sys-apps/openrc                     sysv-utils
@@ -150,25 +158,33 @@ app-eselect/eselect-php             fpm
 dev-lang/php                        acl
 dev-lang/php                        apache2
 dev-lang/php                        bcmath
+dev-lang/php                        berkdb
 dev-lang/php                        cgi
 dev-lang/php                        cjk
 dev-lang/php                        curl
 dev-lang/php                        exif
+dev-lang/php                        ffi
 dev-lang/php                        fpm
 dev-lang/php                        ftp
 dev-lang/php                        gd
 dev-lang/php                        gmp
 dev-lang/php                        intl
+dev-lang/php                        kerberos
 dev-lang/php                        ldap
 dev-lang/php                        pcntl
 dev-lang/php                        pdo
-dev-lang/php                        spell
+dev-lang/php                        postgres
+dev-lang/php                        sockets
+dev-lang/php                        sodium
 dev-lang/php                        sqlite
+dev-lang/php                        sysvipc
 dev-lang/php                        threads
 dev-lang/php                        truetype
+dev-lang/php                        webp
 dev-lang/php                        xmlreader
 dev-lang/php                        xmlwriter
 dev-lang/php                        xpm
+dev-lang/php                        xslt
 dev-lang/php                        zip
 
 # Prolog
@@ -199,6 +215,9 @@ www-servers/apache                  apache2_mpms_worker
 www-servers/apache                  ldap
 www-servers/apache                  threads
 
+# BFP / EBPF
+dev-libs/libbpf                     static-libs
+
 # Curl
 net-misc/curl                       gopher
 net-misc/curl                       http2
@@ -208,6 +227,11 @@ net-misc/curl                       ssh
 net-misc/curl                       ssl
 net-misc/curl                       telnet
 net-misc/curl                       zstd
+
+# CPP-HTTPLib
+dev-cpp/cpp-httplib                 brotli
+dev-cpp/cpp-httplib                 ssl
+dev-cpp/cpp-httplib                 zlib
 
 # LibSSH
 net-libs/libssh                     server
@@ -239,6 +263,14 @@ net-misc/rsync                      lz4
 net-misc/rsync                      system-zlib
 net-misc/rsync                      zstd
 
+# RRDtool
+net-analyzer/rrdtool                graph
+net-analyzer/rrdtool                perl
+net-analyzer/rrdtool                python
+net-analyzer/rrdtool                rrdcgi
+net-analyzer/rrdtool                tcl
+net-analyzer/rrdtool                tcpd
+
 # Samba
 net-fs/samba                        acl
 net-fs/samba                        addc
@@ -251,6 +283,16 @@ net-fs/samba                        winbind
 sys-libs/ldb                        python
 sys-libs/tdb                        python
 sys-libs/tevent                     python
+
+
+##################################### Containers
+#                                   #                   #
+
+# Incus / LXD / LXC
+dev-libs/raft                       lz4
+dev-util/xdelta                     lzma
+sys-fs/squashfs-tools               lzma
+sys-libs/libcap                     static-libs
 
 
 ##################################### Virtualization
