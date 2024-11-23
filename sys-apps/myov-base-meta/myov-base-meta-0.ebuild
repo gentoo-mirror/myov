@@ -46,6 +46,7 @@ RDEPEND="
 	app-editors/vim
 	app-misc/tmux
 	app-shells/bash-completion[eselect(+)]
+	app-shells/loksh
 	app-shells/tcsh
 	app-shells/zsh[unicode(+)]
 	app-text/htmltidy
