@@ -142,7 +142,7 @@ RDEPEND="
 		net-analyzer/tcpdump
 		net-analyzer/tcptraceroute
 		net-analyzer/traceroute
-		net-dns/bind-tools
+		net-dns/bind
 		net-fs/sshfs
 		net-misc/curl
 		net-misc/iperf
