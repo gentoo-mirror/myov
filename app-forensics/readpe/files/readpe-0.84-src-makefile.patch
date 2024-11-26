@@ -1,0 +1,19 @@
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -6,7 +6,7 @@ export PLATFORM_OS := $(shell uname | cut -d_ -f1)
+ ####### Makefile Conventions - Directory variables
+
+ srcdir = .
+-prefix = /usr/local
++prefix = /usr
+
+ exec_prefix = $(prefix)
+ sysconfdir = $(prefix)/etc
+@@ -150,6 +150,6 @@ install: installdirs
+ 	for prog in $(PROGS); do \
+ 		$(INSTALL_PROGRAM) $(INSTALL_FLAGS) $(pev_BUILDDIR)/$$prog $(DESTDIR)$(bindir); \
+ 		$(CHK_FILE_EXISTS) $(MANDIR)/$$prog$(man1ext) && \
+-			gzip -c -9 $(MANDIR)/$$prog$(man1ext) > $(DESTDIR)$(man1dir)/$$prog$(man1ext).gz || \
++			mv $(MANDIR)/$$prog$(man1ext) $(DESTDIR)$(man1dir)/$$prog$(man1ext) || \
+ 			echo -n; \
+ 	done

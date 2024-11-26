@@ -1,0 +1,11 @@
+--- a/lib/libpe/Makefile
++++ b/lib/libpe/Makefile
+@@ -6,7 +6,7 @@ PLATFORM_OS := $(shell uname | cut -d_ -f1)
+ ####### Makefile Conventions - Directory variables
+ 
+ srcdir = .
+-prefix = /usr/local
++prefix = /usr
+ exec_prefix = $(prefix)
+ sysconfdir = $(prefix)/etc
+ includedir = $(prefix)/include
