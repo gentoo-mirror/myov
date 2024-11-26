@@ -29,10 +29,12 @@ RDEPEND="
 	kde-apps/kwrite
 	kde-apps/okular
 	kde-apps/spectacle
+	kde-frameworks/oxygen-icons
 	kde-misc/kclock
 	kde-misc/krename
 	kde-misc/kweather
 	kde-plasma/breeze-gtk
+	kde-plasma/oxygen
 	kde-plasma/plasma-browser-integration
 	kde-plasma/plasma-meta
 	kde-plasma/print-manager
