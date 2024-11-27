@@ -11,7 +11,7 @@ SRC_URI="https://swarm.workshop.perforce.com/downloads/guest/perforce_software/j
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86"
 
 PATCHES=(
 	"${FILESDIR}/jam-2.6.1-jamfile-bin.patch"
