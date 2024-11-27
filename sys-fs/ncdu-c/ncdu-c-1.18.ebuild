@@ -9,7 +9,7 @@ SRC_URI="https://dev.yorhel.nl/download/ncdu-${PV}.tar.gz"
 S="${WORKDIR}/ncdu-${PV}"
 
 LICENSE="MIT"
-SLOT="0"
+SLOT="0/${PV}"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 
 DEPEND="
