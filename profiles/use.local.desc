@@ -22,3 +22,5 @@ sys-apps/myov-base-meta:gentoo - Pull in Gentoo specific tools
 sys-apps/myov-base-meta:grub - Pull in GRUB2
 sys-apps/myov-base-meta:hardware - Pull in hardware tools
 sys-apps/myov-base-meta:network - Pull in network communication/diagnosis tools
+sys-apps/paludis:pbin - Enable PBins, experimental Paludis binary packages
+sys-apps/paludis:search-index - Enable package search index (cave search --index)

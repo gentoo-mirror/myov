@@ -1,0 +1,17 @@
+BDEPEND=app-text/asciidoc app-text/htmltidy app-text/xmlto doc? ( app-text/doxygen ) test? ( dev-cpp/gtest ) app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare pretend setup test
+DEPEND=sys-apps/file search-index? ( dev-db/sqlite:3 ) pbin? ( app-arch/libarchive:= ) xml? ( dev-libs/libxml2:= ) python? ( python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_11? ( dev-libs/boost:=[python,python_targets_python3_11(-)] ) python_single_target_python3_12? ( dev-libs/boost:=[python,python_targets_python3_12(-)] ) python_single_target_python3_13? ( dev-libs/boost:=[python,python_targets_python3_13(-)] ) ) ruby? ( dev-lang/ruby:* )
+DESCRIPTION=Paludis, the other package mangler based on EAPI
+EAPI=8
+HOMEPAGE=https://paludis.exherbolinux.org/ https://gitlab.exherbo.org/paludis/paludis/
+INHERIT=bash-completion-r1 check-reqs cmake python-single-r1
+IUSE=doc pbin python +ruby +search-index test vim-syntax +xml python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13
+KEYWORDS=~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86
+LICENSE=GPL-2+ vim-syntax? ( vim )
+RDEPEND=sys-apps/file search-index? ( dev-db/sqlite:3 ) pbin? ( app-arch/libarchive:= ) xml? ( dev-libs/libxml2:= ) python? ( python_single_target_python3_11? ( dev-lang/python:3.11 ) python_single_target_python3_12? ( dev-lang/python:3.12 ) python_single_target_python3_13? ( dev-lang/python:3.13 ) python_single_target_python3_11? ( dev-libs/boost:=[python,python_targets_python3_11(-)] ) python_single_target_python3_12? ( dev-libs/boost:=[python,python_targets_python3_12(-)] ) python_single_target_python3_13? ( dev-libs/boost:=[python,python_targets_python3_13(-)] ) ) ruby? ( dev-lang/ruby:* )
+REQUIRED_USE=python? ( ^^ ( python_single_target_python3_11 python_single_target_python3_12 python_single_target_python3_13 ) )
+RESTRICT=!test? ( test )
+SLOT=0/3.0.1
+SRC_URI=https://gitlab.exherbo.org/paludis/paludis/-/archive/3.0.1/paludis-3.0.1.tar.bz2
+_eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	bash-completion-r1	767861f3744f589ee5291c1698b1c082	check-reqs	2a9731073c152554078a9a8df8fc0f1b	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	python-utils-r1	2fee95c11e5f883024588d4837db6802	python-single-r1	47d8ac9be330c9366112b78fd4f8ce57
+_md5_=687a9b9d41a32f953da208ca5ae45c32
