@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+  <maintainer type="person">
+    <email>xgqt@xgqt.org</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <longdescription lang="en">
+    This package allows to access CP/M file systems similar to the
+    well-known mtools package, which accesses MSDOS file systems. All CP/M
+    file system features are supported.
+  </longdescription>
+</pkgmetadata>
