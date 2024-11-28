@@ -6,4 +6,7 @@
     <email>xgqt@xgqt.org</email>
     <name>Maciej Barć</name>
   </maintainer>
+  <upstream>
+    <bugs-to>https://chiselapp.com/user/bacon/repository/bacon/home</bugs-to>
+  </upstream>
 </pkgmetadata>

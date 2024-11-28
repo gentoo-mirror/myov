@@ -15,7 +15,7 @@ else
 	SRC_URI="https://github.com/bazelbuild/bazel/archive/${PV}.tar.gz
 		-> ${P}.tar.gz"
 
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86"
 fi
 
 S="${WORKDIR}/bazel-${PV}/scripts/zsh_completion"

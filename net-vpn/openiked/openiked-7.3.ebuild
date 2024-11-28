@@ -21,7 +21,7 @@ else
 		-> ${MY_P}.gh.tar.gz"
 	S="${WORKDIR}/${MY_P}"
 
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86"
 fi
 
 LICENSE="ISC"

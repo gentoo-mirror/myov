@@ -20,7 +20,7 @@ else
 		-> ${P}.gh.tar.gz"
 	S="${WORKDIR}/${PN}-${P}"
 
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64 ~mips ~x86"
 fi
 
 LICENSE="APSL-2"

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+  <maintainer type="person">
+    <email>xgqt@xgqt.org</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <use>
+    <flag name="pbin">Enable PBins, experimental Paludis binary packages</flag>
+    <flag name="search-index">Enable package search index (cave search --index)</flag>
+  </use>
+  <upstream>
+    <bugs-to>https://gitlab.exherbo.org/paludis/paludis/-/issues</bugs-to>
+  </upstream>
+</pkgmetadata>
