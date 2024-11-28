@@ -28,6 +28,7 @@ sys-apps/nix-single 2.24.6: Nix, the purely functional package manager
 sys-apps/paludis 3.0.1: Paludis, the other package mangler based on EAPI
 sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
 sys-cluster/k3s-bin 1.30.1: Lightweight Kubernetes (binary package)
+sys-fs/cpmtools 2.24: Tools to access CP/M file systems
 sys-fs/ncdu-c 1.18: NCurses Disk Usage
 virtual/deno 1: Virtual for deno
 www-apps/prowlarr-bin 1.25.3.4815 1.26.1.4844: An indexer manager/proxy to integrate with your various PVR apps
