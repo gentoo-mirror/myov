@@ -6,6 +6,7 @@ app-containers/myov-containers-meta:docker - Pull in docker-related packages
 app-containers/myov-containers-meta:kubernetes - Pull in kubernetes-related packages
 app-emacs/myov-emacs-meta:gentoo - Pull in Gentoo specific tools
 app-emacs/myov-emacs-meta:package-developer - Pull in packages for Emacs package development and testing
+dev-lang/yabasic:ffi - Enable foreign function interface
 dev-util/myov-academia-meta:cxx - Pull in C/C++ development packages
 dev-util/myov-academia-meta:latex - Pull in LaTeX development packages
 dev-util/myov-academia-meta:python - Pull in Python development packages
