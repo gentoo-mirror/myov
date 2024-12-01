@@ -22,7 +22,7 @@ else
 	SRC_URI="https://gitlab.com/xgqt/xgqt-python-app-${PN}/-/archive/${PV}/xgqt-python-app-${P}.tar.bz2"
 	S="${WORKDIR}/xgqt-python-app-${P}/Source/v${MAJOR}/${PN}-app"
 
-	KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86"
+	KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
 fi
 
 LICENSE="MPL-2.0"
