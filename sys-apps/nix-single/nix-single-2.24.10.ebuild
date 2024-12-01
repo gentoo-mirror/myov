@@ -25,6 +25,7 @@ LICENSE="LGPL-2.1"
 SLOT="0"
 
 RDEPEND="
+	!sys-apps/lix
 	!sys-apps/nix
 
 	app-arch/brotli:=
@@ -105,10 +106,21 @@ src_install() {
 	edo rm -r "${D}/usr/"{include,lib64/pkgconfig}
 	edo rm -r "${D}/usr/lib/"{systemd,tmpfiles.d}
 
-	keepdir /nix/store /nix/var /nix/var/nix
-	fperms 1775 /nix/store /nix/var /nix/var/nix
+	local -a dirs=(
+		/nix
+		/nix/store
+		/nix/var
+		/nix/var/log
+		/nix/var/log/nix
+		/nix/var/log/nix/drvs
+	)
+	local dir=""
+	for dir in "${dirs[@]}"; do
+		keepdir "${dir}"
+		fperms 1755 "${dir}"
+	done
 }
 
 pkg_postinst() {
-	elog "To use for a given user do: chown -R USER:USER /nix"
+	elog 'To use for a given user do: sudo chown -R "${USER}:${USER}" "/nix"'
 }
