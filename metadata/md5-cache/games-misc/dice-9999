@@ -2,10 +2,10 @@ BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=unpack
 DESCRIPTION=Roll some dice
 EAPI=8
-HOMEPAGE=https://gitlab.com/xgqt/dice
+HOMEPAGE=https://gitlab.com/xgqt/dice/
 INHERIT=git-r3
 LICENSE=GPL-3
 PROPERTIES=live
 SLOT=0
 _eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81
-_md5_=a7e5af785db484e9ace76b51e24625c8
+_md5_=22a806b0d7a5cb61aa1fac23e05dee5f
