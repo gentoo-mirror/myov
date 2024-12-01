@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+  <maintainer type="person">
+    <email>xgqt@xgqt.org</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <use>
+    <flag name="ffi">Enable foreign function interface</flag>
+  </use>
+  <upstream>
+    <bugs-to>https://2484.de/yabasic/</bugs-to>
+  </upstream>
+</pkgmetadata>
