@@ -35,7 +35,6 @@ RDEPEND="
 	python? (
 		dev-python/ipython
 		dev-python/numpy
-		dev-python/pandas
 		dev-python/pip
 		dev-python/scipy
 	)

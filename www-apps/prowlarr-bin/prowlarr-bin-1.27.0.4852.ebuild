@@ -13,26 +13,26 @@ BASE_URI="https://github.com/Prowlarr/Prowlarr/releases/download/v${PV}"
 SRC_URI="
 amd64? (
 	elibc_glibc? (
-		${BASE_URI}/Prowlarr.develop.${PV}.linux-core-x64.tar.gz
+		${BASE_URI}/Prowlarr.master.${PV}.linux-core-x64.tar.gz
 	)
 	elibc_musl? (
-		${BASE_URI}/Prowlarr.develop.${PV}.linux-musl-core-x64.tar.gz
+		${BASE_URI}/Prowlarr.master.${PV}.linux-musl-core-x64.tar.gz
 	)
 )
 arm? (
 	elibc_glibc? (
-		${BASE_URI}/Prowlarr.develop.${PV}.linux-core-arm.tar.gz
+		${BASE_URI}/Prowlarr.master.${PV}.linux-core-arm.tar.gz
 	)
 	elibc_musl? (
-		${BASE_URI}/Prowlarr.develop.${PV}.linux-musl-core-arm.tar.gz
+		${BASE_URI}/Prowlarr.master.${PV}.linux-musl-core-arm.tar.gz
 	)
 )
 arm64? (
 	elibc_glibc? (
-		${BASE_URI}/Prowlarr.develop.${PV}.linux-core-arm64.tar.gz
+		${BASE_URI}/Prowlarr.master.${PV}.linux-core-arm64.tar.gz
 	)
 	elibc_musl? (
-		${BASE_URI}/Prowlarr.develop.${PV}.linux-musl-core-arm64.tar.gz
+		${BASE_URI}/Prowlarr.master.${PV}.linux-musl-core-arm64.tar.gz
 	)
 )
 "
