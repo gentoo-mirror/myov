@@ -88,6 +88,7 @@ RDEPEND="
 	fonts? (
 		media-fonts/cantarell
 		media-fonts/cascadia-code
+		media-fonts/dejavu
 		media-fonts/fontawesome
 		media-fonts/jetbrains-mono
 		media-fonts/noto-cjk
