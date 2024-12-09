@@ -133,6 +133,7 @@ RDEPEND="
 	)
 	network? (
 		net-analyzer/arp-scan
+		net-analyzer/ifstat
 		net-analyzer/iftop
 		net-analyzer/iptraf-ng
 		net-analyzer/mtr
