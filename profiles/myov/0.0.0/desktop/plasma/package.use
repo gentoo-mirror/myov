@@ -13,9 +13,6 @@ kde-apps/kio-extras                 taglib
 app-text/poppler                    nss
 kde-plasma/plasma-desktop           ibus
 
-# Unnecessary
-kde-plasma/powerdevil               -wireless
-
 # Development
 dev-qt/qtsql                        -mysql
 dev-qt/qtsql                        postgres
@@ -34,7 +31,6 @@ kde-apps/kwave                      vorbis
 net-misc/nextcloud-client           dolphin
 net-p2p/ktorrent                    -webengine
 net-p2p/transmission                -gtk
-net-p2p/transmission                -qt5
 net-p2p/transmission                qt6
 
 # PIM

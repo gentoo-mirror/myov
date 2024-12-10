@@ -201,8 +201,6 @@ dev-lang/python                     sqlite
 ##################################### Multimedia
 #                                   #                   #
 
-media-libs/phonon                   -vlc
-media-libs/phonon                   gstreamer
 media-libs/phonon                   minimal
 
 

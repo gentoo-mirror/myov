@@ -181,10 +181,6 @@ media-gfx/gimp                      vector-icons
 media-libs/babl                     introspection
 media-libs/gegl                     introspection
 
-# HandBrake
-media-video/handbrake               -fdk
-media-video/handbrake               libav-aac
-
 # Inkscape
 media-gfx/inkscape                  imagemagick
 media-gfx/inkscape                  -spell
@@ -208,15 +204,6 @@ dev-db/postgresql                   kerberos            # Needed by LibreOffice.
 # Qt Exclusions
 media-libs/openal                   -qt5
 net-wireless/wpa_supplicant         -qt5
-
-# Qt Python
-dev-python/PyQt5                    declarative
-dev-python/PyQt5                    designer
-dev-python/PyQt5                    webchannel
-dev-python/PyQt5                    websockets
-dev-python/QtPy                     -sql
-dev-python/QtPy                     gui
-dev-python/QtPy                     printsupport
 
 # Qtwebengine
 dev-qt/qtwebengine                  -bindist
