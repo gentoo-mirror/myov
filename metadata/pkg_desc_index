@@ -15,6 +15,7 @@ dev-db/dbview 1.0.4: View dBase III files
 dev-lang/bacon 5.0.1: BASIC to C translator for Unix systems
 dev-lang/bwbasic 3.30: Bywater interpreter for the BASIC programming language
 dev-lang/deno-bin 1.46.3: Modern runtime for JavaScript and TypeScript
+dev-lang/quickjs 2024.07.27: Small embeddable JavaScript engine
 dev-lang/yabasic 2.90.5: Traditional interpreter for the BASIC language
 dev-libs/editline 1.17.1-r1: line editing library for UNIX call compatible with the FSF readline
 dev-util/etask 1.2.0 9999: CLI interface to GNU Emacs
