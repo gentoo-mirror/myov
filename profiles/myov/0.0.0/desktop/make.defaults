@@ -3,6 +3,6 @@
 
 USE="alsa branding git ldap lm-sensors mtp policykit raw screencast
  sound usb v4l vaapi vulkan webp wifi
- -handbook -phonon"
+ -handbook"
 
 INPUT_DEVICES="libinput"
