@@ -14,15 +14,22 @@ RESTRICT="bindist"
 
 RDEPEND="
 	app-antivirus/clamav
-	dev-lang/php[apache2]
-	net-analyzer/zabbix[agent2,postgres,server]
-	net-firewall/firewalld[gui?]
+	app-backup/restic
+	app-containers/incus
+	app-misc/mc
+	app-misc/uptimed
 
 	dev-db/pg_top
 	dev-db/phppgadmin
-
 	dev-lang/bas
+	dev-lang/php[apache2]
 	dev-lang/quickjs
+	dev-util/0xtools
+	dev-util/perf
+
+	net-analyzer/zabbix[agent2,postgres,server]
+	net-firewall/firewalld[gui?]
+	net-misc/rclone
 
 	www-apps/phpsysinfo
 	www-misc/monitorix
