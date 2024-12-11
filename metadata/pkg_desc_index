@@ -7,6 +7,8 @@ app-containers/myov-containers-meta 0: Meta package for OCI container packages
 app-emacs/emacs-eie 1.0.0 9999: Run a Emacs batch process REPL inside Emacs
 app-emacs/myov-emacs-meta 0: Meta package for Emacs Lisp packages
 app-forensics/readpe 0.84: Multiplatform command line toolkit to work with PE binaries
+app-portage/hook-ccache 0: CCache Portage hook
+app-portage/hook-time 0: Time Portage hook, display time taken by a phase
 app-portage/porttail 1.0.0_alpha1 1.9999: Dynamically follow and view running Portage builds
 app-shells/bazel-completion 7.3.2: Shell completion for Bazel
 app-text/headerdoc 8.9.31: Engine processing comments from source code and header files
