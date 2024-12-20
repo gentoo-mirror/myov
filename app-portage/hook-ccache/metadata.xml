@@ -11,5 +11,6 @@
       <email>xgqt@gentoo.org</email>
       <name>Maciej Barć</name>
     </maintainer>
+    <remote-id type="gitlab">xgqt/myov</remote-id>
   </upstream>
 </pkgmetadata>
