@@ -3,6 +3,8 @@
 
 EAPI=8
 
+inherit flag-o-matic
+
 DESCRIPTION="Roll some dice"
 HOMEPAGE="https://gitlab.com/xgqt/dice/"
 
@@ -18,3 +20,14 @@ fi
 
 LICENSE="GPL-3"
 SLOT="0"
+IUSE="custom-cflags"
+
+src_configure() {
+	if use custom-cflags ; then
+		:
+	else
+		strip-flags
+	fi
+
+	default
+}
