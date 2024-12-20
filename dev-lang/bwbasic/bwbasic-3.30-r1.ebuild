@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit edo toolchain-funcs
+inherit edo flag-o-matic toolchain-funcs
 
 DESCRIPTION="Bywater interpreter for the BASIC programming language"
 HOMEPAGE="https://sourceforge.net/projects/bwbasic/"
@@ -13,6 +13,7 @@ S="${WORKDIR}"
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
+IUSE="custom-cflags"
 
 BDEPEND="
 	app-arch/unzip
@@ -29,6 +30,16 @@ DOCS=( README )
 src_prepare() {
 	edo chmod +x ./configure
 	edo dos2unix ./Makefile.in ./bwb_cmd.c ./configure
+
+	default
+}
+
+src_configure() {
+	if use custom-cflags ; then
+		:
+	else
+		strip-flags
+	fi
 
 	default
 }
