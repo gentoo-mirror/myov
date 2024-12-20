@@ -3,6 +3,8 @@
 
 EAPI=8
 
+inherit flag-o-matic
+
 DESCRIPTION="BASIC to C translator for Unix systems"
 HOMEPAGE="https://www.basic-converter.org/
 	https://chiselapp.com/user/bacon/repository/bacon/home"
@@ -14,7 +16,7 @@ SRC_URI="${REPO_URI}/attachdownload/${P}.tar.gz?page=Downloads&file=${P}.tar.gz
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
-IUSE="gui"
+IUSE="custom-cflags gui"
 
 RDEPEND="
 	gui? (
@@ -27,6 +29,12 @@ DEPEND="
 "
 
 src_configure() {
+	if use custom-cflags ; then
+		:
+	else
+		strip-flags
+	fi
+
 	local -a econfargs=(
 		--with-bash
 		$(use_enable gui gui-gtk4)
