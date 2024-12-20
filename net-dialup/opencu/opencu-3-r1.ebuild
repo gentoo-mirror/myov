@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake
+inherit cmake flag-o-matic
 
 DESCRIPTION="Port of OpenBSD's serial terminal emulator cu(1) to Linux"
 HOMEPAGE="https://github.com/tobhe/opencu/"
@@ -21,8 +21,9 @@ fi
 
 LICENSE="ISC"
 SLOT="0"
+IUSE="custom-cflags"
 
-PATCHES=( "${FILESDIR}/${PN}-3-cmake.patch" )
+PATCHES=( "${FILESDIR}/opencu-3-cmake.patch" )
 
 RDEPEND="
 	dev-libs/libevent:=
@@ -30,3 +31,13 @@ RDEPEND="
 DEPEND="
 	${RDEPEND}
 "
+
+src_configure() {
+	if use custom-cflags ; then
+		:
+	else
+		strip-flags
+	fi
+
+	cmake_src_configure
+}
