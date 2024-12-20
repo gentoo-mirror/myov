@@ -1,9 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=Roll some dice
-EAPI=8
-HOMEPAGE=https://gitlab.com/xgqt/dice/
-KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86
-LICENSE=GPL-3
-SLOT=0
-SRC_URI=https://gitlab.com/xgqt/dice/-/archive/1.0.0/dice-1.0.0.tar.bz2
-_md5_=22a806b0d7a5cb61aa1fac23e05dee5f

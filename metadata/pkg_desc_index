@@ -6,38 +6,39 @@ app-ai/ollama-bin 0.3.12: Local runner for LLMs
 app-containers/myov-containers-meta 0: Meta package for OCI container packages
 app-emacs/emacs-eie 1.0.0 9999: Run a Emacs batch process REPL inside Emacs
 app-emacs/myov-emacs-meta 0: Meta package for Emacs Lisp packages
-app-forensics/readpe 0.84: Multiplatform command line toolkit to work with PE binaries
+app-forensics/readpe 0.84-r1: Multiplatform command line toolkit to work with PE binaries
 app-portage/hook-ccache 0: CCache Portage hook
 app-portage/hook-time 0: Time Portage hook, display time taken by a phase
 app-portage/porttail 1.0.0_alpha1 1.9999: Dynamically follow and view running Portage builds
 app-shells/bazel-completion 7.3.2: Shell completion for Bazel
 app-text/headerdoc 8.9.31: Engine processing comments from source code and header files
-dev-build/jam 2.6.1: make(1) redux, build utility based on Make
-dev-db/dbview 1.0.4: View dBase III files
+dev-build/jam 2.6.1-r1: make(1) redux, build utility based on Make
+dev-db/dbview 1.0.4-r1: View dBase III files
 dev-lang/bacon 5.0.1: BASIC to C translator for Unix systems
-dev-lang/bwbasic 3.30: Bywater interpreter for the BASIC programming language
+dev-lang/bwbasic 3.30-r1: Bywater interpreter for the BASIC programming language
 dev-lang/deno-bin 1.46.3: Modern runtime for JavaScript and TypeScript
-dev-lang/quickjs 2024.07.27: Small embeddable JavaScript engine
-dev-lang/yabasic 2.90.5: Traditional interpreter for the BASIC language
+dev-lang/quickjs 2024.07.27-r1: Small embeddable JavaScript engine
+dev-lang/yabasic 2.90.5-r1: Traditional interpreter for the BASIC language
 dev-libs/editline 1.17.1-r1: line editing library for UNIX call compatible with the FSF readline
 dev-util/etask 1.2.0 9999: CLI interface to GNU Emacs
 dev-util/myov-academia-meta 0: Meta package for academic packages
 games-arcade/lbreakouthd 1.1.9: Breakout clone written with the SDL library
-games-misc/dice 1.0.0 9999: Roll some dice
+games-misc/dice 1.0.0-r1 9999: Roll some dice
 games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Grateful Gead song lyrics
 games-misc/myov-games-meta 0: Meta package for miscellaneous open-source desktop games
 kde-apps/myov-kde-meta 0: Meta package for KDE packages, custom selection
-net-dialup/opencu 3: Port of OpenBSD's serial terminal emulator cu(1) to Linux
-net-vpn/openiked 7.3: Internet Key Exchange version 2 (IKEv2) daemon
-sys-apps/crazydiskinfo 1.1.0: Interactive TUI S.M.A.R.T viewer for Unix systems
+net-dialup/opencu 3-r1: Port of OpenBSD's serial terminal emulator cu(1) to Linux
+net-vpn/openiked 7.3-r1: Internet Key Exchange version 2 (IKEv2) daemon
+sys-apps/crazydiskinfo 1.1.0-r1: Interactive TUI S.M.A.R.T viewer for Unix systems
 sys-apps/myov-base-meta 0-r1: Meta package for basic system packages
 sys-apps/myov-mainstation-meta 0-r1: Meta package for server/workstation with a feeling of a mainframe
-sys-apps/nix-single 2.24.10: Nix, the purely functional package manager
-sys-apps/paludis 3.0.1: Paludis, the other package mangler based on EAPI
+sys-apps/nix-single 2.24.10-r1: Nix, the purely functional package manager
+sys-apps/paludis 3.0.1-r1: Paludis, the other package mangler based on EAPI
 sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
-sys-apps/qdiskinfo 0.3: CrystalDiskInfo alternative for Linux
+sys-apps/qdiskinfo 0.3-r1: CrystalDiskInfo alternative for Linux
 sys-cluster/k3s-bin 1.30.1: Lightweight Kubernetes (binary package)
-sys-fs/cpmtools 2.24: Tools to access CP/M file systems
-sys-fs/ncdu-c 1.18: NCurses Disk Usage
+sys-cluster/pacemaker 2.1.9: Pacemaker CRM
+sys-fs/cpmtools 2.24-r1: Tools to access CP/M file systems
+sys-fs/ncdu-c 1.18-r1: NCurses Disk Usage
 virtual/deno 1: Virtual for deno
 www-apps/prowlarr-bin 1.26.1.4844 1.27.0.4852: An indexer manager/proxy to integrate with your various PVR apps

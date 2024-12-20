@@ -1,11 +1,12 @@
-DEFINED_PHASES=compile prepare
+DEFINED_PHASES=compile configure prepare
 DESCRIPTION=Multiplatform command line toolkit to work with PE binaries
 EAPI=8
 HOMEPAGE=https://github.com/mentebinaria/readpe/
-INHERIT=toolchain-funcs
+INHERIT=flag-o-matic toolchain-funcs
+IUSE=custom-cflags
 KEYWORDS=~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86
 LICENSE=GPL-2+
 SLOT=0
 SRC_URI=https://github.com/mentebinaria/readpe/archive/v0.84.tar.gz -> readpe-0.84.gh.tar.gz
-_eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96
-_md5_=03f0d48c63ab03335cc76a3ce595bace
+_eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe
+_md5_=e9c812e200b82ed9eda14d2a6a83eb81

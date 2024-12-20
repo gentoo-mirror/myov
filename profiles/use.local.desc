@@ -25,3 +25,4 @@ sys-apps/myov-base-meta:hardware - Pull in hardware tools
 sys-apps/myov-base-meta:network - Pull in network communication/diagnosis tools
 sys-apps/paludis:pbin - Enable PBins, experimental Paludis binary packages
 sys-apps/paludis:search-index - Enable package search index (cave search --index)
+sys-cluster/pacemaker:smtp - Enable SMTP support via net-libs/libesmtp
