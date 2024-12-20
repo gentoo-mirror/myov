@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit autotools
+inherit autotools flag-o-matic
 
 DESCRIPTION="Traditional interpreter for the BASIC language"
 HOMEPAGE="https://2484.de/yabasic/"
@@ -12,7 +12,7 @@ SRC_URI="https://2484.de/yabasic/download/${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
-IUSE="X +ffi"
+IUSE="X custom-cflags +ffi"
 
 RDEPEND="
 	sys-libs/ncurses:=
@@ -41,6 +41,12 @@ src_prepare() {
 }
 
 src_configure() {
+	if use custom-cflags ; then
+		:
+	else
+		strip-flags
+	fi
+
 	local -x LIBS="$(pkg-config --libs ncurses)"
 
 	local -a econfargs=(

@@ -21,6 +21,7 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
+IUSE="custom-cflags"
 
 RDEPEND="
 	dev-libs/libatasmart:=
@@ -31,10 +32,21 @@ DEPEND="
 "
 
 src_prepare() {
-	append-cxxflags -std=c++11 -Wall -Wextra
 	cmake_src_prepare
 
 	sed -i -e "s|set.*||g" ./CMakeLists.txt || die
+}
+
+src_configure() {
+	if use custom-cflags ; then
+		:
+	else
+		strip-flags
+	fi
+
+	append-cxxflags -std=c++11 -Wall -Wextra
+
+	cmake_src_configure
 }
 
 src_install() {

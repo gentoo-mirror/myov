@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit autotools check-reqs edo toolchain-funcs
+inherit autotools check-reqs edo flag-o-matic toolchain-funcs
 
 DESCRIPTION="Nix, the purely functional package manager"
 HOMEPAGE="https://nixos.org/nix
@@ -23,6 +23,7 @@ fi
 
 LICENSE="LGPL-2.1"
 SLOT="0"
+IUSE="custom-cflags"
 
 RDEPEND="
 	!sys-apps/lix
@@ -49,8 +50,8 @@ DEPEND="
 CHECKREQS_DISK_BUILD="2000M"
 
 PATCHES=(
-	"${FILESDIR}/${PN}-2.22.1-lib-paths.patch"
-	"${FILESDIR}/${PN}-2.22.1-nix-profile.patch"
+	"${FILESDIR}/nix-single-2.22.1-lib-paths.patch"
+	"${FILESDIR}/nix-single-2.22.1-nix-profile.patch"
 )
 
 pkg_setup() {
@@ -68,8 +69,15 @@ src_prepare() {
 }
 
 src_configure() {
+	if use custom-cflags ; then
+		:
+	else
+		strip-flags
+	fi
+
 	export V="1"
 	local -x CONFIG_SHELL="${BROOT}/bin/bash"
+
 	tc-export CC CXX
 
 	local -a conf_opts=(

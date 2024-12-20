@@ -26,29 +26,35 @@ fi
 
 LICENSE="ISC"
 SLOT="0"
-IUSE="apparmor debug"
+IUSE="apparmor custom-cflags debug"
 
 RDEPEND="
 	acct-group/_iked
 	acct-user/_iked
 	dev-libs/libevent:0=
 	dev-libs/openssl:0=
+
 	apparmor? (
 		sys-apps/apparmor
 	)
+"
+DEPEND="
+	${RDEPEND}
 "
 
 DOC_CONTENTS="Create a key pair if not already present:\\n
 openssl ecparam -genkey -name prime256v1 -noout -out /etc/iked/private/local.key\\n
 openssl ec -in /etc/iked/private/local.key -pubout -out /etc/iked/local.pub\\n\\n"
 
-src_prepare() {
+src_configure() {
+	if use custom-cflags ; then
+		:
+	else
+		strip-flags
+	fi
+
 	append-cflags -mcmodel=large
 
-	cmake_src_prepare
-}
-
-src_configure() {
 	CMAKE_BUILD_TYPE="$(usex debug Debug Release)"
 
 	local -a mycmakeargs=(
