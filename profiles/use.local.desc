@@ -2,6 +2,8 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+app-containers/apptainer:network - Install network plug-ins
+app-containers/apptainer:suid - Install SUID helper binary
 app-containers/myov-containers-meta:docker - Pull in docker-related packages
 app-containers/myov-containers-meta:kubernetes - Pull in kubernetes-related packages
 app-emacs/myov-emacs-meta:gentoo - Pull in Gentoo specific tools
