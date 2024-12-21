@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+  <maintainer type="person">
+    <email>xgqt@xgqt.org</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <use>
+    <flag name="network">Install network plug-ins</flag>
+    <flag name="suid">Install SUID helper binary</flag>
+  </use>
+  <upstream>
+    <bugs-to>https://github.com/apptainer/apptainer/issues/</bugs-to>
+    <remote-id type="github">apptainer/apptainer</remote-id>
+  </upstream>
+</pkgmetadata>
