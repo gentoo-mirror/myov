@@ -152,6 +152,14 @@ src_configure() {
 	econf "${myconf[@]}"
 }
 
+src_compile() {
+	default
+
+	# TODO: Fix "VariableScope: variable 'ED' used in 'src_compile'".
+	mkdir -p "${ED}/usr/share/Lmod/lib" || die
+	emake DESTDIR="${ED}" tcl2lua
+}
+
 src_test() {
 	local -x PATH="${EPREFIX}/opt/hermes/bin:${PATH}"
 
