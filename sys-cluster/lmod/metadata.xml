@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+  <maintainer type="person">
+    <email>xgqt@xgqt.org</email>
+    <name>Maciej Barć</name>
+  </maintainer>
+  <longdescription>
+    Lmod is a lua based program to manage the user environment
+    under Unix systems, specifically designed to easily handle the MODULEPATH
+    Hierarchical problem.  Environment Modules provide a convenient way to
+    dynamically change the users' environment through modulefiles.  This
+    includes easily adding or removing directories to the PATH,
+    LD_LIBRARY_PATH and other environment variables.
+  </longdescription>
+  <upstream>
+    <bugs-to>https://github.com/TACC/Lmod/issues/</bugs-to>
+    <remote-id type="github">TACC/Lmod</remote-id>
+  </upstream>
+</pkgmetadata>
