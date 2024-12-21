@@ -6,7 +6,7 @@ EAPI=8
 LUA_COMPAT=( lua5-{1..3} )
 PYTHON_COMPAT=( python3_{11..13} )
 
-inherit autotools edo flag-o-matic lua-single prefix python-r1
+inherit autotools edo flag-o-matic lua-single python-r1
 
 DESCRIPTION="Environment Module System based on Lua"
 HOMEPAGE="https://lmod.readthedocs.io/en/latest/
