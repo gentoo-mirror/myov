@@ -6,7 +6,7 @@ EAPI=8
 LUA_COMPAT=( lua5-{1..3} )
 PYTHON_COMPAT=( python3_{11..13} )
 
-inherit autotools edo flag-o-matic lua-single prefix python-r1
+inherit autotools edo flag-o-matic lua-single python-r1
 
 DESCRIPTION="Environment Module System based on Lua"
 HOMEPAGE="https://lmod.readthedocs.io/en/latest/
@@ -150,6 +150,14 @@ src_configure() {
 		--without-redirect
 	)
 	econf "${myconf[@]}"
+}
+
+src_compile() {
+	default
+
+	# TODO: Fix "VariableScope: variable 'ED' used in 'src_compile'".
+	mkdir -p "${ED}/usr/share/Lmod/lib" || die
+	emake DESTDIR="${ED}" tcl2lua
 }
 
 src_test() {
