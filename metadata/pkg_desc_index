@@ -39,6 +39,7 @@ sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
 sys-apps/qdiskinfo 0.3-r1: CrystalDiskInfo alternative for Linux
 sys-cluster/environment-modules 5.5.0: Environment Modules provide dynamic modification of user environment
 sys-cluster/k3s-bin 1.30.1: Lightweight Kubernetes (binary package)
+sys-cluster/lmod 8.7.55: Environment Module System based on Lua
 sys-cluster/pacemaker 2.1.9: Pacemaker CRM
 sys-fs/cpmtools 2.24-r1: Tools to access CP/M file systems
 sys-fs/ncdu-c 1.18-r1: NCurses Disk Usage
