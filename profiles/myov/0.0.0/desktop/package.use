@@ -109,6 +109,11 @@ x11-libs/wxGTK                      gstreamer
 x11-base/xorg-server                -suid
 x11-base/xorg-server                xvfb
 
+# digiKam
+media-gfx/digikam                   geolocation
+media-gfx/digikam                   video
+media-libs/vigra                    openexr
+
 # OBS
 media-video/obs-studio              pipewire
 
