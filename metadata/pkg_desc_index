@@ -15,6 +15,7 @@ app-shells/bazel-completion 7.3.2: Shell completion for Bazel
 app-text/headerdoc 8.9.31: Engine processing comments from source code and header files
 dev-build/jam 2.6.1-r1: make(1) redux, build utility based on Make
 dev-db/dbview 1.0.4-r1: View dBase III files
+dev-db/rsm 1.82.4: Implementation of ANSI/MDC Standard M language and database
 dev-lang/bacon 5.0.1: BASIC to C translator for Unix systems
 dev-lang/bwbasic 3.30-r1: Bywater interpreter for the BASIC programming language
 dev-lang/deno-bin 1.46.3: Modern runtime for JavaScript and TypeScript
