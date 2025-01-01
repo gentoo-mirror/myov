@@ -1,4 +1,4 @@
-# Copyright (c) 2024, Maciej Barć <xgqt@xgqt.org>
+# Copyright (c) 2024-2025, Maciej Barć <xgqt@xgqt.org>
 
 PWD                     := $(shell pwd)
 
