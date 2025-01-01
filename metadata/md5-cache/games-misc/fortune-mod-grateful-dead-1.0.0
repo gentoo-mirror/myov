@@ -8,4 +8,4 @@ LICENSE=GPL-3
 RDEPEND=games-misc/fortune-mod
 SLOT=0
 SRC_URI=https://gitlab.com/xgqt/grateful_dead_lyrics/-/archive/1.0.0/grateful_dead_lyrics-1.0.0.tar.bz2
-_md5_=b9e77fda5627507094beabab18650e9c
+_md5_=039967b0a90a41ab1b38941d8af01ecb

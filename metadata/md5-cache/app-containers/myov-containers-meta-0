@@ -8,4 +8,4 @@ LICENSE=metapackage
 RDEPEND=app-containers/buildah app-containers/distrobox app-containers/earthly app-containers/podman app-containers/skopeo app-containers/umoci app-containers/k3d docker? ( app-containers/docker app-containers/docker-buildx app-containers/docker-cli app-containers/docker-compose ) kubernetes? ( app-admin/helm sys-cluster/k9scli sys-cluster/kubectl )
 RESTRICT=bindist
 SLOT=0
-_md5_=26be1443e0ee4a6e2a64304b2b4db3f6
+_md5_=0d8a88442ffef3700efb909896c4a669

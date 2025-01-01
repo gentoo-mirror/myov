@@ -4,4 +4,4 @@ EAPI=8
 KEYWORDS=~amd64 ~arm64
 RDEPEND=|| ( dev-lang/deno-bin:0/1 dev-lang/deno:0/1 )
 SLOT=1
-_md5_=8fa6708bec57d1b73a3b3f53db7b796f
+_md5_=8a3ea4f1f21a8c21d863ebf6aa21c18f

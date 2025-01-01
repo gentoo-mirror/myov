@@ -6,4 +6,4 @@ KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86
 LICENSE=GPL-2+
 RESTRICT=bindist
 SLOT=0
-_md5_=3cc5aacca52f0fd9dc3069fef6abdb57
+_md5_=1f2afc4c7e3ff9a72458666c63e3f872

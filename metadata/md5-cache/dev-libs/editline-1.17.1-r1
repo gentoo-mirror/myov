@@ -6,4 +6,4 @@ KEYWORDS=~amd64 ~arm64 ~x86
 LICENSE=Apache-2.0
 SLOT=0
 SRC_URI=https://github.com/troglobit/editline/releases/download/1.17.1/editline-1.17.1.tar.xz
-_md5_=5670fb3c778fbf63ff5025d3866d299c
+_md5_=ddc51a7476c7107c069eac99c8f98ff8
