@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 time_hook_calculate_age() {
