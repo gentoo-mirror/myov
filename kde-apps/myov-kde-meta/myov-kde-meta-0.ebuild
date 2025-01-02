@@ -21,6 +21,7 @@ RDEPEND="
 	kde-apps/filelight
 	kde-apps/kate
 	kde-apps/kcalc
+	kde-apps/kdenlive
 	kde-apps/kdialog[X(+)?]
 	kde-apps/kompare
 	kde-apps/konsole[X(+)?]
@@ -39,6 +40,7 @@ RDEPEND="
 	kde-plasma/plasma-meta
 	kde-plasma/print-manager
 	kde-plasma/xdg-desktop-portal-kde
+	media-gfx/krita
 	sys-block/partitionmanager
 
 	app-admin/keepassxc[X(+)?,browser(+)]
@@ -46,9 +48,11 @@ RDEPEND="
 	media-gfx/simple-scan
 	media-sound/kid3
 	media-video/ffmpeg[X(+)?,vulkan(+)?]
+	media-video/obs-studio
 	x11-apps/mesa-progs
 
 	|| (
+		media-video/smplayer
 		media-video/mpv[X(+)?,wayland(+)?]
 		media-video/vlc[X(+)?,ffmpeg(+),v4l(+)]
 	)
