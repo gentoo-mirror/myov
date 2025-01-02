@@ -122,6 +122,7 @@ RDEPEND="
 		sys-apps/pciutils
 		sys-apps/smartmontools
 		sys-apps/usbutils
+		sys-fs/exfatprogs
 		sys-fs/sysfsutils
 		sys-kernel/linux-firmware
 		sys-power/powertop
