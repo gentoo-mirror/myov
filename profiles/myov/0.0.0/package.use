@@ -303,3 +303,12 @@ app-emulation/qemu                  ssh
 net-dns/dnsmasq                     script
 net-libs/gnutls                     pkcs11
 net-libs/gnutls                     tools
+
+
+##################################### Web
+#                                   #                   #
+
+# Browser libraries
+media-libs/libvpx                   postproc
+net-libs/nodejs                     inspector           # Needed by chromium and Firefox.
+net-libs/nodejs                     npm
