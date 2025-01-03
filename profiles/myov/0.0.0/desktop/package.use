@@ -256,10 +256,6 @@ dev-vcs/git                         tk
 ##################################### Web
 #                                   #                   #
 
-# Browser libraries
-media-libs/libvpx                   postproc
-net-libs/nodejs                     inspector           # Needed by chromium and Firefox.
-
 # Chromium
 www-client/chromium                 -custom-cflags
 www-client/chromium                 -headless
