@@ -223,6 +223,9 @@ dev-qt/qtwebengine                  widgets
 media-sound/audacity                ffmpeg
 media-sound/audacity                vamp
 
+# EasyEffects
+media-sound/easyeffects             -doc                # Pulls in "yelp" and "webkit-gtk".
+
 # Strawberry
 media-sound/strawberry              -mtp
 media-sound/strawberry              gstreamer
