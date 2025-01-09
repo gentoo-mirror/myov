@@ -31,6 +31,7 @@ games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Gratef
 games-misc/myov-games-meta 0: Meta package for miscellaneous open-source desktop games
 kde-apps/myov-kde-meta 0: Meta package for KDE packages, custom selection
 net-dialup/opencu 3-r1: Port of OpenBSD's serial terminal emulator cu(1) to Linux
+net-dialup/syncterm 1.3: ANSI-BBS terminal which supports telnet, rlogin, and SSH
 net-vpn/openiked 7.3-r1: Internet Key Exchange version 2 (IKEv2) daemon
 sys-apps/crazydiskinfo 1.1.0-r1: Interactive TUI S.M.A.R.T viewer for Unix systems
 sys-apps/myov-base-meta 0-r1: Meta package for basic system packages
