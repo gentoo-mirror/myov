@@ -19,6 +19,7 @@ dev-db/rsm 1.82.4: Implementation of ANSI/MDC Standard M language and database
 dev-lang/bacon 5.0.1: BASIC to C translator for Unix systems
 dev-lang/bwbasic 3.30-r1: Bywater interpreter for the BASIC programming language
 dev-lang/deno-bin 1.46.3: Modern runtime for JavaScript and TypeScript
+dev-lang/python 3.6.15: An interpreted, interactive, object-oriented programming language
 dev-lang/quickjs 2024.07.27-r1: Small embeddable JavaScript engine
 dev-lang/yabasic 2.90.5-r1: Traditional interpreter for the BASIC language
 dev-libs/editline 1.17.1-r1: line editing library for UNIX call compatible with the FSF readline
