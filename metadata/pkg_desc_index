@@ -47,4 +47,4 @@ sys-cluster/pacemaker 2.1.9: Pacemaker CRM
 sys-fs/cpmtools 2.24-r1: Tools to access CP/M file systems
 sys-fs/ncdu-c 1.18-r1: NCurses Disk Usage
 virtual/deno 1: Virtual for deno
-www-apps/prowlarr-bin 1.28.2.4885: An indexer manager/proxy to integrate with your various PVR apps
+www-apps/prowlarr-bin 1.29.2.4915: An indexer manager/proxy to integrate with your various PVR apps
