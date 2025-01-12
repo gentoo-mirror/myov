@@ -9,7 +9,7 @@ HOMEPAGE="https://gitlab.com/xgqt/myov/"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="gui"
+IUSE="gui +postgres"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -19,11 +19,10 @@ RDEPEND="
 	app-misc/mc
 	app-misc/uptimed
 
-	dev-db/pg_top
-	dev-db/phppgadmin
 	dev-lang/bas
-	dev-lang/php[apache2]
 	dev-lang/quickjs
+
+	dev-lang/php[apache2]
 	dev-util/0xtools
 	dev-util/perf
 
@@ -32,7 +31,6 @@ RDEPEND="
 	net-misc/rclone
 
 	www-apps/phpsysinfo
-	www-misc/monitorix
 
 	|| (
 		dev-lang/oorexx
@@ -41,5 +39,9 @@ RDEPEND="
 
 	gui? (
 		app-antivirus/clamtk
+	)
+	postgres? (
+		dev-db/pg_top
+		dev-db/phppgadmin
 	)
 "
