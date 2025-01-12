@@ -11,13 +11,6 @@
       to bootstrap pip and setuptools (if disabled, it will
       be only possible to use venv `--without-pip`)
     </flag>
-    <flag name="jit">
-      Enable experimental Just-In-Time compilation support.
-    </flag>
-    <flag name="libedit">
-      Link readline extension against <pkg>dev-libs/libedit</pkg>
-      instead of <pkg>sys-libs/readline</pkg>
-    </flag>
     <flag name="pgo">
       Optimize the build using Profile Guided Optimization (PGO)
       by running Python's test suite and collecting statistics
@@ -27,10 +20,6 @@
       Disable pymalloc when running under
       <pkg>dev-debug/valgrind</pkg> is detected (may incur minor
       performance penalty even when valgrind is not used)
-    </flag>
-    <flag name="wininst">
-      Install Windows executables required to create an executable
-      installer for MS Windows
     </flag>
   </use>
   <upstream>
