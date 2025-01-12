@@ -21,7 +21,7 @@ sys-boot/grub                       device-mapper mount
 # Pinentry
 app-crypt/pinentry                  -emacs              # Disable broken Emacs interface.
 app-crypt/pinentry                  -gtk
-app-crypt/pinentry                  qt5
+app-crypt/pinentry                  qt6
 
 
 ##################################### Electronics
@@ -42,7 +42,7 @@ sci-libs/vtk                        boost
 sci-libs/vtk                        ffmpeg
 sci-libs/vtk                        imaging
 sci-libs/vtk                        python
-sci-libs/vtk                        qt5
+sci-libs/vtk                        qt6
 sci-libs/vtk                        rendering
 sci-libs/vtk                        tk
 sci-libs/vtk                        views
@@ -135,7 +135,7 @@ media-libs/mlt                      -gtk
 media-libs/mlt                      ffmpeg
 media-libs/mlt                      frei0r
 media-libs/mlt                      python
-media-libs/mlt                      qt5
+media-libs/mlt                      qt6
 media-libs/mlt                      sdl
 media-libs/mlt                      xml
 media-libs/opencv                   -gstreamer
@@ -228,7 +228,6 @@ media-sound/easyeffects             -doc                # Pulls in "yelp" and "w
 
 # Strawberry
 media-sound/strawberry              -mtp
-media-sound/strawberry              gstreamer
 
 # Chromaprint
 media-libs/chromaprint              tools

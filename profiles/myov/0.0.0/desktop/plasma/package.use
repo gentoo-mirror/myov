@@ -6,7 +6,6 @@ app-office/libreoffice              -kde
 media-gfx/darktable                 -kwallet
 
 # Small dependencies
-kde-apps/kio-extras                 nfs
 kde-apps/kio-extras                 taglib
 
 # Necessary
