@@ -49,12 +49,15 @@ RDEPEND="
 	app-shells/loksh
 	app-shells/tcsh
 	app-shells/zsh[unicode(+)]
+	app-text/dos2unix
 	app-text/htmltidy
 	app-text/tree
+
 	dev-debug/gdb
 	dev-debug/strace
 	dev-util/trace-cmd
 	dev-vcs/git[gpg(+)]
+
 	sys-apps/busybox
 	sys-apps/moreutils
 	sys-block/parted
