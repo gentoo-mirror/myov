@@ -1,8 +1,19 @@
 # Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
+# @ECLASS: custom-cflags.eclass
+# @MAINTAINER:
+# Maciej Barć <xgqt@gentoo.org>
+# @AUTHOR:
+# Maciej Barć <xgqt@gentoo.org>
+# @SUPPORTED_EAPIS: 8
+# @BLURB: Easy custom-cflags wire-up
+# @DESCRIPTION:
+# Easy "custom-cflags" wire-up. Exports USE="custom-cflags"
+# and "src_configure".
+
 case "${EAPI}" in
-    7 | 8 ) : ;;
+    8 ) : ;;
     * ) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
 esac
 
