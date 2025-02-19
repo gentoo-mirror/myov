@@ -104,9 +104,11 @@ RDEPEND="
 		app-portage/elogv
 		app-portage/elsw
 		app-portage/gentoolkit
+		app-portage/nattka
 		app-portage/portage-utils
 		app-portage/pram
 		app-portage/smart-live-rebuild
+		dev-python/networkx
 		dev-util/pkgcheck
 		dev-util/pkgdev
 		sys-devel/crossdev
