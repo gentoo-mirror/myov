@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 
-inherit bash-completion-r1 check-reqs cmake flag-o-matic python-single-r1
+inherit custom-cflags bash-completion-r1 check-reqs cmake python-single-r1
 
 DESCRIPTION="Paludis, the other package mangler based on EAPI"
 HOMEPAGE="https://paludis.exherbolinux.org/
@@ -23,7 +23,7 @@ fi
 
 LICENSE="GPL-2+ vim-syntax? ( vim )"
 SLOT="0/${PV}"
-IUSE="doc custom-cflags pbin python +ruby +search-index test vim-syntax +xml"
+IUSE="doc pbin python +ruby +search-index test vim-syntax +xml"
 REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
 RESTRICT="!test? ( test )"
 
@@ -77,11 +77,7 @@ pkg_setup() {
 }
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	local -a mycmakeargs=(
 		# Static features.

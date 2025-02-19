@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop flag-o-matic toolchain-funcs
+inherit custom-cflags desktop toolchain-funcs
 
 DESCRIPTION="ANSI-BBS terminal which supports telnet, rlogin, and SSH"
 HOMEPAGE="https://syncterm.bbsdev.net/"
@@ -12,7 +12,6 @@ SRC_URI="https://sourceforge.net/projects/syncterm/files/syncterm/syncterm-${PV}
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86"
-IUSE="custom-cflags"
 
 RDEPEND="
 	sys-libs/ncurses:=
@@ -27,16 +26,6 @@ DOCS=( src/syncterm/CHANGES )
 
 src_prepare() {
 	tc-export AR CC STRIP
-
-	default
-}
-
-src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
 
 	default
 }

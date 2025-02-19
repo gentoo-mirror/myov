@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake flag-o-matic
+inherit cmake custom-cflags flag-o-matic
 
 DESCRIPTION="Interactive TUI S.M.A.R.T viewer for Unix systems"
 HOMEPAGE="https://github.com/otakuto/crazydiskinfo/"
@@ -21,7 +21,6 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="custom-cflags"
 
 RDEPEND="
 	dev-libs/libatasmart:=
@@ -38,12 +37,7 @@ src_prepare() {
 }
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
-
+	custom-cflags_src_configure
 	append-cxxflags -std=c++11 -Wall -Wextra
 
 	cmake_src_configure

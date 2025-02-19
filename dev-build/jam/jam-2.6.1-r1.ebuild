@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit flag-o-matic toolchain-funcs
+inherit custom-cflags toolchain-funcs
 
 DESCRIPTION="make(1) redux, build utility based on Make"
 HOMEPAGE="https://swarm.workshop.perforce.com/projects/perforce_software-jam/"
@@ -12,7 +12,6 @@ SRC_URI="https://swarm.workshop.perforce.com/downloads/guest/perforce_software/j
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86"
-IUSE="custom-cflags"
 
 PATCHES=(
 	"${FILESDIR}/jam-2.6.1-jamfile-bin.patch"
@@ -22,15 +21,9 @@ PATCHES=(
 DOCS=( Jam.html Jambase.html Jamfile.html README RELNOTES )
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	tc-export AR CC RANLIB
-
-	default
 }
 
 src_compile() {

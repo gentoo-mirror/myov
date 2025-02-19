@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit flag-o-matic toolchain-funcs
+inherit custom-cflags toolchain-funcs
 
 DESCRIPTION="Multiplatform command line toolkit to work with PE binaries"
 HOMEPAGE="https://github.com/mentebinaria/readpe/"
@@ -21,7 +21,6 @@ fi
 
 LICENSE="GPL-2+"
 SLOT="0"
-IUSE="custom-cflags"
 
 PATCHES=(
 	"${FILESDIR}/readpe-0.84-libpe-makefile.patch"
@@ -36,16 +35,6 @@ src_prepare() {
 		|| die
 
 	tc-export CC
-
-	default
-}
-
-src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
 
 	default
 }

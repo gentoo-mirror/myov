@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit flag-o-matic
+inherit custom-cflags
 
 DESCRIPTION="BASIC to C translator for Unix systems"
 HOMEPAGE="https://www.basic-converter.org/
@@ -16,7 +16,7 @@ SRC_URI="${REPO_URI}/attachdownload/${P}.tar.gz?page=Downloads&file=${P}.tar.gz
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
-IUSE="custom-cflags gui"
+IUSE="gui"
 
 RDEPEND="
 	gui? (
@@ -29,11 +29,7 @@ DEPEND="
 "
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	local -a econfargs=(
 		--with-bash

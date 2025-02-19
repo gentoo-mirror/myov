@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 
-inherit flag-o-matic python-r1
+inherit custom-cflags python-r1
 
 DESCRIPTION="Environment Modules provide dynamic modification of user environment"
 HOMEPAGE="https://envmodules.github.io/modules/
@@ -25,7 +25,7 @@ fi
 
 LICENSE="GPL-2+"
 SLOT="0/${PV}"
-IUSE="custom-cflags test"
+IUSE="test"
 RESTRICT="!test? ( test )"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
@@ -51,11 +51,7 @@ PDEPEND="
 "
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	local -a myconf=(
 		--with-verbosity="normal"

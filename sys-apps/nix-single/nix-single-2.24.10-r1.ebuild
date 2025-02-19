@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit autotools check-reqs edo flag-o-matic toolchain-funcs
+inherit autotools custom-cflags check-reqs edo toolchain-funcs
 
 DESCRIPTION="Nix, the purely functional package manager"
 HOMEPAGE="https://nixos.org/nix
@@ -23,7 +23,6 @@ fi
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-IUSE="custom-cflags"
 
 RDEPEND="
 	!sys-apps/lix
@@ -69,11 +68,7 @@ src_prepare() {
 }
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	export V="1"
 	local -x CONFIG_SHELL="${BROOT}/bin/bash"

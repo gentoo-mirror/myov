@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit edo flag-o-matic linux-info toolchain-funcs
+inherit custom-cflags edo linux-info toolchain-funcs
 
 DESCRIPTION="The container system for secure high-performance computing"
 HOMEPAGE="https://apptainer.org/
@@ -21,7 +21,7 @@ fi
 
 LICENSE="BSD"
 SLOT="0"
-IUSE="custom-cflags debug examples +network suid systemd"
+IUSE="debug examples +network suid systemd"
 
 RDEPEND="
 	dev-libs/openssl
@@ -55,11 +55,7 @@ PATCHES=(
 DOCS=( README.md CONTRIBUTORS.md CONTRIBUTING.md )
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	local -a myconfargs=(
 		-v

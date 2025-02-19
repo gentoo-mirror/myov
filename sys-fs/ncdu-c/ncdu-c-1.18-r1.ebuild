@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit flag-o-matic
+inherit custom-cflags
 
 DESCRIPTION="NCurses Disk Usage"
 HOMEPAGE="https://dev.yorhel.nl/ncdu"
@@ -13,7 +13,6 @@ S="${WORKDIR}/ncdu-${PV}"
 LICENSE="MIT"
 SLOT="0/${PV}"
 KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
-IUSE="custom-cflags"
 
 DEPEND="
 	sys-libs/ncurses:=[unicode(+)]
@@ -21,16 +20,6 @@ DEPEND="
 RDEPEND="
 	${DEPEND}
 "
-
-src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
-
-	default
-}
 
 src_install() {
 	exeinto /usr/bin

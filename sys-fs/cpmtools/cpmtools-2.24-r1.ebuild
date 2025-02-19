@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit flag-o-matic
+inherit custom-cflags
 
 DESCRIPTION="Tools to access CP/M file systems"
 HOMEPAGE="http://www.moria.de/~michael/cpmtools/"
@@ -12,7 +12,6 @@ SRC_URI="http://www.moria.de/~michael/${PN}/files/${P}.tar.gz"
 LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86"
-IUSE="custom-cflags"
 
 RDEPEND="
 	sys-libs/ncurses:=
@@ -25,11 +24,7 @@ BDEPEND="
 "
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	local -x LIBS="$(pkg-config --libs ncurses)"
 
