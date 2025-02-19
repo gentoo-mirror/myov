@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{11..13} )
 
-inherit custom-cflags bash-completion-r1 check-reqs cmake python-single-r1
+inherit check-reqs cmake custom-cflags python-single-r1 shell-completion
 
 DESCRIPTION="Paludis, the other package mangler based on EAPI"
 HOMEPAGE="https://paludis.exherbolinux.org/
@@ -107,9 +107,7 @@ src_install() {
 	cmake_src_install
 
 	dobashcomp ./bash-completion/cave
-
-	insinto /usr/share/zsh/site-functions
-	doins ./zsh-completion/_cave
+	dozshcomp ./zsh-completion/_cave
 
 	if use python ; then
 		python_optimize "${ED}/usr/lib"
