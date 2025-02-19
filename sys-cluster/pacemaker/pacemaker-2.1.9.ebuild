@@ -5,7 +5,7 @@ EAPI=8
 
 MY_P="${PN^}-${PV/_/-}"
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..13} )
 
 inherit autotools custom-cflags python-single-r1
 
