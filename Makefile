@@ -42,13 +42,10 @@ cache:
 	$(PKGCHECK) cache --update
 
 .PHONY: test
-test: cache
-test: manifests
-test:
+test: cache manifests
 	$(PKGCHECK) scan $(SCAN-FLAGS)
 	-$(PKGCHECK) scan $(SCAN-FLAGS) --commits
 
 .PHONY: push
 push: test
-push:
 	$(SH) $(PWD)/.aux/admin/push_all.bash
