@@ -6,7 +6,7 @@ EAPI=8
 MY_PN="${PN}-portable"
 MY_P="${MY_PN}-${PV}"
 
-inherit cmake edo flag-o-matic readme.gentoo-r1 systemd
+inherit cmake custom-cflags edo flag-o-matic readme.gentoo-r1 systemd
 
 DESCRIPTION="Internet Key Exchange version 2 (IKEv2) daemon"
 HOMEPAGE="https://www.openiked.org/
@@ -26,7 +26,7 @@ fi
 
 LICENSE="ISC"
 SLOT="0"
-IUSE="apparmor custom-cflags debug"
+IUSE="apparmor debug"
 
 RDEPEND="
 	acct-group/_iked
@@ -47,11 +47,7 @@ openssl ecparam -genkey -name prime256v1 -noout -out /etc/iked/private/local.key
 openssl ec -in /etc/iked/private/local.key -pubout -out /etc/iked/local.pub\\n\\n"
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	append-cflags -mcmodel=large
 

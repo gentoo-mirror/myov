@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake flag-o-matic xdg
+inherit cmake custom-cflags xdg
 
 DESCRIPTION="CrystalDiskInfo alternative for Linux"
 HOMEPAGE="https://github.com/edisionnano/QDiskInfo/"
@@ -22,7 +22,6 @@ fi
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="custom-cflags"
 
 DEPEND="
 	dev-qt/qtbase:6[dbus,gui,widgets]
@@ -33,12 +32,7 @@ RDEPEND="
 "
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
-
+	custom-cflags_src_configure
 	cmake_src_configure
 }
 

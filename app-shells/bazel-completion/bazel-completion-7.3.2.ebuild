@@ -3,6 +3,8 @@
 
 EAPI=8
 
+inherit shell-completion
+
 DESCRIPTION="Shell completion for Bazel"
 HOMEPAGE="https://bazel.build/
 	https://github.com/bazelbuild/bazel/"
@@ -24,6 +26,5 @@ LICENSE="Apache-2.0"
 SLOT="0"
 
 src_install() {
-	insinto /usr/share/zsh/site-functions
-	doins _bazel
+	dozshcomp _bazel
 }

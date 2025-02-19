@@ -6,7 +6,7 @@ EAPI=8
 MAJOR="$(ver_cut 1)"
 
 DISTUTILS_USE_PEP517="flit"
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..13} )
 
 inherit distutils-r1
 

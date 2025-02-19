@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit flag-o-matic toolchain-funcs
+inherit custom-cflags toolchain-funcs
 
 DESCRIPTION="Implementation of ANSI/MDC Standard M language and database"
 HOMEPAGE="https://gitlab.com/Reference-Standard-M/rsm/"
@@ -22,7 +22,6 @@ fi
 
 LICENSE="AGPL-3+"
 SLOT="0"
-IUSE="custom-cflags"
 
 RDEPEND="
 	virtual/libcrypt
@@ -37,16 +36,6 @@ src_prepare() {
 	default
 
 	rm ./Makefile || die
-}
-
-src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
-
-	default
 }
 
 src_compile() {

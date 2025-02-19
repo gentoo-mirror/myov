@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit flag-o-matic toolchain-funcs
+inherit custom-cflags toolchain-funcs
 
 DESCRIPTION="Small embeddable JavaScript engine"
 HOMEPAGE="https://bellard.org/quickjs/
@@ -29,7 +29,6 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="custom-cflags"
 
 PATCHES=(
 	"${FILESDIR}/quickjs-2024.01.13-sharedlib.patch"
@@ -48,11 +47,7 @@ src_prepare() {
 }
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	tc-export AR CC
 

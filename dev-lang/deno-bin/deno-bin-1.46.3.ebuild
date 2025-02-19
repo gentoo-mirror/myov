@@ -5,7 +5,7 @@ EAPI=8
 
 MAJOR="$(ver_cut 1)"
 
-inherit bash-completion-r1
+inherit shell-completion
 
 DESCRIPTION="Modern runtime for JavaScript and TypeScript"
 HOMEPAGE="https://deno.com/
@@ -43,6 +43,5 @@ src_install() {
 	dosym -r "/usr/bin/${P}" "/usr/bin/deno"
 
 	newbashcomp "completions/deno.bash" "deno"
-	insinto /usr/share/zsh/site-functions
-	newins "completions/deno.zsh" "_deno"
+	newzshcomp "completions/deno.zsh" "_deno"
 }

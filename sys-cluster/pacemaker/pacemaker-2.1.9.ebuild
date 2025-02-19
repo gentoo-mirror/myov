@@ -5,9 +5,9 @@ EAPI=8
 
 MY_P="${PN^}-${PV/_/-}"
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{12..13} )
 
-inherit autotools flag-o-matic python-single-r1
+inherit autotools custom-cflags python-single-r1
 
 DESCRIPTION="Pacemaker CRM"
 HOMEPAGE="https://www.clusterlabs.org/pacemaker/
@@ -26,7 +26,7 @@ fi
 
 LICENSE="GPL-2+ LGPL-2.1+ BSD CC-BY-SA-4.0"
 SLOT="0"
-IUSE="acl custom-cflags smtp snmp"
+IUSE="acl smtp snmp"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="
@@ -55,11 +55,7 @@ src_prepare() {
 }
 
 src_configure() {
-	if use custom-cflags ; then
-		:
-	else
-		strip-flags
-	fi
+	custom-cflags_src_configure
 
 	local -a myconf=(
 		--disable-fatal-warnings
