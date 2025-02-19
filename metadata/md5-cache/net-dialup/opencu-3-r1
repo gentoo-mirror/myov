@@ -4,12 +4,12 @@ DEPEND=dev-libs/libevent:=
 DESCRIPTION=Port of OpenBSD's serial terminal emulator cu(1) to Linux
 EAPI=8
 HOMEPAGE=https://github.com/tobhe/opencu/
-INHERIT=cmake flag-o-matic
+INHERIT=cmake custom-cflags
 IUSE=custom-cflags
 KEYWORDS=~amd64 ~arm ~arm64 ~mips ~ppc64 ~riscv ~x86
 LICENSE=ISC
 RDEPEND=dev-libs/libevent:=
 SLOT=0
 SRC_URI=https://github.com/tobhe/opencu/archive/refs/tags/v3.tar.gz -> opencu-3.gh.tar.gz
-_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=93ed8f3e589515b3e095ac3f520c4c93
+_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	custom-cflags	f03b04b487e40684a88f4282de7e4740
+_md5_=f9ce111ce761d6feac4932dea7dcc4b2
