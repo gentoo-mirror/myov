@@ -1,0 +1,12 @@
+--- a/scripts/nix-profile.sh.in
++++ b/scripts/nix-profile.sh.in
+@@ -1,5 +1,8 @@
+ # This file is tested by tests/installer/default.nix.
+-if [ -n "${HOME-}" ] && [ -n "${USER-}" ]; then
++if [ -n "${HOME-}" ] && [ -n "${USER-}" ] && \
++   [ "$(whoami)" != root    ] && \
++   [ "$(whoami)" != portage ]
++then
+ 
+     # Set up the per-user profile.
+ 
