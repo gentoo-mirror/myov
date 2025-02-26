@@ -10,11 +10,13 @@ repos:
       - id: check-byte-order-marker
       - id: check-vcs-permalinks
       - id: end-of-file-fixer
-      - id: trailing-whitespace
 
       - id: check-json
       - id: check-xml
       - id: check-yaml
+
+      - id: trailing-whitespace
+        exclude: ".*\\.patch$"
 
       - id: pretty-format-json
         args: ["--autofix", "--indent", "2", "--no-sort-keys"]
