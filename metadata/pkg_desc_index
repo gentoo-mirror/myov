@@ -36,7 +36,7 @@ net-vpn/openiked 7.3-r1: Internet Key Exchange version 2 (IKEv2) daemon
 sys-apps/crazydiskinfo 1.1.0-r1: Interactive TUI S.M.A.R.T viewer for Unix systems
 sys-apps/myov-base-meta 0-r3: Meta package for basic system packages
 sys-apps/myov-mainstation-meta 0-r2: Meta package for server/workstation with a feeling of a mainframe
-sys-apps/nix-single 2.24.10-r1: Nix, the purely functional package manager
+sys-apps/nix-single 2.24.10-r1 2.26.2: Nix, the purely functional package manager
 sys-apps/paludis 3.0.1-r1: Paludis, the other package mangler based on EAPI
 sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
 sys-apps/qdiskinfo 0.3-r1: CrystalDiskInfo alternative for Linux
