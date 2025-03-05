@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit edo toolchain-funcs
+inherit custom-cflags edo toolchain-funcs
 
 DESCRIPTION="Grow Bonsai trees in your terminal"
 HOMEPAGE="https://gitlab.com/jallbrit/cbonsai/"
