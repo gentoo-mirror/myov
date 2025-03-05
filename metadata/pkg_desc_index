@@ -26,6 +26,7 @@ dev-libs/editline 1.17.1-r1: line editing library for UNIX call compatible with 
 dev-util/etask 1.2.0 9999: CLI interface to GNU Emacs
 dev-util/myov-academia-meta 0: Meta package for academic packages
 games-arcade/lbreakouthd 1.1.9: Breakout clone written with the SDL library
+games-misc/cbonsai 1.3.1: Grow Bonsai trees in your terminal
 games-misc/dice 1.0.0-r1 9999: Roll some dice
 games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Grateful Gead song lyrics
 games-misc/myov-games-meta 0: Meta package for miscellaneous open-source desktop games
