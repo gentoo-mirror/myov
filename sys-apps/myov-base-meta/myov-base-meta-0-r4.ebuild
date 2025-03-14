@@ -149,6 +149,7 @@ RDEPEND="
 		net-analyzer/tcpdump
 		net-analyzer/tcptraceroute
 		net-analyzer/traceroute
+
 		net-dns/bind
 		net-fs/sshfs
 		net-misc/curl
@@ -157,6 +158,7 @@ RDEPEND="
 		net-misc/mosh
 		net-misc/ntp
 		net-misc/socat
+		net-misc/sshpass
 		net-misc/whois
 	)
 "
