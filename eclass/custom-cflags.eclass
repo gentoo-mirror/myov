@@ -3,9 +3,9 @@
 
 # @ECLASS: custom-cflags.eclass
 # @MAINTAINER:
-# Maciej Barć <xgqt@gentoo.org>
+# Maciej Barć <xgqt@xgqt.org>
 # @AUTHOR:
-# Maciej Barć <xgqt@gentoo.org>
+# Maciej Barć <xgqt@xgqt.org>
 # @SUPPORTED_EAPIS: 8
 # @BLURB: Easy custom-cflags wire-up
 # @DESCRIPTION:
@@ -13,8 +13,8 @@
 # and "src_configure".
 
 case "${EAPI}" in
-    8 ) : ;;
-    * ) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
+	8 ) : ;;
+	* ) die "${ECLASS}: EAPI ${EAPI:-0} not supported" ;;
 esac
 
 if [[ -z ${_CUSTOM_CFLAGS} ]] ; then
