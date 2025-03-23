@@ -6,11 +6,4 @@
     <email>xgqt@xgqt.org</email>
     <name>Maciej Barć</name>
   </maintainer>
-  <upstream>
-    <maintainer status="active">
-      <email>xgqt@xgqt.org</email>
-      <name>Maciej Barć</name>
-    </maintainer>
-    <remote-id type="gitlab">xgqt/myov</remote-id>
-  </upstream>
 </pkgmetadata>
