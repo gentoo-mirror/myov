@@ -30,6 +30,7 @@ games-misc/cbonsai 1.3.1: Grow Bonsai trees in your terminal
 games-misc/dice 1.0.0-r1 9999: Roll some dice
 games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Grateful Gead song lyrics
 games-misc/myov-games-meta 0: Meta package for miscellaneous open-source desktop games
+gui-apps/crystal-dock 2.10: Desktop panel for Linux desktop, supports KDE 6 and LXQt on Wayland
 kde-apps/myov-kde-meta 0: Meta package for KDE packages, custom selection
 net-dialup/opencu 3-r1: Port of OpenBSD's serial terminal emulator cu(1) to Linux
 net-dialup/syncterm 1.3: ANSI-BBS terminal which supports telnet, rlogin, and SSH
