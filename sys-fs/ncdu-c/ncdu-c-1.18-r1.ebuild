@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit custom-cflags
+inherit autotools custom-cflags
 
 DESCRIPTION="NCurses Disk Usage"
 HOMEPAGE="https://dev.yorhel.nl/ncdu"
@@ -20,6 +20,18 @@ DEPEND="
 RDEPEND="
 	${DEPEND}
 "
+
+src_prepare() {
+	default
+
+	eautoreconf
+}
+
+src_configure() {
+	custom-cflags_src_configure
+
+	default
+}
 
 src_install() {
 	exeinto /usr/bin
