@@ -48,6 +48,7 @@ RDEPEND="
 	app-emacs/ninja-mode
 	app-emacs/rust-mode
 	app-emacs/systemd-mode
+	app-emacs/tuareg-mode
 	app-emacs/typescript-mode
 	app-emacs/yaml-mode
 
@@ -81,9 +82,7 @@ RDEPEND="
 		app-emacs/emojify
 	)
 	ocaml? (
-		>=dev-lang/ocaml-4.07.0
 		app-emacs/dune-format
-		app-emacs/tuareg-mode
 		dev-ml/merlin[emacs(+)]
 	)
 	package-developer? (
