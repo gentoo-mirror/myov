@@ -29,7 +29,6 @@ RDEPEND="
 	kde-apps/kwave[flac(+),mp3(+),opus(+)]
 	kde-apps/kwrite
 	kde-apps/okular
-	kde-apps/spectacle
 	kde-frameworks/oxygen-icons
 	kde-misc/kclock
 	kde-misc/krename
@@ -39,6 +38,7 @@ RDEPEND="
 	kde-plasma/plasma-browser-integration
 	kde-plasma/plasma-meta
 	kde-plasma/print-manager
+	kde-plasma/spectacle
 	kde-plasma/xdg-desktop-portal-kde
 	media-gfx/krita
 	sys-block/partitionmanager
