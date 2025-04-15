@@ -42,6 +42,6 @@ src_install() {
 	dodir /etc/conf.d
 	dosym -r /etc/default/earlyoom /etc/conf.d/earlyoom
 
-	newinitd "${FILESDIR}/${PN}-r1 ${PN}"
+	newinitd "${FILESDIR}/${PN}-r1" "${PN}"
 	systemd_dounit earlyoom.service
 }
