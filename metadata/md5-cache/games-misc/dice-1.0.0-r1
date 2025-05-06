@@ -8,5 +8,5 @@ KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86
 LICENSE=GPL-3
 SLOT=0
 SRC_URI=https://gitlab.com/xgqt/dice/-/archive/1.0.0/dice-1.0.0.tar.bz2
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	custom-cflags	739181576d101665706c7226aa8d5e47
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	custom-cflags	739181576d101665706c7226aa8d5e47
 _md5_=3a42555f3b1c5cfa2519bd3e4d4bb15b
