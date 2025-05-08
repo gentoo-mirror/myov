@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit custom-cflags edo multiprocessing toolchain-funcs
+inherit custom-cflags edo multiprocessing systemd toolchain-funcs
 
 DESCRIPTION="High Performance Web Platform Based on Nginx and LuaJIT"
 HOMEPAGE="https://openresty.org/
@@ -35,6 +35,9 @@ DEPEND="
 BDEPEND="
 	dev-lang/perl
 "
+
+# Lua libs
+QA_PREBUILT="usr/lib64/openresty/lualib/.*"
 
 src_configure() {
 	custom-cflags_src_configure
@@ -101,6 +104,8 @@ src_configure() {
 
 src_install() {
 	default
+
+	systemd_newunit "${FILESDIR}/nginx.service" nginx.service
 
 	rm -r "${ED}/run" || die
 	keepdir /var/log/openresty
