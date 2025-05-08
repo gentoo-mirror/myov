@@ -1,10 +1,10 @@
-BDEPEND=dev-lang/perl
+BDEPEND=dev-lang/perl virtual/pkgconfig
 DEFINED_PHASES=configure install
 DEPEND=dev-libs/libatomic_ops dev-libs/libxml2 dev-libs/libxslt dev-libs/openssl:= media-libs/gd:=[webp] sys-libs/zlib:= virtual/libcrypt:= pcre? ( dev-libs/libpcre2:= )
 DESCRIPTION=High Performance Web Platform Based on Nginx and LuaJIT
 EAPI=8
 HOMEPAGE=https://openresty.org/ https://github.com/openresty/openresty/
-INHERIT=custom-cflags edo multiprocessing toolchain-funcs
+INHERIT=custom-cflags edo multiprocessing systemd toolchain-funcs
 IUSE=pcre threads custom-cflags
 KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~sparc ~x86
 LICENSE=BSD
@@ -12,5 +12,5 @@ RDEPEND=dev-libs/libatomic_ops dev-libs/libxml2 dev-libs/libxslt dev-libs/openss
 RESTRICT=test
 SLOT=0
 SRC_URI=https://openresty.org/download/openresty-1.27.1.2.tar.gz
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	custom-cflags	739181576d101665706c7226aa8d5e47	edo	367e103a74bf77e6a8da7894d999fa3c	multiprocessing	1e32df7deee68372153dca65f4a7c21f
-_md5_=96442537c296028851bf0444289c85c8
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	custom-cflags	739181576d101665706c7226aa8d5e47	edo	367e103a74bf77e6a8da7894d999fa3c	multiprocessing	1e32df7deee68372153dca65f4a7c21f	systemd	a964c0cbe818b5729da1dbfcee5be861
+_md5_=520238d25a953f5467f7e30eff5e9400
