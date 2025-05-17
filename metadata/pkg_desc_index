@@ -23,6 +23,7 @@ dev-lang/python 3.6.15: An interpreted, interactive, object-oriented programming
 dev-lang/quickjs 2024.07.27-r1: Small embeddable JavaScript engine
 dev-lang/yabasic 2.90.5-r1: Traditional interpreter for the BASIC language
 dev-libs/editline 1.17.1-r1: line editing library for UNIX call compatible with the FSF readline
+dev-python/scons-xo-exts 1.0.2 1.9999: Extensions for SCons, includes Python libraries and builders
 dev-util/etask 1.2.0 9999: CLI interface to GNU Emacs
 dev-util/myov-academia-meta 0: Meta package for academic packages
 games-arcade/lbreakouthd 1.1.9: Breakout clone written with the SDL library
