@@ -13,7 +13,7 @@ SRC_URI="https://openresty.org/download/${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
-IUSE="pcre threads"
+IUSE="pcre"
 RESTRICT="test"  # No (auto-wired) tests in the bundle.
 
 RDEPEND="
@@ -46,6 +46,7 @@ src_configure() {
 	local -a myconf=(
 		-j"$(makeopts_jobs)"
 		--build="${P}-compilation"
+		--builddir="${WORKDIR}/${P}_builddir"
 
 		--with-cc="$(tc-getCC)"
 		--with-cpp="$(tc-getCPP)"
@@ -63,12 +64,12 @@ src_configure() {
 		# Features
 		$(use_with pcre pcre)
 		$(use_with pcre pcre-jit)
-		$(use_with threads)
 		--with-compat
 		--with-file-aio
 		--with-libatomic
 		--with-mail
 		--with-stream
+		--with-threads
 
 		# Modules - http
 		--with-http_addition_module
@@ -105,8 +106,8 @@ src_configure() {
 src_install() {
 	default
 
-	systemd_newunit "${FILESDIR}/nginx.service" nginx.service
+	systemd_newunit "${FILESDIR}/${PN}.service" "${PN}.service"
 
-	rm -r "${ED}/run" || die
-	keepdir /var/log/openresty
+	rm -f -r "${ED}/run" || die
+	keepdir "/var/log/${PN}"
 }
