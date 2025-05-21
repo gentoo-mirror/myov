@@ -35,7 +35,7 @@ export ACCEPT_LICENSE="*"
 export PORTAGE_ELOG_CLASSES="warn error log"
 export PORTAGE_ELOG_SYSTEM="echo save"
 
-export DISTDIR="${cache}/distdiles"
+export DISTDIR="${cache}/distfiles"
 export PKGDIR="${cache}/binpkgs"
 export PORTAGE_LOGDIR="${cache}/log"
 export PORTAGE_TMPDIR="${cache}/tmp"
