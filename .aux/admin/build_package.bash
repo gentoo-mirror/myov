@@ -28,14 +28,18 @@ declare -r build_log_file="${cache}/build.log"
 mkdir -p "${cache}"
 rm -f "${build_log_file}"
 
-export FEATURES="test"
+FEATURES="test
+    -sandbox -usersandbox
+    ipc-sandbox mount-sandbox network-sandbox pid-sandbox"
+export FEATURES
+
 export USE="test"
 export ACCEPT_LICENSE="*"
 
 export PORTAGE_ELOG_CLASSES="warn error log"
 export PORTAGE_ELOG_SYSTEM="echo save"
 
-export DISTDIR="${cache}/distdiles"
+export DISTDIR="${cache}/distfiles"
 export PKGDIR="${cache}/binpkgs"
 export PORTAGE_LOGDIR="${cache}/log"
 export PORTAGE_TMPDIR="${cache}/tmp"

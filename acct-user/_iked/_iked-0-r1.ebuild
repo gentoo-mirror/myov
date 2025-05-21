@@ -7,6 +7,7 @@ inherit acct-user
 
 DESCRIPTION="A user for net-vpn/openiked VPN"
 
+ACCT_USER_ID=100
 ACCT_USER_GROUPS=( _iked )
 
 acct-user_add_deps

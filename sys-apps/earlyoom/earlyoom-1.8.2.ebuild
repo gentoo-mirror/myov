@@ -34,7 +34,8 @@ src_compile() {
 }
 
 src_install() {
-	dobin earlyoom
+	exeinto /usr/bin
+	doexe earlyoom
 
 	insinto /etc/default
 	newins earlyoom.default earlyoom
