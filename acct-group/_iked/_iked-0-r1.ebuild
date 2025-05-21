@@ -6,3 +6,5 @@ EAPI=8
 inherit acct-group
 
 DESCRIPTION="A group for net-vpn/openiked VPN"
+
+ACCT_GROUP_ID=101
