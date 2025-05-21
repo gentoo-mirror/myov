@@ -28,7 +28,7 @@ declare -r build_log_file="${cache}/build.log"
 mkdir -p "${cache}"
 rm -f "${build_log_file}"
 
-export FEATURES="test"
+export FEATURES="test -sandbox -usersandbox"
 export USE="test"
 export ACCEPT_LICENSE="*"
 
