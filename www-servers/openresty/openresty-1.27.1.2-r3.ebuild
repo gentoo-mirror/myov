@@ -13,7 +13,7 @@ SRC_URI="https://openresty.org/download/${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
-IUSE="pcre"
+IUSE="+dedicated-user pcre"
 RESTRICT="test"  # No (auto-wired) tests in the bundle.
 
 RDEPEND="
@@ -25,6 +25,10 @@ RDEPEND="
 	sys-libs/zlib:=
 	virtual/libcrypt:=
 
+	dedicated-user? (
+		acct-group/nginx
+		acct-user/nginx
+	)
 	pcre? (
 		dev-libs/libpcre2:=
 	)
@@ -103,6 +107,14 @@ src_configure() {
 	edo perl ./configure "${myconf[@]}"
 }
 
+src_compile() {
+	# https://bugs.gentoo.org/286772
+	local -x LANG="C"
+	local -x LC_ALL="C"
+
+	emake
+}
+
 src_install() {
 	default
 
@@ -110,4 +122,9 @@ src_install() {
 
 	rm -f -r "${ED}/run" || die
 	keepdir "/var/log/${PN}"
+
+	if use dedicated-user ; then
+		fperms 0710 "/var/log/${PN}"
+		fowners 0:nginx "/var/log/${PN}"
+	fi
 }
