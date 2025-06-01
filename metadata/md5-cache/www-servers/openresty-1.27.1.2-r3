@@ -1,16 +1,16 @@
 BDEPEND=dev-lang/perl virtual/pkgconfig
-DEFINED_PHASES=configure install
-DEPEND=dev-libs/libatomic_ops dev-libs/libxml2 dev-libs/libxslt dev-libs/openssl:= media-libs/gd:=[webp] sys-libs/zlib:= virtual/libcrypt:= pcre? ( dev-libs/libpcre2:= )
+DEFINED_PHASES=compile configure install
+DEPEND=dev-libs/libatomic_ops dev-libs/libxml2 dev-libs/libxslt dev-libs/openssl:= media-libs/gd:=[webp] sys-libs/zlib:= virtual/libcrypt:= dedicated-user? ( acct-group/nginx acct-user/nginx ) pcre? ( dev-libs/libpcre2:= )
 DESCRIPTION=High Performance Web Platform Based on Nginx and LuaJIT
 EAPI=8
 HOMEPAGE=https://openresty.org/ https://github.com/openresty/openresty/
 INHERIT=custom-cflags edo multiprocessing systemd toolchain-funcs
-IUSE=pcre custom-cflags
+IUSE=+dedicated-user pcre custom-cflags
 KEYWORDS=~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~sparc ~x86
 LICENSE=BSD
-RDEPEND=dev-libs/libatomic_ops dev-libs/libxml2 dev-libs/libxslt dev-libs/openssl:= media-libs/gd:=[webp] sys-libs/zlib:= virtual/libcrypt:= pcre? ( dev-libs/libpcre2:= )
+RDEPEND=dev-libs/libatomic_ops dev-libs/libxml2 dev-libs/libxslt dev-libs/openssl:= media-libs/gd:=[webp] sys-libs/zlib:= virtual/libcrypt:= dedicated-user? ( acct-group/nginx acct-user/nginx ) pcre? ( dev-libs/libpcre2:= )
 RESTRICT=test
 SLOT=0
 SRC_URI=https://openresty.org/download/openresty-1.27.1.2.tar.gz
 _eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	custom-cflags	739181576d101665706c7226aa8d5e47	edo	a5e294016aa84979fcb2459749eb80b2	multiprocessing	1e32df7deee68372153dca65f4a7c21f	systemd	a964c0cbe818b5729da1dbfcee5be861
-_md5_=3aa79b3bb2cd4940e1e58ed718a5faae
+_md5_=c8c465bd1ede5a0f3678819169e74875

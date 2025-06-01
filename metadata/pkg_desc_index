@@ -51,4 +51,4 @@ sys-cluster/pacemaker 2.1.9: Pacemaker CRM
 sys-fs/cpmtools 2.24-r1: Tools to access CP/M file systems
 sys-fs/ncdu-c 1.18-r1: NCurses Disk Usage
 virtual/deno 1: Virtual for deno
-www-servers/openresty 1.27.1.2-r2: High Performance Web Platform Based on Nginx and LuaJIT
+www-servers/openresty 1.27.1.2-r3: High Performance Web Platform Based on Nginx and LuaJIT
