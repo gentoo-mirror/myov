@@ -10,4 +10,7 @@
     <bugs-to>https://github.com/openresty/openresty/issues/</bugs-to>
     <remote-id type="github">openresty/openresty</remote-id>
   </upstream>
+  <use>
+    <flag name="dedicated-user">Use a dedicated user account for services of this package</flag>
+  </use>
 </pkgmetadata>
