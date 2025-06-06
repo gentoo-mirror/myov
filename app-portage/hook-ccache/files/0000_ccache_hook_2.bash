@@ -29,7 +29,7 @@ if [[ "${FEATURES}" == *ccache* ]] ; then
                     ewarn "Old original CCache config file not found, given: ${_old_ccache_conf}"
                 fi
 
-                nonfatal chown -R portage:portage "${_new_ccache_dir}"
+                nonfatal chown -R "${PORTAGE_USERNAME:-portage}" "${_new_ccache_dir}"
                 nonfatal chmod -R u+rw "${_new_ccache_dir}"
                 nonfatal chmod -R g+rw "${_new_ccache_dir}"
                 ;;
