@@ -153,6 +153,7 @@ dev-libs/libpcre2                   pcre16
 dev-libs/libpcre2                   pcre32
 
 # PHP
+media-libs/gd                       xpm
 app-eselect/eselect-php             apache2
 app-eselect/eselect-php             fpm
 dev-lang/php                        acl
