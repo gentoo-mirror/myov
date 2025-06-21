@@ -15,35 +15,36 @@ if [[ "${PV}" == *9999* ]] ; then
 	EGIT_REPO_URI="https://github.com/NixOS/nix"
 else
 	SRC_URI="https://github.com/NixOS/nix/archive/refs/tags/${PV}.tar.gz
-		-> ${P}.tar.gz"
+		-> ${P}.gh.tar.gz"
 	S="${WORKDIR}/nix-${PV}"
 
-	# KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64 ~x86"
 fi
 
 LICENSE="LGPL-2.1"
 SLOT="0"
 
-RDEPEND="
-	!sys-apps/lix
-	!sys-apps/nix
-
+DEPEND="
+	>=dev-libs/blake3-1.5.5
 	app-arch/brotli:=
-	app-arch/libarchive:=
+	app-arch/libarchive
 	dev-cpp/nlohmann_json
 	dev-cpp/toml11
-	dev-db/sqlite:3=
+	dev-db/sqlite:3
 	dev-libs/boehm-gc[cxx]
 	dev-libs/boost:=
 	dev-libs/editline
 	dev-libs/libgit2:=
-	dev-libs/libsodium:=
+	dev-libs/libsodium
 	dev-libs/openssl:=
 	net-misc/curl
 	sys-libs/libseccomp
 "
-DEPEND="
-	${RDEPEND}
+RDEPEND="
+	!sys-apps/lix
+	!sys-apps/nix
+
+	${DEPEND}
 "
 
 CHECKREQS_DISK_BUILD="2000M"
@@ -98,5 +99,5 @@ src_install() {
 }
 
 pkg_postinst() {
-	elog 'To use for a given user do: sudo chown -R "${USER}:${USER}" "/nix" "/var/lib/nix"'
+	elog 'To use for a given user do: sudo chown -R "${USER}:${USER}" /nix /var/lib/nix'
 }

@@ -15,6 +15,7 @@ RESTRICT="bindist"
 RDEPEND="
 	app-cdr/dolphin-plugins-mountiso
 	app-cdr/isoimagewriter
+
 	kde-apps/ark
 	kde-apps/dolphin-plugins-git
 	kde-apps/ffmpegthumbs
@@ -29,17 +30,18 @@ RDEPEND="
 	kde-apps/kwave[flac(+),mp3(+),opus(+)]
 	kde-apps/kwrite
 	kde-apps/okular
-	kde-frameworks/oxygen-icons
+
 	kde-misc/kclock
 	kde-misc/krename
 	kde-misc/kweather
+
 	kde-plasma/breeze-gtk
-	kde-plasma/oxygen
 	kde-plasma/plasma-browser-integration
 	kde-plasma/plasma-meta
 	kde-plasma/print-manager
 	kde-plasma/spectacle
 	kde-plasma/xdg-desktop-portal-kde
+
 	media-gfx/krita
 	sys-block/partitionmanager
 
@@ -107,6 +109,7 @@ RDEPEND="
 		media-gfx/inkscape[X(+)?]
 		media-gfx/jpegoptim
 		media-gfx/optipng
+		media-gfx/rawtherapee
 		media-libs/exiftool
 	)
 	vulkan? (
