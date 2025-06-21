@@ -9,26 +9,33 @@ HOMEPAGE="https://gitlab.com/xgqt/myov/"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+kde"
+IUSE="+gui +kde"
+REQUIRED_USE="kde? ( gui )"
 RESTRICT="bindist"
 
 # TODO: Find clones: bejeweled, billiard, space cadet (pinball), zuma.
 # TODO: Replace those KDE games: granatier.
 
 RDEPEND="
-	games-arcade/gnome-nibbles
-	games-board/gnome-mahjongg
-	games-board/gnome-mines
-	games-puzzle/gnome-sudoku
-	games-puzzle/gnome2048
-	games-puzzle/quadrapassel
+	games-misc/cbonsai
+	games-misc/cowsay
+	games-misc/fortune-mod
 
-	kde? (
-		kde-apps/kapman
-		kde-apps/kbreakout
-		kde-apps/kdiamond
-		kde-apps/knavalbattle
-		kde-apps/knights
-		kde-apps/kpat
+	gui? (
+		games-arcade/gnome-nibbles
+		games-board/gnome-mahjongg
+		games-board/gnome-mines
+		games-puzzle/gnome-sudoku
+		games-puzzle/gnome2048
+		games-puzzle/quadrapassel
+
+		kde? (
+			kde-apps/kapman
+			kde-apps/kbreakout
+			kde-apps/kdiamond
+			kde-apps/knavalbattle
+			kde-apps/knights
+			kde-apps/kpat
+		)
 	)
 "
