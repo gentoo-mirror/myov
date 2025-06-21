@@ -1,0 +1,12 @@
+DEFINED_PHASES=-
+DESCRIPTION=Meta package for miscellaneous open-source desktop games
+EAPI=8
+HOMEPAGE=https://gitlab.com/xgqt/myov/
+IUSE=+gui +kde
+KEYWORDS=~amd64
+LICENSE=metapackage
+RDEPEND=games-misc/cbonsai games-misc/cowsay games-misc/fortune-mod gui? ( games-arcade/gnome-nibbles games-board/gnome-mahjongg games-board/gnome-mines games-puzzle/gnome-sudoku games-puzzle/gnome2048 games-puzzle/quadrapassel kde? ( kde-apps/kapman kde-apps/kbreakout kde-apps/kdiamond kde-apps/knavalbattle kde-apps/knights kde-apps/kpat ) )
+REQUIRED_USE=kde? ( gui )
+RESTRICT=bindist
+SLOT=0
+_md5_=c18189ec013848c48d426f4c515b8a64
