@@ -144,6 +144,7 @@ media-libs/opencv                   -opengl
 media-libs/opencv                   -qt5
 media-libs/opencv                   contrib
 media-libs/opencv                   contribdnn
+media-libs/opencv                   features2d
 media-libs/opencv                   ffmpeg
 
 # FFmpeg
