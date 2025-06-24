@@ -153,6 +153,7 @@ media-video/ffmpeg                  chromium
 media-video/ffmpeg                  cpudetection
 media-video/ffmpeg                  fontconfig
 media-video/ffmpeg                  jpeg2k
+media-video/ffmpeg                  lame
 media-video/ffmpeg                  libaom
 media-video/ffmpeg                  libass
 media-video/ffmpeg                  libdrm
