@@ -9,7 +9,6 @@ app-containers/myov-containers-meta:kubernetes - Pull in kubernetes-related pack
 app-emacs/myov-emacs-meta:gentoo - Pull in Gentoo specific tools
 app-emacs/myov-emacs-meta:package-developer - Pull in packages for Emacs package development and testing
 dev-lang/python:bluetooth - Build Bluetooth protocol support in socket module
-dev-lang/python:ensurepip - Install the ensurepip module that uses bundled wheels to bootstrap pip and setuptools (if disabled, it will be only possible to use venv `--without-pip`)
 dev-lang/python:pgo - Optimize the build using Profile Guided Optimization (PGO) by running Python's test suite and collecting statistics based on its performance. This will take longer to build.
 dev-lang/python:valgrind - Disable pymalloc when running under dev-debug/valgrind is detected (may incur minor performance penalty even when valgrind is not used)
 dev-lang/yabasic:ffi - Enable foreign function interface
