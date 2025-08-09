@@ -8,8 +8,16 @@ inherit systemd
 DESCRIPTION="Lightweight Kubernetes (binary package)"
 HOMEPAGE="https://k3s.io/
 	https://github.com/k3s-io/k3s/"
-SRC_URI="https://github.com/k3s-io/k3s/releases/download/v${PV}+k3s1/k3s
-	-> ${P}-amd64"
+SRC_URI="
+	amd64? (
+		https://github.com/k3s-io/k3s/releases/download/v${PV}+k3s1/k3s
+			-> ${P}-github-release-amd64
+	)
+	arm64? (
+		https://github.com/k3s-io/k3s/releases/download/v${PV}+k3s1/k3s-arm64
+			-> ${P}-github-release-arm64
+	)
+"
 S="${WORKDIR}"
 
 LICENSE="Apache-2.0"
@@ -18,16 +26,21 @@ KEYWORDS="~amd64"
 RESTRICT="strip"
 
 RDEPEND="
-	!sys-cluster/k3s
-	>=app-containers/slirp4netns-1.2.0
-	>=app-misc/yq-go-4.44.3
 	>=net-firewall/conntrack-tools-1.4.8
+	app-containers/slirp4netns
+	app-misc/yq-go
 "
 
 QA_PREBUILT="*"
 
 src_unpack() {
-	cp "${DISTDIR}/${P}-amd64" "${WORKDIR}/k3s" || die
+	if use amd64 ; then
+		cp "${DISTDIR}/${P}-github-release-amd64" "${WORKDIR}/k3s" || die
+	elif use arm64 ; then
+		cp "${DISTDIR}/${P}-github-release-arm64" "${WORKDIR}/k3s" || die
+	else
+		die "Current architecture is unsupported"
+	fi
 }
 
 src_install() {

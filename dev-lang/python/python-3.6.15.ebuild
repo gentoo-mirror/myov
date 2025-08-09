@@ -25,7 +25,7 @@ LICENSE="PSF-2"
 SLOT="${PYVER}"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 IUSE="
-	bluetooth build custom-cflags debug +ensurepip examples gdbm +ncurses pgo
+	bluetooth build custom-cflags debug examples gdbm +ncurses pgo
 	+readline +sqlite +ssl tk valgrind
 "
 RESTRICT="test"
@@ -40,7 +40,6 @@ RDEPEND="
 	>=sys-libs/zlib-1.1.3:=
 	virtual/libcrypt:=
 	virtual/libintl
-	ensurepip? ( dev-python/ensurepip-wheels )
 	gdbm? ( sys-libs/gdbm:=[berkdb] )
 	kernel_linux? ( sys-apps/util-linux:= )
 	ncurses? ( >=sys-libs/ncurses-5.2:= )
@@ -306,10 +305,9 @@ src_install() {
 		pax-mark m "${ED}/usr/bin/${abiver}"
 	fi
 
-	rm -r "${libdir}"/ensurepip/_bundled || die
-	if ! use ensurepip; then
-		rm -r "${libdir}"/ensurepip || die
-	fi
+	rm -f -r "${libdir}"/ensurepip/_bundled || die
+	rm -f -r "${libdir}"/ensurepip || die
+
 	if ! use sqlite; then
 		rm -r "${libdir}/"{sqlite3,test/test_sqlite*} || die
 	fi
