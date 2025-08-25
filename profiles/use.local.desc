@@ -28,6 +28,7 @@ sys-apps/myov-base-meta:gentoo - Pull in Gentoo specific tools
 sys-apps/myov-base-meta:grub - Pull in GRUB2
 sys-apps/myov-base-meta:hardware - Pull in hardware tools
 sys-apps/myov-base-meta:network - Pull in network communication/diagnosis tools
+sys-apps/myov-mainstation-meta:server - Pull in server components for a central operator
 sys-apps/paludis:pbin - Enable PBins, experimental Paludis binary packages
 sys-apps/paludis:search-index - Enable package search index (cave search --index)
 sys-cluster/pacemaker:smtp - Enable SMTP support via net-libs/libesmtp
