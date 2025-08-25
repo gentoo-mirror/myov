@@ -9,7 +9,7 @@ HOMEPAGE="https://gitlab.com/xgqt/myov/"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="gui +postgres"
+IUSE="gui +postgres +server"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -18,19 +18,14 @@ RDEPEND="
 	app-containers/incus
 	app-misc/mc
 	app-misc/uptimed
-
 	dev-lang/bas
 	dev-lang/quickjs
-
-	dev-lang/php[apache2]
 	dev-util/0xtools
 	dev-util/perf
-
-	net-analyzer/zabbix[agent2,postgres,server]
-	net-firewall/firewalld[gui?]
 	net-misc/rclone
 
-	www-apps/phpsysinfo
+	net-analyzer/zabbix[agent2,postgres?,server?]
+	net-firewall/firewalld[gui?]
 
 	|| (
 		dev-lang/oorexx
@@ -43,5 +38,9 @@ RDEPEND="
 	postgres? (
 		dev-db/pg_top
 		dev-db/phppgadmin
+	)
+	server? (
+		dev-lang/php[apache2]
+		www-apps/phpsysinfo
 	)
 "

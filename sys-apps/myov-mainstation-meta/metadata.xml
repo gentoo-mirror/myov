@@ -9,4 +9,7 @@
   <upstream>
     <remote-id type="gitlab">xgqt/myov</remote-id>
   </upstream>
+  <use>
+    <flag name="server">Pull in server components for a central operator</flag>
+  </use>
 </pkgmetadata>
