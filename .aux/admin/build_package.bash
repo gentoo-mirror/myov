@@ -49,12 +49,16 @@ mkdir -p "${PKGDIR}"
 mkdir -p "${PORTAGE_LOGDIR}"
 mkdir -p "${PORTAGE_TMPDIR}"
 
-echo ">>> Working on ebuild: ${1}"
+declare -r ebuild="${1}"
+shift
 
-set -x
+declare -r -a phases=( clean compile "${@}" )
+declare phase=""
 
-ebuild "${1}" clean
-ebuild "${1}" compile
-ebuild "${1}" test
-ebuild "${1}" package
-ebuild "${1}" clean
+echo ">>> Working on ebuild: ${ebuild}"
+
+for phase in "${phases[@]}" ; do
+    echo ">>> Running phase command ${phase} for ebuild ${ebuild}"
+
+    ebuild "${ebuild}" "${phase}"
+done

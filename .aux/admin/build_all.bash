@@ -27,7 +27,7 @@ declare -a failed_ebuilds=()
 ebuild=""
 
 while read -r ebuild ; do
-    if bash ./.aux/admin/build_package.bash "${ebuild}" ; then
+    if bash ./.aux/admin/build_package.bash "${ebuild}" test package clean ; then
         echo " Success, ${ebuild} has passed."
     else
         failed_ebuilds+=( "${ebuild}" )
