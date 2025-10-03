@@ -14,7 +14,6 @@ RESTRICT="bindist"
 
 RDEPEND="
 	app-antivirus/clamav
-	app-backup/restic
 	app-containers/incus
 	app-misc/mc
 	app-misc/uptimed

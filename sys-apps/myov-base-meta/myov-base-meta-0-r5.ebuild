@@ -38,11 +38,13 @@ NO_PREFIX_DEPEND="
 		sys-boot/grub[mount(+)]
 	)
 	network? (
+		net-firewall/firewalld
 		net-fs/nfs-utils
 	)
 "
 
 RDEPEND="
+	app-backup/restic
 	app-editors/vim
 	app-misc/tmux
 	app-shells/bash-completion[eselect(+)]
