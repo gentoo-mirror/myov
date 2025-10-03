@@ -15,16 +15,20 @@ RESTRICT="bindist"
 RDEPEND="
 	app-antivirus/clamav
 	app-containers/incus
+	app-emulation/qemu
 	app-misc/mc
 	app-misc/uptimed
+
 	dev-lang/bas
 	dev-lang/quickjs
 	dev-util/0xtools
 	dev-util/perf
-	net-misc/rclone
 
 	net-analyzer/zabbix[agent2,postgres?,server?]
 	net-firewall/firewalld[gui?]
+	net-misc/rclone
+
+	sys-fs/btrfs-progs
 
 	|| (
 		dev-lang/oorexx
@@ -33,6 +37,11 @@ RDEPEND="
 
 	gui? (
 		app-antivirus/clamtk
+
+		|| (
+			games-emulation/dosbox-staging
+			games-emulation/dosbox
+		)
 	)
 	postgres? (
 		dev-db/pg_top
