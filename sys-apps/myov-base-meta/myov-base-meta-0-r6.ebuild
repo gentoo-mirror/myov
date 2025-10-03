@@ -154,6 +154,7 @@ RDEPEND="
 
 		net-dns/bind
 		net-fs/sshfs
+		net-ftp/ncftp
 		net-misc/curl
 		net-misc/iperf
 		net-misc/iputils
