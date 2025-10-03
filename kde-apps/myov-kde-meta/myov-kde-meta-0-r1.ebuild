@@ -9,7 +9,7 @@ HOMEPAGE="https://gitlab.com/xgqt/myov/"
 LICENSE="metapackage"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="X +android +accessibility dvd +fonts +graphics vulkan +wayland"
+IUSE="+android +accessibility dvd +fonts +graphics vulkan +wayland"
 RESTRICT="bindist"
 
 RDEPEND="
@@ -23,9 +23,9 @@ RDEPEND="
 	kde-apps/kate
 	kde-apps/kcalc
 	kde-apps/kdenlive
-	kde-apps/kdialog[X(+)?]
+	kde-apps/kdialog
 	kde-apps/kompare
-	kde-apps/konsole[X(+)?]
+	kde-apps/konsole
 	kde-apps/kwalletmanager
 	kde-apps/kwave[flac(+),mp3(+),opus(+)]
 	kde-apps/kwrite
@@ -45,18 +45,18 @@ RDEPEND="
 	media-gfx/krita
 	sys-block/partitionmanager
 
-	app-admin/keepassxc[X(+)?,browser(+)]
+	app-admin/keepassxc[browser(+)]
 	gnome-base/dconf-editor
 	media-gfx/simple-scan
 	media-sound/kid3
-	media-video/ffmpeg[X(+)?,vulkan(+)?]
+	media-video/ffmpeg[vulkan(+)?]
 	media-video/obs-studio
 	x11-apps/mesa-progs
 
 	|| (
 		media-video/smplayer
-		media-video/mpv[X(+)?,wayland(+)?]
-		media-video/vlc[X(+)?,ffmpeg(+),v4l(+)]
+		media-video/mpv[wayland(+)?]
+		media-video/vlc[ffmpeg(+),v4l(+)]
 	)
 	|| (
 		kde-apps/kamoso
@@ -67,7 +67,6 @@ RDEPEND="
 		media-sound/lollypop
 		media-sound/elisa
 		media-sound/cantata
-		media-sound/clementine
 		media-sound/quodlibet
 	)
 	|| (
@@ -76,17 +75,11 @@ RDEPEND="
 		net-p2p/qbittorrent[gui(+)]
 	)
 
-	X? (
-		x11-apps/xinit
-		x11-apps/xkill
-		x11-base/xorg-server
-		x11-apps/xinput
-	)
 	accessibility? (
 		kde-apps/kdeaccessibility-meta
 	)
 	android? (
-		kde-misc/kdeconnect[X(+)?]
+		kde-misc/kdeconnect
 	)
 	dvd? (
 		kde-apps/k3b[dvd(+)]
@@ -104,9 +97,9 @@ RDEPEND="
 		media-fonts/roboto
 	)
 	graphics? (
-		kde-apps/gwenview[X(+)?]
+		kde-apps/gwenview
 		kde-apps/kdegraphics-meta
-		media-gfx/inkscape[X(+)?]
+		media-gfx/inkscape
 		media-gfx/jpegoptim
 		media-gfx/optipng
 		media-gfx/rawtherapee
