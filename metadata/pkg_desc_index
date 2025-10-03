@@ -32,16 +32,16 @@ games-arcade/lbreakouthd 1.1.9: Breakout clone written with the SDL library
 games-misc/cbonsai 1.3.1: Grow Bonsai trees in your terminal
 games-misc/dice 1.0.0-r1 9999: Roll some dice
 games-misc/fortune-mod-grateful-dead 1.0.0 9999: Fortune modules from the Grateful Gead song lyrics
-games-misc/myov-games-meta 1: Meta package for miscellaneous open-source desktop games
+games-misc/myov-games-meta 0-r1: Meta package for miscellaneous open-source desktop games
 gui-apps/crystal-dock 2.10: Desktop panel for Linux desktop, supports KDE 6 and LXQt on Wayland
-kde-apps/myov-kde-meta 1: Meta package for KDE packages, custom selection
+kde-apps/myov-kde-meta 0-r1: Meta package for KDE packages, custom selection
 net-dialup/opencu 3-r1: Port of OpenBSD's serial terminal emulator cu(1) to Linux
 net-dialup/syncterm 1.3: ANSI-BBS terminal which supports telnet, rlogin, and SSH
 net-vpn/openiked 7.3-r1: Internet Key Exchange version 2 (IKEv2) daemon
 sys-apps/crazydiskinfo 1.1.0-r1: Interactive TUI S.M.A.R.T viewer for Unix systems
 sys-apps/earlyoom 1.8.2: Early OOM Daemon for Linux
-sys-apps/myov-base-meta 0-r4: Meta package for basic system packages
-sys-apps/myov-mainstation-meta 0-r2: Meta package for server/workstation with a feeling of a mainframe
+sys-apps/myov-base-meta 0-r6: Meta package for basic system packages
+sys-apps/myov-mainstation-meta 0-r4: Meta package for server/workstation with a feeling of a mainframe
 sys-apps/paludis 3.0.1-r1: Paludis, the other package mangler based on EAPI
 sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
 sys-apps/qdiskinfo 0.3-r1: CrystalDiskInfo alternative for Linux

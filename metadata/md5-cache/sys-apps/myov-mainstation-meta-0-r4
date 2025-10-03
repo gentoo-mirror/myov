@@ -1,0 +1,11 @@
+DEFINED_PHASES=-
+DESCRIPTION=Meta package for server/workstation with a feeling of a mainframe
+EAPI=8
+HOMEPAGE=https://gitlab.com/xgqt/myov/
+IUSE=gui +postgres +server
+KEYWORDS=~amd64
+LICENSE=metapackage
+RDEPEND=app-antivirus/clamav app-containers/incus app-emulation/qemu app-misc/mc app-misc/uptimed dev-lang/bas dev-lang/quickjs dev-util/0xtools dev-util/perf net-analyzer/zabbix[agent2,postgres?,server?] net-firewall/firewalld[gui?] net-misc/rclone sys-fs/btrfs-progs || ( dev-lang/oorexx dev-lang/regina-rexx ) gui? ( app-antivirus/clamtk || ( games-emulation/dosbox-staging games-emulation/dosbox ) ) postgres? ( dev-db/pg_top dev-db/phppgadmin ) server? ( dev-lang/php[apache2] www-apps/phpsysinfo )
+RESTRICT=bindist
+SLOT=0
+_md5_=a526d9a9e71aa9a9ea72af67baa44fa4
