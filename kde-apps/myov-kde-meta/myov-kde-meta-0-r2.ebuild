@@ -42,15 +42,12 @@ RDEPEND="
 	kde-plasma/spectacle
 	kde-plasma/xdg-desktop-portal-kde
 
-	media-gfx/krita
-	sys-block/partitionmanager
-
 	app-admin/keepassxc[browser(+)]
 	gnome-base/dconf-editor
 	media-gfx/simple-scan
 	media-sound/kid3
 	media-video/ffmpeg[vulkan(+)?]
-	media-video/obs-studio
+	sys-block/partitionmanager
 	x11-apps/mesa-progs
 
 	|| (
@@ -101,9 +98,11 @@ RDEPEND="
 		kde-apps/kdegraphics-meta
 		media-gfx/inkscape
 		media-gfx/jpegoptim
+		media-gfx/krita
 		media-gfx/optipng
 		media-gfx/rawtherapee
 		media-libs/exiftool
+		media-video/obs-studio
 	)
 	vulkan? (
 		dev-util/vulkan-tools
