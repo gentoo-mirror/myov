@@ -63,16 +63,6 @@ app-arch/brotli                     python
 ##################################### Editors
 #                                   #                   #
 
-# Neovim
-app-editors/neovim                  -lua_single_target_lua5-1
-app-editors/neovim                  lua_single_target_luajit
-dev-lua/lpeg                        lua_targets_luajit
-dev-lua/luv                         -lua_single_target_lua5-1
-dev-lua/luv                         -lua_single_target_lua5-3
-dev-lua/luv                         -lua_single_target_lua5-4
-dev-lua/luv                         lua_single_target_luajit
-dev-lua/mpack                       lua_targets_luajit
-
 # GNU Emacs
 app-editors/emacs                   -lcms
 app-editors/emacs                   dynamic-loading
