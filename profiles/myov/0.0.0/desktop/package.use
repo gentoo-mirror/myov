@@ -261,16 +261,6 @@ dev-vcs/git                         tk
 ##################################### Web
 #                                   #                   #
 
-# Chromium
-www-client/chromium                 -custom-cflags
-www-client/chromium                 -headless
-www-client/chromium                 -kerberos
-www-client/chromium                 -official
-www-client/chromium                 -qt5
-www-client/chromium                 -widevine
-www-client/chromium                 hangouts
-www-client/chromium                 proprietary-codecs
-
 # Falkon
 dev-qt/qtwebchannel                 qml
 sys-libs/zlib                       minizip
