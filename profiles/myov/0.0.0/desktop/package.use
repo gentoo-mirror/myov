@@ -16,7 +16,8 @@ dev-vcs/git                         gpg
 kde-frameworks/kwallet              gpg
 
 # GRUB
-sys-boot/grub                       device-mapper mount
+sys-boot/grub                       device-mapper
+sys-boot/grub                       mount
 
 # Pinentry
 app-crypt/pinentry                  -emacs              # Disable broken Emacs interface.
@@ -259,16 +260,6 @@ dev-vcs/git                         tk
 
 ##################################### Web
 #                                   #                   #
-
-# Chromium
-www-client/chromium                 -custom-cflags
-www-client/chromium                 -headless
-www-client/chromium                 -kerberos
-www-client/chromium                 -official
-www-client/chromium                 -qt5
-www-client/chromium                 -widevine
-www-client/chromium                 hangouts
-www-client/chromium                 proprietary-codecs
 
 # Falkon
 dev-qt/qtwebchannel                 qml
