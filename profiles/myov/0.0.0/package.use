@@ -192,8 +192,6 @@ dev-lang/python                     sqlite
 ##################################### Multimedia
 #                                   #                   #
 
-media-libs/phonon                   minimal
-
 
 ##################################### Networking
 #                                   #                   #
