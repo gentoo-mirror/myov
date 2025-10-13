@@ -223,6 +223,7 @@ dev-cpp/cpp-httplib                 zlib
 # Firewalld
 net-firewall/nftables               json
 net-firewall/nftables               python
+net-firewall/nftables               xtables
 
 # LibSSH
 net-libs/libssh                     server
