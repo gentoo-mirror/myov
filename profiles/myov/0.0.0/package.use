@@ -220,6 +220,10 @@ dev-cpp/cpp-httplib                 brotli
 dev-cpp/cpp-httplib                 ssl
 dev-cpp/cpp-httplib                 zlib
 
+# Firewalld
+net-firewall/nftables               json
+net-firewall/nftables               python
+
 # LibSSH
 net-libs/libssh                     server
 
