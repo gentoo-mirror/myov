@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://gitlab.com/xgqt/xgqt-misc-lib-project-info-schema/-/raw/2.2.0/code/source/v2/project-info-schema/src/schema.json
+# Copyright (c) 2024-2025, Maciej Barć <xgqt@xgqt.org>
+---
+meta:
+  schema:
+    version: "2.2.0"
+  info: "."
+spec:
+  project:
+    title: "My Overlay"
+    authors:
+      - "Maciej Barć"
+    description: >-
+      Collection of ebuild scripts of the programs I created/maintain
+    homepage: "https://gitlab.com/xgqt/myov"
+    keywords:
+      - gentoo
+      - system
+    languages:
+      - ebuild
+      - shell
+    localization:
+      - english
+  legal:
+    copyright: "Copyright (c) 2019-2025, Maciej Barć <xgqt@xgqt.org>"
+    license:
+      - name: "GNU GPL v2 License"
+        identifier: GPL-2.0-or-later
+  maintenance:
+    status: active
+    upstream: "https://gitlab.com/xgqt/myov"
+    bugsTo: "https://gitlab.com/xgqt/myov/-/issues"
+  build:
+    tools:
+      - bash
+      - make
+      - python
+    recipe: |-
+      cd .
+      make test
