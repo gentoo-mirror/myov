@@ -1,6 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "timezone": "Europe/Warsaw",
+  "extends": [
+    "config:recommended"
+  ],
   "ignorePaths": [
-    ".aux"
+    ".aux",
+    ".cache",
+    ".mypy_cache"
   ]
 }
