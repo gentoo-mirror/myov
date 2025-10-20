@@ -46,7 +46,7 @@ sys-apps/paludis 3.0.1-r1: Paludis, the other package mangler based on EAPI
 sys-apps/qbwrap 1.1.0 1.9999: Quick Bubblewrap chroot management tool
 sys-apps/qdiskinfo 0.3-r1: CrystalDiskInfo alternative for Linux
 sys-cluster/environment-modules 5.5.0: Environment Modules provide dynamic modification of user environment
-sys-cluster/k3s-bin 1.32.3-r1 1.33.3: Lightweight Kubernetes (binary package)
+sys-cluster/k3s-bin 1.33.3 1.34.1: Lightweight Kubernetes (binary package)
 sys-cluster/lmod 8.7.55: Environment Module System based on Lua
 sys-cluster/pacemaker 2.1.9: Pacemaker CRM
 sys-fs/cpmtools 2.24-r1: Tools to access CP/M file systems
