@@ -4,6 +4,13 @@
 
 external-sources=true
 
+# https://github.com/koalaman/shellcheck/wiki/SC1090
+disable=SC1090
+
+# Sometimes Shellcheck thinks those paths do not exist, even if annotated.
+# https://github.com/koalaman/shellcheck/wiki/SC1091
+disable=SC1091
+
 # https://github.com/koalaman/shellcheck/wiki/SC2155
 disable=SC2155
 

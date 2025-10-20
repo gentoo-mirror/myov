@@ -1,0 +1,6 @@
+# -*- conf -*-
+
+# Documentation: https://flake8.pycqa.org/en/latest/user/configuration.html
+
+[flake8]
+max_line_length = 108
