@@ -28,7 +28,6 @@ RDEPEND="
 	app-emacs/org-appear
 	app-emacs/rainbow-delimiters
 	app-emacs/restclient
-	app-emacs/spacemacs-theme
 	app-emacs/swiper
 	app-emacs/switch-window
 	app-emacs/undo-tree
