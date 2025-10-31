@@ -155,11 +155,11 @@ RDEPEND="
 		net-dns/bind
 		net-fs/sshfs
 		net-ftp/ncftp
+		net-misc/chrony
 		net-misc/curl
 		net-misc/iperf
 		net-misc/iputils
 		net-misc/mosh
-		net-misc/ntp
 		net-misc/socat
 		net-misc/sshpass
 		net-misc/whois
