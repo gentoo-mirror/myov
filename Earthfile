@@ -4,7 +4,6 @@ WORKDIR /build
 
 setup:
     FROM +base
-    ENV FEATURES="-sandbox -ipc-sandbox -mount-sandbox -network-sandbox -pid-sandbox"
     COPY --dir . .
 
 build:

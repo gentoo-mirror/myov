@@ -8,5 +8,5 @@ test:
   stage: test
   timeout: 20 minutes
   script:
-    - export FEATURES="-sandbox" && scons build
-    - export FEATURES="-sandbox" && scons test
+    - scons build
+    - scons test
