@@ -7,13 +7,17 @@ import os
 
 from shutil import which
 
-from SCons.Script import Clean
-from SCons.Script import Default
-from SCons.Script import Dir
-from SCons.Script import Environment
-from SCons.Script import Glob
-from SCons.Script import Variables
-from SCons.Script import Touch
+from SCons.Script import (
+    Clean,
+    Default,
+    Dir,
+    EnsurePythonVersion,
+    EnsureSConsVersion,
+    Environment,
+    Glob,
+    Touch,
+    Variables,
+)
 
 
 venv_path = os.path.abspath(".venv")
@@ -31,29 +35,16 @@ aux = pwd.Dir(".aux")
 admin = aux.Dir("admin")
 
 
+EnsurePythonVersion(3, 12)
+EnsureSConsVersion(4, 9)
+
+
 tools = [
     "default",
 ]
 
-
 opts = Variables()
 
-# Egencache
-opts.Add(
-    key="EGENCACHE",
-    help="path to the egencache command binary",
-    default=which(cmd="egencache") or "egencache",
-)
-opts.Add(
-    key="EGENCACHE_DEFAULT_OPTS",
-    help="egencache lint options",
-    default="--verbose --update",
-)
-opts.Add(
-    key="EGENCACHE_EXTRA_OPTS",
-    help="extra egencache lint options",
-    default="",
-)
 
 # Pkgdev
 opts.Add(
@@ -160,24 +151,6 @@ manifests = env.Command(
     ],
 )
 
-egencache_cache_cmd_args = [
-    "${EGENCACHE}",
-    "${EGENCACHE_DEFAULT_OPTS}",
-    "${EGENCACHE_EXTRA_OPTS}",
-    "--repo=myov",
-]
-egencache_cache = env.Command(
-    target=["target/egencache-cache.stamp"],
-    source=[
-        ebuilds,
-    ],
-    action=[
-        " ".join(egencache_cache_cmd_args),
-        #
-        Touch("${TARGET}"),
-    ],
-)
-
 pkgcheck_cache_cmd_args = [
     "${PKGCHECK}",
     "cache",
@@ -198,7 +171,6 @@ pkgcheck_cache = env.Command(
 ebuild_cache = env.Command(
     target=["target/ebuild-cache.stamp"],
     source=[
-        egencache_cache,
         pkgcheck_cache,
     ],
     action=[
