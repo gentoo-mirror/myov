@@ -13,6 +13,7 @@ from SCons.Script import Dir
 from SCons.Script import Environment
 from SCons.Script import Glob
 from SCons.Script import Variables
+from SCons.Script import Touch
 
 
 venv_path = os.path.abspath(".venv")
@@ -26,7 +27,6 @@ if os.path.exists(activate_this_py):
 
 pwd = Dir(".")
 
-cache = pwd.Dir(".cache")
 aux = pwd.Dir(".aux")
 admin = aux.Dir("admin")
 
@@ -115,21 +115,43 @@ env = Environment(
 
 env["PWD"] = pwd.srcnode().abspath
 
-env["CACHE"] = cache.srcnode().abspath
 env["AUX"] = aux.srcnode().abspath
 env["ADMIN"] = admin.srcnode().abspath
 
 
+ebuilds = Glob("*/*/*.ebuild")
+
+ebuild_builds = []
+
+for ebuild in ebuilds:
+    ebuild_build = env.Command(
+        target=[ebuild.srcnode().relpath + ".ebuilt.stamp"],
+        source=[
+            admin.File("build_package.bash"),
+            ebuild,
+        ],
+        action=[
+            "bash ${SOURCES} test clean",
+            #
+            Touch("${TARGET}"),
+        ],
+    )
+
+    ebuild_builds.append(ebuild_build)
+
+
 build_all = env.Command(
-    target=["build-all"],
+    target=["target/build-all.stamp"],
     source=[
         admin.File("build_all.bash"),
+        ebuilds,
     ],
     action=[
         "bash ${SOURCE}",
+        #
+        Touch("${TARGET}"),
     ],
 )
-env.AlwaysBuild(build_all)
 
 pkgdev_manifests_cmd_args = [
     "${PKGDEV}",
@@ -138,14 +160,17 @@ pkgdev_manifests_cmd_args = [
     "${PKGDEV_EXTRA_OPTS}",
     "${PWD}",
 ]
-pkgdev_manifests = env.Command(
-    target=["pkgdev-manifests"],
-    source=[],
+manifests = env.Command(
+    target=["target/manifests.stamp"],
+    source=[
+        ebuilds,
+    ],
     action=[
         " ".join(pkgdev_manifests_cmd_args),
+        #
+        Touch("${TARGET}"),
     ],
 )
-env.AlwaysBuild(pkgdev_manifests)
 
 egencache_cache_cmd_args = [
     "${EGENCACHE}",
@@ -154,13 +179,16 @@ egencache_cache_cmd_args = [
     "--repo=myov",
 ]
 egencache_cache = env.Command(
-    target=["egencache-cache"],
-    source=[],
+    target=["target/egencache-cache.stamp"],
+    source=[
+        ebuilds,
+    ],
     action=[
         " ".join(egencache_cache_cmd_args),
+        #
+        Touch("${TARGET}"),
     ],
 )
-env.AlwaysBuild(egencache_cache)
 
 pkgcheck_cache_cmd_args = [
     "${PKGCHECK}",
@@ -168,22 +196,28 @@ pkgcheck_cache_cmd_args = [
     "--update",
 ]
 pkgcheck_cache = env.Command(
-    target=["pkgcheck-cache"],
-    source=[],
+    target=["target/pkgcheck-cache.stamp"],
+    source=[
+        ebuilds,
+    ],
     action=[
         " ".join(pkgcheck_cache_cmd_args),
+        #
+        Touch("${TARGET}"),
     ],
 )
-env.AlwaysBuild(pkgcheck_cache)
 
-ebuild_cache = env.Alias(
-    target=["ebuild-cache"],
+ebuild_cache = env.Command(
+    target=["target/ebuild-cache.stamp"],
     source=[
         egencache_cache,
         pkgcheck_cache,
     ],
+    action=[
+        #
+        Touch("${TARGET}"),
+    ],
 )
-env.AlwaysBuild(ebuild_cache)
 
 pkgcheck_scan_files_cmd_args = [
     "${PKGCHECK}",
@@ -192,20 +226,18 @@ pkgcheck_scan_files_cmd_args = [
     "${PKGCHECK_EXTRA_OPTS}",
 ]
 pkgcheck_scan_files = env.Command(
-    target=["pkgcheck-scan-files"],
-    source=[],
-    action=[
-        " ".join(pkgcheck_scan_files_cmd_args),
-    ],
-)
-env.Depends(
-    target=[pkgcheck_scan_files],
-    dependency=[
+    target=["target/pkgcheck-scan-files.stamp"],
+    source=[
+        ebuilds,
         ebuild_cache,
         pkgcheck_cache,
     ],
+    action=[
+        " ".join(pkgcheck_scan_files_cmd_args),
+        #
+        Touch("${TARGET}"),
+    ],
 )
-env.AlwaysBuild(pkgcheck_scan_files)
 
 pkgcheck_scan_commits_cmd_args = [
     "${PKGCHECK}",
@@ -215,53 +247,30 @@ pkgcheck_scan_commits_cmd_args = [
     "--commits",
 ]
 pkgcheck_scan_commits = env.Command(
-    target=["pkgcheck-scan-commits"],
+    target=["target/pkgcheck-scan-commits.stamp"],
     source=[],
     action=[
         " ".join(pkgcheck_scan_commits_cmd_args)
         + " || echo 'WARNING: Commits scan failed'",
+        #
+        Touch("${TARGET}"),
     ],
 )
-env.Depends(
-    target=[pkgcheck_scan_commits],
-    dependency=[
-        ebuild_cache,
-        pkgcheck_cache,
-    ],
-)
-env.AlwaysBuild(pkgcheck_scan_commits)
 
-pkgcheck_scan = env.Alias(
-    target=["pkgcheck-scan"],
+pkgcheck_scan = env.Command(
+    target=["target/pkgcheck-scan.stamp"],
     source=[
         pkgcheck_scan_files,
         pkgcheck_scan_commits,
     ],
+    action=[
+        #
+        Touch("${TARGET}"),
+    ],
 )
-env.AlwaysBuild(pkgcheck_scan)
 
-
-ebuilds = Glob("*/*/*.ebuild")
-ebuild_builds = []
-
-for ebuild in ebuilds:
-    ebuild_build = env.Command(
-        target=[ebuild.srcnode().relpath + ".ebuilt"],
-        source=[
-            admin.File("build_package.bash"),
-            ebuild,
-        ],
-        action=[
-            "bash ${SOURCES} test clean",
-            "date +%s > ${TARGET}",
-        ],
-    )
-
-    ebuild_builds.append(ebuild_build)
-
-
-smoke = env.Alias(
-    target=["smoke"],
+smoke = env.Command(
+    target=["smoke.stamp"],
     source=[
         # Ensure some categories build correctly.
         "app-portage",
@@ -270,21 +279,50 @@ smoke = env.Alias(
         "dev-build/jam",
         "games-misc/dice",
     ],
+    action=[
+        #
+        Touch("${TARGET}"),
+    ],
 )
-env.AlwaysBuild(smoke)
 
-test = env.Alias(
-    target=["test"],
+
+build_stamp = env.Command(
+    target=["target/build.stamp"],
+    source=[
+        manifests,
+        ebuild_cache,
+    ],
+    action=[
+        #
+        Touch("${TARGET}"),
+    ],
+)
+
+build = env.Alias(
+    target=["build"],
+    source=[build_stamp],
+)
+
+test_stamp = env.Command(
+    target=["target/test.stamp"],
     source=[
         pkgcheck_scan,
         smoke,
     ],
+    action=[
+        #
+        Touch("${TARGET}"),
+    ],
 )
-env.AlwaysBuild(test)
+
+test = env.Alias(
+    target=["test"],
+    source=[test_stamp],
+)
 
 
-push_all = env.Command(
-    target=["push-all"],
+push = env.Command(
+    target=["push"],
     source=[
         admin.File("push_all.bash"),
     ],
@@ -292,13 +330,14 @@ push_all = env.Command(
         "bash ${SOURCE}",
     ],
 )
-env.AlwaysBuild(push_all)
+
+env.AlwaysBuild(push)
 
 
 all = env.Alias(
     target=["all"],
     source=[
-        pkgdev_manifests,
+        build,
         test,
     ],
 )
