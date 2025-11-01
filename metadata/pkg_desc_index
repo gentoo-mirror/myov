@@ -19,7 +19,6 @@ dev-db/rsm 1.82.4: Implementation of ANSI/MDC Standard M language and database
 dev-java/jdtls 1.48.0.202506271502: Java language server
 dev-lang/bacon 5.0.1: BASIC to C translator for Unix systems
 dev-lang/bwbasic 3.30-r1: Bywater interpreter for the BASIC programming language
-dev-lang/deno-bin 1.46.3: Modern runtime for JavaScript and TypeScript
 dev-lang/python 3.6.15: An interpreted, interactive, object-oriented programming language
 dev-lang/quickjs 2024.07.27-r1: Small embeddable JavaScript engine
 dev-lang/yabasic 2.90.5-r1: Traditional interpreter for the BASIC language
@@ -51,5 +50,4 @@ sys-cluster/lmod 8.7.55: Environment Module System based on Lua
 sys-cluster/pacemaker 2.1.9: Pacemaker CRM
 sys-fs/cpmtools 2.24-r1: Tools to access CP/M file systems
 sys-fs/ncdu-c 1.18-r1: NCurses Disk Usage
-virtual/deno 1: Virtual for deno
 www-servers/openresty 1.27.1.2-r3: High Performance Web Platform Based on Nginx and LuaJIT
