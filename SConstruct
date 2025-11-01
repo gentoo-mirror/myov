@@ -232,12 +232,9 @@ pkgcheck_scan = env.Command(
 smoke = env.Command(
     target=["target/smoke.stamp"],
     source=[
-        # Ensure some categories build correctly.
-        "app-portage",
-        #
-        # Ensure some packages build correctly.
+        "app-portage/hook-ccache",
+        "app-portage/hook-time",
         "dev-build/jam",
-        "games-misc/dice",
     ],
     action=[
         #
