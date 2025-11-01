@@ -9,8 +9,9 @@
 .vscode/
 metadata/md5-cache/
 
-*.ebuilt
 *.dblite
+*.ebuilt
+*.stamp
 *.swp
 *~
 ,*

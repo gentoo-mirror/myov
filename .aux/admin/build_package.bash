@@ -3,23 +3,18 @@
 # Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-set -e
-set -u
-trap "exit 128" INT
+trap "exit 130" INT
+set -eu
 
 SOURCE="${BASH_SOURCE[0]}"
-
 while [[ -h "${SOURCE}" ]] ; do
     DIR="$(cd -P "$(dirname "${SOURCE}")" >/dev/null 2>&1 && pwd)"
     SOURCE="$(readlink "${SOURCE}")"
-
     [[ "${SOURCE}" != /* ]] && SOURCE="${DIR}/${SOURCE}"
 done
-
 SCRIPT_DIR="$(cd -P "$(dirname "${SOURCE}")" >/dev/null 2>&1 && pwd)"
 
 cd "${SCRIPT_DIR}"
-
 cd ../../
 
 declare -r cache="$(pwd)/.cache"
@@ -28,9 +23,11 @@ declare -r build_log_file="${cache}/build.log"
 mkdir -p "${cache}"
 rm -f "${build_log_file}"
 
-FEATURES="test
-    -sandbox -usersandbox
-    ipc-sandbox mount-sandbox network-sandbox pid-sandbox"
+if [[ -z "${FEATURES+x}" ]] ; then
+    FEATURES="-sandbox -usersandbox ipc-sandbox mount-sandbox network-sandbox pid-sandbox"
+fi
+
+FEATURES+=" test "
 export FEATURES
 
 export USE="test"
@@ -53,12 +50,9 @@ declare -r ebuild="${1}"
 shift
 
 declare -r -a phases=( clean compile "${@}" )
-declare phase=""
 
 echo ">>> Working on ebuild: ${ebuild}"
+echo ">>> Will execute phases: ${phases[*]}"
 
-for phase in "${phases[@]}" ; do
-    echo ">>> Running phase command ${phase} for ebuild ${ebuild}"
-
-    ebuild "${ebuild}" "${phase}"
-done
+set -x
+exec ebuild "${ebuild}" "${phases[@]}"

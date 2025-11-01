@@ -1,5 +1,5 @@
 ---
-image: docker.io/xgqt/ci-gentoo-tools:latest
+image: docker.io/xgqt/ci-gentoo-tools:3.0.0.current-glibc
 
 stages:
   - test
@@ -7,7 +7,6 @@ stages:
 test:
   stage: test
   timeout: 20 minutes
-
   script:
-    - egencache --jobs 16 --load-average 2 --update
-    - make test
+    - scons build
+    - scons test
