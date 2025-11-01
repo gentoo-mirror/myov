@@ -2,8 +2,11 @@
 .devcontainer/
 .git/
 .vscode/
+target/
 
 .dir-locals.el
 .editorconfig
 .gitattributes
 .gitignore
+
+*.stamp
