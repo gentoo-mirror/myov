@@ -26,6 +26,19 @@ pipeline
             }
         }
 
+        stage("build")
+        {
+            options
+            {
+                timeout(time: 20, unit: "MINUTES")
+            }
+
+            steps
+            {
+                sh "earthly +build"
+            }
+        }
+
         stage("test")
         {
             options
