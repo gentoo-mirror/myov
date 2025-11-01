@@ -121,6 +121,7 @@ env["ADMIN"] = admin.srcnode().abspath
 
 ebuilds = Glob("*/*/*.ebuild")
 
+
 ebuild_builds = []
 
 for ebuild in ebuilds:
@@ -139,19 +140,6 @@ for ebuild in ebuilds:
 
     ebuild_builds.append(ebuild_build)
 
-
-build_all = env.Command(
-    target=["target/build-all.stamp"],
-    source=[
-        admin.File("build_all.bash"),
-        ebuilds,
-    ],
-    action=[
-        "bash ${SOURCE}",
-        #
-        Touch("${TARGET}"),
-    ],
-)
 
 pkgdev_manifests_cmd_args = [
     "${PKGDEV}",
