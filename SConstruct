@@ -258,7 +258,7 @@ pkgcheck_scan = env.Command(
 )
 
 smoke = env.Command(
-    target=["smoke.stamp"],
+    target=["target/smoke.stamp"],
     source=[
         # Ensure some categories build correctly.
         "app-portage",
